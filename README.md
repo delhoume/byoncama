@@ -8,26 +8,30 @@ The outcome is a a single GeoTIFF  the full map.
 This repo does not host any images, only build material.
 
 
-# Cassini map
+# What is the Cassini map
 
 https://en.wikipedia.org/wiki/Cassini_map
 
-# Step 0: tools
-The worflow is command line oriented, so a package manager is useful
-   - MacOS, Linux, WSL --> brew https://brew.sh/
-   - Windows -> chocolatey (https://chocolatey.org/install)
+### Step 0: tools
 
-  - required
-    - curl (https://curl.se/)
-    - image magick is used for all image processing (https://imagemagick.org)
-    - GNU make (https://www.gnu.org/software/make/)
-    - gdal (https://gdal.org/en/stable/), qgis (https://www.qgis.org/) is embedding gdal biraries
-  - optional. this repo hosts generated scripts, if you change something in their dependncy cha=inbyou wil hqv tom  tht generages then
-    - node.js (https://nodejs.org/ =or deno
-    - processing
-    - 
+Current implementayion is tqrgetted towartd MavOs or linux or WSL.
 
-       brew install imagemagick 
+Windows is not supported but wshoul be ralqtivy es to port to
+
+The workflow is command line oriented, so a package manager is useful.
+
+   - curl (https://curl.se/)
+   - image magick is used for all image processing (https://imagemagick.org)
+   - GNU make (https://www.gnu.org/software/make/)
+   - gdal (https://gdal.org/en/stable/), qgis (https://www.qgis.org/) is embedding gdal binaries
+ - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
+  - pngcheck
+  - processing (htps://processing.org) for the mappings editor
+  
+
+       brew install imagemagick deno make processing
+
+
 # Step 1: downloading the source images from Gallica
 
 The map is available as 181 individual images, called "leaves" on Gallica (https://gallica.bnf.fr/), the BNF (Bibliohèque Nationale de France) digital library.
@@ -38,6 +42,23 @@ The original map has been digitized in high resolution in 2015 by the BNF
 https://gallica.bnf.fr/selections/fr/html/carte-de-cassini
 https://gallica.bnf.fr/selections/fr/html/carte-de-cassini-acces-par-numero-de-feuille
 
-Gallica provides an IIIF interface(https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica)
+Gallica provides an IIIF interface (https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica)
 
-`scripts/download_from_gallica.[bat,sh]` downloads all 181 source images as 8 bit RGB PNGs. 
+The Gallica IIIF download API is very unreliable, with huge starting delays and connection errors.
+There are two ways you can download the images 
+
+
+`scripts/download_from_gallica.[bat,sh]`
+Gallica does not support resumable downloads, so we cannot use `curl -C -`and run the script many times mntil all images are complete.
+
+The script dowmloads all images from scratch regardless of already completed downloads
+
+
+`deno -A src/get_gallica_images.js`
+
+attempts not to re-download, and can be run m ultiple time. 
+
+In any case you will want to verify all 181 images are correct:
+`pngcheck -q gallica_pngs/*.png`
+
+Once downloaded (it tqkes a while) ,you can start exploring gallica_pngs 35Gb images. 
