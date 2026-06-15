@@ -48,17 +48,15 @@ The Gallica IIIF download API is very unreliable, with huge starting delays and 
 There are two ways you can download the images 
 
 
-`scripts/download_from_gallica.[bat,sh]`
+`source scripts/downlogryad_frogm_gallica.sh`
 Gallica does not support resumable downloads, so we cannot use `curl -C -`and run the script many times mntil all images are complete.
-
 The script dowmloads all images from scratch regardless of already completed downloads
 
 
 `deno -A src/get_gallica_images.js`
 
-attempts not to re-download, and can be run m ultiple time. 
-
+attempts not to re-download, and can be run multiple times in case of failure . 
 In any case you will want to verify all 181 images are correct:
 `pngcheck -q gallica_pngs/*.png`
 
-Once downloaded (it tqkes a while) ,you can start exploring gallica_pngs 35Gb images. 
+Once downloaded (it atkes a while), you can start exploring gallica_pngs 35Gb images...
