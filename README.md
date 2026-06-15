@@ -24,4 +24,4 @@ https://gallica.bnf.fr/selections/fr/html/carte-de-cassini-acces-par-numero-de-f
 
 Gallica provides an IIIF interface(https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica)
 
-scripts/download_from_gallica.[bat,sh] downloads all 181 source images as 8 bit RGB PNGs. 
+`scripts/download_from_gallica.[bat,sh]` downloads all 181 source images as 8 bit RGB PNGs. 
