@@ -15,8 +15,6 @@ int lastIndex = -1;
 double latestClosestDistance;
 
 
-String imagefolder =  "/Volumes/MyBook/Cassini/GallicaPngs/";
-//String imagefolder =  "/Users/fredericdelhoume/Downloads/Ferraris/OriginalImages/";
 String mapping_extension =  "_mapping.json";
 String mappingname; 
 String imagext = ".png";
@@ -52,7 +50,13 @@ void readMappingInfo() {
    cells = new Cell[numCells];
    handles = new Handle[numCells * 4];
    ignored = new int[numCells * 4];
-   img = loadImage(imagefolder + image + imagext);
+   String sketchpath = sketchPath();
+ File sketchf = new File(sketchpath);
+ File imgf =  new File(sketchf.getParentFile(), "gallica_pngs");
+ File imagf = new File(imgf, image + imagext);
+ String imagepath = imagf.getAbsolutePath();
+ 
+ img = loadImage(imagepath);
 
     imagewidth = img.width;
     imageheight = img.height;
@@ -65,11 +69,11 @@ void readMappingInfo() {
     // Get each object in the array
     JSONObject panel = mapping.getJSONObject(c);
     int column = panel.getInt("column");    
-    int row = panel.getInt("row");    
+    int row = panel.getInt("row");     //<>//
     JSONObject topleft = panel.getJSONObject("topleft");   
     JSONObject topright = panel.getJSONObject("topright");    
     JSONObject bottomright = panel.getJSONObject("bottomright");    
-    JSONObject bottomleft = panel.getJSONObject("bottomleft"); //<>//
+    JSONObject bottomleft = panel.getJSONObject("bottomleft"); 
     Handle handle1 = new Handle("topleft", fixWidth(topleft.getInt("x"), imagewidth), fixHeight(topleft.getInt("y"), imageheight)); 
     Handle handle2 = new Handle("topright", fixWidth(topright.getInt("x"), imagewidth), fixHeight(topright.getInt("y"), imageheight));  
     Handle handle3 = new Handle("bottomright", fixWidth(bottomright.getInt("x"), imagewidth), fixHeight(bottomright.getInt("y"), imageheight));    
@@ -124,11 +128,11 @@ void saveMappingInfo() {
      cellj.setJSONObject("topleft", tlj);
      cellj.setJSONObject("topright", trj);
      cellj.setJSONObject("bottomright", brj);
-     cellj.setJSONObject("bottomleft", blj);
+     cellj.setJSONObject("bottomleft", blj); //<>//
      cellj.setInt("column", cells[i].column); 
      cellj.setInt("row", cells[i].row);
    }
-   saveJSONObject(json, mappingname); //<>//
+   saveJSONObject(json, mappingname); 
 }
 
 PImage screenImage;
@@ -141,12 +145,9 @@ void fileSelected(File selection) {
 }
 
 void setup() {
-// size(displayWidth, displayHeight); //, P2D);
-
 selectInput("Select a mapping file", "fileSelected");
-size(2500, 1000); // P2D);
-   screenImage = createImage(width, height, RGB);
-}
+size(2000, 1000); // P2D);
+} 
 
 int lineWeight = 2;
 boolean blackcolor = true;
@@ -166,9 +167,8 @@ boolean blackcolor = true;
     vertex(w + xpos, h + ypos,  right  / img.width, bottom / img.height);
     vertex(xpos, h + ypos, left / img.width, bottom / img.height );
     endShape();
-  }
- //<>//
-
+  } //<>//
+ 
 
   int loupeSize = 100;
   int loupeSize2 = 2 * loupeSize;
@@ -178,6 +178,9 @@ PImage loupeImage = createImage(loupeSize2, loupeSize2, RGB);
 void draw() {
   if (img == null) return;
   if (img.width != 0) {
+    if (screenImage == null)
+      screenImage = createImage(width, height, RGB);
+
     screenImage.loadPixels();
     for (int y = 0; y < height; ++y) {
       for (int x = 0;x < width; ++x) {
@@ -332,10 +335,10 @@ void keyPressed() {
     selectInput("Select a mapping file", "fileSelected");
   }
   int mx = (int)screentoimagex(mouseX);
-  int my = (int)screentoimagey(mouseY);
+  int my = (int)screentoimagey(mouseY); //<>//
    int overIndex = findClosest(mx, my, 200);
     if (overIndex != -1) {
-    Handle handle = handles[overIndex]; //<>//
+    Handle handle = handles[overIndex]; 
        if (key == 'h') {
          if (handle == handle.cell.tl) handle.cell.tr._y = handle._y;
          else if (handle == handle.cell.tr) handle.cell.tl._y = handle._y;
@@ -377,12 +380,12 @@ int findClosest(int mx, int my, int radius) {
 }
 
 void mousePressed() {
-  int mx = (int)screentoimagex(mouseX);
-  int my = (int)screentoimagey(mouseY);
+  int mx = (int)screentoimagex(mouseX); //<>//
+  int my = (int)screentoimagey(mouseY); //<>//
   editIndex = findClosest(mx, my, 50);
-} //<>//
- //<>//
- void mouseDragged() {
+} 
+
+void mouseDragged() {
     if (editIndex != -1) {
       Handle handle = handles[editIndex];
       if (!keyPressed || (keyPressed &&  (key == 'x'))) {
@@ -500,10 +503,10 @@ boolean  first = false;
     _x = ix;
     _y = iy;
     size = 4;
-    over = false;
+    over = false; //<>//
     locked = true;
   }
- //<>//
+ 
   void display(color c) {
     fill(0,0,0);
     noStroke();
