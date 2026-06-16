@@ -1,0 +1,247 @@
+{
+  "image": "148_Geneve_btv1b53095275m",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 413,
+        "y": 3357
+      },
+      "topleft": {
+        "x": 428,
+        "y": 485
+      },
+      "topright": {
+        "x": 2338,
+        "y": 493
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2325,
+        "y": 3361
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2379,
+        "y": 3357
+      },
+      "topleft": {
+        "x": 2399,
+        "y": 484
+      },
+      "topright": {
+        "x": 4494,
+        "y": 500
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4476,
+        "y": 3358
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4539,
+        "y": 3338
+      },
+      "topleft": {
+        "x": 4552,
+        "y": 478
+      },
+      "topright": {
+        "x": 6641,
+        "y": 473
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6627,
+        "y": 3346
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6687,
+        "y": 3344
+      },
+      "topleft": {
+        "x": 6691,
+        "y": 459
+      },
+      "topright": {
+        "x": 7628,
+        "y": 458
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7628,
+        "y": 3335
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 404,
+        "y": 6574
+      },
+      "topleft": {
+        "x": 409,
+        "y": 3431
+      },
+      "topright": {
+        "x": 2319,
+        "y": 3431
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2320,
+        "y": 6576
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2378,
+        "y": 6586
+      },
+      "topleft": {
+        "x": 2373,
+        "y": 3425
+      },
+      "topright": {
+        "x": 4473,
+        "y": 3423
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4487,
+        "y": 6566
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4555,
+        "y": 6581
+      },
+      "topleft": {
+        "x": 4532,
+        "y": 3405
+      },
+      "topright": {
+        "x": 6634,
+        "y": 3409
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6632,
+        "y": 6561
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6692,
+        "y": 6571
+      },
+      "topleft": {
+        "x": 6686,
+        "y": 3401
+      },
+      "topright": {
+        "x": 7626,
+        "y": 3402
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7650,
+        "y": 6561
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 439,
+        "y": 9420
+      },
+      "topleft": {
+        "x": 410,
+        "y": 6641
+      },
+      "topright": {
+        "x": 2330,
+        "y": 6646
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2342,
+        "y": 9401
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2405,
+        "y": 9408
+      },
+      "topleft": {
+        "x": 2393,
+        "y": 6647
+      },
+      "topright": {
+        "x": 4507,
+        "y": 6631
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4510,
+        "y": 9392
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4588,
+        "y": 9400
+      },
+      "topleft": {
+        "x": 4577,
+        "y": 6636
+      },
+      "topright": {
+        "x": 6658,
+        "y": 6619
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6669,
+        "y": 9381
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 6719,
+        "y": 9401
+      },
+      "topleft": {
+        "x": 6701,
+        "y": 6627
+      },
+      "topright": {
+        "x": 7659,
+        "y": 6620
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7710,
+        "y": 9389
+      },
+      "row": 2
+    }
+  ],
+  "columns": 4,
+  "rows": 3
+}

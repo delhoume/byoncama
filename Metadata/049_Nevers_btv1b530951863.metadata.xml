@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2023-12-27T11:24:05Z</responseDate><request verb="GetRecord" metadataPrefix="oai_dc" identifier="oai:bnf.fr:gallica/ark:/12148/btv1b530951863">http://oai.bnf.fr/oai2/OAIHandler</request><GetRecord><record><header><identifier>oai:bnf.fr:gallica/ark:/12148/btv1b530951863</identifier><datestamp>2021-11-24</datestamp><setSpec>gallica:typedoc:cartes:carte</setSpec></header><metadata><oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>http://gallica.bnf.fr/ark:/12148/btv1b530951863</dc:identifier>
+<dc:title>Carte générale de la France. 049, [Nevers]. N°49. Flle 42 / [établie sous la direction de César-François Cassini de Thury]</dc:title>
+<dc:relation>Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb408603060</dc:relation>
+<dc:relation>Titre d'ensemble : Carte générale de la France</dc:relation>
+<dc:creator>Chaillou, F. (17..-17..). Cartographe</dc:creator>
+<dc:creator>Regnard (17..-17.. ; cartographe). Cartographe</dc:creator>
+<dc:creator>La Court. Cartographe</dc:creator>
+<dc:creator>Girard (17..-17.. ; ingénieur-géographe). Cartographe</dc:creator>
+<dc:creator>Le Roy de Boscroger. Cartographe</dc:creator>
+<dc:creator>Le Roy des Carreaux. Cartographe</dc:creator>
+<dc:creator>Luce, Louis René (1695?-1774). Graveur</dc:creator>
+<dc:creator>Le Roy (17..-18..? ; le jeune). Fonction indéterminée</dc:creator>
+<dc:creator>Cassini de Thury, César-François (1714-1784). Cartographe. Éditeur scientifique</dc:creator>
+<dc:date>1759</dc:date>
+<dc:subject xml:lang="fre">Nevers -- Environs</dc:subject>
+<dc:coverage>France – Bourgogne-Franche-Comté – Nièvre</dc:coverage>
+<dc:coverage>E 2°52' - E 3°53' / N 47°15' - N 46°49'</dc:coverage>
+<dc:description>Échelle(s) : [1:86 400 ca] Echelle de dix mille Toises = [22 cm] (d'après échelle graphique)</dc:description>
+<dc:format>1 carte en coul. ; 60 x 95 cm</dc:format>
+<dc:language>fre</dc:language>
+<dc:relation>Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb40860543r</dc:relation>
+<dc:type xml:lang="eng">map</dc:type>
+<dc:type xml:lang="fre">carte</dc:type>
+<dc:type xml:lang="fre">image fixe</dc:type>
+<dc:type xml:lang="eng">image</dc:type>
+<dc:type xml:lang="eng">still image</dc:type>
+<dc:source>Bibliothèque nationale de France, département Cartes et plans, GE FF-18595 (49)</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:description>Appartient à l’ensemble documentaire : AnvilFr</dc:description>
+<dc:format>image/jpeg</dc:format>
+<dc:format>Nombre total de vues :  1</dc:format>
+</oai_dc:dc>
+</metadata></record></GetRecord></OAI-PMH>

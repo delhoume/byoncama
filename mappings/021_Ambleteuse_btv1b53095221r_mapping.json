@@ -1,0 +1,188 @@
+{
+  "image": "021_Ambleteuse_btv1b53095221r",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 262,
+        "y": 3314
+      },
+      "topleft": {
+        "x": 262,
+        "y": 430
+      },
+      "topright": {
+        "x": 2264,
+        "y": 436
+      },
+      "column": 0,
+      "row": 0,
+      "bottomright": {
+        "x": 2262,
+        "y": 3314
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2305,
+        "y": 3318
+      },
+      "topleft": {
+        "x": 2303,
+        "y": 434
+      },
+      "topright": {
+        "x": 4412,
+        "y": 436
+      },
+      "column": 1,
+      "row": 0,
+      "bottomright": {
+        "x": 4406,
+        "y": 3318
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4459,
+        "y": 3320
+      },
+      "topleft": {
+        "x": 4459,
+        "y": 448
+      },
+      "topright": {
+        "x": 6326,
+        "y": 424
+      },
+      "column": 2,
+      "row": 0,
+      "bottomright": {
+        "x": 6329,
+        "y": 3302
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 289,
+        "y": 6517
+      },
+      "topleft": {
+        "x": 263,
+        "y": 3372
+      },
+      "topright": {
+        "x": 2258,
+        "y": 3363
+      },
+      "column": 0,
+      "row": 1,
+      "bottomright": {
+        "x": 2244,
+        "y": 6509
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2306,
+        "y": 6505
+      },
+      "topleft": {
+        "x": 2306,
+        "y": 3363
+      },
+      "topright": {
+        "x": 4409,
+        "y": 3363
+      },
+      "column": 1,
+      "row": 1,
+      "bottomright": {
+        "x": 4399,
+        "y": 6505
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4445,
+        "y": 6499
+      },
+      "topleft": {
+        "x": 4459,
+        "y": 3362
+      },
+      "topright": {
+        "x": 6329,
+        "y": 3354
+      },
+      "column": 2,
+      "row": 1,
+      "bottomright": {
+        "x": 6312,
+        "y": 6514
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 294,
+        "y": 9339
+      },
+      "topleft": {
+        "x": 287,
+        "y": 6564
+      },
+      "topright": {
+        "x": 2259,
+        "y": 6553
+      },
+      "column": 0,
+      "row": 2,
+      "bottomright": {
+        "x": 2270,
+        "y": 9339
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2307,
+        "y": 9338
+      },
+      "topleft": {
+        "x": 2307,
+        "y": 6555
+      },
+      "topright": {
+        "x": 4412,
+        "y": 6550
+      },
+      "column": 1,
+      "row": 2,
+      "bottomright": {
+        "x": 4400,
+        "y": 9338
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4437,
+        "y": 9333
+      },
+      "topleft": {
+        "x": 4457,
+        "y": 6547
+      },
+      "topright": {
+        "x": 6316,
+        "y": 6559
+      },
+      "column": 2,
+      "row": 2,
+      "bottomright": {
+        "x": 6312,
+        "y": 9337
+      }
+    }
+  ],
+  "columns": 3,
+  "rows": 3,
+  "targetWidth": 6017
+}

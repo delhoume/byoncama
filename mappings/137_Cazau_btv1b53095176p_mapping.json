@@ -1,0 +1,128 @@
+{
+  "image": "137_Cazau_btv1b53095176p",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 319,
+        "y": 3318
+      },
+      "topleft": {
+        "x": 333,
+        "y": 439
+      },
+      "topright": {
+        "x": 2331,
+        "y": 445
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2331,
+        "y": 3334
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2399,
+        "y": 3328
+      },
+      "topleft": {
+        "x": 2395,
+        "y": 449
+      },
+      "topright": {
+        "x": 4520,
+        "y": 449
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4520,
+        "y": 3328
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 299,
+        "y": 6565
+      },
+      "topleft": {
+        "x": 314,
+        "y": 3399
+      },
+      "topright": {
+        "x": 2325,
+        "y": 3395
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2321,
+        "y": 6577
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2394,
+        "y": 6573
+      },
+      "topleft": {
+        "x": 2391,
+        "y": 3399
+      },
+      "topright": {
+        "x": 4512,
+        "y": 3399
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4499,
+        "y": 6578
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 301,
+        "y": 9384
+      },
+      "topleft": {
+        "x": 301,
+        "y": 6626
+      },
+      "topright": {
+        "x": 2324,
+        "y": 6638
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2313,
+        "y": 9388
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2380,
+        "y": 9386
+      },
+      "topleft": {
+        "x": 2394,
+        "y": 6633
+      },
+      "topright": {
+        "x": 4508,
+        "y": 6649
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4495,
+        "y": 9400
+      },
+      "row": 2
+    }
+  ],
+  "columns": 2,
+  "rows": 3,
+  "targetWidth": 4060
+}

@@ -1,0 +1,129 @@
+La carte complète : https://www.geoportail.gouv.fr/donnees/carte-de-cassini
+https://wxs.ign.fr/an7nvfzojv5wa96dsga5nk8w/geoportail/wmts?layer=GEOGRAPHICALGRIDSYSTEMS.CASSINI&style=normal&tilematrixset=PM&Service=WMTS&Request=GetTile&Version=1.0.0&
+     Format=image%2Fjpeg&TileMatrix=15&TileCol=16482&TileRow=11669
+
+     
+Gallica :
+
+https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica
+
+curl https://gallica.bnf.fr/iiif/ark:/12148/{iiif}/f1/full/full/0/native.tif -O TiffsOrigine -o ${iiif}.tif
+curl https://gallica.bnf.fr/iiif/ark:/12148/{iiif}/f1/info.json -O TiffsOrigine -o ${iiif}.json
+
+//Carte-générale     btv1b10234249z
+
+listgeo
+->
+Geotiff_Information:
+   Version: 1
+   Key_Revision: 1.0
+   Tagged_Information:
+      ModelTiepointTag (2,3):
+         0                 0                 0
+         -575150.702351852 6662671.93516232  0
+      ModelPixelScaleTag (1,3):
+         7.73              7.5               0
+      End_Of_Tags.
+   Keyed_Information:
+      GTModelTypeGeoKey (Short,1): ModelTypeProjected
+      GTRasterTypeGeoKey (Short,1): RasterPixelIsArea
+      GTCitationGeoKey (Ascii,25): "WGS 84 / Pseudo-Mercator"
+      GeogCitationGeoKey (Ascii,7): "WGS 84"
+      GeogAngularUnitsGeoKey (Short,1): Angular_Degree
+      ProjectedCSTypeGeoKey (Short,1): Code-3857 (WGS 84 / Pseudo-Mercator)
+      ProjLinearUnitsGeoKey (Short,1): Linear_Meter
+      End_Of_Keys.
+   End_Of_Geotiff.
+
+PCS = 3857 (WGS 84 / Pseudo-Mercator)
+Projection = 3856 (Popular Visualisation Pseudo-Mercator)
+Projection Method: CT_Mercator
+   ProjNatOriginLatGeoKey: 0.000000 (  0d 0' 0.00"N)
+   ProjNatOriginLongGeoKey: 0.000000 (  0d 0' 0.00"E)
+   ProjScaleAtNatOriginGeoKey: 1.000000
+   ProjFalseEastingGeoKey: 0.000000 m
+   ProjFalseNorthingGeoKey: 0.000000 m
+GCS: 4326/WGS 84
+Datum: 6326/World Geodetic System 1984
+Ellipsoid: 7030/WGS 84 (6378137.00,6356752.31)
+Prime Meridian: 8901/Greenwich (0.000000/  0d 0' 0.00"E)
+Projection Linear Units: 9001/metre (1.000000m)
+
+Corner Coordinates:
+Upper Left    ( -575150.702, 6662671.935)  (  5d10' 0.00"W, 51d25'15.44"N)
+Lower Left    ( -575150.702, 5201011.935)  (  5d10' 0.00"W, 42d27'29.52"N)
+Upper Right   (  968476.188, 6662671.935)  (  8d41'59.89"E, 51d25'15.44"N)
+Lower Right   (  968476.188, 5201011.935)  (  8d41'59.89"E, 42d27'29.52"N)
+Center        (  196662.743, 5931841.935)  (  1d45'59.95"E, 47d 7'44.76"N)
+
+// -init 255 very slow...
+ls -a NewNewTiiffs/*.tif > cassini.lst
+gdal_merge.py -v -ps 773 -750 -o cassini_small_rgb_strip.tif --optfile cassini.lst
+gdal_merge.py -v -ps 77.3 -75  -o cassini_medium_rgb_strip.tif --optfile cassini.lst
+gdal_merge.py -v -ps 7.73 -7.5  -o  cassini_full_rgb_strip.tif --optfile cassini.lst
+
+listgeo cassini_small_rgb_strip.tif  > cassini_small.geo
+listgeo cassini_medium_rgb_strip.tif  > cassini_medium.geo
+listgeo cassini_full_rgb.tif  > cassini_full.geo
+ 
+
+gdal_translate -b 1 -b 2 -b 3 cassini_small_merge.tif cassini_small_rgb.tif
+gdal_translate -b 1 -b 2 -b 3 cassini_medium_merge.tif cassini_medium_rgb.tif
+gdal_translate -b 1 -b 2 -b 3 cassini_full_merge.tif cassini_full_rgb.tif
+
+/Volumes/My\ Book/BigMars/bin/strip2tiled cassini_small_rgb_strip.tif cassini_small.tif
+/Volumes/My\ Book/BigMars/bin/strip2tiled cassini_medium_rgb_strip.tif cassini_medium.tif
+
+applygeo cassini_small.geo cassini_small.tif
+applygeo cassini_medium.geo cassini_medium.tif
+
+gdal_translate cassini_small.tif cassini_small.jpg
+gdal_translate cassini_medium.tif cassini_medium.jpg
+
+/Volumes/My\ Book/BigMars/bin/strip2tiled cassini_full_rgb_strip.tif 0.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 0.tif 1.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 1.tif 2.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 2.tif 3.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 3.tif 4.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 4.tif 5.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 5.tif 6.tif
+/Volumes/My\ Book/BigMars/bin/halftiff 6.tif 7.tif
+
+/Volumes/My\ Book/BigMars/bin/tiffmerge -f 0 0.tif 1.tif 2.tif 3.tif 4.tif 5.tif 6.tif 7.tif 7.tif cassini_full.tif
+applygeo cassini_full_merge.geo cassini_full.tif
+
+rm -rf cassini_*_*.tif [0-9].tif ._* *.xml
+
+vips --vips-progress dzsave cassini_full.tif Cassini --tile-size 512
+http-server
+
+re-clipper le bas de dunkerque.
+                     landau
+                     
+  reprendre le bas de nancy
+
+
+../../Documents/GitHub/gdal/apps/gdalbuildvrt -of GTiff NewNewTIFFS cassini.vrt 
+../../Documents/GitHub/gdal/apps/gdal_translate -of GTiff cassini.vrt cassini.tif
+
+
+Il a été réalisé avec le logiciel SIS, système d’information géographique développé par la société Cadcorp. Les paramètres de la projection Cassini employés sont :
+
+Ellipsoïde : sphère de Picard de rayon 6371598,000 m
+Latitude d’origine : 48°50’10’’ Nord
+Méridien origine : méridien de Paris, 2°20’14’’ Est de Greenwich
+Méridien central : 0°
+Faux Est : 0.000 m
+Faux Nord : 0.000 m
+
+
+016_Rodez_btv1b53095227f baguettes très tordues
+
+
+# LYON centre 196000 -344000
+gdal_merge.py  -v -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -ul_lr 154906 -316722 234906 -365448 -o lyon.tif PerfectTiffs/087_Lyon_btv1b530951596.tif PerfectTiffs/118_Environs_de_Bellay_btv1b53095279d.tif
+gdalwarp -t_srs "EPSG:3857" lyon.tif lyon_pseudo_mercator.tif
+
+# RENNES centre -299400 -72900 += 40000, 25000
+gdal_merge.py  -v -co BIGTIFF=YES -co TILED=YES -co BLOCKXSIZE=512 -co BLOCKYSIZE=512 -ul_lr -340000 -47900 -259400 -97900 -o rennes.tif PerfectTiffs/096_Mayenne_btv1b53095122t.tif PerfectTiffs/097_Laval_btv1b53095111z.tif PerfectTiffs/129_Rennes_btv1b53095266n.tif PerfectTiffs/128_Dinan_btv1b53095172w.tif
+gdalwarp -t_srs "EPSG:3857" rennes.tif rennes_pseudo_mercator.tif

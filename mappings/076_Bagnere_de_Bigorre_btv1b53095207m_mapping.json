@@ -1,0 +1,299 @@
+{
+  "image": "076_Bagnere_de_Bigorre_btv1b53095207m",
+  "targetHeight": 4140,
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 482,
+        "y": 2806
+      },
+      "topleft": {
+        "x": 507,
+        "y": 186
+      },
+      "topright": {
+        "x": 2282,
+        "y": 210
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2260,
+        "y": 2810
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2341,
+        "y": 2837
+      },
+      "topleft": {
+        "x": 2336,
+        "y": 218
+      },
+      "topright": {
+        "x": 4441,
+        "y": 225
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4435,
+        "y": 2837
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4492,
+        "y": 2833
+      },
+      "topleft": {
+        "x": 4503,
+        "y": 202
+      },
+      "topright": {
+        "x": 6616,
+        "y": 211
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6600,
+        "y": 2814
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6669,
+        "y": 2836
+      },
+      "topleft": {
+        "x": 6668,
+        "y": 220
+      },
+      "topright": {
+        "x": 8779,
+        "y": 225
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8780,
+        "y": 2820
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 8828,
+        "y": 2833
+      },
+      "topleft": {
+        "x": 8854,
+        "y": 222
+      },
+      "topright": {
+        "x": 10951,
+        "y": 244
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10941,
+        "y": 2839
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 11010,
+        "y": 2854
+      },
+      "topleft": {
+        "x": 11009,
+        "y": 254
+      },
+      "topright": {
+        "x": 13120,
+        "y": 266
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 13115,
+        "y": 2864
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 13172,
+        "y": 2865
+      },
+      "topleft": {
+        "x": 13163,
+        "y": 273
+      },
+      "topright": {
+        "x": 14961,
+        "y": 267
+      },
+      "column": 6,
+      "bottomright": {
+        "x": 14956,
+        "y": 2861
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 488,
+        "y": 5191
+      },
+      "topleft": {
+        "x": 489,
+        "y": 2898
+      },
+      "topright": {
+        "x": 2268,
+        "y": 2895
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2256,
+        "y": 5200
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2333,
+        "y": 5199
+      },
+      "topleft": {
+        "x": 2344,
+        "y": 2915
+      },
+      "topright": {
+        "x": 4458,
+        "y": 2916
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4447,
+        "y": 5199
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4506,
+        "y": 5199
+      },
+      "topleft": {
+        "x": 4510,
+        "y": 2904
+      },
+      "topright": {
+        "x": 6619,
+        "y": 2901
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6614,
+        "y": 5199
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6682,
+        "y": 5194
+      },
+      "topleft": {
+        "x": 6671,
+        "y": 2905
+      },
+      "topright": {
+        "x": 8782,
+        "y": 2894
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8793,
+        "y": 5194
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 8863,
+        "y": 5194
+      },
+      "topleft": {
+        "x": 8836,
+        "y": 2911
+      },
+      "topright": {
+        "x": 10946,
+        "y": 2886
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10965,
+        "y": 5194
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 11021,
+        "y": 5193
+      },
+      "topleft": {
+        "x": 11012,
+        "y": 2904
+      },
+      "topright": {
+        "x": 13119,
+        "y": 2907
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 13116,
+        "y": 5193
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 13175,
+        "y": 5191
+      },
+      "topleft": {
+        "x": 13166,
+        "y": 2914
+      },
+      "topright": {
+        "x": 14952,
+        "y": 2907
+      },
+      "column": 6,
+      "bottomright": {
+        "x": 14944,
+        "y": 5191
+      },
+      "row": 1
+    }
+  ],
+  "comment2": "prendre en compte la hauteur du bandeau pour corriger la targetHeight",
+  "columns": 7,
+  "comment": "use width from 076_Tarbes because there is no gap",
+  "useWidths": [
+    1747,
+    2125,
+    2124,
+    2125,
+    2119,
+    2121,
+    1803
+  ],
+  "rows": 2
+}

@@ -1,0 +1,58 @@
+echo 162_Strasbourg_btv1b530952082
+  echo Extracting 3 rows and 7 columns
+   magick /Users/fredericdelhoume/Downloads/Cassini/GallicaPngs/162_Strasbourg_btv1b530952082.png    \( +clone -distort Perspective '545,440 0 0 541,3319 0,2883 2299,3311 1751,2883  2289,423 1751,0' -crop 1751x2883+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_0_0_crop.png +delete \) \
+   \( +clone -distort Perspective '2325,421 0 0 2330,3303 0,2885 4434,3292 2095,2885  4412,404 2095,0' -crop 2095x2885+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_1_0_crop.png +delete \) \
+   \( +clone -distort Perspective '4453,413 0 0 4466,3301 0,2886 6551,3294 2088,2886  6545,409 2088,0' -crop 2088x2886+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_2_0_crop.png +delete \) \
+   \( +clone -distort Perspective '6593,406 0 0 6585,3293 0,2890 8679,3293 2095,2890  8690,400 2095,0' -crop 2095x2890+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_3_0_crop.png +delete \) \
+   \( +clone -distort Perspective '8721,392 0 0 8721,3285 0,2891 10814,3282 2089,2891  10807,392 2089,0' -crop 2089x2891+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_4_0_crop.png +delete \) \
+   \( +clone -distort Perspective '10853,382 0 0 10865,3274 0,2895 12951,3278 2091,2895  12949,379 2091,0' -crop 2091x2895+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_5_0_crop.png +delete \) \
+   \( +clone -distort Perspective '12988,378 0 0 13005,3277 0,2897 14770,3270 1762,2897  14747,374 1762,0' -crop 1762x2897+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_6_0_crop.png +delete \) \
+   \( +clone -distort Perspective '538,3367 0 0 536,6489 0,3128 2298,6487 1757,3128  2291,3353 1757,0' -crop 1757x3128+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_0_1_crop.png +delete \) \
+   \( +clone -distort Perspective '2329,3350 0 0 2341,6488 0,3132 4426,6475 2087,3132  4419,3349 2087,0' -crop 2087x3132+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_1_1_crop.png +delete \) \
+   \( +clone -distort Perspective '4458,3354 0 0 4467,6480 0,3124 6553,6470 2087,3124  6546,3348 2087,0' -crop 2087x3124+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_2_1_crop.png +delete \) \
+   \( +clone -distort Perspective '6580,3340 0 0 6596,6465 0,3126 8689,6464 2094,3126  8675,3336 2094,0' -crop 2094x3126+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_3_1_crop.png +delete \) \
+   \( +clone -distort Perspective '8716,3335 0 0 8729,6460 0,3119 10817,6442 2088,3119  10805,3328 2088,0' -crop 2088x3119+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_4_1_crop.png +delete \) \
+   \( +clone -distort Perspective '10853,3314 0 0 10859,6430 0,3119 12942,6445 2092,3119  12955,3322 2092,0' -crop 2092x3119+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_5_1_crop.png +delete \) \
+   \( +clone -distort Perspective '12992,3318 0 0 12992,6441 0,3121 14775,6431 1774,3121  14757,3311 1774,0' -crop 1774x3121+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_6_1_crop.png +delete \) \
+   \( +clone -distort Perspective '543,6544 0 0 555,9375 0,2829 2304,9367 1754,2829  2302,6539 1754,0' -crop 1754x2829+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_0_2_crop.png +delete \) \
+   \( +clone -distort Perspective '2333,6547 0 0 2349,9383 0,2835 4433,9364 2089,2835  4427,6529 2089,0' -crop 2089x2835+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_1_2_crop.png +delete \) \
+   \( +clone -distort Perspective '4465,6537 0 0 4484,9379 0,2841 6572,9350 2094,2841  6565,6509 2094,0' -crop 2094x2841+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_2_2_crop.png +delete \) \
+   \( +clone -distort Perspective '6598,6507 0 0 6614,9353 0,2837 8708,9333 2092,2837  8689,6505 2092,0' -crop 2092x2837+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_3_2_crop.png +delete \) \
+   \( +clone -distort Perspective '8733,6508 0 0 8748,9340 0,2835 10837,9333 2084,2835  10812,6495 2084,0' -crop 2084x2835+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_4_2_crop.png +delete \) \
+   \( +clone -distort Perspective '10853,6487 0 0 10889,9323 0,2827 12977,9304 2091,2827  12947,6485 2091,0' -crop 2091x2827+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_5_2_crop.png +delete \) \
+   \( +clone -distort Perspective '12997,6483 0 0 13033,9302 0,2819 14789,9296 1767,2819  14776,6476 1767,0' -crop 1767x2819+0+0 -compress None -write /tmp/162_Strasbourg_btv1b530952082_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick  /tmp/162_Strasbourg_btv1b530952082_0_0_crop.png -resize 1751x2883! /tmp/162_Strasbourg_btv1b530952082_0_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_1_0_crop.png -resize 2095x2883! /tmp/162_Strasbourg_btv1b530952082_1_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_2_0_crop.png -resize 2088x2883! /tmp/162_Strasbourg_btv1b530952082_2_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_3_0_crop.png -resize 2095x2883! /tmp/162_Strasbourg_btv1b530952082_3_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_4_0_crop.png -resize 2089x2883! /tmp/162_Strasbourg_btv1b530952082_4_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_5_0_crop.png -resize 2091x2883! /tmp/162_Strasbourg_btv1b530952082_5_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_6_0_crop.png -resize 1762x2883! /tmp/162_Strasbourg_btv1b530952082_6_0_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_0_1_crop.png -resize 1751x3128! /tmp/162_Strasbourg_btv1b530952082_0_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_1_1_crop.png -resize 2095x3128! /tmp/162_Strasbourg_btv1b530952082_1_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_2_1_crop.png -resize 2088x3128! /tmp/162_Strasbourg_btv1b530952082_2_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_3_1_crop.png -resize 2095x3128! /tmp/162_Strasbourg_btv1b530952082_3_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_4_1_crop.png -resize 2089x3128! /tmp/162_Strasbourg_btv1b530952082_4_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_5_1_crop.png -resize 2091x3128! /tmp/162_Strasbourg_btv1b530952082_5_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_6_1_crop.png -resize 1762x3128! /tmp/162_Strasbourg_btv1b530952082_6_1_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_0_2_crop.png -resize 1751x2829! /tmp/162_Strasbourg_btv1b530952082_0_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_1_2_crop.png -resize 2095x2829! /tmp/162_Strasbourg_btv1b530952082_1_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_2_2_crop.png -resize 2088x2829! /tmp/162_Strasbourg_btv1b530952082_2_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_3_2_crop.png -resize 2095x2829! /tmp/162_Strasbourg_btv1b530952082_3_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_4_2_crop.png -resize 2089x2829! /tmp/162_Strasbourg_btv1b530952082_4_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_5_2_crop.png -resize 2091x2829! /tmp/162_Strasbourg_btv1b530952082_5_2_crop2.png
+magick  /tmp/162_Strasbourg_btv1b530952082_6_2_crop.png -resize 1762x2829! /tmp/162_Strasbourg_btv1b530952082_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick /tmp/162_Strasbourg_btv1b530952082_0_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_1_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_2_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_3_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_4_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_5_0_crop2.png /tmp/162_Strasbourg_btv1b530952082_6_0_crop2.png +append /tmp/162_Strasbourg_btv1b530952082_row0.png
+echo making elements for row 1
+magick /tmp/162_Strasbourg_btv1b530952082_0_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_1_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_2_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_3_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_4_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_5_1_crop2.png /tmp/162_Strasbourg_btv1b530952082_6_1_crop2.png +append /tmp/162_Strasbourg_btv1b530952082_row1.png
+echo making elements for row 2
+magick /tmp/162_Strasbourg_btv1b530952082_0_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_1_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_2_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_3_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_4_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_5_2_crop2.png /tmp/162_Strasbourg_btv1b530952082_6_2_crop2.png +append /tmp/162_Strasbourg_btv1b530952082_row2.png
+echo assembling rows
+magick /tmp/162_Strasbourg_btv1b530952082_row0.png /tmp/162_Strasbourg_btv1b530952082_row1.png /tmp/162_Strasbourg_btv1b530952082_row2.png -append -compress Zip /Users/fredericdelhoume/Downloads/Cassini/PerfectTiffs/162_Strasbourg_btv1b530952082.tif
+echo deleting temporary files
+rm -rf /tmp/162_Strasbourg_btv1b530952082*.png
+echo done

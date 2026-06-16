@@ -1,0 +1,188 @@
+{
+  "image": "138_Vieux_Boucau_les_Bains_btv1b530951774",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 312,
+        "y": 3405
+      },
+      "topleft": {
+        "x": 310,
+        "y": 531
+      },
+      "topright": {
+        "x": 2352,
+        "y": 557
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2316,
+        "y": 3434
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2377,
+        "y": 3426
+      },
+      "topleft": {
+        "x": 2404,
+        "y": 548
+      },
+      "topright": {
+        "x": 4486,
+        "y": 561
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4479,
+        "y": 3438
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4534,
+        "y": 3429
+      },
+      "topleft": {
+        "x": 4557,
+        "y": 548
+      },
+      "topright": {
+        "x": 6640,
+        "y": 551
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6617,
+        "y": 3445
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 277,
+        "y": 6656
+      },
+      "topleft": {
+        "x": 308,
+        "y": 3467
+      },
+      "topright": {
+        "x": 2319,
+        "y": 3480
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2309,
+        "y": 6663
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2361,
+        "y": 6653
+      },
+      "topleft": {
+        "x": 2371,
+        "y": 3486
+      },
+      "topright": {
+        "x": 4465,
+        "y": 3488
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4452,
+        "y": 6668
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4506,
+        "y": 6678
+      },
+      "topleft": {
+        "x": 4539,
+        "y": 3494
+      },
+      "topright": {
+        "x": 6621,
+        "y": 3507
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6609,
+        "y": 6704
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 307,
+        "y": 9511
+      },
+      "topleft": {
+        "x": 270,
+        "y": 6713
+      },
+      "topright": {
+        "x": 2300,
+        "y": 6725
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2314,
+        "y": 9507
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2362,
+        "y": 9516
+      },
+      "topleft": {
+        "x": 2356,
+        "y": 6729
+      },
+      "topright": {
+        "x": 4459,
+        "y": 6744
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4454,
+        "y": 9519
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4504,
+        "y": 9527
+      },
+      "topleft": {
+        "x": 4502,
+        "y": 6746
+      },
+      "topright": {
+        "x": 6604,
+        "y": 6771
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6606,
+        "y": 9539
+      },
+      "row": 2
+    }
+  ],
+  "columns": 3,
+  "rows": 3,
+  "targetWidth": 6090
+}

@@ -1,0 +1,248 @@
+{
+  "image": "133_Ile_de_Re_btv1b530951255",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 392,
+        "y": 3387
+      },
+      "topleft": {
+        "x": 432,
+        "y": 539
+      },
+      "topright": {
+        "x": 1157,
+        "y": 548
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1118,
+        "y": 3389
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 1189,
+        "y": 3393
+      },
+      "topleft": {
+        "x": 1200,
+        "y": 541
+      },
+      "topright": {
+        "x": 3293,
+        "y": 547
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3275,
+        "y": 3402
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 3340,
+        "y": 3401
+      },
+      "topleft": {
+        "x": 3347,
+        "y": 543
+      },
+      "topright": {
+        "x": 5452,
+        "y": 543
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5451,
+        "y": 3402
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 5515,
+        "y": 3410
+      },
+      "topleft": {
+        "x": 5511,
+        "y": 546
+      },
+      "topright": {
+        "x": 7620,
+        "y": 526
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7621,
+        "y": 3407
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 381,
+        "y": 6639
+      },
+      "topleft": {
+        "x": 402,
+        "y": 3448
+      },
+      "topright": {
+        "x": 1136,
+        "y": 3450
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1114,
+        "y": 6654
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 1190,
+        "y": 6652
+      },
+      "topleft": {
+        "x": 1192,
+        "y": 3455
+      },
+      "topright": {
+        "x": 3274,
+        "y": 3466
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3263,
+        "y": 6672
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 3334,
+        "y": 6671
+      },
+      "topleft": {
+        "x": 3335,
+        "y": 3471
+      },
+      "topright": {
+        "x": 5444,
+        "y": 3481
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5439,
+        "y": 6684
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 5510,
+        "y": 6682
+      },
+      "topleft": {
+        "x": 5509,
+        "y": 3489
+      },
+      "topright": {
+        "x": 7623,
+        "y": 3478
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7621,
+        "y": 6688
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 371,
+        "y": 9507
+      },
+      "topleft": {
+        "x": 375,
+        "y": 6717
+      },
+      "topright": {
+        "x": 1105,
+        "y": 6721
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1129,
+        "y": 9498
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 1210,
+        "y": 9509
+      },
+      "topleft": {
+        "x": 1188,
+        "y": 6725
+      },
+      "topright": {
+        "x": 3255,
+        "y": 6730
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3287,
+        "y": 9492
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 3352,
+        "y": 9512
+      },
+      "topleft": {
+        "x": 3327,
+        "y": 6753
+      },
+      "topright": {
+        "x": 5440,
+        "y": 6759
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5435,
+        "y": 9496
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 5521,
+        "y": 9506
+      },
+      "topleft": {
+        "x": 5520,
+        "y": 6760
+      },
+      "topright": {
+        "x": 7620,
+        "y": 6753
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7620,
+        "y": 9502
+      },
+      "row": 2
+    }
+  ],
+  "columns": "4",
+  "rows": "3",
+  "targetWidth": 7105
+}

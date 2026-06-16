@@ -1,0 +1,90 @@
+{
+  "image": "040bis_Andorre_btv1b53095219x",
+  "targetHeight": 1776,
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 247,
+        "y": 1658
+      },
+      "topleft": {
+        "x": 247,
+        "y": 197
+      },
+      "topright": {
+        "x": 1222,
+        "y": 193
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1235,
+        "y": 1656
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 1279,
+        "y": 1668
+      },
+      "topleft": {
+        "x": 1248,
+        "y": 215
+      },
+      "topright": {
+        "x": 3351,
+        "y": 183
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3364,
+        "y": 1628
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 3396,
+        "y": 1625
+      },
+      "topleft": {
+        "x": 3398,
+        "y": 187
+      },
+      "topright": {
+        "x": 5486,
+        "y": 189
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5483,
+        "y": 1639
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 5523,
+        "y": 1636
+      },
+      "topleft": {
+        "x": 5510,
+        "y": 183
+      },
+      "topright": {
+        "x": 7290,
+        "y": 158
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7303,
+        "y": 1615
+      },
+      "row": 0
+    }
+  ],
+  "columns": 4,
+  "comment": "",
+  "rows": 1,
+  "targetWidth": 7005
+}

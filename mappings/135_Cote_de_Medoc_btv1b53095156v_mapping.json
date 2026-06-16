@@ -1,0 +1,68 @@
+{
+  "image": "135_Cote_de_Medoc_btv1b53095156v",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 289,
+        "y": 3295
+      },
+      "topleft": {
+        "x": 291,
+        "y": 458
+      },
+      "topright": {
+        "x": 2300,
+        "y": 433
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2308,
+        "y": 3290
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 271,
+        "y": 6498
+      },
+      "topleft": {
+        "x": 290,
+        "y": 3348
+      },
+      "topright": {
+        "x": 2300,
+        "y": 3349
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2301,
+        "y": 6497
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 279,
+        "y": 9337
+      },
+      "topleft": {
+        "x": 267,
+        "y": 6562
+      },
+      "topright": {
+        "x": 2291,
+        "y": 6558
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2302,
+        "y": 9320
+      },
+      "row": 2
+    }
+  ],
+  "columns": "1",
+  "rows": "3",
+  "targetWidth": "2030"
+}

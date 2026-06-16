@@ -1,0 +1,188 @@
+{
+  "image": "059_Perpignan_btv1b53095288c",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 354,
+        "y": 3351
+      },
+      "topleft": {
+        "x": 371,
+        "y": 461
+      },
+      "topright": {
+        "x": 2235,
+        "y": 469
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2228,
+        "y": 3361
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2302,
+        "y": 3361
+      },
+      "topleft": {
+        "x": 2296,
+        "y": 465
+      },
+      "topright": {
+        "x": 4397,
+        "y": 475
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4393,
+        "y": 3362
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4461,
+        "y": 3363
+      },
+      "topleft": {
+        "x": 4462,
+        "y": 471
+      },
+      "topright": {
+        "x": 6448,
+        "y": 470
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6448,
+        "y": 3355
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 345,
+        "y": 6578
+      },
+      "topleft": {
+        "x": 351,
+        "y": 3413
+      },
+      "topright": {
+        "x": 2235,
+        "y": 3424
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2229,
+        "y": 6581
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2292,
+        "y": 6585
+      },
+      "topleft": {
+        "x": 2288,
+        "y": 3416
+      },
+      "topright": {
+        "x": 4377,
+        "y": 3409
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4395,
+        "y": 6565
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4454,
+        "y": 6574
+      },
+      "topleft": {
+        "x": 4459,
+        "y": 3416
+      },
+      "topright": {
+        "x": 6447,
+        "y": 3415
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6447,
+        "y": 6581
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 356,
+        "y": 9392
+      },
+      "topleft": {
+        "x": 350,
+        "y": 6648
+      },
+      "topright": {
+        "x": 2242,
+        "y": 6637
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2241,
+        "y": 9395
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2304,
+        "y": 9388
+      },
+      "topleft": {
+        "x": 2301,
+        "y": 6638
+      },
+      "topright": {
+        "x": 4403,
+        "y": 6623
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4410,
+        "y": 9376
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4445,
+        "y": 9386
+      },
+      "topleft": {
+        "x": 4451,
+        "y": 6627
+      },
+      "topright": {
+        "x": 6447,
+        "y": 6633
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6447,
+        "y": 9386
+      },
+      "row": 2
+    }
+  ],
+  "columns": "3",
+  "rows": "3",
+  "targetWidth": 6090
+}

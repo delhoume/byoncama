@@ -1,0 +1,58 @@
+echo 109_Montmedy_btv1b530952584
+  echo Extracting 3 rows and 7 columns
+   magick /Users/fredericdelhoume/Downloads/Cassini/GallicaPngs/109_Montmedy_btv1b530952584.png    \( +clone -distort Perspective '539,450 0 0 553,3329 0,2890 2332,3335 1781,2890  2322,433 1781,0' -crop 1781x2890+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_0_0_crop.png +delete \) \
+   \( +clone -distort Perspective '2362,451 0 0 2360,3332 0,2877 4459,3330 2105,2877  4473,456 2105,0' -crop 2105x2877+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_1_0_crop.png +delete \) \
+   \( +clone -distort Perspective '4511,460 0 0 4496,3336 0,2875 6594,3341 2094,2875  6601,466 2094,0' -crop 2094x2875+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_2_0_crop.png +delete \) \
+   \( +clone -distort Perspective '6640,462 0 0 6626,3339 0,2877 8714,3345 2089,2877  8730,467 2089,0' -crop 2089x2877+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_3_0_crop.png +delete \) \
+   \( +clone -distort Perspective '8768,461 0 0 8758,3344 0,2882 10861,3357 2102,2882  10869,475 2102,0' -crop 2102x2882+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_4_0_crop.png +delete \) \
+   \( +clone -distort Perspective '10913,472 0 0 10906,3353 0,2885 12992,3365 2087,2885  13001,475 2087,0' -crop 2087x2885+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_5_0_crop.png +delete \) \
+   \( +clone -distort Perspective '13055,473 0 0 13038,3367 0,2898 14800,3373 1764,2898  14822,471 1764,0' -crop 1764x2898+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_6_0_crop.png +delete \) \
+   \( +clone -distort Perspective '562,3363 0 0 550,6493 0,3123 2311,6493 1766,3123  2334,3376 1766,0' -crop 1766x3123+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_0_1_crop.png +delete \) \
+   \( +clone -distort Perspective '2370,3365 0 0 2341,6496 0,3133 4441,6508 2098,3133  4466,3373 2098,0' -crop 2098x3133+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_1_1_crop.png +delete \) \
+   \( +clone -distort Perspective '4494,3372 0 0 4473,6509 0,3140 6572,6522 2096,3140  6588,3379 2096,0' -crop 2096x3140+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_2_1_crop.png +delete \) \
+   \( +clone -distort Perspective '6621,3383 0 0 6604,6516 0,3132 8680,6527 2073,3132  8691,3396 2073,0' -crop 2073x3132+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_3_1_crop.png +delete \) \
+   \( +clone -distort Perspective '8747,3398 0 0 8733,6530 0,3133 10838,6539 2103,3133  10849,3404 2103,0' -crop 2103x3133+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_4_1_crop.png +delete \) \
+   \( +clone -distort Perspective '10897,3405 0 0 10889,6533 0,3128 12982,6535 2093,3128  12991,3407 2093,0' -crop 2093x3128+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_5_1_crop.png +delete \) \
+   \( +clone -distort Perspective '13039,3408 0 0 13028,6539 0,3133 14795,6540 1758,3133  14788,3405 1758,0' -crop 1758x3133+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_6_1_crop.png +delete \) \
+   \( +clone -distort Perspective '555,6540 0 0 523,9341 0,2815 2295,9360 1764,2815  2311,6531 1764,0' -crop 1764x2815+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_0_2_crop.png +delete \) \
+   \( +clone -distort Perspective '2347,6537 0 0 2328,9363 0,2829 4427,9377 2095,2829  4439,6545 2095,0' -crop 2095x2829+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_1_2_crop.png +delete \) \
+   \( +clone -distort Perspective '4477,6549 0 0 4468,9382 0,2831 6552,9397 2088,2831  6569,6567 2088,0' -crop 2088x2831+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_2_2_crop.png +delete \) \
+   \( +clone -distort Perspective '6596,6562 0 0 6591,9394 0,2831 8677,9394 2090,2831  8691,6563 2090,0' -crop 2090x2831+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_3_2_crop.png +delete \) \
+   \( +clone -distort Perspective '8731,6576 0 0 8720,9396 0,2818 10833,9399 2107,2818  10833,6582 2107,0' -crop 2107x2818+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_4_2_crop.png +delete \) \
+   \( +clone -distort Perspective '10871,6574 0 0 10887,9396 0,2815 12976,9383 2100,2815  12983,6575 2100,0' -crop 2100x2815+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_5_2_crop.png +delete \) \
+   \( +clone -distort Perspective '13027,6585 0 0 13032,9390 0,2807 14841,9390 1789,2807  14796,6580 1789,0' -crop 1789x2807+0+0 -compress None -write /tmp/109_Montmedy_btv1b530952584_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick  /tmp/109_Montmedy_btv1b530952584_0_0_crop.png -resize 1781x2890! /tmp/109_Montmedy_btv1b530952584_0_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_1_0_crop.png -resize 2105x2890! /tmp/109_Montmedy_btv1b530952584_1_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_2_0_crop.png -resize 2094x2890! /tmp/109_Montmedy_btv1b530952584_2_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_3_0_crop.png -resize 2089x2890! /tmp/109_Montmedy_btv1b530952584_3_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_4_0_crop.png -resize 2102x2890! /tmp/109_Montmedy_btv1b530952584_4_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_5_0_crop.png -resize 2087x2890! /tmp/109_Montmedy_btv1b530952584_5_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_6_0_crop.png -resize 1764x2890! /tmp/109_Montmedy_btv1b530952584_6_0_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_0_1_crop.png -resize 1781x3123! /tmp/109_Montmedy_btv1b530952584_0_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_1_1_crop.png -resize 2105x3123! /tmp/109_Montmedy_btv1b530952584_1_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_2_1_crop.png -resize 2094x3123! /tmp/109_Montmedy_btv1b530952584_2_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_3_1_crop.png -resize 2089x3123! /tmp/109_Montmedy_btv1b530952584_3_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_4_1_crop.png -resize 2102x3123! /tmp/109_Montmedy_btv1b530952584_4_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_5_1_crop.png -resize 2087x3123! /tmp/109_Montmedy_btv1b530952584_5_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_6_1_crop.png -resize 1764x3123! /tmp/109_Montmedy_btv1b530952584_6_1_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_0_2_crop.png -resize 1781x2815! /tmp/109_Montmedy_btv1b530952584_0_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_1_2_crop.png -resize 2105x2815! /tmp/109_Montmedy_btv1b530952584_1_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_2_2_crop.png -resize 2094x2815! /tmp/109_Montmedy_btv1b530952584_2_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_3_2_crop.png -resize 2089x2815! /tmp/109_Montmedy_btv1b530952584_3_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_4_2_crop.png -resize 2102x2815! /tmp/109_Montmedy_btv1b530952584_4_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_5_2_crop.png -resize 2087x2815! /tmp/109_Montmedy_btv1b530952584_5_2_crop2.png
+magick  /tmp/109_Montmedy_btv1b530952584_6_2_crop.png -resize 1764x2815! /tmp/109_Montmedy_btv1b530952584_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick /tmp/109_Montmedy_btv1b530952584_0_0_crop2.png /tmp/109_Montmedy_btv1b530952584_1_0_crop2.png /tmp/109_Montmedy_btv1b530952584_2_0_crop2.png /tmp/109_Montmedy_btv1b530952584_3_0_crop2.png /tmp/109_Montmedy_btv1b530952584_4_0_crop2.png /tmp/109_Montmedy_btv1b530952584_5_0_crop2.png /tmp/109_Montmedy_btv1b530952584_6_0_crop2.png +append /tmp/109_Montmedy_btv1b530952584_row0.png
+echo making elements for row 1
+magick /tmp/109_Montmedy_btv1b530952584_0_1_crop2.png /tmp/109_Montmedy_btv1b530952584_1_1_crop2.png /tmp/109_Montmedy_btv1b530952584_2_1_crop2.png /tmp/109_Montmedy_btv1b530952584_3_1_crop2.png /tmp/109_Montmedy_btv1b530952584_4_1_crop2.png /tmp/109_Montmedy_btv1b530952584_5_1_crop2.png /tmp/109_Montmedy_btv1b530952584_6_1_crop2.png +append /tmp/109_Montmedy_btv1b530952584_row1.png
+echo making elements for row 2
+magick /tmp/109_Montmedy_btv1b530952584_0_2_crop2.png /tmp/109_Montmedy_btv1b530952584_1_2_crop2.png /tmp/109_Montmedy_btv1b530952584_2_2_crop2.png /tmp/109_Montmedy_btv1b530952584_3_2_crop2.png /tmp/109_Montmedy_btv1b530952584_4_2_crop2.png /tmp/109_Montmedy_btv1b530952584_5_2_crop2.png /tmp/109_Montmedy_btv1b530952584_6_2_crop2.png +append /tmp/109_Montmedy_btv1b530952584_row2.png
+echo assembling rows
+magick /tmp/109_Montmedy_btv1b530952584_row0.png /tmp/109_Montmedy_btv1b530952584_row1.png /tmp/109_Montmedy_btv1b530952584_row2.png -append -compress Zip /Users/fredericdelhoume/Downloads/Cassini/PerfectTiffs/109_Montmedy_btv1b530952584.tif
+echo deleting temporary files
+rm -rf /tmp/109_Montmedy_btv1b530952584*.png
+echo done

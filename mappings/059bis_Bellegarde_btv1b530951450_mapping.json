@@ -1,0 +1,129 @@
+{
+  "image": "059bis_Bellegarde_btv1b530951450",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 359,
+        "y": 2773
+      },
+      "topleft": {
+        "x": 387,
+        "y": 169
+      },
+      "topright": {
+        "x": 2287,
+        "y": 193
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2249,
+        "y": 2803
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2305,
+        "y": 2791
+      },
+      "topleft": {
+        "x": 2330,
+        "y": 186
+      },
+      "topright": {
+        "x": 4443,
+        "y": 192
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4404,
+        "y": 2809
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4453,
+        "y": 2824
+      },
+      "topleft": {
+        "x": 4478,
+        "y": 199
+      },
+      "topright": {
+        "x": 6480,
+        "y": 205
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6476,
+        "y": 2831
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 341,
+        "y": 4611
+      },
+      "topleft": {
+        "x": 374,
+        "y": 2817
+      },
+      "topright": {
+        "x": 2254,
+        "y": 2855
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2219,
+        "y": 4634
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2307,
+        "y": 4645
+      },
+      "topleft": {
+        "x": 2298,
+        "y": 2863
+      },
+      "topright": {
+        "x": 4409,
+        "y": 2862
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4415,
+        "y": 4645
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4453,
+        "y": 4646
+      },
+      "topleft": {
+        "x": 4463,
+        "y": 2859
+      },
+      "topright": {
+        "x": 6480,
+        "y": 2869
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6480,
+        "y": 4646
+      },
+      "row": 1
+    }
+  ],
+  "columns": "3",
+  "targetHeigh": 5920,
+  "rows": "2",
+  "targetWidth": 6090
+}

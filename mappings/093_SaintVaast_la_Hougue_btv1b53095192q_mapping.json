@@ -1,0 +1,248 @@
+{
+  "image": "093_SaintVaast_la_Hougue_btv1b53095192q",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 377,
+        "y": 3334
+      },
+      "topleft": {
+        "x": 399,
+        "y": 438
+      },
+      "topright": {
+        "x": 2295,
+        "y": 438
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2287,
+        "y": 3337
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2325,
+        "y": 3335
+      },
+      "topleft": {
+        "x": 2335,
+        "y": 436
+      },
+      "topright": {
+        "x": 4433,
+        "y": 446
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4433,
+        "y": 3340
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4475,
+        "y": 3340
+      },
+      "topleft": {
+        "x": 4466,
+        "y": 449
+      },
+      "topright": {
+        "x": 6553,
+        "y": 434
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6568,
+        "y": 3330
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6610,
+        "y": 3335
+      },
+      "topleft": {
+        "x": 6609,
+        "y": 434
+      },
+      "topright": {
+        "x": 7521,
+        "y": 432
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7532,
+        "y": 3327
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 383,
+        "y": 6488
+      },
+      "topleft": {
+        "x": 383,
+        "y": 3366
+      },
+      "topright": {
+        "x": 2289,
+        "y": 3364
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2298,
+        "y": 6501
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2324,
+        "y": 6504
+      },
+      "topleft": {
+        "x": 2328,
+        "y": 3367
+      },
+      "topright": {
+        "x": 4434,
+        "y": 3375
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4434,
+        "y": 6499
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4470,
+        "y": 6509
+      },
+      "topleft": {
+        "x": 4475,
+        "y": 3382
+      },
+      "topright": {
+        "x": 6569,
+        "y": 3385
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6569,
+        "y": 6509
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6609,
+        "y": 6508
+      },
+      "topleft": {
+        "x": 6609,
+        "y": 3374
+      },
+      "topright": {
+        "x": 7533,
+        "y": 3376
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7523,
+        "y": 6505
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 372,
+        "y": 9353
+      },
+      "topleft": {
+        "x": 375,
+        "y": 6531
+      },
+      "topright": {
+        "x": 2290,
+        "y": 6536
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2279,
+        "y": 9361
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2314,
+        "y": 9360
+      },
+      "topleft": {
+        "x": 2327,
+        "y": 6536
+      },
+      "topright": {
+        "x": 4438,
+        "y": 6542
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4415,
+        "y": 9360
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4449,
+        "y": 9377
+      },
+      "topleft": {
+        "x": 4475,
+        "y": 6553
+      },
+      "topright": {
+        "x": 6566,
+        "y": 6548
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6559,
+        "y": 9377
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 6596,
+        "y": 9378
+      },
+      "topleft": {
+        "x": 6606,
+        "y": 6551
+      },
+      "topright": {
+        "x": 7520,
+        "y": 6551
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7508,
+        "y": 9378
+      },
+      "row": 2
+    }
+  ],
+  "columns": 4,
+  "rows": 3,
+  "targetWidth": 7105
+}

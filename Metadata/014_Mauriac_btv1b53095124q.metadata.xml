@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?><OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2023-12-27T11:23:39Z</responseDate><request verb="GetRecord" metadataPrefix="oai_dc" identifier="oai:bnf.fr:gallica/ark:/12148/btv1b53095124q">http://oai.bnf.fr/oai2/OAIHandler</request><GetRecord><record><header><identifier>oai:bnf.fr:gallica/ark:/12148/btv1b53095124q</identifier><datestamp>2022-01-05</datestamp><setSpec>gallica:typedoc:cartes:carte</setSpec></header><metadata><oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:identifier>http://gallica.bnf.fr/ark:/12148/btv1b53095124q</dc:identifier>
+<dc:title>Carte générale de la France. 014, [Mauriac]. N°14. Flle 158 / [établie sous la direction de César-François Cassini de Thury]</dc:title>
+<dc:relation>Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb408603060</dc:relation>
+<dc:relation>Titre d'ensemble : Carte générale de la France</dc:relation>
+<dc:creator>Cabay (17..-1... ; topographe). Cartographe</dc:creator>
+<dc:creator>Dubois (17..-17.. ; ingénieur de Cassini). Cartographe</dc:creator>
+<dc:creator>Luc (18..-18..). Cartographe</dc:creator>
+<dc:creator>Pauly (17..-17..?). Cartographe</dc:creator>
+<dc:creator>Thouvenot (17..-17..). Cartographe</dc:creator>
+<dc:creator>La Briffe Ponsan. Cartographe</dc:creator>
+<dc:creator>Dupain-Triel, Jean-Louis (1722-1808). Cartographe</dc:creator>
+<dc:creator>La Lande. Cartographe</dc:creator>
+<dc:creator>La Ruelle. Cartographe</dc:creator>
+<dc:creator>Teitaud (17..-17.. ; géomètre). Cartographe</dc:creator>
+<dc:creator>Cornuau, Pierre. Cartographe</dc:creator>
+<dc:creator>Cassini de Thury, César-François (1714-1784). Cartographe. Éditeur scientifique</dc:creator>
+<dc:date>1783-1784</dc:date>
+<dc:subject xml:lang="fre">Mauriac -- Environs</dc:subject>
+<dc:coverage>France (parties)</dc:coverage>
+<dc:coverage>France – Auvergne-Rhône-Alpes – Cantal</dc:coverage>
+<dc:coverage>E 1°50' - E 2°52' / N 45°33' - N 45°6'</dc:coverage>
+<dc:description>Échelle(s) : [1:86400] ou 1 ligne pour 100 toises</dc:description>
+<dc:format>1 carte : en coul. ; 60 x 94,5 cm</dc:format>
+<dc:language>fre</dc:language>
+<dc:relation>Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb408605056</dc:relation>
+<dc:type xml:lang="eng">map</dc:type>
+<dc:type xml:lang="fre">carte</dc:type>
+<dc:type xml:lang="fre">image fixe</dc:type>
+<dc:type xml:lang="eng">image</dc:type>
+<dc:type xml:lang="eng">still image</dc:type>
+<dc:source>Bibliothèque nationale de France, département Cartes et plans, GE FF-18595 (14)</dc:source>
+<dc:rights xml:lang="fre">domaine public</dc:rights>
+<dc:rights xml:lang="eng">public domain</dc:rights>
+<dc:description>Appartient à l’ensemble documentaire : AnvilFr</dc:description>
+<dc:format>image/jpeg</dc:format>
+<dc:format>Nombre total de vues :  1</dc:format>
+</oai_dc:dc>
+</metadata></record></GetRecord></OAI-PMH>

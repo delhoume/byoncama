@@ -1,0 +1,58 @@
+echo 032_LeDorat_btv1b530952728
+  echo Extracting 3 rows and 7 columns
+   magick /Users/fredericdelhoume/Downloads/Cassini/GallicaPngs/032_LeDorat_btv1b530952728.png    \( +clone -distort Perspective '512,440 0 0 510,3295 0,2862 2277,3297 1768,2862  2281,428 1768,0' -crop 1768x2862+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_0_0_crop.png +delete \) \
+   \( +clone -distort Perspective '2344,425 0 0 2336,3294 0,2869 4437,3286 2096,2869  4435,417 2096,0' -crop 2096x2869+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_1_0_crop.png +delete \) \
+   \( +clone -distort Perspective '4491,417 0 0 4476,3287 0,2870 6576,3299 2105,2870  6602,429 2105,0' -crop 2105x2870+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_2_0_crop.png +delete \) \
+   \( +clone -distort Perspective '6640,431 0 0 6620,3304 0,2869 8715,3307 2093,2869  8732,442 2093,0' -crop 2093x2869+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_3_0_crop.png +delete \) \
+   \( +clone -distort Perspective '8785,436 0 0 8765,3311 0,2873 10869,3316 2104,2873  10889,445 2104,0' -crop 2104x2873+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_4_0_crop.png +delete \) \
+   \( +clone -distort Perspective '10943,444 0 0 10913,3318 0,2876 13009,3341 2102,2876  13051,463 2102,0' -crop 2102x2876+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_5_0_crop.png +delete \) \
+   \( +clone -distort Perspective '13097,461 0 0 13069,3336 0,2875 14828,3344 1751,2875  14840,469 1751,0' -crop 1751x2875+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_6_0_crop.png +delete \) \
+   \( +clone -distort Perspective '507,3347 0 0 487,6497 0,3149 2258,6504 1767,3149  2271,3355 1767,0' -crop 1767x3149+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_0_1_crop.png +delete \) \
+   \( +clone -distort Perspective '2321,3345 0 0 2308,6491 0,3146 4407,6498 2101,3146  4425,3351 2101,0' -crop 2101x3146+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_1_1_crop.png +delete \) \
+   \( +clone -distort Perspective '4466,3352 0 0 4461,6498 0,3139 6553,6484 2098,3139  6571,3352 2098,0' -crop 2098x3139+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_2_1_crop.png +delete \) \
+   \( +clone -distort Perspective '6618,3356 0 0 6604,6495 0,3137 8700,6486 2090,3137  8702,3351 2090,0' -crop 2090x3137+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_3_1_crop.png +delete \) \
+   \( +clone -distort Perspective '8763,3360 0 0 8736,6494 0,3140 10849,6510 2106,3140  10862,3364 2106,0' -crop 2106x3140+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_4_1_crop.png +delete \) \
+   \( +clone -distort Perspective '10914,3369 0 0 10894,6515 0,3148 12999,6531 2100,3148  13009,3381 2100,0' -crop 2100x3148+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_5_1_crop.png +delete \) \
+   \( +clone -distort Perspective '13066,3377 0 0 13046,6528 0,3146 14806,6531 1758,3146  14823,3390 1758,0' -crop 1758x3146+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_6_1_crop.png +delete \) \
+   \( +clone -distort Perspective '487,6552 0 0 475,9355 0,2812 2243,9368 1768,2812  2256,6546 1768,0' -crop 1768x2812+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_0_2_crop.png +delete \) \
+   \( +clone -distort Perspective '2292,6544 0 0 2294,9365 0,2816 4383,9362 2096,2816  4396,6550 2096,0' -crop 2096x2816+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_1_2_crop.png +delete \) \
+   \( +clone -distort Perspective '4444,6553 0 0 4439,9369 0,2817 6542,9362 2108,2817  6558,6544 2108,0' -crop 2108x2817+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_2_2_crop.png +delete \) \
+   \( +clone -distort Perspective '6603,6547 0 0 6585,9366 0,2822 8691,9362 2101,2822  8699,6537 2101,0' -crop 2101x2822+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_3_2_crop.png +delete \) \
+   \( +clone -distort Perspective '8754,6546 0 0 8738,9371 0,2820 10838,9367 2094,2820  10843,6551 2094,0' -crop 2094x2820+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_4_2_crop.png +delete \) \
+   \( +clone -distort Perspective '10897,6564 0 0 10881,9381 0,2812 12995,9390 2109,2812  13002,6583 2109,0' -crop 2109x2812+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_5_2_crop.png +delete \) \
+   \( +clone -distort Perspective '13047,6570 0 0 13039,9376 0,2804 14784,9380 1751,2804  14805,6577 1751,0' -crop 1751x2804+0+0 -compress None -write /tmp/032_LeDorat_btv1b530952728_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick  /tmp/032_LeDorat_btv1b530952728_0_0_crop.png -resize 1768x2862! /tmp/032_LeDorat_btv1b530952728_0_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_1_0_crop.png -resize 2096x2862! /tmp/032_LeDorat_btv1b530952728_1_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_2_0_crop.png -resize 2105x2862! /tmp/032_LeDorat_btv1b530952728_2_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_3_0_crop.png -resize 2093x2862! /tmp/032_LeDorat_btv1b530952728_3_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_4_0_crop.png -resize 2104x2862! /tmp/032_LeDorat_btv1b530952728_4_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_5_0_crop.png -resize 2102x2862! /tmp/032_LeDorat_btv1b530952728_5_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_6_0_crop.png -resize 1751x2862! /tmp/032_LeDorat_btv1b530952728_6_0_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_0_1_crop.png -resize 1768x3149! /tmp/032_LeDorat_btv1b530952728_0_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_1_1_crop.png -resize 2096x3149! /tmp/032_LeDorat_btv1b530952728_1_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_2_1_crop.png -resize 2105x3149! /tmp/032_LeDorat_btv1b530952728_2_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_3_1_crop.png -resize 2093x3149! /tmp/032_LeDorat_btv1b530952728_3_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_4_1_crop.png -resize 2104x3149! /tmp/032_LeDorat_btv1b530952728_4_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_5_1_crop.png -resize 2102x3149! /tmp/032_LeDorat_btv1b530952728_5_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_6_1_crop.png -resize 1751x3149! /tmp/032_LeDorat_btv1b530952728_6_1_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_0_2_crop.png -resize 1768x2812! /tmp/032_LeDorat_btv1b530952728_0_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_1_2_crop.png -resize 2096x2812! /tmp/032_LeDorat_btv1b530952728_1_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_2_2_crop.png -resize 2105x2812! /tmp/032_LeDorat_btv1b530952728_2_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_3_2_crop.png -resize 2093x2812! /tmp/032_LeDorat_btv1b530952728_3_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_4_2_crop.png -resize 2104x2812! /tmp/032_LeDorat_btv1b530952728_4_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_5_2_crop.png -resize 2102x2812! /tmp/032_LeDorat_btv1b530952728_5_2_crop2.png
+magick  /tmp/032_LeDorat_btv1b530952728_6_2_crop.png -resize 1751x2812! /tmp/032_LeDorat_btv1b530952728_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick /tmp/032_LeDorat_btv1b530952728_0_0_crop2.png /tmp/032_LeDorat_btv1b530952728_1_0_crop2.png /tmp/032_LeDorat_btv1b530952728_2_0_crop2.png /tmp/032_LeDorat_btv1b530952728_3_0_crop2.png /tmp/032_LeDorat_btv1b530952728_4_0_crop2.png /tmp/032_LeDorat_btv1b530952728_5_0_crop2.png /tmp/032_LeDorat_btv1b530952728_6_0_crop2.png +append /tmp/032_LeDorat_btv1b530952728_row0.png
+echo making elements for row 1
+magick /tmp/032_LeDorat_btv1b530952728_0_1_crop2.png /tmp/032_LeDorat_btv1b530952728_1_1_crop2.png /tmp/032_LeDorat_btv1b530952728_2_1_crop2.png /tmp/032_LeDorat_btv1b530952728_3_1_crop2.png /tmp/032_LeDorat_btv1b530952728_4_1_crop2.png /tmp/032_LeDorat_btv1b530952728_5_1_crop2.png /tmp/032_LeDorat_btv1b530952728_6_1_crop2.png +append /tmp/032_LeDorat_btv1b530952728_row1.png
+echo making elements for row 2
+magick /tmp/032_LeDorat_btv1b530952728_0_2_crop2.png /tmp/032_LeDorat_btv1b530952728_1_2_crop2.png /tmp/032_LeDorat_btv1b530952728_2_2_crop2.png /tmp/032_LeDorat_btv1b530952728_3_2_crop2.png /tmp/032_LeDorat_btv1b530952728_4_2_crop2.png /tmp/032_LeDorat_btv1b530952728_5_2_crop2.png /tmp/032_LeDorat_btv1b530952728_6_2_crop2.png +append /tmp/032_LeDorat_btv1b530952728_row2.png
+echo assembling rows
+magick /tmp/032_LeDorat_btv1b530952728_row0.png /tmp/032_LeDorat_btv1b530952728_row1.png /tmp/032_LeDorat_btv1b530952728_row2.png -append -compress Zip /Users/fredericdelhoume/Downloads/Cassini/PerfectTiffs/032_LeDorat_btv1b530952728.tif
+echo deleting temporary files
+rm -rf /tmp/032_LeDorat_btv1b530952728*.png
+echo done

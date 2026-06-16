@@ -1,0 +1,825 @@
+{
+    "longitudes": {
+        "Paris": {
+            "left": "-20000",
+            "tiles": [
+                "Dunkerque",
+                "St_Omer",
+                "Abbeville",
+                "Amiens",
+                "Beauvais",
+                "Paris",
+                "Fontainebleau",
+                "Orleans",
+                "Gien",
+                "Bourges",
+                "La_Chatre",
+                "Evaux",
+                "Aubusson",
+                "Mauriac",
+                "Aurillac",
+                "Rodez",
+                "Albi",
+                "Castres",
+                "Carcassonne",
+                "Mont_Louis",
+                "Puigcerda"
+            ]
+        },
+        "Evreux": {
+            "right": "-20000",
+            "tiles": [
+                "Forges",
+                "Rouen",
+                "Evreux",
+                "Chartres",
+                "Vendome",
+                "Blois",
+                "Loches",
+                "Chateauroux",
+                "LeDorat",
+                "Limoges",
+                "Tulle",
+                "Sarlat",
+                "Cahors",
+                "Montauban",
+                "Toulouse",
+                "Saint_Lizier",
+                "Ax_les_thermes",
+                "AxBand"
+            ]
+        },
+        "Lisieux": {
+            "right": "-60000",
+            "tiles": [
+                "Lisieux",
+                "Argentan",
+                "LeMans",
+                "Alencon",
+                "Tours",
+                "Richelieu",
+                "Poitiers",
+                "Charroux",
+                "Angouleme",
+                "Perigueux",
+                "Bergerac",
+                "Castillonnes",
+                "Agen",
+                "Auch",
+                "Tarbes",
+                "Bagnere_de_Bigorre"
+            ]
+        },
+        "Vire": {
+            "right": "-100000",
+            "tiles": [
+                "Vire",
+                "Bayeux",
+                "Mayenne",
+                "Laval",
+                "Angers",
+                "Mortagne",
+                "Lucon",
+                "Aire",
+                "Pau",
+                "PauBand"
+           ]
+        },
+                "LaRochelle": {
+                    "right": "-100000",
+                    "tiles": [
+                        "LaRochelle",
+                "Saintes",
+                "Blaye",
+                "Bordeaux",
+                "Bazas",
+                "Roquefort"
+            ]
+        },
+        "Lille": {
+            "left": "20000",
+            "tiles": [
+                "Lille",
+                "Cambrai",
+                "Laon",
+                "Soissons",
+                "Meaux",
+                "Sens",
+                "Auxerre",
+                "Vezelay",
+                "Moulins",
+                "Nevers",
+                "Gannat",
+                "Clermont_Ferrand",
+                "Brioude",
+                "Saint_Flour",
+                "Mende",
+                "Nant",
+                "Lodeve",
+                "Narbonne"
+            ]
+        },
+        "Reims": {
+            "left": "60000",
+            "tiles": [
+                "Reims",
+                "Rocroi",
+                "Charleville",
+                "Chalons_sur_Marne",
+                "Troyes",
+                "Tonnerre",
+                "Semur_en_Auxois",
+                "Autun",
+                "Chalon_sur_Saone",
+                "Macon",
+                "Lyon",
+                "Saint_Etienne",
+                "Le_Puy",
+                "Viviers",
+                "Nimes",
+                "Montpellier"
+            ]
+        },
+        "MontpellierBand": {
+            "right": "100000",
+            "width": "11080",
+            "tiles": [
+                "MontpellierBand"
+            ]
+        },
+        "Dijon": {
+            "left": "100000",
+            "tiles": [
+                "Verdun",
+                "Montmedy",
+                "Toul",
+                "Joinville",
+                "Langres",
+                "Dijon",
+                "Dole",
+                "Tournus",
+                "Bourg_en_Bresse",
+                "Environs_de_Bellay",
+                "Grenoble",
+                "Valence",
+                "Vaison_la_Romaine",
+                "Avignon",
+                "Aix_en_Provence",
+                "AixBand"
+            ]
+        },
+        "Metz": {
+            "left": "140000",
+            "tiles": [
+                "Luxembourg",
+                "Metz",
+                "Nancy",
+                "Epinal",
+                "Luxeuil",
+                "Vesoul",
+                "Besancon",
+                "Briancon",
+                "Barraux",
+                "Embrun",
+                "Digne_les_Bains",
+                "Lorgues",
+                "Toulon"
+            ]
+        },
+        "Rennes": {
+            "right": "-140000",
+            "tiles": [
+                "Cherbourg",
+                "Coutances",
+                "Saint_Malo",
+                "Dinan",
+                "Rennes",
+                "Paimboeuf",
+                "Nantes",
+                "La_Roche_sur_Yon"
+            ]
+        },
+        "Vannes": {
+            "right": "-180000",
+            "tiles": [
+                "Vannes",
+                "Treguier",
+                "Uzel",
+                "Belle_Ile"
+            ]
+        },
+        "Quimperle": {
+            "right": "-220000",
+            "tiles": [
+                "Quimperle",
+                "Carhaix",
+                "Saint_Pol_de_Leon"
+            ]
+        },
+        "Saint_Pol_de_Leon": {
+            "right": "-220000",
+            "tiles": [
+                "Saint_Pol_de_Leon"
+            ]
+        },
+        "Cauterets": {
+            "right": "-100000",
+            "width": "30542",
+            "tiles": [
+                "Cauterets"
+            ]
+        },
+        "Andorre": {
+            "right": "-20000",
+            "width": "19718",
+            "tiles": [
+                "Andorre"
+            ]
+        },
+        "Marseille": {
+            "right": "140000",
+            "width": "19930",
+            "tiles": [
+                "Marseille"
+            ]
+        },
+        "Boulogne": {
+            "right": "-20000",
+            "width": "16900",
+            "tiles": [
+                "Boulogne"
+            ]
+        },
+        "Ambleteuse": {
+            "right": "-20000",
+            "width": "16650",
+            "tiles": [
+                "Ambleteuse"
+            ]
+        },
+        "Dieppe": {
+            "right": "-20000",
+            "width": "29250",
+            "tiles": [
+                "Dieppe"
+            ]
+        },
+        "Le_Havre": {
+            "right": "-60000",
+            "width": "27350",
+            "tiles": [
+                "Le_Havre"
+            ]
+        },
+        "SaintVaast_la_Hougue": {
+            "left": "-140000",
+            "width": "20000",
+            "tiles": [
+                "SaintVaast_la_Hougue"
+            ]
+        },
+        "Ile_de_Re": {
+            "right": "-140000",
+            "width": "20085",
+            "tiles": [
+                "Ile_de_Re"
+            ]
+        },
+        "Ile_dOleron": {
+            "right": "-140000",
+            "width": "10556",
+            "tiles": [
+                "Ile_dOleron"
+            ]
+        },
+        "Cote_de_Medoc": {
+            "right": "-140000",
+            "width": "5900",
+            "tiles": [
+                "Cote_de_Medoc"
+            ]
+        },
+        "Cazau": {
+            "right": "-140000",
+            "width": "11900",
+            "tiles": [
+                "Cazau",
+                "La_Teste_de_Buch"
+            ]
+        },
+        "Vieux_Boucau_les_Bains": {
+            "right": "-140000",
+            "width": "17780",
+            "tiles": [
+                "Vieux_Boucau_les_Bains"
+            ]
+        },
+        "Bayonne": {
+            "right": "-140000",
+            "tiles": [
+                "Bayonne",
+                "Saint_Jean_Pied_de_Port"
+            ]
+        },
+        "Perpignan": {
+            "left": "20000",
+            "width": "17074",
+            "tiles": [
+                "Perpignan"
+            ]
+        },
+        "Bellegarde": {
+            "left": "20000",
+            "width": "17274",
+            "tiles": [
+                "Bellegarde"
+            ]
+        },
+        "Nozeroi": {
+            "left": "140000",
+            "width": "34650",
+            "tiles": [
+                "Nozeroi"
+            ]
+        },
+        "Geneve": {
+            "left": "140000",
+            "width": "20100",
+            "tiles": [
+                "Geneve"
+            ]
+        },
+        "BarrauxBand": {
+            "left": "140000",
+            "width": "13350",
+            "tiles": [
+                "BarrauxBand"
+            ]
+        },
+        "Montmelian": {
+            "left": "140000",
+            "width": "13290",
+            "tiles": [
+                "Montmelian"
+            ]
+        },
+        "Strasbourg": {
+            "left": "180000",
+            "tiles": [
+                "Landau_Wissenbourg",
+                "Strasbourg"
+            ]
+        },
+        "Saint_Hubert": {
+            "left": "100000",
+            "width": "20074",
+            "tiles": [
+                "Saint_Hubert"
+            ]
+        },
+        "Bale": {
+            "left": "180000",
+            "width": "34350",
+            "tiles": [
+                "Colmar",
+                "Neuf_Brisach",
+                "Bale"
+            ]
+        },
+        "Queyras": {
+            "left": "180000",
+            "width": "17770",
+            "tiles": [
+                "Queyras"
+            ]
+        },
+        "Larche": {
+            "left": "180000",
+            "width": "11677",
+            "tiles": [
+                "Larche"
+            ]
+        },
+        "Vence": {
+            "left": "180000",
+            "width": "29263",
+            "tiles": [
+                "Vence"
+            ]
+        },
+        "Antibes": {
+            "left": "180000",
+            "width": "28319",
+            "tiles": [
+                "Antibes"
+            ]
+        },
+        "Cap_Camrat": {
+            "left": "180000",
+            "width": "4727",
+            "tiles": [
+                "Cap_Camrat"
+            ]
+        },
+        "Ouessant": {
+            "right": "-260000",
+            "width": "26503",
+            "tiles": [
+                "Ouessant"
+            ]
+        },
+        "Rade_de_Brest": {
+            "right": "-260000",
+            "width": "20060",
+            "tiles": [
+                "Rade_de_Brest"
+            ]
+        },
+        "Philippsburg": {
+            "left": "220000",
+            "width": "20105",
+            "tiles": [
+                "Philippsburg"
+            ]
+        }
+    },
+    "latitudes": {
+        "Paris": {
+            "top": "12500",
+            "tiles": [
+                "Paris",
+                "Vire",
+                "Argentan",
+                "Evreux",
+                "Meaux",
+                "Chalons_sur_Marne",
+                "Toul",
+                "Nancy",
+                "Strasbourg"
+            ]
+        },
+        "Ouessant": {
+            "bottom": "-12500",
+            "height": "26200",
+            "tiles": [
+                "Saint_Pol_de_Leon",
+                "Ouessant"
+            ]
+        },
+        "Treguier": {
+            "bottom": "-12500",
+            "height": "25850",
+            "tiles": [
+                "Treguier"
+            ]
+        },
+        "Saint_Malo": {
+            "bottom": "-12500",
+            "tiles": [
+                "Saint_Malo"
+            ]
+        },
+        "Beauvais": {
+            "bottom": "12500",
+            "tiles": [
+                "Beauvais",
+                "Coutances",
+                "Rouen",
+                "Lisieux",
+                "Bayeux",
+                "Soissons",
+                "Reims",
+                "Verdun",
+                "Metz",
+                "Landau_Wissenbourg",
+                "Philippsburg"
+            ]
+        },
+        "Amiens": {
+            "bottom": "37500",
+            "tiles": [
+                "Cherbourg",
+                "SaintVaast_la_Hougue",
+                "Le_Havre",
+                "Forges",
+                "Amiens",
+                "Charleville",
+                "Laon",
+                "Montmedy",
+                "Luxembourg"
+            ]
+        },
+        "Dieppe": {
+            "bottom": "62500",
+            "tiles": [
+                "Dieppe",
+                "Abbeville",
+                "Cambrai",
+                "Rocroi",
+                "Saint_Hubert"
+            ]
+        },
+        "Lille": {
+            "bottom": "87500",
+            "tiles": [
+                "Lille",
+                "Boulogne",
+                "St_Omer"
+            ]
+        },
+        "Dunkerque": {
+            "bottom": "112500",
+            "tiles": [
+                "Dunkerque",
+                "Ambleteuse"
+            ]
+        },
+        "Fontainebleau": {
+            "top": "-12500",
+            "tiles": [
+                "Dinan",
+                "Mayenne",
+                "Chartres",
+                "Fontainebleau",
+                "Alencon",
+                "Troyes",
+                "Epinal",
+                "Sens",
+                "Joinville",
+                "Colmar",
+                "Uzel",
+                "Carhaix",
+                "Rade_de_Brest"
+            ]
+        },
+        "Orleans": {
+            "top": "-37500",
+            "tiles": [
+                "Rennes",
+                "Laval",
+                "LeMans",
+                "Vendome",
+                "Orleans",
+                "Auxerre",
+                "Tonnerre",
+                "Langres",
+                "Luxeuil",
+                "Neuf_Brisach",
+                "Quimperle",
+                "Vannes"
+            ]
+        },
+        "Gien": {
+            "top": "-62500",
+            "tiles": [
+                "Gien",
+                "Belle_Ile",
+                "Paimboeuf",
+                "Blois",
+                "Vezelay",
+                "Tours",
+                "Semur_en_Auxois",
+                "Angers",
+                "Dijon",
+                "Vesoul",
+                "Bale"
+            ]
+        },
+        "Bourges": {
+            "top": "-87500",
+            "tiles": [
+                "Bourges",
+                "Loches",
+                "Nevers",
+                "Richelieu",
+                "Autun",
+                "Mortagne",
+                "Dole",
+                "Nantes",
+                "Besancon"
+            ]
+        },
+        "Poitiers": {
+            "top": "-112500",
+            "tiles": [
+                "Poitiers",
+                "Chateauroux",
+                "La_Chatre",
+                "Moulins",
+                "Chalon_sur_Saone",
+                "Lucon",
+                "Tournus",
+                "La_Roche_sur_Yon",
+                "Nozeroi"
+            ]
+        },
+        "LaRochelle": {
+            "top": "-137500",
+            "tiles": [
+                "LeDorat",
+                "Evaux",
+                "Gannat",
+                "Charroux",
+                "Macon",
+                "LaRochelle",
+                "Bourg_en_Bresse",
+                "Ile_de_Re",
+                "Geneve"
+            ]
+        },
+        "Angouleme": {
+            "top": "-162500",
+            "tiles": [
+                "Angouleme",
+                "Aubusson",
+                "Limoges",
+                "Clermont_Ferrand",
+                "Lyon",
+                "Saintes",
+                "Environs_de_Bellay",
+                "Ile_dOleron"
+            ]
+        },
+        "Perigueux": {
+            "top": "-187500",
+            "tiles": [
+                "Cote_de_Medoc",
+                "Blaye",
+                "Perigueux",
+                "Tulle",
+                "Mauriac",
+                "Brioude",
+                "Saint_Etienne",
+                "Grenoble",
+                "Barraux"
+            ]
+        },
+        "Aurillac": {
+            "top": "-212500",
+            "tiles": [
+                "La_Teste_de_Buch",
+                "Aurillac",
+                "Sarlat",
+                "Saint_Flour",
+                "Bergerac",
+                "Le_Puy",
+                "Bordeaux",
+                "Valence",
+                "Briancon",
+                "Queyras"
+            ]
+        },
+        "Rodez": {
+            "top": "-237500",
+            "tiles": [
+                "Rodez",
+                "Cahors",
+                "Mende",
+                "Castillonnes",
+                "Viviers",
+                "Bazas",
+                "Vaison_la_Romaine",
+                "Cazau",
+                "Embrun"
+            ]
+        },
+        "Larche": {
+            "top": "-237500",
+            "height": "25000",
+            "tiles": [
+                "Larche"
+            ]
+        },
+        "Albi": {
+            "top": "-262500",
+            "tiles": [
+                "Vieux_Boucau_les_Bains",
+                "Roquefort",
+                "Albi",
+                "Montauban",
+                "Nant",
+                "Albi",
+                "Agen",
+                "Nimes",
+                "Avignon",
+                "Digne_les_Bains",
+                "Vence"
+            ]
+        },
+        "Castres": {
+            "top": "-287500",
+            "tiles": [
+                "Bayonne",
+                "Aire",
+                "Toulouse",
+                "Castres",
+                "Lodeve",
+                "Auch",
+                "Montpellier",
+                "Lorgues",
+                "Antibes",
+                "Aix_en_Provence"
+            ]
+        },
+        "MontpellierBand": {
+            "top": "-312500",
+            "bottom": "-313300",
+            "tiles": [
+                "MontpellierBand",
+                "AixBand"
+            ]
+        },
+        "Marseille": {
+            "top": "-313300",
+            "bottom": "-325000",
+            "tiles": [
+                "Marseille"
+            ]
+        },
+        "Carcassonne": {
+            "top": "-312500",
+            "tiles": [
+                "Saint_Jean_Pied_de_Port",
+                "Pau",
+                "Carcassonne",
+                "Tarbes",
+                "Saint_Lizier",
+                "Narbonne",
+                "Toulon"
+            ]
+        },
+        "PauBand": {
+            "top": "-337500",
+            "height": "864",
+            "tiles": [
+                "PauBand"
+            ]
+        },
+        "AxBand": {
+            "top": "-362500",
+            "height": "849",
+            "tiles": [
+                "AxBand"
+            ]
+        },
+        "Cauterets": {
+            "bottom": "-350000",
+            "height": "11636",
+            "tiles": [
+                "Cauterets"
+            ]
+        },
+        "Andorre": {
+            "top": "-363349",
+            "height": "4110",
+            "tiles": [
+                "Andorre"
+            ]
+        },
+        "Bagnere_de_Bigorre": {
+            "top": "-337500",
+            "height": "13900",
+            "tiles": [
+                "Bagnere_de_Bigorre"
+            ]
+        },
+        "Mont_Louis": {
+            "top": "-337500",
+            "height": "25000",
+            "tiles": [
+                "Mont_Louis",
+                "Ax_les_thermes",
+                "Perpignan"
+            ]
+        },
+        "Puigcerda": {
+            "top": "-362500",
+            "height": "13000",
+            "tiles": [
+                "Puigcerda",
+                "Bellegarde"
+            ]
+        },
+        "BarrauxBand": {
+            "bottom": "-187500",
+            "height": "789",
+            "tiles": [
+                "BarrauxBand"
+            ]
+        },
+        "Montmelian": {
+            "bottom": "-186711",
+            "height": "5313",
+            "tiles": [
+                "Montmelian"
+            ]
+        },
+        "Cap_Camrat": {
+            "top": "-312000",
+            "height": "10098",
+            "tiles": [
+                "Cap_Camrat"
+            ]
+        }
+    }
+}

@@ -1,0 +1,247 @@
+{
+  "image": "109Bis_Saint_Hubert_btv1b53095278z",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 457,
+        "y": 3294
+      },
+      "topleft": {
+        "x": 480,
+        "y": 407
+      },
+      "topright": {
+        "x": 2329,
+        "y": 418
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2325,
+        "y": 3293
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2363,
+        "y": 3283
+      },
+      "topleft": {
+        "x": 2370,
+        "y": 414
+      },
+      "topright": {
+        "x": 4464,
+        "y": 422
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4472,
+        "y": 3285
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4507,
+        "y": 3275
+      },
+      "topleft": {
+        "x": 4502,
+        "y": 421
+      },
+      "topright": {
+        "x": 6600,
+        "y": 417
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6590,
+        "y": 3284
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6635,
+        "y": 3285
+      },
+      "topleft": {
+        "x": 6638,
+        "y": 411
+      },
+      "topright": {
+        "x": 7594,
+        "y": 411
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7590,
+        "y": 3287
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 451,
+        "y": 6451
+      },
+      "topleft": {
+        "x": 454,
+        "y": 3338
+      },
+      "topright": {
+        "x": 2318,
+        "y": 3335
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2324,
+        "y": 6453
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2358,
+        "y": 6448
+      },
+      "topleft": {
+        "x": 2359,
+        "y": 3329
+      },
+      "topright": {
+        "x": 4462,
+        "y": 3330
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4456,
+        "y": 6447
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4495,
+        "y": 6441
+      },
+      "topleft": {
+        "x": 4490,
+        "y": 3332
+      },
+      "topright": {
+        "x": 6583,
+        "y": 3327
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6589,
+        "y": 6436
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6619,
+        "y": 6437
+      },
+      "topleft": {
+        "x": 6619,
+        "y": 3334
+      },
+      "topright": {
+        "x": 7582,
+        "y": 3328
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7582,
+        "y": 6433
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 451,
+        "y": 9303
+      },
+      "topleft": {
+        "x": 457,
+        "y": 6475
+      },
+      "topright": {
+        "x": 2319,
+        "y": 6477
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2327,
+        "y": 9297
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2360,
+        "y": 9295
+      },
+      "topleft": {
+        "x": 2355,
+        "y": 6480
+      },
+      "topright": {
+        "x": 4459,
+        "y": 6479
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4458,
+        "y": 9296
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4490,
+        "y": 9292
+      },
+      "topleft": {
+        "x": 4490,
+        "y": 6474
+      },
+      "topright": {
+        "x": 6589,
+        "y": 6480
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6587,
+        "y": 9297
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 6624,
+        "y": 9302
+      },
+      "topleft": {
+        "x": 6626,
+        "y": 6484
+      },
+      "topright": {
+        "x": 7587,
+        "y": 6477
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7582,
+        "y": 9302
+      },
+      "row": 2
+    }
+  ],
+  "columns": "4",
+  "rows": "3"
+}
