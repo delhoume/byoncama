@@ -3,7 +3,7 @@ Build Your Own Cassini Map
 
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
-The outcome is a a single GeoTIFF  the full map.
+The outcome is a single GeoTIFF for the full map.
 
 This repo does not host any images, only build material.
 
@@ -14,9 +14,9 @@ https://en.wikipedia.org/wiki/Cassini_map
 
 ### Step 0: tools
 
-Current implementayion is tqrgetted towartd MavOs or linux or WSL.
+Current implementation is targetted towartd MacOs or linux or WSL.
 
-Windows is not supported but wshoul be ralqtivy es to port to
+Windows is not supported but should be relativly easy to port to
 
 The workflow is command line oriented, so a package manager is useful.
 
@@ -29,7 +29,7 @@ The workflow is command line oriented, so a package manager is useful.
   - processing (htps://processing.org) for the mappings editor
   
 
-       brew install imagemagick deno make processing
+       `brew install imagemagick deno make processing`
 
 
 # Step 1: downloading the source images from Gallica
@@ -44,7 +44,8 @@ https://gallica.bnf.fr/selections/fr/html/carte-de-cassini-acces-par-numero-de-f
 
 Gallica provides an IIIF interface (https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica)
 
-The Gallica IIIF download API is very unreliable, with huge starting delays and connection errors.
+The Gallica IIIF download API is very unreliable, with huge starting delays and connection errors.TT here eems to be a daily limit in number of requests too.
+
 There are two ways you can download the images 
 
 
@@ -59,4 +60,6 @@ attempts not to re-download, and can be run multiple times in case of failure .
 In any case you will want to verify all 181 images are correct:
 `pngcheck -q gallica_pngs/*.png`
 
-Once downloaded (it atkes a while), you can start exploring gallica_pngs 35Gb images...
+Your mileage may vary, but expect a few days and multiple attemps to get all images.
+
+Once downloaded (it takes a while), you can start exploring gallica_pngs 35Gb images...
