@@ -1,0 +1,47 @@
+{
+  "image": "092_Montpellier_btv1b530951700",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 10884,
+        "y": 9611
+      },
+      "topleft": {
+        "x": 10886,
+        "y": 9369
+      },
+      "topright": {
+        "x": 12996,
+        "y": 9372
+      },
+      "column": 0,
+      "row": 0,
+      "bottomright": {
+        "x": 12997,
+        "y": 9611
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 13028,
+        "y": 9611
+      },
+      "topleft": {
+        "x": 13028,
+        "y": 9372
+      },
+      "topright": {
+        "x": 14808,
+        "y": 9369
+      },
+      "column": 1,
+      "row": 0,
+      "bottomright": {
+        "x": 14808,
+        "y": 9611
+      }
+    }
+  ],
+  "columns": 2,
+  "rows": 1
+}

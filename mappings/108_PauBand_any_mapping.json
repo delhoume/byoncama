@@ -1,0 +1,158 @@
+{
+  "image": "108_Pau_btv1b53095216k",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 553,
+        "y": 9816
+      },
+      "topleft": {
+        "x": 553,
+        "y": 9521
+      },
+      "topright": {
+        "x": 2321,
+        "y": 9521
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2321,
+        "y": 9829
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2405,
+        "y": 9819
+      },
+      "topleft": {
+        "x": 2406,
+        "y": 9541
+      },
+      "topright": {
+        "x": 4515,
+        "y": 9525
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4515,
+        "y": 9819
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4589,
+        "y": 9816
+      },
+      "topleft": {
+        "x": 4590,
+        "y": 9521
+      },
+      "topright": {
+        "x": 6706,
+        "y": 9500
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6711,
+        "y": 9804
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6790,
+        "y": 9804
+      },
+      "topleft": {
+        "x": 6787,
+        "y": 9501
+      },
+      "topright": {
+        "x": 8900,
+        "y": 9483
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8901,
+        "y": 9795
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 8979,
+        "y": 9802
+      },
+      "topleft": {
+        "x": 8982,
+        "y": 9488
+      },
+      "topright": {
+        "x": 11090,
+        "y": 9474
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 11096,
+        "y": 9782
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 11172,
+        "y": 9788
+      },
+      "topleft": {
+        "x": 11161,
+        "y": 9481
+      },
+      "topright": {
+        "x": 13262,
+        "y": 9452
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 13264,
+        "y": 9768
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 13331,
+        "y": 9772
+      },
+      "topleft": {
+        "x": 13329,
+        "y": 9456
+      },
+      "topright": {
+        "x": 15069,
+        "y": 9446
+      },
+      "column": 6,
+      "bottomright": {
+        "x": 15068,
+        "y": 9746
+      },
+      "row": 0
+    }
+  ],
+  "targetHeight": 297,
+  "columns": 7,
+  "comment": "band at the bottom of 108_Pau,use widths from 108_Pau",
+  "useWidths": [
+    1791,
+    2131,
+    2131,
+    2139,
+    2126,
+    2126,
+    1764
+  ],
+  "rows": 1
+}

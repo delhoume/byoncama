@@ -1,0 +1,247 @@
+{
+  "image": "175_Rade_de_Brest_btv1b53095237v",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 761,
+        "y": 3389
+      },
+      "topleft": {
+        "x": 783,
+        "y": 534
+      },
+      "topright": {
+        "x": 1525,
+        "y": 534
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1519,
+        "y": 3394
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 1575,
+        "y": 3393
+      },
+      "topleft": {
+        "x": 1591,
+        "y": 532
+      },
+      "topright": {
+        "x": 3672,
+        "y": 546
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3654,
+        "y": 3402
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 3731,
+        "y": 3399
+      },
+      "topleft": {
+        "x": 3741,
+        "y": 538
+      },
+      "topright": {
+        "x": 5845,
+        "y": 540
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5827,
+        "y": 3399
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 5881,
+        "y": 3397
+      },
+      "topleft": {
+        "x": 5911,
+        "y": 544
+      },
+      "topright": {
+        "x": 7994,
+        "y": 537
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7974,
+        "y": 3409
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 750,
+        "y": 6612
+      },
+      "topleft": {
+        "x": 753,
+        "y": 3446
+      },
+      "topright": {
+        "x": 1513,
+        "y": 3439
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1500,
+        "y": 6611
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 1559,
+        "y": 6609
+      },
+      "topleft": {
+        "x": 1577,
+        "y": 3446
+      },
+      "topright": {
+        "x": 3661,
+        "y": 3445
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3633,
+        "y": 6620
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 3701,
+        "y": 6618
+      },
+      "topleft": {
+        "x": 3718,
+        "y": 3455
+      },
+      "topright": {
+        "x": 5818,
+        "y": 3463
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5795,
+        "y": 6627
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 5847,
+        "y": 6641
+      },
+      "topleft": {
+        "x": 5869,
+        "y": 3458
+      },
+      "topright": {
+        "x": 7964,
+        "y": 3464
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7936,
+        "y": 6638
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 721,
+        "y": 9467
+      },
+      "topleft": {
+        "x": 746,
+        "y": 6675
+      },
+      "topright": {
+        "x": 1498,
+        "y": 6673
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 1481,
+        "y": 9473
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 1543,
+        "y": 9463
+      },
+      "topleft": {
+        "x": 1560,
+        "y": 6670
+      },
+      "topright": {
+        "x": 3640,
+        "y": 6690
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 3618,
+        "y": 9471
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 3671,
+        "y": 9458
+      },
+      "topleft": {
+        "x": 3689,
+        "y": 6677
+      },
+      "topright": {
+        "x": 5786,
+        "y": 6700
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5755,
+        "y": 9480
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 5809,
+        "y": 9478
+      },
+      "topleft": {
+        "x": 5843,
+        "y": 6703
+      },
+      "topright": {
+        "x": 7929,
+        "y": 6706
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7891,
+        "y": 9503
+      },
+      "row": 2
+    }
+  ],
+  "columns": "4",
+  "rows": "3"
+}

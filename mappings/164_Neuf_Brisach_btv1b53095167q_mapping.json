@@ -1,0 +1,367 @@
+{
+  "image": "164_Neuf_Brisach_btv1b53095167q",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 509,
+        "y": 3399
+      },
+      "topleft": {
+        "x": 511,
+        "y": 524
+      },
+      "topright": {
+        "x": 2324,
+        "y": 518
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2326,
+        "y": 3392
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2370,
+        "y": 3396
+      },
+      "topleft": {
+        "x": 2361,
+        "y": 520
+      },
+      "topright": {
+        "x": 4463,
+        "y": 518
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4460,
+        "y": 3396
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4515,
+        "y": 3393
+      },
+      "topleft": {
+        "x": 4514,
+        "y": 515
+      },
+      "topright": {
+        "x": 6611,
+        "y": 517
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6600,
+        "y": 3387
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6647,
+        "y": 3393
+      },
+      "topleft": {
+        "x": 6660,
+        "y": 520
+      },
+      "topright": {
+        "x": 8750,
+        "y": 519
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8751,
+        "y": 3394
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 8807,
+        "y": 3394
+      },
+      "topleft": {
+        "x": 8791,
+        "y": 516
+      },
+      "topright": {
+        "x": 10886,
+        "y": 510
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10895,
+        "y": 3392
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 10939,
+        "y": 3387
+      },
+      "topleft": {
+        "x": 10924,
+        "y": 517
+      },
+      "topright": {
+        "x": 12883,
+        "y": 505
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 12883,
+        "y": 3400
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 510,
+        "y": 6609
+      },
+      "topleft": {
+        "x": 514,
+        "y": 3442
+      },
+      "topright": {
+        "x": 2322,
+        "y": 3447
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2316,
+        "y": 6608
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2359,
+        "y": 6608
+      },
+      "topleft": {
+        "x": 2373,
+        "y": 3441
+      },
+      "topright": {
+        "x": 4463,
+        "y": 3443
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4454,
+        "y": 6598
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4497,
+        "y": 6599
+      },
+      "topleft": {
+        "x": 4499,
+        "y": 3444
+      },
+      "topright": {
+        "x": 6594,
+        "y": 3442
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6599,
+        "y": 6595
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6644,
+        "y": 6600
+      },
+      "topleft": {
+        "x": 6634,
+        "y": 3445
+      },
+      "topright": {
+        "x": 8748,
+        "y": 3441
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8745,
+        "y": 6606
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 8793,
+        "y": 6594
+      },
+      "topleft": {
+        "x": 8799,
+        "y": 3438
+      },
+      "topright": {
+        "x": 10889,
+        "y": 3441
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10879,
+        "y": 6600
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 10920,
+        "y": 6596
+      },
+      "topleft": {
+        "x": 10930,
+        "y": 3434
+      },
+      "topright": {
+        "x": 12885,
+        "y": 3444
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 12885,
+        "y": 6591
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 501,
+        "y": 9443
+      },
+      "topleft": {
+        "x": 507,
+        "y": 6657
+      },
+      "topright": {
+        "x": 2314,
+        "y": 6657
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2307,
+        "y": 9436
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2356,
+        "y": 9439
+      },
+      "topleft": {
+        "x": 2347,
+        "y": 6653
+      },
+      "topright": {
+        "x": 4437,
+        "y": 6642
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4443,
+        "y": 9420
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4488,
+        "y": 9433
+      },
+      "topleft": {
+        "x": 4494,
+        "y": 6645
+      },
+      "topright": {
+        "x": 6583,
+        "y": 6642
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6588,
+        "y": 9432
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 6639,
+        "y": 9436
+      },
+      "topleft": {
+        "x": 6629,
+        "y": 6651
+      },
+      "topright": {
+        "x": 8729,
+        "y": 6646
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8736,
+        "y": 9432
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 8781,
+        "y": 9431
+      },
+      "topleft": {
+        "x": 8776,
+        "y": 6642
+      },
+      "topright": {
+        "x": 10868,
+        "y": 6639
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10872,
+        "y": 9416
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 10916,
+        "y": 9418
+      },
+      "topleft": {
+        "x": 10908,
+        "y": 6642
+      },
+      "topright": {
+        "x": 12886,
+        "y": 6628
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 12886,
+        "y": 9397
+      },
+      "row": 2
+    }
+  ],
+  "columns": "6",
+  "rows": "3"
+}

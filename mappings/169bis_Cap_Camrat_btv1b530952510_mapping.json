@@ -1,0 +1,87 @@
+{
+  "image": "169bis_Cap_Camrat_btv1b530952510",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 121,
+        "y": 3282
+      },
+      "topleft": {
+        "x": 181,
+        "y": 208
+      },
+      "topright": {
+        "x": 528,
+        "y": 211
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 465,
+        "y": 3284
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 523,
+        "y": 3277
+      },
+      "topleft": {
+        "x": 560,
+        "y": 212
+      },
+      "topright": {
+        "x": 1863,
+        "y": 214
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 1834,
+        "y": 3285
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 117,
+        "y": 3789
+      },
+      "topleft": {
+        "x": 119,
+        "y": 3330
+      },
+      "topright": {
+        "x": 464,
+        "y": 3336
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 457,
+        "y": 3789
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 522,
+        "y": 3793
+      },
+      "topleft": {
+        "x": 518,
+        "y": 3326
+      },
+      "topright": {
+        "x": 1832,
+        "y": 3325
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 1832,
+        "y": 3793
+      },
+      "row": 1
+    }
+  ],
+  "columns": "2",
+  "rows": "2"
+}

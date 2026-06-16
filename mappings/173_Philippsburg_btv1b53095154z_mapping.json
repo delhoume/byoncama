@@ -1,0 +1,247 @@
+{
+  "image": "173_Philippsburg_btv1b53095154z",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 236,
+        "y": 3388
+      },
+      "topleft": {
+        "x": 267,
+        "y": 532
+      },
+      "topright": {
+        "x": 2356,
+        "y": 553
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2347,
+        "y": 3385
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2412,
+        "y": 3377
+      },
+      "topleft": {
+        "x": 2418,
+        "y": 557
+      },
+      "topright": {
+        "x": 4514,
+        "y": 551
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4505,
+        "y": 3378
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4561,
+        "y": 3379
+      },
+      "topleft": {
+        "x": 4571,
+        "y": 554
+      },
+      "topright": {
+        "x": 6688,
+        "y": 554
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6680,
+        "y": 3388
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6743,
+        "y": 3382
+      },
+      "topleft": {
+        "x": 6749,
+        "y": 553
+      },
+      "topright": {
+        "x": 7476,
+        "y": 545
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7469,
+        "y": 3384
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 240,
+        "y": 6615
+      },
+      "topleft": {
+        "x": 254,
+        "y": 3437
+      },
+      "topright": {
+        "x": 2354,
+        "y": 3443
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2332,
+        "y": 6613
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2398,
+        "y": 6604
+      },
+      "topleft": {
+        "x": 2413,
+        "y": 3441
+      },
+      "topright": {
+        "x": 4507,
+        "y": 3438
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4485,
+        "y": 6618
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 4553,
+        "y": 6612
+      },
+      "topleft": {
+        "x": 4554,
+        "y": 3448
+      },
+      "topright": {
+        "x": 6674,
+        "y": 3447
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6672,
+        "y": 6613
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 6735,
+        "y": 6633
+      },
+      "topleft": {
+        "x": 6737,
+        "y": 3454
+      },
+      "topright": {
+        "x": 7469,
+        "y": 3454
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7465,
+        "y": 6621
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 252,
+        "y": 9453
+      },
+      "topleft": {
+        "x": 243,
+        "y": 6676
+      },
+      "topright": {
+        "x": 2339,
+        "y": 6669
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2345,
+        "y": 9435
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2399,
+        "y": 9446
+      },
+      "topleft": {
+        "x": 2400,
+        "y": 6679
+      },
+      "topright": {
+        "x": 4493,
+        "y": 6678
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4492,
+        "y": 9441
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 4551,
+        "y": 9441
+      },
+      "topleft": {
+        "x": 4563,
+        "y": 6677
+      },
+      "topright": {
+        "x": 6679,
+        "y": 6672
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6660,
+        "y": 9443
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 6725,
+        "y": 9471
+      },
+      "topleft": {
+        "x": 6742,
+        "y": 6689
+      },
+      "topright": {
+        "x": 7466,
+        "y": 6682
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 7447,
+        "y": 9472
+      },
+      "row": 2
+    }
+  ],
+  "columns": "4",
+  "rows": "3"
+}

@@ -1,0 +1,67 @@
+{
+  "image": "149_Montmelian_btv1b53095119j",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 507,
+        "y": 2117
+      },
+      "topleft": {
+        "x": 541,
+        "y": 266
+      },
+      "topright": {
+        "x": 2255,
+        "y": 266
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2238,
+        "y": 2130
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2290,
+        "y": 2127
+      },
+      "topleft": {
+        "x": 2282,
+        "y": 265
+      },
+      "topright": {
+        "x": 4363,
+        "y": 271
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4376,
+        "y": 2123
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4431,
+        "y": 2137
+      },
+      "topleft": {
+        "x": 4433,
+        "y": 279
+      },
+      "topright": {
+        "x": 5268,
+        "y": 273
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5295,
+        "y": 2136
+      },
+      "row": 0
+    }
+  ],
+  "columns": 3,
+  "rows": 1
+}

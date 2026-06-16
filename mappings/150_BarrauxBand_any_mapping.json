@@ -1,0 +1,67 @@
+{
+  "image": "150_Barraux_btv1b53095120x",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 587,
+        "y": 489
+      },
+      "topleft": {
+        "x": 589,
+        "y": 217
+      },
+      "topright": {
+        "x": 2300,
+        "y": 199
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2309,
+        "y": 489
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2359,
+        "y": 483
+      },
+      "topleft": {
+        "x": 2359,
+        "y": 196
+      },
+      "topright": {
+        "x": 4453,
+        "y": 213
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4452,
+        "y": 488
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4508,
+        "y": 502
+      },
+      "topleft": {
+        "x": 4508,
+        "y": 234
+      },
+      "topright": {
+        "x": 5338,
+        "y": 234
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 5338,
+        "y": 498
+      },
+      "row": 0
+    }
+  ],
+  "columns": 3,
+  "rows": 1
+}

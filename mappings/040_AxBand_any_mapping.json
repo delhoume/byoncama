@@ -1,0 +1,150 @@
+{
+  "image": "040_Ax_les_thermes_btv1b53095200g",
+  "targetHeight": 300,
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 523,
+        "y": 9672
+      },
+      "topleft": {
+        "x": 523,
+        "y": 9401
+      },
+      "topright": {
+        "x": 2275,
+        "y": 9401
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2275,
+        "y": 9672
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2332,
+        "y": 9672
+      },
+      "topleft": {
+        "x": 2324,
+        "y": 9401
+      },
+      "topright": {
+        "x": 4432,
+        "y": 9401
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4431,
+        "y": 9672
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 4474,
+        "y": 9672
+      },
+      "topleft": {
+        "x": 4479,
+        "y": 9401
+      },
+      "topright": {
+        "x": 6578,
+        "y": 9401
+      },
+      "column": 2,
+      "bottomright": {
+        "x": 6577,
+        "y": 9672
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 6624,
+        "y": 9671
+      },
+      "topleft": {
+        "x": 6630,
+        "y": 9401
+      },
+      "topright": {
+        "x": 8739,
+        "y": 9384
+      },
+      "column": 3,
+      "bottomright": {
+        "x": 8741,
+        "y": 9674
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 8785,
+        "y": 9688
+      },
+      "topleft": {
+        "x": 8780,
+        "y": 9397
+      },
+      "topright": {
+        "x": 10887,
+        "y": 9382
+      },
+      "column": 4,
+      "bottomright": {
+        "x": 10882,
+        "y": 9676
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 10922,
+        "y": 9683
+      },
+      "topleft": {
+        "x": 10919,
+        "y": 9389
+      },
+      "topright": {
+        "x": 13001,
+        "y": 9381
+      },
+      "column": 5,
+      "bottomright": {
+        "x": 12998,
+        "y": 9677
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 13038,
+        "y": 9684
+      },
+      "topleft": {
+        "x": 13042,
+        "y": 9382
+      },
+      "topright": {
+        "x": 14813,
+        "y": 9374
+      },
+      "column": 6,
+      "bottomright": {
+        "x": 14814,
+        "y": 9662
+      },
+      "row": 0
+    }
+  ],
+  "columns": 7,
+  "comment": "small band between 040 and 04bis",
+  "useWidths": [ 1778,2131,2124,2132,2128,2123,1789 ],
+  "rows": 1
+}

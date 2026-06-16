@@ -1,0 +1,147 @@
+{
+  "image": "123_Aix_en_Provence_btv1b530952478",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 599,
+        "y": 9782
+      },
+      "topleft": {
+        "x": 599,
+        "y": 9499
+      },
+      "topright": {
+        "x": 2360,
+        "y": 9501
+      },
+      "column": 0,
+      "row": 0,
+      "bottomright": {
+        "x": 2359,
+        "y": 9782
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2414,
+        "y": 9786
+      },
+      "topleft": {
+        "x": 2419,
+        "y": 9507
+      },
+      "topright": {
+        "x": 4532,
+        "y": 9494
+      },
+      "column": 1,
+      "row": 0,
+      "bottomright": {
+        "x": 4532,
+        "y": 9774
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4586,
+        "y": 9771
+      },
+      "topleft": {
+        "x": 4584,
+        "y": 9496
+      },
+      "topright": {
+        "x": 6697,
+        "y": 9487
+      },
+      "column": 2,
+      "row": 0,
+      "bottomright": {
+        "x": 6700,
+        "y": 9753
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 6762,
+        "y": 9757
+      },
+      "topleft": {
+        "x": 6761,
+        "y": 9493
+      },
+      "topright": {
+        "x": 8880,
+        "y": 9487
+      },
+      "column": 3,
+      "row": 0,
+      "bottomright": {
+        "x": 8881,
+        "y": 9764
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 8951,
+        "y": 9761
+      },
+      "topleft": {
+        "x": 8951,
+        "y": 9486
+      },
+      "topright": {
+        "x": 11064,
+        "y": 9460
+      },
+      "column": 4,
+      "row": 0,
+      "bottomright": {
+        "x": 11071,
+        "y": 9739
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 11127,
+        "y": 9744
+      },
+      "topleft": {
+        "x": 11121,
+        "y": 9461
+      },
+      "topright": {
+        "x": 13222,
+        "y": 9450
+      },
+      "column": 5,
+      "row": 0,
+      "bottomright": {
+        "x": 13226,
+        "y": 9721
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 13278,
+        "y": 9722
+      },
+      "topleft": {
+        "x": 13275,
+        "y": 9444
+      },
+      "topright": {
+        "x": 14992,
+        "y": 9438
+      },
+      "column": 6,
+      "row": 0,
+      "bottomright": {
+        "x": 14990,
+        "y": 9722
+      }
+    }
+  ],
+  "columns": 7,
+  "rows": 1
+}

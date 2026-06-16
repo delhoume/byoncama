@@ -1,0 +1,58 @@
+echo 171_Carhaix_btv1b53095252f
+  echo Extracting 3 rows and 7 columns
+   magick /Users/fredericdelhoume/Downloads/Cassini/GallicaPngs/171_Carhaix_btv1b53095252f.png    \( +clone -distort Perspective '279,507 0 0 291,3415 0,2897 2363,3399 2075,2897  2357,513 2075,0' -crop 2075x2897+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_0_0_crop.png +delete \) \
+   \( +clone -distort Perspective '2417,505 0 0 2430,3411 0,2904 4520,3409 2089,2904  4505,506 2089,0' -crop 2089x2904+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_1_0_crop.png +delete \) \
+   \( +clone -distort Perspective '4568,505 0 0 4577,3413 0,2905 6666,3418 2093,2905  6666,516 2093,0' -crop 2093x2905+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_2_0_crop.png +delete \) \
+   \( +clone -distort Perspective '6734,509 0 0 6742,3421 0,2913 8817,3414 2080,2913  8820,500 2080,0' -crop 2080x2913+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_3_0_crop.png +delete \) \
+   \( +clone -distort Perspective '8898,492 0 0 8879,3412 0,2920 10969,3422 2088,2920  10985,501 2088,0' -crop 2088x2920+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_4_0_crop.png +delete \) \
+   \( +clone -distort Perspective '11059,506 0 0 11041,3420 0,2915 13126,3424 2088,2915  13150,508 2088,0' -crop 2088x2915+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_5_0_crop.png +delete \) \
+   \( +clone -distort Perspective '13218,511 0 0 13199,3428 0,2912 14759,3427 1558,2912  14774,519 1558,0' -crop 1558x2912+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_6_0_crop.png +delete \) \
+   \( +clone -distort Perspective '278,3463 0 0 275,6639 0,3174 2351,6644 2072,3174  2347,3472 2072,0' -crop 2072x3174+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_0_1_crop.png +delete \) \
+   \( +clone -distort Perspective '2427,3471 0 0 2413,6644 0,3172 4493,6649 2079,3172  4505,3478 2079,0' -crop 2079x3172+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_1_1_crop.png +delete \) \
+   \( +clone -distort Perspective '4571,3479 0 0 4561,6641 0,3166 6649,6662 2086,3166  6656,3492 2086,0' -crop 2086x3166+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_2_1_crop.png +delete \) \
+   \( +clone -distort Perspective '6732,3475 0 0 6712,6652 0,3174 8801,6661 2089,3174  8821,3489 2089,0' -crop 2089x3174+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_3_1_crop.png +delete \) \
+   \( +clone -distort Perspective '8865,3498 0 0 8862,6665 0,3172 10955,6675 2097,3172  10967,3497 2097,0' -crop 2097x3172+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_4_1_crop.png +delete \) \
+   \( +clone -distort Perspective '11034,3487 0 0 11030,6670 0,3178 13123,6661 2093,3178  13127,3487 2093,0' -crop 2093x3178+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_5_1_crop.png +delete \) \
+   \( +clone -distort Perspective '13201,3482 0 0 13195,6667 0,3182 14750,6663 1556,3182  14758,3484 1556,0' -crop 1556x3182+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_6_1_crop.png +delete \) \
+   \( +clone -distort Perspective '277,6698 0 0 267,9473 0,2772 2342,9474 2072,2772  2346,6705 2072,0' -crop 2072x2772+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_0_2_crop.png +delete \) \
+   \( +clone -distort Perspective '2408,6703 0 0 2425,9467 0,2770 4500,9466 2082,2770  4498,6690 2082,0' -crop 2082x2770+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_1_2_crop.png +delete \) \
+   \( +clone -distort Perspective '4559,6709 0 0 4560,9474 0,2762 6648,9478 2091,2762  6654,6718 2091,0' -crop 2091x2762+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_2_2_crop.png +delete \) \
+   \( +clone -distort Perspective '6713,6725 0 0 6709,9486 0,2762 8792,9491 2087,2762  8804,6728 2087,0' -crop 2087x2762+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_3_2_crop.png +delete \) \
+   \( +clone -distort Perspective '8860,6742 0 0 8882,9500 0,2759 10972,9490 2091,2759  10952,6729 2091,0' -crop 2091x2759+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_4_2_crop.png +delete \) \
+   \( +clone -distort Perspective '11034,6741 0 0 11048,9490 0,2750 13141,9483 2089,2750  13120,6731 2089,0' -crop 2089x2750+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_5_2_crop.png +delete \) \
+   \( +clone -distort Perspective '13196,6733 0 0 13206,9481 0,2746 14745,9477 1543,2746  14743,6732 1543,0' -crop 1543x2746+0+0 -compress None -write /tmp/171_Carhaix_btv1b53095252f_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick  /tmp/171_Carhaix_btv1b53095252f_0_0_crop.png -resize 2075x2897! /tmp/171_Carhaix_btv1b53095252f_0_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_1_0_crop.png -resize 2089x2897! /tmp/171_Carhaix_btv1b53095252f_1_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_2_0_crop.png -resize 2093x2897! /tmp/171_Carhaix_btv1b53095252f_2_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_3_0_crop.png -resize 2080x2897! /tmp/171_Carhaix_btv1b53095252f_3_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_4_0_crop.png -resize 2088x2897! /tmp/171_Carhaix_btv1b53095252f_4_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_5_0_crop.png -resize 2088x2897! /tmp/171_Carhaix_btv1b53095252f_5_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_6_0_crop.png -resize 1558x2897! /tmp/171_Carhaix_btv1b53095252f_6_0_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_0_1_crop.png -resize 2075x3174! /tmp/171_Carhaix_btv1b53095252f_0_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_1_1_crop.png -resize 2089x3174! /tmp/171_Carhaix_btv1b53095252f_1_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_2_1_crop.png -resize 2093x3174! /tmp/171_Carhaix_btv1b53095252f_2_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_3_1_crop.png -resize 2080x3174! /tmp/171_Carhaix_btv1b53095252f_3_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_4_1_crop.png -resize 2088x3174! /tmp/171_Carhaix_btv1b53095252f_4_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_5_1_crop.png -resize 2088x3174! /tmp/171_Carhaix_btv1b53095252f_5_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_6_1_crop.png -resize 1558x3174! /tmp/171_Carhaix_btv1b53095252f_6_1_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_0_2_crop.png -resize 2075x2772! /tmp/171_Carhaix_btv1b53095252f_0_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_1_2_crop.png -resize 2089x2772! /tmp/171_Carhaix_btv1b53095252f_1_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_2_2_crop.png -resize 2093x2772! /tmp/171_Carhaix_btv1b53095252f_2_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_3_2_crop.png -resize 2080x2772! /tmp/171_Carhaix_btv1b53095252f_3_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_4_2_crop.png -resize 2088x2772! /tmp/171_Carhaix_btv1b53095252f_4_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_5_2_crop.png -resize 2088x2772! /tmp/171_Carhaix_btv1b53095252f_5_2_crop2.png
+magick  /tmp/171_Carhaix_btv1b53095252f_6_2_crop.png -resize 1558x2772! /tmp/171_Carhaix_btv1b53095252f_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick /tmp/171_Carhaix_btv1b53095252f_0_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_1_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_2_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_3_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_4_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_5_0_crop2.png /tmp/171_Carhaix_btv1b53095252f_6_0_crop2.png +append /tmp/171_Carhaix_btv1b53095252f_row0.png
+echo making elements for row 1
+magick /tmp/171_Carhaix_btv1b53095252f_0_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_1_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_2_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_3_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_4_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_5_1_crop2.png /tmp/171_Carhaix_btv1b53095252f_6_1_crop2.png +append /tmp/171_Carhaix_btv1b53095252f_row1.png
+echo making elements for row 2
+magick /tmp/171_Carhaix_btv1b53095252f_0_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_1_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_2_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_3_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_4_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_5_2_crop2.png /tmp/171_Carhaix_btv1b53095252f_6_2_crop2.png +append /tmp/171_Carhaix_btv1b53095252f_row2.png
+echo assembling rows
+magick /tmp/171_Carhaix_btv1b53095252f_row0.png /tmp/171_Carhaix_btv1b53095252f_row1.png /tmp/171_Carhaix_btv1b53095252f_row2.png -append -compress Zip /Users/fredericdelhoume/Downloads/Cassini/PerfectTiffs/171_Carhaix_btv1b53095252f.tif
+echo deleting temporary files
+rm -rf /tmp/171_Carhaix_btv1b53095252f*.png
+echo done

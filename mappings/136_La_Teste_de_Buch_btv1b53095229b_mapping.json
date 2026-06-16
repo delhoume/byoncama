@@ -1,0 +1,128 @@
+{
+  "image": "136_La_Teste_de_Buch_btv1b53095229b",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 186,
+        "y": 3231
+      },
+      "topleft": {
+        "x": 186,
+        "y": 371
+      },
+      "topright": {
+        "x": 2216,
+        "y": 372
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2211,
+        "y": 3231
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2285,
+        "y": 3234
+      },
+      "topleft": {
+        "x": 2277,
+        "y": 375
+      },
+      "topright": {
+        "x": 4383,
+        "y": 364
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4399,
+        "y": 3227
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 189,
+        "y": 6447
+      },
+      "topleft": {
+        "x": 189,
+        "y": 3306
+      },
+      "topright": {
+        "x": 2211,
+        "y": 3307
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2219,
+        "y": 6448
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2303,
+        "y": 6451
+      },
+      "topleft": {
+        "x": 2286,
+        "y": 3309
+      },
+      "topright": {
+        "x": 4399,
+        "y": 3297
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4410,
+        "y": 6454
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 190,
+        "y": 9288
+      },
+      "topleft": {
+        "x": 190,
+        "y": 6516
+      },
+      "topright": {
+        "x": 2211,
+        "y": 6510
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2228,
+        "y": 9288
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2292,
+        "y": 9286
+      },
+      "topleft": {
+        "x": 2293,
+        "y": 6512
+      },
+      "topright": {
+        "x": 4406,
+        "y": 6523
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4396,
+        "y": 9300
+      },
+      "row": 2
+    }
+  ],
+  "columns": 2,
+  "rows": 3,
+  "targetWidth": 4060
+}

@@ -1,0 +1,128 @@
+{
+  "image": "134_Ile_dOleron_btv1b53095155d",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 690,
+        "y": 3374
+      },
+      "topleft": {
+        "x": 707,
+        "y": 486
+      },
+      "topright": {
+        "x": 2310,
+        "y": 485
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2305,
+        "y": 3386
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 2375,
+        "y": 3394
+      },
+      "topleft": {
+        "x": 2376,
+        "y": 491
+      },
+      "topright": {
+        "x": 4450,
+        "y": 484
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4467,
+        "y": 3389
+      },
+      "row": 0
+    },
+    {
+      "bottomleft": {
+        "x": 685,
+        "y": 6656
+      },
+      "topleft": {
+        "x": 680,
+        "y": 3464
+      },
+      "topright": {
+        "x": 2301,
+        "y": 3462
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2295,
+        "y": 6653
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 2382,
+        "y": 6655
+      },
+      "topleft": {
+        "x": 2375,
+        "y": 3461
+      },
+      "topright": {
+        "x": 4460,
+        "y": 3464
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4451,
+        "y": 6645
+      },
+      "row": 1
+    },
+    {
+      "bottomleft": {
+        "x": 693,
+        "y": 9476
+      },
+      "topleft": {
+        "x": 688,
+        "y": 6742
+      },
+      "topright": {
+        "x": 2306,
+        "y": 6734
+      },
+      "column": 0,
+      "bottomright": {
+        "x": 2312,
+        "y": 9487
+      },
+      "row": 2
+    },
+    {
+      "bottomleft": {
+        "x": 2383,
+        "y": 9484
+      },
+      "topleft": {
+        "x": 2381,
+        "y": 6731
+      },
+      "topright": {
+        "x": 4451,
+        "y": 6737
+      },
+      "column": 1,
+      "bottomright": {
+        "x": 4455,
+        "y": 9487
+      },
+      "row": 2
+    }
+  ],
+  "columns": "2",
+  "rows": "3",
+  "targetWidth": 4060
+}

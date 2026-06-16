@@ -1,0 +1,427 @@
+{
+  "image": "027_Chartres_btv1b530951361",
+  "mapping": [
+    {
+      "bottomleft": {
+        "x": 506,
+        "y": 3342
+      },
+      "topleft": {
+        "x": 515,
+        "y": 528
+      },
+      "topright": {
+        "x": 2276,
+        "y": 521
+      },
+      "column": 0,
+      "row": 0,
+      "bottomright": {
+        "x": 2272,
+        "y": 3351
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2310,
+        "y": 3348
+      },
+      "topleft": {
+        "x": 2322,
+        "y": 510
+      },
+      "topright": {
+        "x": 4409,
+        "y": 510
+      },
+      "column": 1,
+      "row": 0,
+      "bottomright": {
+        "x": 4411,
+        "y": 3352
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4460,
+        "y": 3349
+      },
+      "topleft": {
+        "x": 4462,
+        "y": 502
+      },
+      "topright": {
+        "x": 6559,
+        "y": 505
+      },
+      "column": 2,
+      "row": 0,
+      "bottomright": {
+        "x": 6568,
+        "y": 3334
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 6618,
+        "y": 3330
+      },
+      "topleft": {
+        "x": 6626,
+        "y": 498
+      },
+      "topright": {
+        "x": 8732,
+        "y": 493
+      },
+      "column": 3,
+      "row": 0,
+      "bottomright": {
+        "x": 8728,
+        "y": 3328
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 8765,
+        "y": 3337
+      },
+      "topleft": {
+        "x": 8781,
+        "y": 501
+      },
+      "topright": {
+        "x": 10885,
+        "y": 513
+      },
+      "column": 4,
+      "row": 0,
+      "bottomright": {
+        "x": 10873,
+        "y": 3341
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 10912,
+        "y": 3336
+      },
+      "topleft": {
+        "x": 10931,
+        "y": 513
+      },
+      "topright": {
+        "x": 13036,
+        "y": 521
+      },
+      "column": 5,
+      "row": 0,
+      "bottomright": {
+        "x": 13007,
+        "y": 3343
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 13057,
+        "y": 3342
+      },
+      "topleft": {
+        "x": 13081,
+        "y": 523
+      },
+      "topright": {
+        "x": 14832,
+        "y": 533
+      },
+      "column": 6,
+      "row": 0,
+      "bottomright": {
+        "x": 14816,
+        "y": 3347
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 505,
+        "y": 6562
+      },
+      "topleft": {
+        "x": 509,
+        "y": 3403
+      },
+      "topright": {
+        "x": 2270,
+        "y": 3395
+      },
+      "column": 0,
+      "row": 1,
+      "bottomright": {
+        "x": 2288,
+        "y": 6562
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2329,
+        "y": 6565
+      },
+      "topleft": {
+        "x": 2314,
+        "y": 3412
+      },
+      "topright": {
+        "x": 4418,
+        "y": 3398
+      },
+      "column": 1,
+      "row": 1,
+      "bottomright": {
+        "x": 4429,
+        "y": 6565
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4477,
+        "y": 6557
+      },
+      "topleft": {
+        "x": 4464,
+        "y": 3392
+      },
+      "topright": {
+        "x": 6573,
+        "y": 3394
+      },
+      "column": 2,
+      "row": 1,
+      "bottomright": {
+        "x": 6576,
+        "y": 6549
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 6625,
+        "y": 6555
+      },
+      "topleft": {
+        "x": 6618,
+        "y": 3384
+      },
+      "topright": {
+        "x": 8717,
+        "y": 3383
+      },
+      "column": 3,
+      "row": 1,
+      "bottomright": {
+        "x": 8713,
+        "y": 6550
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 8758,
+        "y": 6563
+      },
+      "topleft": {
+        "x": 8765,
+        "y": 3390
+      },
+      "topright": {
+        "x": 10860,
+        "y": 3388
+      },
+      "column": 4,
+      "row": 1,
+      "bottomright": {
+        "x": 10860,
+        "y": 6563
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 10907,
+        "y": 6562
+      },
+      "topleft": {
+        "x": 10910,
+        "y": 3387
+      },
+      "topright": {
+        "x": 13007,
+        "y": 3396
+      },
+      "column": 5,
+      "row": 1,
+      "bottomright": {
+        "x": 13006,
+        "y": 6566
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 13041,
+        "y": 6563
+      },
+      "topleft": {
+        "x": 13050,
+        "y": 3391
+      },
+      "topright": {
+        "x": 14818,
+        "y": 3394
+      },
+      "column": 6,
+      "row": 1,
+      "bottomright": {
+        "x": 14802,
+        "y": 6571
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 504,
+        "y": 9455
+      },
+      "topleft": {
+        "x": 501,
+        "y": 6620
+      },
+      "topright": {
+        "x": 2286,
+        "y": 6620
+      },
+      "column": 0,
+      "row": 2,
+      "bottomright": {
+        "x": 2284,
+        "y": 9465
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 2335,
+        "y": 9466
+      },
+      "topleft": {
+        "x": 2323,
+        "y": 6620
+      },
+      "topright": {
+        "x": 4424,
+        "y": 6620
+      },
+      "column": 1,
+      "row": 2,
+      "bottomright": {
+        "x": 4431,
+        "y": 9455
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 4484,
+        "y": 9449
+      },
+      "topleft": {
+        "x": 4472,
+        "y": 6618
+      },
+      "topright": {
+        "x": 6576,
+        "y": 6603
+      },
+      "column": 2,
+      "row": 2,
+      "bottomright": {
+        "x": 6579,
+        "y": 9446
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 6628,
+        "y": 9451
+      },
+      "topleft": {
+        "x": 6624,
+        "y": 6609
+      },
+      "topright": {
+        "x": 8722,
+        "y": 6613
+      },
+      "column": 3,
+      "row": 2,
+      "bottomright": {
+        "x": 8725,
+        "y": 9439
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 8768,
+        "y": 9447
+      },
+      "topleft": {
+        "x": 8768,
+        "y": 6614
+      },
+      "topright": {
+        "x": 10861,
+        "y": 6614
+      },
+      "column": 4,
+      "row": 2,
+      "bottomright": {
+        "x": 10866,
+        "y": 9446
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 10914,
+        "y": 9453
+      },
+      "topleft": {
+        "x": 10901,
+        "y": 6618
+      },
+      "topright": {
+        "x": 13003,
+        "y": 6612
+      },
+      "column": 5,
+      "row": 2,
+      "bottomright": {
+        "x": 13003,
+        "y": 9453
+      }
+    },
+    {
+      "bottomleft": {
+        "x": 13043,
+        "y": 9451
+      },
+      "topleft": {
+        "x": 13046,
+        "y": 6611
+      },
+      "topright": {
+        "x": 14802,
+        "y": 6617
+      },
+      "column": 6,
+      "row": 2,
+      "bottomright": {
+        "x": 14797,
+        "y": 9451
+      }
+    }
+  ],
+  "columns": 7,
+  "rows": 3
+}
