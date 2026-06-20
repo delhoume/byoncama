@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 114_Dijon_btv1b53095148b
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/114_Dijon_btv1b53095148b.png  \( +clone +distort Perspective '543,474 0 0 525,3348 0,2879 2305,3348 1773,2879  2309,464 1773,0' -crop 1773x2879+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2341,465 0 0 2345,3353 0,2891 4439,3359 2097,2891  4442,465 2097,0' -crop 2097x2891+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4489,464 0 0 4481,3364 0,2902 6585,3368 2097,2902  6580,463 2097,0' -crop 2097x2902+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6623,462 0 0 6622,3367 0,2903 8714,3367 2093,2903  8718,465 2093,0' -crop 2093x2903+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8763,462 0 0 8758,3363 0,2899 10860,3361 2099,2899  10859,464 2099,0' -crop 2099x2899+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10898,464 0 0 10906,3362 0,2900 13002,3371 2098,2900  12999,469 2098,0' -crop 2098x2900+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13045,475 0 0 13048,3372 0,2894 14831,3361 1772,2894  14806,470 1772,0' -crop 1772x2894+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '518,3404 0 0 507,6516 0,3117 2296,6518 1784,3117  2298,3396 1784,0' -crop 1784x3117+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2354,3397 0 0 2350,6531 0,3132 4433,6530 2087,3132  4446,3400 2087,0' -crop 2087x3132+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4489,3406 0 0 4484,6530 0,3129 6577,6538 2095,3129  6586,3403 2095,0' -crop 2095x3129+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6628,3412 0 0 6611,6540 0,3130 8714,6544 2096,3130  8717,3411 2096,0' -crop 2096x3130+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8756,3410 0 0 8757,6544 0,3133 10867,6546 2105,3133  10856,3413 2105,0' -crop 2105x3133+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10900,3409 0 0 10907,6548 0,3140 12996,6554 2096,3140  13004,3413 2096,0' -crop 2096x3140+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13044,3412 0 0 13038,6554 0,3137 14806,6546 1780,3137  14837,3413 1780,0' -crop 1780x3137+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '509,6566 0 0 504,9399 0,2831 2289,9388 1785,2831  2295,6559 1785,0' -crop 1785x2831+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2338,6569 0 0 2336,9389 0,2816 4435,9381 2097,2816  4434,6568 2097,0' -crop 2097x2816+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4484,6569 0 0 4479,9380 0,2809 6572,9385 2094,2809  6579,6578 2094,0' -crop 2094x2809+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6621,6583 0 0 6611,9387 0,2802 8705,9384 2091,2802  8710,6584 2091,0' -crop 2091x2802+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8757,6586 0 0 8746,9385 0,2799 10841,9393 2097,2799  10857,6593 2097,0' -crop 2097x2799+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10899,6591 0 0 10888,9393 0,2805 12982,9407 2091,2805  12987,6599 2091,0' -crop 2091x2805+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13031,6593 0 0 13034,9409 0,2812 14798,9399 1772,2812  14811,6590 1772,0' -crop 1772x2812+0+0 -compress None -write $TMP_FOLDER/114_Dijon_btv1b53095148b_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_0_crop.png -resize 1773x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_0_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_1_0_crop.png -resize 2097x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_1_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_2_0_crop.png -resize 2097x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_2_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_3_0_crop.png -resize 2093x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_3_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_4_0_crop.png -resize 2099x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_4_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_5_0_crop.png -resize 2098x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_5_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_6_0_crop.png -resize 1772x2879! $TMP_FOLDER/114_Dijon_btv1b53095148b_6_0_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_1_crop.png -resize 1773x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_0_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_1_1_crop.png -resize 2097x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_1_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_2_1_crop.png -resize 2097x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_2_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_3_1_crop.png -resize 2093x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_3_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_4_1_crop.png -resize 2099x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_4_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_5_1_crop.png -resize 2098x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_5_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_6_1_crop.png -resize 1772x3117! $TMP_FOLDER/114_Dijon_btv1b53095148b_6_1_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_2_crop.png -resize 1773x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_0_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_1_2_crop.png -resize 2097x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_1_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_2_2_crop.png -resize 2097x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_2_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_3_2_crop.png -resize 2093x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_3_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_4_2_crop.png -resize 2099x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_4_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_5_2_crop.png -resize 2098x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_5_2_crop2.png
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_6_2_crop.png -resize 1772x2831! $TMP_FOLDER/114_Dijon_btv1b53095148b_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_1_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_2_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_3_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_4_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_5_0_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_6_0_crop2.png +append $TMP_FOLDER/114_Dijon_btv1b53095148b_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_1_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_2_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_3_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_4_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_5_1_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_6_1_crop2.png +append $TMP_FOLDER/114_Dijon_btv1b53095148b_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_0_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_1_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_2_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_3_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_4_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_5_2_crop2.png $TMP_FOLDER/114_Dijon_btv1b53095148b_6_2_crop2.png +append $TMP_FOLDER/114_Dijon_btv1b53095148b_row2.png
+echo assembling rows
+magick $TMP_FOLDER/114_Dijon_btv1b53095148b_row0.png $TMP_FOLDER/114_Dijon_btv1b53095148b_row1.png $TMP_FOLDER/114_Dijon_btv1b53095148b_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/114_Dijon_btv1b53095148b.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

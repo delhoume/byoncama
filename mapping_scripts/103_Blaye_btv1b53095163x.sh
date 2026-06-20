@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 103_Blaye_btv1b53095163x
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/103_Blaye_btv1b53095163x.png  \( +clone +distort Perspective '259,475 0 0 250,3372 0,2899 2337,3379 2085,2899  2343,477 2085,0' -crop 2085x2899+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2395,479 0 0 2390,3381 0,2900 4481,3382 2094,2900  4492,483 2094,0' -crop 2094x2900+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4543,495 0 0 4536,3381 0,2892 6625,3389 2089,2892  6633,490 2089,0' -crop 2089x2892+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6681,485 0 0 6673,3385 0,2900 8775,3392 2094,2900  8767,492 2094,0' -crop 2094x2900+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8809,488 0 0 8827,3392 0,2902 10920,3384 2098,2902  10912,483 2098,0' -crop 2098x2902+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10965,484 0 0 10966,3386 0,2901 13056,3374 2086,2901  13047,473 2086,0' -crop 2086x2901+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13090,478 0 0 13100,3374 0,2893 14620,3366 1521,2893  14613,476 1521,0' -crop 1521x2893+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '242,3426 0 0 223,6606 0,3175 2329,6610 2101,3175  2339,3439 2101,0' -crop 2101x3175+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2379,3432 0 0 2375,6606 0,3174 4466,6616 2096,3174  4481,3442 2096,0' -crop 2096x3174+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4534,3438 0 0 4526,6617 0,3173 6615,6610 2089,3173  6624,3443 2089,0' -crop 2089x3173+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6669,3440 0 0 6676,6610 0,3169 8772,6606 2100,3169  8773,3438 2100,0' -crop 2100x3169+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8818,3438 0 0 8824,6608 0,3170 10918,6607 2098,3170  10921,3436 2098,0' -crop 2098x3170+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10962,3434 0 0 10974,6615 0,3176 13065,6604 2091,3176  13054,3432 2091,0' -crop 2091x3176+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13105,3423 0 0 13113,6603 0,3183 14614,6610 1508,3183  14620,3424 1508,0' -crop 1508x3183+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '221,6666 0 0 220,9420 0,2753 2316,9420 2095,2753  2316,6668 2095,0' -crop 2095x2753+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2366,6667 0 0 2370,9423 0,2760 4464,9430 2097,2760  4466,6666 2097,0' -crop 2097x2760+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4523,6665 0 0 4514,9427 0,2766 6615,9426 2098,2766  6619,6656 2098,0' -crop 2098x2766+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6673,6662 0 0 6677,9429 0,2770 8792,9429 2103,2770  8764,6656 2103,0' -crop 2103x2770+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8815,6662 0 0 8843,9438 0,2770 10939,9423 2097,2770  10914,6659 2097,0' -crop 2097x2770+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10976,6661 0 0 10994,9430 0,2766 13080,9422 2082,2766  13055,6659 2082,0' -crop 2082x2766+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13102,6661 0 0 13130,9432 0,2773 14612,9429 1493,2773  14607,6654 1493,0' -crop 1493x2773+0+0 -compress None -write $TMP_FOLDER/103_Blaye_btv1b53095163x_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_0_crop.png -resize 2085x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_0_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_1_0_crop.png -resize 2094x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_1_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_2_0_crop.png -resize 2089x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_2_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_3_0_crop.png -resize 2094x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_3_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_4_0_crop.png -resize 2098x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_4_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_5_0_crop.png -resize 2086x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_5_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_6_0_crop.png -resize 1521x2899! $TMP_FOLDER/103_Blaye_btv1b53095163x_6_0_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_1_crop.png -resize 2085x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_0_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_1_1_crop.png -resize 2094x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_1_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_2_1_crop.png -resize 2089x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_2_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_3_1_crop.png -resize 2094x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_3_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_4_1_crop.png -resize 2098x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_4_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_5_1_crop.png -resize 2086x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_5_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_6_1_crop.png -resize 1521x3175! $TMP_FOLDER/103_Blaye_btv1b53095163x_6_1_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_2_crop.png -resize 2085x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_0_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_1_2_crop.png -resize 2094x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_1_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_2_2_crop.png -resize 2089x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_2_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_3_2_crop.png -resize 2094x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_3_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_4_2_crop.png -resize 2098x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_4_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_5_2_crop.png -resize 2086x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_5_2_crop2.png
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_6_2_crop.png -resize 1521x2753! $TMP_FOLDER/103_Blaye_btv1b53095163x_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_1_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_2_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_3_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_4_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_5_0_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_6_0_crop2.png +append $TMP_FOLDER/103_Blaye_btv1b53095163x_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_1_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_2_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_3_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_4_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_5_1_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_6_1_crop2.png +append $TMP_FOLDER/103_Blaye_btv1b53095163x_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_0_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_1_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_2_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_3_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_4_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_5_2_crop2.png $TMP_FOLDER/103_Blaye_btv1b53095163x_6_2_crop2.png +append $TMP_FOLDER/103_Blaye_btv1b53095163x_row2.png
+echo assembling rows
+magick $TMP_FOLDER/103_Blaye_btv1b53095163x_row0.png $TMP_FOLDER/103_Blaye_btv1b53095163x_row1.png $TMP_FOLDER/103_Blaye_btv1b53095163x_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/103_Blaye_btv1b53095163x.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

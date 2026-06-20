@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 064_LeMans_btv1b530951094
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/064_LeMans_btv1b530951094.png  \( +clone +distort Perspective '510,502 0 0 491,3380 0,2882 2284,3389 1790,2882  2297,503 1790,0' -crop 1790x2882+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2345,492 0 0 2343,3368 0,2883 4457,3375 2110,2883  4452,485 2110,0' -crop 2110x2883+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4514,476 0 0 4508,3373 0,2894 6620,3372 2114,2894  6631,480 2114,0' -crop 2114x2894+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6688,468 0 0 6669,3364 0,2890 8778,3370 2105,2890  8790,485 2105,0' -crop 2105x2890+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8846,470 0 0 8829,3370 0,2892 10936,3373 2106,2892  10952,488 2106,0' -crop 2106x2892+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10992,474 0 0 10992,3364 0,2884 13092,3358 2102,2884  13097,479 2102,0' -crop 2102x2884+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13153,480 0 0 13133,3368 0,2885 14900,3373 1762,2885  14910,490 1762,0' -crop 1762x2885+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '481,3438 0 0 494,6596 0,3158 2269,6599 1784,3158  2274,3440 1784,0' -crop 1784x3158+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2339,3422 0 0 2326,6589 0,3157 4434,6581 2106,3157  4443,3434 2106,0' -crop 2106x3157+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4505,3427 0 0 4498,6585 0,3152 6608,6571 2108,3152  6611,3425 2108,0' -crop 2108x3152+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6675,3418 0 0 6658,6567 0,3154 8758,6585 2098,3154  8772,3426 2098,0' -crop 2098x3154+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8822,3413 0 0 8806,6570 0,3160 10909,6586 2108,3160  10935,3423 2108,0' -crop 2108x3160+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10987,3415 0 0 10973,6579 0,3166 13080,6583 2105,3166  13090,3415 2105,0' -crop 2105x3166+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13139,3414 0 0 13119,6591 0,3169 14888,6584 1766,3169  14902,3423 1766,0' -crop 1766x3169+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '494,6649 0 0 529,9456 0,2802 2290,9439 1770,2802  2274,6642 1770,0' -crop 1770x2802+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2332,6635 0 0 2339,9440 0,2803 4445,9433 2104,2803  4434,6631 2104,0' -crop 2104x2803+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4489,6635 0 0 4504,9444 0,2809 6607,9427 2109,2809  6604,6618 2109,0' -crop 2109x2809+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6659,6623 0 0 6663,9428 0,2800 8774,9414 2104,2800  8756,6619 2104,0' -crop 2104x2800+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8803,6630 0 0 8818,9426 0,2795 10923,9413 2100,2795  10898,6618 2100,0' -crop 2100x2795+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10965,6627 0 0 10971,9426 0,2794 13078,9421 2107,2794  13073,6632 2107,0' -crop 2107x2794+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13127,6625 0 0 13119,9419 0,2794 14872,9422 1763,2794  14900,6628 1763,0' -crop 1763x2794+0+0 -compress None -write $TMP_FOLDER/064_LeMans_btv1b530951094_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_0_crop.png -resize 1790x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_0_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_1_0_crop.png -resize 2110x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_1_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_2_0_crop.png -resize 2114x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_2_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_3_0_crop.png -resize 2105x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_3_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_4_0_crop.png -resize 2106x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_4_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_5_0_crop.png -resize 2102x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_5_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_6_0_crop.png -resize 1762x2882! $TMP_FOLDER/064_LeMans_btv1b530951094_6_0_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_1_crop.png -resize 1790x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_0_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_1_1_crop.png -resize 2110x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_1_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_2_1_crop.png -resize 2114x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_2_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_3_1_crop.png -resize 2105x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_3_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_4_1_crop.png -resize 2106x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_4_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_5_1_crop.png -resize 2102x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_5_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_6_1_crop.png -resize 1762x3158! $TMP_FOLDER/064_LeMans_btv1b530951094_6_1_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_2_crop.png -resize 1790x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_0_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_1_2_crop.png -resize 2110x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_1_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_2_2_crop.png -resize 2114x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_2_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_3_2_crop.png -resize 2105x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_3_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_4_2_crop.png -resize 2106x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_4_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_5_2_crop.png -resize 2102x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_5_2_crop2.png
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_6_2_crop.png -resize 1762x2802! $TMP_FOLDER/064_LeMans_btv1b530951094_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_1_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_2_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_3_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_4_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_5_0_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_6_0_crop2.png +append $TMP_FOLDER/064_LeMans_btv1b530951094_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_1_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_2_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_3_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_4_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_5_1_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_6_1_crop2.png +append $TMP_FOLDER/064_LeMans_btv1b530951094_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_0_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_1_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_2_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_3_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_4_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_5_2_crop2.png $TMP_FOLDER/064_LeMans_btv1b530951094_6_2_crop2.png +append $TMP_FOLDER/064_LeMans_btv1b530951094_row2.png
+echo assembling rows
+magick $TMP_FOLDER/064_LeMans_btv1b530951094_row0.png $TMP_FOLDER/064_LeMans_btv1b530951094_row1.png $TMP_FOLDER/064_LeMans_btv1b530951094_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/064_LeMans_btv1b530951094.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

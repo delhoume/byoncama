@@ -1,0 +1,49 @@
+echo extracting  2 rows and 7 columns from 020bis_Puigcerda_btv1b53095218g
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/020bis_Puigcerda_btv1b53095218g.png  \( +clone +distort Perspective '434,188 0 0 454,3129 0,2924 2319,3098 1861,2924  2291,190 1861,0' -crop 1861x2924+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2345,192 0 0 2387,3099 0,2902 4470,3075 2086,2902  4434,177 2086,0' -crop 2086x2902+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4494,170 0 0 4529,3081 0,2902 6600,3067 2083,2902  6590,173 2083,0' -crop 2083x2902+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6645,178 0 0 6662,3073 0,2897 8753,3068 2091,2897  8737,168 2091,0' -crop 2091x2897+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8795,183 0 0 8814,3083 0,2903 10894,3069 2077,2903  10870,163 2077,0' -crop 2077x2903+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10943,175 0 0 10948,3081 0,2908 13026,3067 2080,2908  13026,157 2080,0' -crop 2080x2908+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13074,158 0 0 13081,3067 0,2906 14840,3067 1759,2906  14834,164 1759,0' -crop 1759x2906+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '455,3184 0 0 471,4682 0,1506 2335,4675 1869,1506  2329,3161 1869,0' -crop 1869x1506+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2392,3155 0 0 2399,4675 0,1519 4483,4658 2086,1519  4480,3139 2086,0' -crop 2086x1519+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4529,3140 0 0 4536,4666 0,1523 6617,4649 2080,1523  6608,3129 2080,0' -crop 2080x1523+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6658,3125 0 0 6675,4661 0,1529 8765,4653 2093,1529  8755,3131 2093,0' -crop 2093x1529+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8810,3144 0 0 8827,4671 0,1524 10911,4648 2092,1524  10910,3127 2092,0' -crop 2092x1524+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10944,3138 0 0 10956,4658 0,1522 13035,4646 2080,1522  13025,3121 2080,0' -crop 2080x1522+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13081,3122 0 0 13097,4645 0,1520 14846,4639 1753,1520  14839,3122 1753,0' -crop 1753x1520+0+0 -compress None -write $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_1_crop.png +delete \) \
+ null:
+  echo Combining 2 rows and 7 columns
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_0_crop.png -resize 1861x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_0_crop.png -resize 2086x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_0_crop.png -resize 2083x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_0_crop.png -resize 2091x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_0_crop.png -resize 2077x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_0_crop.png -resize 2080x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_0_crop.png -resize 1759x2924! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_0_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_1_crop.png -resize 1861x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_1_crop.png -resize 2086x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_1_crop.png -resize 2083x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_1_crop.png -resize 2091x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_1_crop.png -resize 2077x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_1_crop.png -resize 2080x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_1_crop2.png
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_1_crop.png -resize 1759x1506! $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_1_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_0_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_0_crop2.png +append $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_0_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_1_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_2_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_3_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_4_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_5_1_crop2.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_6_1_crop2.png +append $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_row1.png
+echo assembling rows
+magick $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_row0.png $TMP_FOLDER/020bis_Puigcerda_btv1b53095218g_row1.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/020bis_Puigcerda_btv1b53095218g.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

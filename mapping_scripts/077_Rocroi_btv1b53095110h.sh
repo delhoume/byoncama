@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 077_Rocroi_btv1b53095110h
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/077_Rocroi_btv1b53095110h.png  \( +clone +distort Perspective '526,454 0 0 518,3316 0,2865 2300,3318 1778,2865  2300,449 1778,0' -crop 1778x2865+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2338,438 0 0 2337,3309 0,2875 4428,3314 2088,2875  4424,434 2088,0' -crop 2088x2875+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4466,432 0 0 4470,3311 0,2877 6557,3303 2097,2877  6573,428 2097,0' -crop 2097x2877+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6620,425 0 0 6610,3302 0,2878 8707,3306 2095,2878  8714,426 2095,0' -crop 2095x2878+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8763,421 0 0 8758,3299 0,2878 10849,3303 2091,2878  10855,425 2091,0' -crop 2091x2878+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10900,413 0 0 10897,3297 0,2882 12982,3298 2092,2882  12999,418 2092,0' -crop 2092x2882+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13039,419 0 0 13029,3294 0,2871 14797,3288 1762,2871  14796,421 1762,0' -crop 1762x2871+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '519,3364 0 0 526,6489 0,3128 2307,6487 1782,3128  2302,3356 1782,0' -crop 1782x3128+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2342,3356 0 0 2339,6490 0,3133 4428,6493 2084,3133  4422,3360 2084,0' -crop 2084x3133+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4463,3363 0 0 4466,6490 0,3130 6551,6493 2087,3130  6553,3360 2087,0' -crop 2087x3130+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6601,3354 0 0 6598,6487 0,3133 8693,6480 2097,3133  8701,3347 2097,0' -crop 2097x3133+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8751,3341 0 0 8745,6481 0,3142 10831,6487 2087,3142  10840,3343 2087,0' -crop 2087x3142+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10888,3344 0 0 10877,6488 0,3148 12973,6493 2095,3148  12983,3340 2095,0' -crop 2095x3148+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13028,3335 0 0 13016,6490 0,3154 14786,6491 1766,3154  14791,3338 1766,0' -crop 1766x3154+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '507,6529 0 0 519,9363 0,2835 2307,9357 1789,2835  2298,6521 1789,0' -crop 1789x2835+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2335,6527 0 0 2346,9360 0,2824 4428,9348 2086,2824  4426,6532 2086,0' -crop 2086x2824+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4458,6537 0 0 4470,9358 0,2816 6564,9348 2099,2816  6562,6537 2099,0' -crop 2099x2816+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6599,6533 0 0 6608,9351 0,2810 8692,9328 2087,2810  8690,6526 2087,0' -crop 2087x2810+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8738,6527 0 0 8738,9330 0,2801 10830,9325 2091,2801  10829,6526 2091,0' -crop 2091x2801+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10875,6529 0 0 10872,9329 0,2797 12966,9325 2095,2797  12971,6531 2095,0' -crop 2095x2797+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13018,6531 0 0 13005,9330 0,2795 14775,9324 1764,2795  14777,6533 1764,0' -crop 1764x2795+0+0 -compress None -write $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_0_crop.png -resize 1778x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_0_crop.png -resize 2088x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_0_crop.png -resize 2097x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_0_crop.png -resize 2095x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_0_crop.png -resize 2091x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_0_crop.png -resize 2092x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_0_crop.png -resize 1762x2865! $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_0_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_1_crop.png -resize 1778x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_1_crop.png -resize 2088x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_1_crop.png -resize 2097x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_1_crop.png -resize 2095x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_1_crop.png -resize 2091x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_1_crop.png -resize 2092x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_1_crop.png -resize 1762x3128! $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_1_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_2_crop.png -resize 1778x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_2_crop.png -resize 2088x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_2_crop.png -resize 2097x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_2_crop.png -resize 2095x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_2_crop.png -resize 2091x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_2_crop.png -resize 2092x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_2_crop2.png
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_2_crop.png -resize 1762x2835! $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_0_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_0_crop2.png +append $TMP_FOLDER/077_Rocroi_btv1b53095110h_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_1_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_1_crop2.png +append $TMP_FOLDER/077_Rocroi_btv1b53095110h_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_0_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_1_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_2_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_3_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_4_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_5_2_crop2.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_6_2_crop2.png +append $TMP_FOLDER/077_Rocroi_btv1b53095110h_row2.png
+echo assembling rows
+magick $TMP_FOLDER/077_Rocroi_btv1b53095110h_row0.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_row1.png $TMP_FOLDER/077_Rocroi_btv1b53095110h_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/077_Rocroi_btv1b53095110h.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

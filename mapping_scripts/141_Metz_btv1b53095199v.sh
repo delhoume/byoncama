@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 141_Metz_btv1b53095199v
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/141_Metz_btv1b53095199v.png  \( +clone +distort Perspective '530,467 0 0 521,3358 0,2894 2316,3362 1787,2894  2309,465 1787,0' -crop 1787x2894+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2348,469 0 0 2355,3366 0,2895 4458,3368 2105,2895  4455,475 2105,0' -crop 2105x2895+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4500,470 0 0 4504,3364 0,2897 6611,3369 2104,2897  6602,469 2104,0' -crop 2104x2897+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6653,473 0 0 6652,3363 0,2895 8738,3379 2091,2895  8749,478 2091,0' -crop 2091x2895+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8792,471 0 0 8793,3381 0,2910 10871,3387 2088,2910  10891,477 2088,0' -crop 2088x2910+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10940,468 0 0 10915,3376 0,2904 13022,3393 2100,2904  13033,493 2100,0' -crop 2100x2904+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13068,488 0 0 13083,3386 0,2897 14861,3385 1784,2897  14859,489 1784,0' -crop 1784x2897+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '518,3408 0 0 518,6547 0,3139 2303,6550 1788,3139  2310,3411 1788,0' -crop 1788x3139+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2353,3416 0 0 2347,6554 0,3144 4435,6570 2091,3144  4447,3419 2091,0' -crop 2091x3144+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4487,3422 0 0 4479,6570 0,3147 6583,6573 2109,3147  6601,3427 2109,0' -crop 2109x3147+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6646,3431 0 0 6633,6575 0,3149 8728,6594 2092,3149  8736,3440 2092,0' -crop 2092x3149+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8780,3438 0 0 8780,6595 0,3153 10879,6590 2100,3153  10882,3441 2100,0' -crop 2100x3153+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10919,3442 0 0 10943,6597 0,3149 13056,6579 2110,3149  13026,3436 2110,0' -crop 2110x3149+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13083,3438 0 0 13110,6584 0,3148 14879,6573 1773,3148  14861,3422 1773,0' -crop 1773x3148+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '515,6602 0 0 512,9424 0,2823 2302,9432 1791,2823  2308,6607 1791,0' -crop 1791x2823+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2342,6606 0 0 2340,9440 0,2822 4417,9434 2081,2822  4428,6623 2081,0' -crop 2081x2822+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4482,6619 0 0 4467,9432 0,2810 6571,9438 2103,2810  6584,6630 2103,0' -crop 2103x2810+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6622,6639 0 0 6628,9453 0,2806 8719,9448 2099,2806  8730,6650 2099,0' -crop 2099x2806+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8779,6660 0 0 8794,9457 0,2800 10889,9443 2096,2800  10877,6640 2096,0' -crop 2096x2800+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10933,6646 0 0 10943,9440 0,2799 13048,9430 2100,2799  13028,6626 2100,0' -crop 2100x2799+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13108,6622 0 0 13109,9420 0,2799 14875,9421 1771,2799  14884,6620 1771,0' -crop 1771x2799+0+0 -compress None -write $TMP_FOLDER/141_Metz_btv1b53095199v_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_0_crop.png -resize 1787x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_0_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_1_0_crop.png -resize 2105x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_1_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_2_0_crop.png -resize 2104x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_2_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_3_0_crop.png -resize 2091x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_3_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_4_0_crop.png -resize 2088x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_4_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_5_0_crop.png -resize 2100x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_5_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_6_0_crop.png -resize 1784x2894! $TMP_FOLDER/141_Metz_btv1b53095199v_6_0_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_1_crop.png -resize 1787x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_0_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_1_1_crop.png -resize 2105x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_1_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_2_1_crop.png -resize 2104x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_2_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_3_1_crop.png -resize 2091x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_3_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_4_1_crop.png -resize 2088x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_4_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_5_1_crop.png -resize 2100x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_5_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_6_1_crop.png -resize 1784x3139! $TMP_FOLDER/141_Metz_btv1b53095199v_6_1_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_2_crop.png -resize 1787x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_0_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_1_2_crop.png -resize 2105x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_1_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_2_2_crop.png -resize 2104x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_2_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_3_2_crop.png -resize 2091x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_3_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_4_2_crop.png -resize 2088x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_4_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_5_2_crop.png -resize 2100x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_5_2_crop2.png
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_6_2_crop.png -resize 1784x2823! $TMP_FOLDER/141_Metz_btv1b53095199v_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_1_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_2_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_3_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_4_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_5_0_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_6_0_crop2.png +append $TMP_FOLDER/141_Metz_btv1b53095199v_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_1_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_2_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_3_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_4_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_5_1_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_6_1_crop2.png +append $TMP_FOLDER/141_Metz_btv1b53095199v_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_0_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_1_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_2_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_3_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_4_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_5_2_crop2.png $TMP_FOLDER/141_Metz_btv1b53095199v_6_2_crop2.png +append $TMP_FOLDER/141_Metz_btv1b53095199v_row2.png
+echo assembling rows
+magick $TMP_FOLDER/141_Metz_btv1b53095199v_row0.png $TMP_FOLDER/141_Metz_btv1b53095199v_row1.png $TMP_FOLDER/141_Metz_btv1b53095199v_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/141_Metz_btv1b53095199v.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 049_Nevers_btv1b530951863
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/049_Nevers_btv1b530951863.png  \( +clone +distort Perspective '508,574 0 0 497,3421 0,2845 2243,3419 1749,2845  2261,576 1749,0' -crop 1749x2845+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2295,575 0 0 2288,3418 0,2844 4395,3428 2111,2844  4410,583 2111,0' -crop 2111x2844+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4445,585 0 0 4446,3433 0,2847 6555,3425 2113,2847  6562,579 2113,0' -crop 2113x2847+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6603,576 0 0 6605,3422 0,2847 8707,3424 2107,2847  8715,575 2107,0' -crop 2107x2847+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8742,568 0 0 8752,3419 0,2853 10862,3421 2113,2853  10858,566 2113,0' -crop 2113x2853+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10902,569 0 0 10916,3421 0,2852 13024,3413 2114,2852  13022,560 2114,0' -crop 2114x2852+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13062,563 0 0 13067,3418 0,2846 14832,3412 1769,2846  14835,574 1769,0' -crop 1769x2846+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '487,3464 0 0 492,6635 0,3176 2247,6637 1755,3176  2243,3456 1755,0' -crop 1755x3176+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2295,3455 0 0 2283,6633 0,3178 4393,6639 2106,3178  4398,3461 2106,0' -crop 2106x3178+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4447,3460 0 0 4441,6634 0,3173 6548,6636 2108,3173  6557,3463 2108,0' -crop 2108x3173+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6601,3465 0 0 6590,6639 0,3165 8707,6627 2114,3165  8713,3471 2114,0' -crop 2114x3165+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8759,3461 0 0 8744,6629 0,3167 10862,6638 2110,3167  10861,3471 2110,0' -crop 2110x3167+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10921,3457 0 0 10929,6639 0,3178 13042,6633 2107,3178  13023,3459 2107,0' -crop 2107x3178+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13071,3455 0 0 13083,6633 0,3175 14854,6622 1770,3175  14841,3449 1770,0' -crop 1770x3175+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '496,6669 0 0 474,9452 0,2785 2245,9460 1761,2785  2247,6673 1761,0' -crop 1761x2785+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2281,6673 0 0 2286,9461 0,2791 4394,9468 2110,2791  4393,6673 2110,0' -crop 2110x2791+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4428,6671 0 0 4432,9456 0,2783 6539,9455 2112,2783  6545,6673 2112,0' -crop 2112x2783+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6588,6676 0 0 6589,9461 0,2790 8704,9457 2114,2790  8701,6662 2114,0' -crop 2114x2790+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8749,6666 0 0 8742,9459 0,2782 10867,9452 2122,2782  10868,6681 2122,0' -crop 2122x2782+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10926,6663 0 0 10919,9449 0,2783 13038,9451 2117,2783  13041,6671 2117,0' -crop 2117x2783+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13086,6667 0 0 13100,9445 0,2783 14862,9450 1767,2783  14859,6661 1767,0' -crop 1767x2783+0+0 -compress None -write $TMP_FOLDER/049_Nevers_btv1b530951863_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_0_crop.png -resize 1749x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_0_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_1_0_crop.png -resize 2111x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_1_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_2_0_crop.png -resize 2113x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_2_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_3_0_crop.png -resize 2107x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_3_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_4_0_crop.png -resize 2113x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_4_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_5_0_crop.png -resize 2114x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_5_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_6_0_crop.png -resize 1769x2845! $TMP_FOLDER/049_Nevers_btv1b530951863_6_0_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_1_crop.png -resize 1749x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_0_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_1_1_crop.png -resize 2111x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_1_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_2_1_crop.png -resize 2113x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_2_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_3_1_crop.png -resize 2107x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_3_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_4_1_crop.png -resize 2113x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_4_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_5_1_crop.png -resize 2114x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_5_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_6_1_crop.png -resize 1769x3176! $TMP_FOLDER/049_Nevers_btv1b530951863_6_1_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_2_crop.png -resize 1749x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_0_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_1_2_crop.png -resize 2111x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_1_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_2_2_crop.png -resize 2113x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_2_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_3_2_crop.png -resize 2107x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_3_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_4_2_crop.png -resize 2113x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_4_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_5_2_crop.png -resize 2114x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_5_2_crop2.png
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_6_2_crop.png -resize 1769x2785! $TMP_FOLDER/049_Nevers_btv1b530951863_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_1_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_2_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_3_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_4_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_5_0_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_6_0_crop2.png +append $TMP_FOLDER/049_Nevers_btv1b530951863_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_1_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_2_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_3_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_4_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_5_1_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_6_1_crop2.png +append $TMP_FOLDER/049_Nevers_btv1b530951863_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_0_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_1_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_2_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_3_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_4_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_5_2_crop2.png $TMP_FOLDER/049_Nevers_btv1b530951863_6_2_crop2.png +append $TMP_FOLDER/049_Nevers_btv1b530951863_row2.png
+echo assembling rows
+magick $TMP_FOLDER/049_Nevers_btv1b530951863_row0.png $TMP_FOLDER/049_Nevers_btv1b530951863_row1.png $TMP_FOLDER/049_Nevers_btv1b530951863_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/049_Nevers_btv1b530951863.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

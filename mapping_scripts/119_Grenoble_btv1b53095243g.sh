@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 119_Grenoble_btv1b53095243g
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/119_Grenoble_btv1b53095243g.png  \( +clone +distort Perspective '482,480 0 0 513,3355 0,2881 2304,3355 1799,2881  2289,467 1799,0' -crop 1799x2881+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2330,470 0 0 2339,3344 0,2874 4424,3341 2087,2874  4419,466 2087,0' -crop 2087x2874+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4457,469 0 0 4458,3342 0,2876 6540,3343 2083,2876  6541,464 2083,0' -crop 2083x2876+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6580,460 0 0 6578,3342 0,2878 8660,3329 2076,2878  8650,455 2076,0' -crop 2076x2878+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8692,453 0 0 8695,3327 0,2874 10778,3318 2087,2874  10784,444 2087,0' -crop 2087x2874+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10819,449 0 0 10813,3320 0,2874 12902,3318 2091,2874  12913,440 2091,0' -crop 2091x2874+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '12949,447 0 0 12938,3321 0,2869 14733,3306 1781,2869  14717,441 1781,0' -crop 1781x2869+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '513,3393 0 0 512,6514 0,3121 2298,6518 1790,3121  2307,3397 1790,0' -crop 1790x3121+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2332,3386 0 0 2336,6509 0,3122 4426,6506 2088,3122  4419,3385 2088,0' -crop 2088x3122+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4451,3381 0 0 4462,6504 0,3115 6549,6486 2088,3115  6540,3379 2088,0' -crop 2088x3115+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6579,3377 0 0 6585,6486 0,3115 8669,6487 2082,3115  8660,3366 2082,0' -crop 2082x3115+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8693,3365 0 0 8702,6484 0,3115 10785,6465 2084,3115  10779,3354 2084,0' -crop 2084x3115+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10816,3360 0 0 10823,6466 0,3104 12918,6458 2092,3104  12906,3355 2092,0' -crop 2092x3104+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '12944,3360 0 0 12960,6459 0,3098 14740,6447 1776,3098  14716,3349 1776,0' -crop 1776x3098+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '506,6566 0 0 505,9367 0,2801 2323,9359 1802,2801  2292,6557 1802,0' -crop 1802x2801+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2328,6550 0 0 2360,9362 0,2811 4443,9353 2088,2811  4421,6543 2088,0' -crop 2088x2811+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4456,6538 0 0 4484,9351 0,2814 6564,9338 2086,2814  6548,6523 2086,0' -crop 2086x2814+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6580,6524 0 0 6603,9344 0,2816 8683,9324 2081,2816  8663,6512 2081,0' -crop 2081x2816+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8707,6517 0 0 8728,9326 0,2810 10817,9312 2084,2810  10786,6500 2084,0' -crop 2084x2810+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10829,6503 0 0 10857,9319 0,2812 12946,9297 2092,2812  12924,6488 2092,0' -crop 2092x2812+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '12965,6486 0 0 12978,9300 0,2814 14761,9290 1778,2814  14739,6475 1778,0' -crop 1778x2814+0+0 -compress None -write $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_0_crop.png -resize 1799x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_0_crop.png -resize 2087x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_0_crop.png -resize 2083x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_0_crop.png -resize 2076x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_0_crop.png -resize 2087x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_0_crop.png -resize 2091x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_0_crop.png -resize 1781x2881! $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_0_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_1_crop.png -resize 1799x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_1_crop.png -resize 2087x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_1_crop.png -resize 2083x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_1_crop.png -resize 2076x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_1_crop.png -resize 2087x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_1_crop.png -resize 2091x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_1_crop.png -resize 1781x3121! $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_1_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_2_crop.png -resize 1799x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_2_crop.png -resize 2087x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_2_crop.png -resize 2083x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_2_crop.png -resize 2076x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_2_crop.png -resize 2087x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_2_crop.png -resize 2091x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_2_crop2.png
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_2_crop.png -resize 1781x2801! $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_0_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_0_crop2.png +append $TMP_FOLDER/119_Grenoble_btv1b53095243g_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_1_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_1_crop2.png +append $TMP_FOLDER/119_Grenoble_btv1b53095243g_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_0_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_1_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_2_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_3_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_4_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_5_2_crop2.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_6_2_crop2.png +append $TMP_FOLDER/119_Grenoble_btv1b53095243g_row2.png
+echo assembling rows
+magick $TMP_FOLDER/119_Grenoble_btv1b53095243g_row0.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_row1.png $TMP_FOLDER/119_Grenoble_btv1b53095243g_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/119_Grenoble_btv1b53095243g.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

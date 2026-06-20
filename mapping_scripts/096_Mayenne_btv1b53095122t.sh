@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 096_Mayenne_btv1b53095122t
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/096_Mayenne_btv1b53095122t.png  \( +clone +distort Perspective '529,432 0 0 526,3316 0,2889 2310,3317 1778,2889  2301,423 1778,0' -crop 1778x2889+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2347,437 0 0 2342,3326 0,2888 4446,3326 2105,2888  4454,439 2105,0' -crop 2105x2888+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4500,442 0 0 4483,3335 0,2885 6597,3332 2114,2885  6614,454 2114,0' -crop 2114x2885+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6647,451 0 0 6635,3333 0,2881 8753,3337 2113,2881  8755,456 2113,0' -crop 2113x2881+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8799,451 0 0 8784,3336 0,2882 10893,3344 2110,2882  10911,464 2110,0' -crop 2110x2882+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10955,459 0 0 10931,3339 0,2882 13042,3358 2110,2882  13065,473 2110,0' -crop 2110x2882+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13109,474 0 0 13086,3362 0,2885 14869,3366 1782,2885  14891,484 1782,0' -crop 1782x2885+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '522,3369 0 0 514,6495 0,3129 2299,6500 1783,3129  2304,3368 1783,0' -crop 1783x3129+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2342,3373 0 0 2345,6510 0,3139 4460,6513 2107,3139  4441,3372 2107,0' -crop 2107x3139+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4490,3384 0 0 4487,6526 0,3137 6601,6512 2114,3137  6604,3379 2114,0' -crop 2114x3137+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6642,3386 0 0 6642,6525 0,3134 8744,6516 2103,3134  8746,3386 2103,0' -crop 2103x3134+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8783,3382 0 0 8769,6517 0,3132 10887,6518 2110,3132  10885,3389 2110,0' -crop 2110x3132+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10926,3392 0 0 10921,6527 0,3136 13027,6536 2105,3136  13030,3398 2105,0' -crop 2105x3136+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13076,3403 0 0 13071,6538 0,3135 14843,6541 1780,3135  14865,3405 1780,0' -crop 1780x3135+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '517,6546 0 0 514,9371 0,2825 2302,9369 1789,2825  2308,6543 1789,0' -crop 1789x2825+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2347,6553 0 0 2351,9390 0,2829 4458,9381 2106,2829  4453,6560 2106,0' -crop 2106x2829+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4494,6568 0 0 4504,9390 0,2821 6610,9380 2107,2821  6602,6559 2107,0' -crop 2107x2821+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6645,6562 0 0 6646,9386 0,2822 8744,9374 2096,2822  8740,6554 2096,0' -crop 2096x2822+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8772,6560 0 0 8774,9375 0,2813 10874,9374 2101,2813  10875,6562 2101,0' -crop 2101x2813+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10913,6567 0 0 10902,9382 0,2811 13016,9386 2111,2811  13022,6578 2111,0' -crop 2111x2811+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13064,6572 0 0 13056,9389 0,2813 14843,9390 1785,2813  14847,6581 1785,0' -crop 1785x2813+0+0 -compress None -write $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_0_crop.png -resize 1778x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_0_crop.png -resize 2105x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_0_crop.png -resize 2114x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_0_crop.png -resize 2113x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_0_crop.png -resize 2110x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_0_crop.png -resize 2110x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_0_crop.png -resize 1782x2889! $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_0_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_1_crop.png -resize 1778x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_1_crop.png -resize 2105x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_1_crop.png -resize 2114x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_1_crop.png -resize 2113x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_1_crop.png -resize 2110x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_1_crop.png -resize 2110x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_1_crop.png -resize 1782x3129! $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_1_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_2_crop.png -resize 1778x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_2_crop.png -resize 2105x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_2_crop.png -resize 2114x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_2_crop.png -resize 2113x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_2_crop.png -resize 2110x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_2_crop.png -resize 2110x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_2_crop2.png
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_2_crop.png -resize 1782x2825! $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_0_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_0_crop2.png +append $TMP_FOLDER/096_Mayenne_btv1b53095122t_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_1_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_1_crop2.png +append $TMP_FOLDER/096_Mayenne_btv1b53095122t_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_0_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_1_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_2_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_3_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_4_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_5_2_crop2.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_6_2_crop2.png +append $TMP_FOLDER/096_Mayenne_btv1b53095122t_row2.png
+echo assembling rows
+magick $TMP_FOLDER/096_Mayenne_btv1b53095122t_row0.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_row1.png $TMP_FOLDER/096_Mayenne_btv1b53095122t_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/096_Mayenne_btv1b53095122t.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

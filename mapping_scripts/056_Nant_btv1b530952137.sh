@@ -1,0 +1,65 @@
+echo extracting  3 rows and 7 columns from 056_Nant_btv1b530952137
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/056_Nant_btv1b530952137.png  \( +clone +distort Perspective '494,587 0 0 500,3445 0,2858 2287,3436 1783,2858  2273,577 1783,0' -crop 1783x2858+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '2311,584 0 0 2326,3440 0,2854 4431,3428 2105,2854  4416,576 2105,0' -crop 2105x2854+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '4457,580 0 0 4479,3430 0,2848 6575,3412 2101,2848  6563,565 2101,0' -crop 2101x2848+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '6611,569 0 0 6622,3416 0,2847 8729,3399 2104,2847  8713,552 2104,0' -crop 2104x2847+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '8755,556 0 0 8772,3404 0,2850 10885,3385 2108,2850  10859,533 2108,0' -crop 2108x2850+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '10908,533 0 0 10923,3387 0,2860 13022,3376 2098,2860  13006,510 2098,0' -crop 2098x2860+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '13055,511 0 0 13071,3378 0,2868 14845,3368 1771,2868  14824,498 1771,0' -crop 1771x2868+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_6_0_crop.png +delete \) \
+ \( +clone +distort Perspective '501,3493 0 0 519,6677 0,3185 2297,6665 1779,3185  2282,3478 1779,0' -crop 1779x3185+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '2337,3480 0 0 2348,6674 0,3191 4455,6652 2102,3191  4435,3463 2102,0' -crop 2102x3191+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '4479,3469 0 0 4494,6659 0,3186 6594,6648 2105,3186  6590,3466 2105,0' -crop 2105x3186+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '6624,3467 0 0 6632,6643 0,3175 8739,6628 2107,3175  8731,3453 2107,0' -crop 2107x3175+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '8775,3440 0 0 8780,6625 0,3187 10891,6625 2108,3187  10881,3436 2108,0' -crop 2108x3187+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '10931,3430 0 0 10928,6630 0,3201 13032,6633 2102,3201  13031,3430 2102,0' -crop 2102x3201+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_5_1_crop.png +delete \) \
+ \( +clone +distort Perspective '13059,3425 0 0 13078,6631 0,3202 14863,6612 1781,3202  14836,3414 1781,0' -crop 1781x3202+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_6_1_crop.png +delete \) \
+ \( +clone +distort Perspective '527,6730 0 0 533,9542 0,2818 2305,9537 1773,2818  2302,6713 1773,0' -crop 1773x2818+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_0_2_crop.png +delete \) \
+ \( +clone +distort Perspective '2350,6714 0 0 2350,9534 0,2824 4456,9532 2107,2824  4458,6703 2107,0' -crop 2107x2824+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_1_2_crop.png +delete \) \
+ \( +clone +distort Perspective '4497,6698 0 0 4501,9528 0,2827 6605,9518 2103,2827  6600,6693 2103,0' -crop 2103x2827+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_2_2_crop.png +delete \) \
+ \( +clone +distort Perspective '6631,6691 0 0 6652,9514 0,2828 8746,9500 2101,2828  8739,6666 2101,0' -crop 2101x2828+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_3_2_crop.png +delete \) \
+ \( +clone +distort Perspective '8787,6667 0 0 8797,9501 0,2827 10898,9486 2095,2827  10877,6666 2095,0' -crop 2095x2827+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_4_2_crop.png +delete \) \
+ \( +clone +distort Perspective '10921,6668 0 0 10950,9496 0,2818 13053,9474 2105,2818  13029,6666 2105,0' -crop 2105x2818+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_5_2_crop.png +delete \) \
+ \( +clone +distort Perspective '13070,6662 0 0 13092,9479 0,2813 14882,9459 1791,2813  14863,6650 1791,0' -crop 1791x2813+0+0 -compress None -write $TMP_FOLDER/056_Nant_btv1b530952137_6_2_crop.png +delete \) \
+ null:
+  echo Combining 3 rows and 7 columns
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_0_crop.png -resize 1783x2858! $TMP_FOLDER/056_Nant_btv1b530952137_0_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_1_0_crop.png -resize 2105x2858! $TMP_FOLDER/056_Nant_btv1b530952137_1_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_2_0_crop.png -resize 2101x2858! $TMP_FOLDER/056_Nant_btv1b530952137_2_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_3_0_crop.png -resize 2104x2858! $TMP_FOLDER/056_Nant_btv1b530952137_3_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_4_0_crop.png -resize 2108x2858! $TMP_FOLDER/056_Nant_btv1b530952137_4_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_5_0_crop.png -resize 2098x2858! $TMP_FOLDER/056_Nant_btv1b530952137_5_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_6_0_crop.png -resize 1771x2858! $TMP_FOLDER/056_Nant_btv1b530952137_6_0_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_1_crop.png -resize 1783x3185! $TMP_FOLDER/056_Nant_btv1b530952137_0_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_1_1_crop.png -resize 2105x3185! $TMP_FOLDER/056_Nant_btv1b530952137_1_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_2_1_crop.png -resize 2101x3185! $TMP_FOLDER/056_Nant_btv1b530952137_2_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_3_1_crop.png -resize 2104x3185! $TMP_FOLDER/056_Nant_btv1b530952137_3_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_4_1_crop.png -resize 2108x3185! $TMP_FOLDER/056_Nant_btv1b530952137_4_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_5_1_crop.png -resize 2098x3185! $TMP_FOLDER/056_Nant_btv1b530952137_5_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_6_1_crop.png -resize 1771x3185! $TMP_FOLDER/056_Nant_btv1b530952137_6_1_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_2_crop.png -resize 1783x2818! $TMP_FOLDER/056_Nant_btv1b530952137_0_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_1_2_crop.png -resize 2105x2818! $TMP_FOLDER/056_Nant_btv1b530952137_1_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_2_2_crop.png -resize 2101x2818! $TMP_FOLDER/056_Nant_btv1b530952137_2_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_3_2_crop.png -resize 2104x2818! $TMP_FOLDER/056_Nant_btv1b530952137_3_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_4_2_crop.png -resize 2108x2818! $TMP_FOLDER/056_Nant_btv1b530952137_4_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_5_2_crop.png -resize 2098x2818! $TMP_FOLDER/056_Nant_btv1b530952137_5_2_crop2.png
+magick $TMP_FOLDER/056_Nant_btv1b530952137_6_2_crop.png -resize 1771x2818! $TMP_FOLDER/056_Nant_btv1b530952137_6_2_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_1_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_2_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_3_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_4_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_5_0_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_6_0_crop2.png +append $TMP_FOLDER/056_Nant_btv1b530952137_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_1_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_2_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_3_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_4_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_5_1_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_6_1_crop2.png +append $TMP_FOLDER/056_Nant_btv1b530952137_row1.png
+echo making elements for row 2
+magick $TMP_FOLDER/056_Nant_btv1b530952137_0_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_1_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_2_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_3_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_4_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_5_2_crop2.png $TMP_FOLDER/056_Nant_btv1b530952137_6_2_crop2.png +append $TMP_FOLDER/056_Nant_btv1b530952137_row2.png
+echo assembling rows
+magick $TMP_FOLDER/056_Nant_btv1b530952137_row0.png $TMP_FOLDER/056_Nant_btv1b530952137_row1.png $TMP_FOLDER/056_Nant_btv1b530952137_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/056_Nant_btv1b530952137.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done

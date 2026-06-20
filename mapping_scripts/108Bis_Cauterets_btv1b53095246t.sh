@@ -1,0 +1,45 @@
+echo extracting  2 rows and 6 columns from 108Bis_Cauterets_btv1b53095246t
+GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
+MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
+MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
+DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
+TMP_FOLDER=/Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Temp/cassini
+mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
+mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
+magick /Volumes/MyBook/Github/byoncama/gallica_pngs/108Bis_Cauterets_btv1b53095246t.png  \( +clone +distort Perspective '290,205 0 0 314,2963 0,2759 975,2964 660,2759  950,204 660,0' -crop 660x2759+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_0_crop.png +delete \) \
+ \( +clone +distort Perspective '1036,211 0 0 1072,2958 0,2739 3142,2946 2092,2739  3150,215 2092,0' -crop 2092x2739+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_0_crop.png +delete \) \
+ \( +clone +distort Perspective '3234,212 0 0 3217,2944 0,2728 5328,2963 2109,2728  5341,239 2109,0' -crop 2109x2728+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_0_crop.png +delete \) \
+ \( +clone +distort Perspective '5422,234 0 0 5405,2948 0,2724 7513,2959 2102,2724  7519,224 2102,0' -crop 2102x2724+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_0_crop.png +delete \) \
+ \( +clone +distort Perspective '7603,223 0 0 7577,2949 0,2732 9677,2969 2095,2732  9694,231 2095,0' -crop 2095x2732+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_0_crop.png +delete \) \
+ \( +clone +distort Perspective '9745,226 0 0 9743,2966 0,2744 11509,2964 1767,2744  11513,215 1767,0' -crop 1767x2744+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_0_crop.png +delete \) \
+ \( +clone +distort Perspective '320,3024 0 0 340,4399 0,1381 1004,4401 661,1381  978,3013 661,0' -crop 661x1381+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_1_crop.png +delete \) \
+ \( +clone +distort Perspective '1067,3011 0 0 1076,4394 0,1385 3157,4397 2079,1385  3145,3010 2079,0' -crop 2079x1385+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_1_crop.png +delete \) \
+ \( +clone +distort Perspective '3214,3020 0 0 3244,4405 0,1381 5324,4383 2096,1381  5326,3006 2096,0' -crop 2096x1381+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_1_crop.png +delete \) \
+ \( +clone +distort Perspective '5411,3005 0 0 5407,4390 0,1377 7503,4389 2098,1377  7512,3020 2098,0' -crop 2098x1377+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_1_crop.png +delete \) \
+ \( +clone +distort Perspective '7585,3012 0 0 7564,4384 0,1371 9660,4397 2096,1371  9681,3026 2096,0' -crop 2096x1371+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_1_crop.png +delete \) \
+ \( +clone +distort Perspective '9734,3024 0 0 9723,4397 0,1373 11501,4400 1772,1373  11500,3027 1772,0' -crop 1772x1373+0+0 -compress None -write $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_1_crop.png +delete \) \
+ null:
+  echo Combining 2 rows and 6 columns
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_0_crop.png -resize 660x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_0_crop.png -resize 2092x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_0_crop.png -resize 2109x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_0_crop.png -resize 2102x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_0_crop.png -resize 2095x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_0_crop.png -resize 1767x2759! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_0_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_1_crop.png -resize 660x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_1_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_1_crop.png -resize 2092x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_1_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_1_crop.png -resize 2109x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_1_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_1_crop.png -resize 2102x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_1_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_1_crop.png -resize 2095x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_1_crop2.png
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_1_crop.png -resize 1767x1381! $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_1_crop2.png
+echo creatings rows
+echo making elements for row 0
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_0_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_0_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_0_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_0_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_0_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_0_crop2.png +append $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_row0.png
+echo making elements for row 1
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_0_1_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_1_1_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_2_1_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_3_1_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_4_1_crop2.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_5_1_crop2.png +append $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_row1.png
+echo assembling rows
+magick $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_row0.png $TMP_FOLDER/108Bis_Cauterets_btv1b53095246t_row1.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/108Bis_Cauterets_btv1b53095246t.tif
+echo deleting temporary folder /Volumes/MyBook/Temp/cassini
+rm -rf /Volumes/MyBook/Temp/cassini
+echo done
