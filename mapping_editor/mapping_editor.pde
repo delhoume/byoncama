@@ -1,5 +1,5 @@
 /*
- Cassini map editor
+ Cassini mappings editor
  (c) F Delhoume 2024
 */
 
@@ -53,13 +53,15 @@ void readMappingInfo() {
    String sketchpath = sketchPath();
  File sketchf = new File(sketchpath);
  File imgf =  new File(sketchf.getParentFile(), "gallica_pngs");
- File imagf = new File(imgf, image + imagext);
- String imagepath = imagf.getAbsolutePath();
- 
- img = loadImage(imagepath);
-
-    imagewidth = img.width;
-    imageheight = img.height;
+ if (imgf != null) {
+     File imagf = new File(imgf, image + imagext);
+   if (imagf != null) {
+     String imagepath = imagf.getAbsolutePath();
+     img = loadImage(imagepath);
+      imagewidth = img.width;
+      imageheight = img.height;
+   }
+ }
    float cellw = img.width / columns;
    float cellh = img.height / rows;
    int hidx = 0;
