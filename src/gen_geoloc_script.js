@@ -1,8 +1,11 @@
 import fs from 'node:fs'
+import path from 'node:path'
 import os from 'node:os';
 
+const isWindows = os.platform() === 'win32';
+const scriptext = isWindows ? ".bat" : ".sh";
 const QGIS_FOLDER="/Applications/QGIS-final-4_0_3.app";
-const GDAL_BIN_FOLDER=`${QGIS_FOLDER}/Contents/MacOS`;
+const GDAL_EDIT = isWindows ? "gdal_edit.exe" : `${QGIS_FOLDER}/Contents/MacOS/gdal_edit`;
 const PROJ_DATA = `${QGIS_FOLDER}/Contents/Resources/qgis/proj`;
 
 let leaf = process.argv[2];
@@ -92,13 +95,19 @@ if (longref && latref) {
     const bottomright = [fright * meterPerToise, fbottom * meterPerToise];
 
     var geo_script = [];
-    geo_script.push(`export PROJ_DATA=${PROJ_DATA}`);
+    if (!isWindows) {
+        geo_script.push(`export PROJ_DATA=${PROJ_DATA}`);
     geo_script.push(`mkdir -p geotif_images`);
     geo_script.push(`cp seamless_images/${leaf}.tif geotif_images`);
-     geo_script.push(`${GDAL_BIN_FOLDER}/gdal_edit -a_srs "+proj=cass +lat_0=${reflat} +lon_0=${reflong} +x_0=0 +y_0=0 +R=${R} +units=m +no_defs" -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${leaf}.tif`);
+    }  else {
+        geo_script.push(`mkdir geotif_images`);
+        geo_script.push(`copy seamless_images\\${leaf}.tif geotif_images`);
+        geo_script.push("%OSGEO4W_ROOT%\\bin\\o4w_env.bat");
+    }
+    geo_script.push(`${GDAL_EDIT} -a_srs "+proj=cass +lat_0=${reflat} +lon_0=${reflong} +x_0=0 +y_0=0 +R=${R} +units=m +no_defs" -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${leaf}.tif`);
     const output = geo_script.join("\n");
-     fs .writeFileSync(`geoloc_scripts/${leaf}.sh`, output);
-    
+ const scriptpath = path.resolve("geoloc_scripts", `${leaf}${scriptext}`);  
+    fs .writeFileSync(scriptpath, output);
 } else {
     console.log('#', city, 'not found (long', longref ? longref.left : '-', longref ? longref.right : '-', ' lat', latref ? latref.top : '-', latref ? latref.bottom : '-',);
 }

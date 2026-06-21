@@ -1,13 +1,9 @@
 echo extracting  3 rows and 7 columns from 001_Paris_btv1b53095162g
-GALLICA_PNG_FOLDER=/Volumes/MyBook/Github/byoncama/gallica_pngs
-MAPPINGS_SCRIPTS_FOLDER=/Volumes/MyBook/Github/byoncama/mapping_scripts
-MAPPPINGS_FOLDER=/Volumes/MyBook/Github/byoncama/mappings
-DEST_FOLDER=/Volumes/MyBook/Github/byoncama/seamless_images
-TMP_FOLDER=/Volumes/MyBook/Temp/cassini
-mkdir -p /Volumes/MyBook/Temp/cassini
-mkdir -p /Volumes/MyBook/Github/byoncama/seamless_images
-mkdir -p /Volumes/MyBook/Github/byoncama/mapping_scripts
-magick /Volumes/MyBook/Github/byoncama/gallica_pngs/001_Paris_btv1b53095162g.png  \( +clone +distort Perspective '545,496 0 0 514,3324 0,2834 2286,3344 1773,2834  2320,504 1773,0' -crop 1773x2834+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop.png +delete \) \
+set DEST_FOLDERRseamless_images
+set TMP_FOLDER=tmp\cassini
+mkdir -p /%TMP_FOLDER%
+mkdir -seamless_images
+%%MAGICK%% gallica_pngs/001_Paris_btv1b53095162g.png  \( +clone +distort Perspective '545,496 0 0 514,3324 0,2834 2286,3344 1773,2834  2320,504 1773,0' -crop 1773x2834+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop.png +delete \) \
  \( +clone +distort Perspective '2354,512 0 0 2330,3341 0,2829 4438,3345 2110,2829  4466,515 2110,0' -crop 2110x2829+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop.png +delete \) \
  \( +clone +distort Perspective '4500,505 0 0 4472,3340 0,2837 6579,3339 2101,2837  6595,500 2101,0' -crop 2101x2837+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop.png +delete \) \
  \( +clone +distort Perspective '6638,492 0 0 6613,3333 0,2842 8724,3337 2101,2842  8730,493 2101,0' -crop 2101x2842+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop.png +delete \) \
@@ -30,36 +26,36 @@ magick /Volumes/MyBook/Github/byoncama/gallica_pngs/001_Paris_btv1b53095162g.png
  \( +clone +distort Perspective '13090,6525 0 0 13127,9381 0,2848 14893,9362 1774,2848  14872,6521 1774,0' -crop 1774x2848+0+0 -compress None -write $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop.png +delete \) \
  null:
   echo Combining 3 rows and 7 columns
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop.png -resize 1773x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop.png -resize 2110x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop.png -resize 2101x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop.png -resize 2101x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop.png -resize 2091x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop.png -resize 2097x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop.png -resize 1789x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop.png -resize 1773x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop.png -resize 2110x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop.png -resize 2101x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop.png -resize 2101x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop.png -resize 2091x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop.png -resize 2097x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop.png -resize 1789x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop.png -resize 1773x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop.png -resize 2110x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop.png -resize 2101x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop.png -resize 2101x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop.png -resize 2091x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop.png -resize 2097x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop2.png
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop.png -resize 1789x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop.png -resize 1773x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop.png -resize 2110x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop.png -resize 2101x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop.png -resize 2101x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop.png -resize 2091x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop.png -resize 2097x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop.png -resize 1789x2834! $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop.png -resize 1773x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop.png -resize 2110x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop.png -resize 2101x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop.png -resize 2101x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop.png -resize 2091x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop.png -resize 2097x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop.png -resize 1789x3151! $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop.png -resize 1773x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop.png -resize 2110x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop.png -resize 2101x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop.png -resize 2101x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop.png -resize 2091x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop.png -resize 2097x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop.png -resize 1789x2843! $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop2.png
 echo creatings rows
 echo making elements for row 0
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row0.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_0_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_0_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row0.png
 echo making elements for row 1
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row1.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_1_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_1_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row1.png
 echo making elements for row 2
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row2.png
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_0_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_1_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_2_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_3_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_4_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_5_2_crop2.png $TMP_FOLDER/001_Paris_btv1b53095162g_6_2_crop2.png +append $TMP_FOLDER/001_Paris_btv1b53095162g_row2.png
 echo assembling rows
-magick $TMP_FOLDER/001_Paris_btv1b53095162g_row0.png $TMP_FOLDER/001_Paris_btv1b53095162g_row1.png $TMP_FOLDER/001_Paris_btv1b53095162g_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/001_Paris_btv1b53095162g.tif
+%%MAGICK%% $TMP_FOLDER/001_Paris_btv1b53095162g_row0.png $TMP_FOLDER/001_Paris_btv1b53095162g_row1.png $TMP_FOLDER/001_Paris_btv1b53095162g_row2.png -append -compress Zip /Volumes/MyBook/Github/byoncama/seamless_images/001_Paris_btv1b53095162g.tif
 echo deleting temporary folder /Volumes/MyBook/Temp/cassini
 rm -rf /Volumes/MyBook/Temp/cassini
 echo done

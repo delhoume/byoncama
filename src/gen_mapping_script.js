@@ -15,14 +15,17 @@ const mappingsfolder = path.join(rootname, "mappings");
 const destfolder = path.join(rootname, "seamless_images");
 const  tempfolder = path.join(os.tmpdir(), "cassini");
 
-const  shext = ".sh";
-const batchext = ".bat";
+const isWindows = os.platform() === 'win32';
+const scriptext = isWindows ? ".bat" : ".sh";
+const magickpath = isWindows ? "%MAGICK%" : "$MAGICK";
+const batchext = isWindows ? ".bat" : ".sh";
 const pngext = ".png";
 const tifext = ".tif";
 const mapext = "_mapping.json";
+const sep = isWindows ? "\\" : "/";
 
 const mapping = process.argv[2];
-const  mappingpath = path.resolve(mappingsfolder, mapping + mapext);
+const  mappingpath = mappingsfolder, mapping + mapext);
 if (fs.existsSync(mappingpath)) {
         generateScript(mapping, mappingpath);
 } else {
@@ -37,16 +40,18 @@ function generateScript(mapping, mappingname) {
 
     let tif = ".tif";
     let rows = json.rows;
-    let script = "";
-
+    
     console.log(`columns: ${cols} rows: ${rows}`);
     let jmapping = json.mapping;
 
     // per col and row
     let tilewidths = new Array(rows);
     let tileheights = new Array(rows);
-    for (let r = 0; r < rows; ++r) {       tilewidths[r] = new Array(cols); for (let c = 0; c < cols; ++c) tilewidths[r][c] = 0;
-        tileheights[r] = new Array(cols); for (let c = 0; c < cols; ++c) tileheights[r][c] = 0;
+    for (let r = 0; r < rows; ++r) {    
+           tilewidths[r] = new Array(cols);
+            for (let c = 0; c < cols; ++c) tilewidths[r][c] = 0;
+        tileheights[r] = new Array(cols); 
+        for (let c = 0; c < cols; ++c) tileheights[r][c] = 0;
     }
 
     // first pass to compute width and heigth;
@@ -71,21 +76,20 @@ function generateScript(mapping, mappingname) {
     console.table(tilewidths);
     console.log("heights");
     console.table(tileheights);
-
-
+let setp =  isWindows ? "set" : "export";
+let script = "";
     script += `echo extracting  ${rows} rows and ${cols} columns from ${realimage}\n`;
 
-    script += `GALLICA_PNG_FOLDER=${imagesfolder}\n`;
-    script += `MAPPINGS_SCRIPTS_FOLDER=${mappingsscriptsfolder}\n`;
-    script += `MAPPPINGS_FOLDER=${mappingsfolder}\n`;
-    script += `DEST_FOLDER=${destfolder}\n`;
-    script += `TMP_FOLDER=${tempfolder}\n`;  
-    script += `mkdir -p ${tempfolder}\n`;
-    script += `mkdir -p ${destfolder}\n`;
-    script += `mkdir -p ${mappingsscriptsfolder}\n`;
+    script += `${setp} MAPPINGS_SCRIPTS_FOLDER=${mappingsscriptsfolder}\n`;
+    script += `${setp} MAPPPINGS_FOLDER=${mappingsfolder}\n`;
+    script += `${setp} DEST_FOLDER=${destfolder}\n`;
+    script += `${setp} TMP_FOLDER=${tempfolder}\n`;  
+    script += `mkdir  ${tempfolder}\n`;
+    script += `mkdir  ${destfolder}\n`;
+    script += `mkdir  ${mappingsscriptsfolder}\n`;
        
     const rimage = `${realimage}${pngext}`;
-    script += `magick ${path.resolve(imagesfolder, rimage)} `;
+    
     for (let c = 0; c < jmapping.length; ++c) {
         let tile = jmapping[c];
         let col = tile.column;
@@ -97,12 +101,11 @@ function generateScript(mapping, mappingname) {
         let fw = tilewidths[row][col];
         let fh = tileheights[row][col];
         //    console.log(`dims for tile ${col} ${row}: ${fw} ${fh}`);
-        const cropimage = `${realimage}_${col}_${row}_crop${pngext}`;
-        script += ` \\( +clone +distort Perspective \'${tl.x},${tl.y} 0 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0\' `;
-        script += `-crop ${fw}x${fh}+0+0 -compress None -write $TMP_FOLDER/${cropimage} +delete \\) \\\n`;
+        script += `${magickpath}  ${path.resolve(imagesfolder, rimage)} `;   
+         const cropimage = `${realimage}_${col}_${row}_crop${pngext}`;
+        script += ` +distort Perspective "${tl.x},${tl.y} 0 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
+        script += `-crop ${fw}x${fh}+0+0 ${path.resolve(tempfolder, cropimage)}\n`;
     }
-    script += ` null:\n`;
-
     script += `  echo Combining ${rows} rows and ${cols} columns\n`;
 
     // référence = ligne du haut, rows de la même colonne doivent avoir la même largeur
@@ -128,7 +131,7 @@ function generateScript(mapping, mappingname) {
         for (let c = 0; c < cols; ++c) {
         const cropimage  = `${realimage}_${c}_${r}_crop${pngext}`; 
         const cropimage2 = `${realimage}_${c}_${r}_crop2${pngext}`;
-        script += `magick $TMP_FOLDER/${cropimage} -resize ${refwidths[c]}x${refheights[r]}! $TMP_FOLDER/${cropimage2}\n`
+        script += `%MAGICK%  ${path.resolve(tempfolder, cropimage)} -resize ${refwidths[c]}x${refheights[r]}! ${path.resolve(tempfolder, cropimage2)}\n`
         }
     }
     console.log("refwidths");
@@ -143,29 +146,28 @@ function generateScript(mapping, mappingname) {
     script += `echo creatings rows\n`;
     for (let r = 0; r < rows; ++r) {
         script += `echo making elements for row ${r}\n`;
-        script += `magick `;
+        script += `%MAGICK%  `;
         for (let c = 0; c < cols; ++c) {
             const cropimage2 = `${realimage}_${c}_${r}_crop2${pngext}`
-            script += `$TMP_FOLDER/${cropimage2} `;
+            script += `${path.resolve(tempfolder, cropimage2)} `;
         }
         const rowimage = `${realimage}_row${r}${pngext}`;
-        script += `+append $TMP_FOLDER/${rowimage}\n`;
+        script += `+append ${path.resolve(tempfolder, rowimage)}\n`;
     }
 
     //assemble rows
     script += `echo assembling rows\n`;
-    script += `magick `;
+   script += `%MAGICK%  `;
     for (let r = 0; r < rows; ++r) {
-        script += `$TMP_FOLDER/${realimage}_row${r}${pngext} `;
+        script += `${path.resolve(tempfolder, `${realimage}_row${r}${pngext}`)} `;
     }
     const dstimage = path.resolve(destfolder, `${mapping}${tifext}`); 
     script += `-append -compress Zip ${dstimage}\n`;
 
-    script += `echo deleting temporary folder ${tempfolder}\n`;
-    script += `rm -rf ${tempfolder}\n`;
+    script += `del /q ${tempfolder}\n`;
     script += `echo done\n`;
 
-    let output = path.resolve(mappingsscriptsfolder, `${mapping}${shext}`);
+    let output = path.resolve(mappingsscriptsfolder, `${mapping}${batchext}`);
     console.log(output);
 
     fs.writeFileSync(output, script);
