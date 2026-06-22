@@ -4,45 +4,61 @@ import os from 'node:os'
 
 const mappingsjson = fs.readFileSync(`data/mappings.json`);
 const mappings = JSON.parse(mappingsjson)['mappings'];
+const isWindows = os.platform() === 'win32';
+const scriptext = isWindows ? ".bat" : ".sh";
+const sep = isWindows ? "\\" : "/";
+const scriptfile = [];
 
-
-const shext = ".sh";
-const batchext = ".bat";
-
-var scriptfile = [];
-
-scriptfile.push("#!/bin/bash");
-
-
-if (fs.existsSync("gallica_pngs")) {
-    if (fs.existsSync("mapping_scripts")) {
-
-        if (!fs.existsSync("generated_scripts")) {
-            fs.mkdirSync("generated_scripts");
-        }
-        if (!fs.existsSync("seamless_images")) {
-            fs.mkdirSync("seamless_images");
-        }
-
-        for (var l = 0; l < mappings.length; ++l) {
-            const leaf = mappings[l];
-           if (fs.existsSync(`gallica_pngs/${leaf}.png`)) {
-                console.log(`generating entry for ${leaf}`);
-                scriptfile.push(`if [ ! -f seamless_images/${leaf}.tif ]; then`);
-                scriptfile.push(`  echo applying mapping, creating seamless image for ${leaf}`);
-                scriptfile.push(`  echo compute intensive, can take several minutes`);
-                scriptfile.push(`  source ./mapping_scripts/${leaf}.sh`);
-                scriptfile.push(`else`);
-                scriptfile.push(`    echo skipping existing  seamless_image/${leaf}`);
-                scriptfile.push(`fi`);
-            }
-        }
-        const output = scriptfile.join("\n");
-        fs.writeFileSync("generated_scripts/seamless.sh", output);
-        console.log(`call with: source ./generated_scripts/seamless.sh`);
-    } else {
-        console.log("create mappping scripts with: deno -A src/gen_all_mappings.js");
-    }
+if (isWindows) {
+    scriptfile.push("@echo off");
+    scriptfile.push(`set MAGICK="C:\\Program Files\\ImageMagick-7.1.2-Q8\\magick.exe"`);
 } else {
-    console.log("download gallica source images first");
+    scriptfile.push("#!/bin/bash");
+    scriptfile.push(`export MAGICK=magick`);
 }
+
+
+if (isWindows) {
+    scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
+    scriptfile.push(`if not exist seamless_images mkdir seamless_images`);
+} else {
+    scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
+    scriptfile.push(`  mkdir gallica_pngs`);
+    scriptfile.push(`fi`);
+    scriptfile.push(`if [ ! -d seamless_images ]; then`);
+    scriptfile.push(`  mkdir seamless_images`);
+    scriptfile.push(`fi`);
+}
+
+var mapinfo = {};
+for (var l = 0; l < mappings.length; ++l) {
+    const mappingname = mappings[l];
+    const mapfile = `mappings${sep}${mappingname}_mapping.json`;
+    if (fs.existsSync(mapfile)) {
+        const mapping = JSON.parse(fs.readFileSync(mapfile));
+        const image = mapping['image'];
+        if (isWindows) {
+            scriptfile.push(`if exist gallica_pngs\\${image}.png (`);
+            scriptfile.push(`  if not exist seamless_images\\${mappingname}.tif (`);
+            scriptfile.push(`     echo Creating seamless image from ${image}.png`);
+            scriptfile.push(`     echo compute intensive, can take several minutes`);
+            scriptfile.push(`     call mapping_scripts\\${mappingname}.bat`);
+            scriptfile.push(`   )`);
+            scriptfile.push(`)`);
+        } else {
+            scriptfile.push(`if [ -f gallica_pngs/${image}.png ]; then`);
+            scriptfile.push(`   if [ ! -f seamless_images/${mappingname}.tif ]; then`);
+            scriptfile.push(`     echo Creating seamless image from ${image}`);
+            scriptfile.push(`     echo compute intensive, can take several minutes`);
+            scriptfile.push(`     source ./mapping_scripts/${mappingname}.sh`);
+            scriptfile.push(`   fi`);
+            scriptfile.push(`fi`);
+        }
+
+    }
+}
+if (!fs.existsSync("scripts")) fs.mkdirSync("scripts");
+
+const output = scriptfile.join("\n");
+const filename = `scripts${sep}make_missing_seamless${scriptext}`;
+fs.writeFileSync(filename, output);
