@@ -13,7 +13,7 @@ const scriptext = isWindows ? ".bat" : ".sh";
 const sep = isWindows ? "\\" : "/";
 const scriptfile = [];
 
-const sheetWidth.InToises = 40000;
+const sheetWidthInToises = 40000;
 const sheetHeightInToises = 25000;
 const meterPerToise = 1.94906;
 const toisePerMeter = 1 / meterPerToise;
