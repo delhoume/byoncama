@@ -11,6 +11,9 @@ if [ -f gallica_pngs/001_Paris_btv1b53095162g.png ]; then
      echo Creating seamless image from 001_Paris_btv1b53095162g.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 001_Paris_btv1b53095162g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/001_Paris_btv1b53095162g.png +distort Perspective "545,496 0, 0 514,3324 0,2834 2286,3344 1773,2834  2320,504 1773,0" -crop 1773x2834+0+0 /tmp/cassini/001_Paris_btv1b53095162g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/001_Paris_btv1b53095162g.png +distort Perspective "2354,512 0, 0 2330,3341 0,2829 4438,3345 2110,2829  4466,515 2110,0" -crop 2110x2829+0+0 /tmp/cassini/001_Paris_btv1b53095162g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/001_Paris_btv1b53095162g.png +distort Perspective "4500,505 0, 0 4472,3340 0,2837 6579,3339 2101,2837  6595,500 2101,0" -crop 2101x2837+0+0 /tmp/cassini/001_Paris_btv1b53095162g_2_0_crop.png
@@ -73,6 +76,9 @@ if [ -f gallica_pngs/002_Beauvais_btv1b53095201x.png ]; then
      echo Creating seamless image from 002_Beauvais_btv1b53095201x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 002_Beauvais_btv1b53095201x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/002_Beauvais_btv1b53095201x.png +distort Perspective "411,517 0, 0 388,3349 0,2829 2350,3348 1956,2829  2362,521 1956,0" -crop 1956x2829+0+0 /tmp/cassini/002_Beauvais_btv1b53095201x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/002_Beauvais_btv1b53095201x.png +distort Perspective "2417,521 0, 0 2395,3350 0,2831 4512,3358 2115,2831  4531,524 2115,0" -crop 2115x2831+0+0 /tmp/cassini/002_Beauvais_btv1b53095201x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/002_Beauvais_btv1b53095201x.png +distort Perspective "4576,522 0, 0 4561,3353 0,2827 6679,3346 2111,2827  6680,522 2111,0" -crop 2111x2827+0+0 /tmp/cassini/002_Beauvais_btv1b53095201x_2_0_crop.png
@@ -135,6 +141,9 @@ if [ -f gallica_pngs/003_Amiens_btv1b53095205q.png ]; then
      echo Creating seamless image from 003_Amiens_btv1b53095205q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 003_Amiens_btv1b53095205q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/003_Amiens_btv1b53095205q.png +distort Perspective "314,599 0, 0 335,3415 0,2824 2273,3414 1936,2824  2249,581 1936,0" -crop 1936x2824+0+0 /tmp/cassini/003_Amiens_btv1b53095205q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/003_Amiens_btv1b53095205q.png +distort Perspective "2296,578 0, 0 2302,3408 0,2824 4371,3401 2069,2824  4365,582 2069,0" -crop 2069x2824+0+0 /tmp/cassini/003_Amiens_btv1b53095205q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/003_Amiens_btv1b53095205q.png +distort Perspective "4406,581 0, 0 4422,3401 0,2813 6485,3380 2070,2813  6483,574 2070,0" -crop 2070x2813+0+0 /tmp/cassini/003_Amiens_btv1b53095205q_2_0_crop.png
@@ -197,6 +206,9 @@ if [ -f gallica_pngs/004_Abbeville_btv1b53095180d.png ]; then
      echo Creating seamless image from 004_Abbeville_btv1b53095180d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 004_Abbeville_btv1b53095180d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/004_Abbeville_btv1b53095180d.png +distort Perspective "501,520 0, 0 491,3323 0,2813 2252,3324 1760,2813  2260,501 1760,0" -crop 1760x2813+0+0 /tmp/cassini/004_Abbeville_btv1b53095180d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/004_Abbeville_btv1b53095180d.png +distort Perspective "2296,493 0, 0 2298,3318 0,2832 4388,3306 2093,2832  4392,466 2093,0" -crop 2093x2832+0+0 /tmp/cassini/004_Abbeville_btv1b53095180d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/004_Abbeville_btv1b53095180d.png +distort Perspective "4452,464 0, 0 4434,3301 0,2833 6519,3299 2084,2833  6535,470 2084,0" -crop 2084x2833+0+0 /tmp/cassini/004_Abbeville_btv1b53095180d_2_0_crop.png
@@ -259,6 +271,9 @@ if [ -f gallica_pngs/005_St_Omer_btv1b530951829.png ]; then
      echo Creating seamless image from 005_St_Omer_btv1b530951829.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 005_St_Omer_btv1b530951829
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/005_St_Omer_btv1b530951829.png +distort Perspective "521,499 0, 0 484,3314 0,2810 2246,3307 1743,2810  2245,502 1743,0" -crop 1743x2810+0+0 /tmp/cassini/005_St_Omer_btv1b530951829_0_0_crop.png
 $MAGICK -monitor gallica_pngs/005_St_Omer_btv1b530951829.png +distort Perspective "2288,488 0, 0 2291,3306 0,2816 4379,3312 2091,2816  4382,498 2091,0" -crop 2091x2816+0+0 /tmp/cassini/005_St_Omer_btv1b530951829_1_0_crop.png
 $MAGICK -monitor gallica_pngs/005_St_Omer_btv1b530951829.png +distort Perspective "4439,496 0, 0 4422,3313 0,2814 6522,3321 2103,2814  6545,510 2103,0" -crop 2103x2814+0+0 /tmp/cassini/005_St_Omer_btv1b530951829_2_0_crop.png
@@ -321,6 +336,9 @@ if [ -f gallica_pngs/006_Dunkerque_btv1b53095202c.png ]; then
      echo Creating seamless image from 006_Dunkerque_btv1b53095202c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 006_Dunkerque_btv1b53095202c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/006_Dunkerque_btv1b53095202c.png +distort Perspective "475,534 0, 0 465,3337 0,2807 2259,3343 1792,2807  2265,532 1792,0" -crop 1792x2807+0+0 /tmp/cassini/006_Dunkerque_btv1b53095202c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/006_Dunkerque_btv1b53095202c.png +distort Perspective "2302,520 0, 0 2305,3339 0,2815 4382,3337 2079,2815  4384,526 2079,0" -crop 2079x2815+0+0 /tmp/cassini/006_Dunkerque_btv1b53095202c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/006_Dunkerque_btv1b53095202c.png +distort Perspective "4435,523 0, 0 4428,3335 0,2810 6515,3335 2087,2810  6523,527 2087,0" -crop 2087x2810+0+0 /tmp/cassini/006_Dunkerque_btv1b53095202c_2_0_crop.png
@@ -383,6 +401,9 @@ if [ -f gallica_pngs/007_Fontainebleau_btv1b53095181v.png ]; then
      echo Creating seamless image from 007_Fontainebleau_btv1b53095181v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 007_Fontainebleau_btv1b53095181v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/007_Fontainebleau_btv1b53095181v.png +distort Perspective "519,457 0, 0 511,3272 0,2817 2328,3284 1817,2817  2336,464 1817,0" -crop 1817x2817+0+0 /tmp/cassini/007_Fontainebleau_btv1b53095181v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/007_Fontainebleau_btv1b53095181v.png +distort Perspective "2371,472 0, 0 2368,3285 0,2809 4448,3291 2083,2809  4458,485 2083,0" -crop 2083x2809+0+0 /tmp/cassini/007_Fontainebleau_btv1b53095181v_1_0_crop.png
 $MAGICK -monitor gallica_pngs/007_Fontainebleau_btv1b53095181v.png +distort Perspective "4507,484 0, 0 4498,3299 0,2821 6589,3306 2091,2821  6599,479 2091,0" -crop 2091x2821+0+0 /tmp/cassini/007_Fontainebleau_btv1b53095181v_2_0_crop.png
@@ -445,6 +466,9 @@ if [ -f gallica_pngs/008_Orleans_btv1b53095183r.png ]; then
      echo Creating seamless image from 008_Orleans_btv1b53095183r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 008_Orleans_btv1b53095183r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/008_Orleans_btv1b53095183r.png +distort Perspective "512,506 0, 0 514,3314 0,2810 2267,3309 1757,2810  2274,497 1757,0" -crop 1757x2810+0+0 /tmp/cassini/008_Orleans_btv1b53095183r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/008_Orleans_btv1b53095183r.png +distort Perspective "2305,503 0, 0 2311,3312 0,2807 4395,3292 2093,2807  4408,486 2093,0" -crop 2093x2807+0+0 /tmp/cassini/008_Orleans_btv1b53095183r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/008_Orleans_btv1b53095183r.png +distort Perspective "4445,502 0, 0 4428,3301 0,2799 6528,3290 2097,2799  6539,490 2097,0" -crop 2097x2799+0+0 /tmp/cassini/008_Orleans_btv1b53095183r_2_0_crop.png
@@ -507,6 +531,9 @@ if [ -f gallica_pngs/009_Gien_btv1b53095203t.png ]; then
      echo Creating seamless image from 009_Gien_btv1b53095203t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 009_Gien_btv1b53095203t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/009_Gien_btv1b53095203t.png +distort Perspective "478,555 0, 0 463,3359 0,2810 2264,3359 1788,2810  2254,543 1788,0" -crop 1788x2810+0+0 /tmp/cassini/009_Gien_btv1b53095203t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/009_Gien_btv1b53095203t.png +distort Perspective "2299,540 0, 0 2299,3357 0,2820 4382,3357 2085,2820  4386,533 2085,0" -crop 2085x2820+0+0 /tmp/cassini/009_Gien_btv1b53095203t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/009_Gien_btv1b53095203t.png +distort Perspective "4437,526 0, 0 4430,3348 0,2824 6526,3340 2087,2824  6516,514 2087,0" -crop 2087x2824+0+0 /tmp/cassini/009_Gien_btv1b53095203t_2_0_crop.png
@@ -569,6 +596,9 @@ if [ -f gallica_pngs/010_Bourges_btv1b530952065.png ]; then
      echo Creating seamless image from 010_Bourges_btv1b530952065.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 010_Bourges_btv1b530952065
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/010_Bourges_btv1b530952065.png +distort Perspective "490,496 0, 0 480,3295 0,2807 2245,3309 1761,2807  2247,493 1761,0" -crop 1761x2807+0+0 /tmp/cassini/010_Bourges_btv1b530952065_0_0_crop.png
 $MAGICK -monitor gallica_pngs/010_Bourges_btv1b530952065.png +distort Perspective "2283,492 0, 0 2286,3305 0,2805 4370,3305 2087,2805  4373,508 2087,0" -crop 2087x2805+0+0 /tmp/cassini/010_Bourges_btv1b530952065_1_0_crop.png
 $MAGICK -monitor gallica_pngs/010_Bourges_btv1b530952065.png +distort Perspective "4394,508 0, 0 4411,3307 0,2799 6509,3290 2099,2799  6495,491 2099,0" -crop 2099x2799+0+0 /tmp/cassini/010_Bourges_btv1b530952065_2_0_crop.png
@@ -631,6 +661,9 @@ if [ -f gallica_pngs/011_La_Chatre_btv1b530952048.png ]; then
      echo Creating seamless image from 011_La_Chatre_btv1b530952048.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 011_La_Chatre_btv1b530952048
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/011_La_Chatre_btv1b530952048.png +distort Perspective "544,522 0, 0 492,3323 0,2808 2282,3352 1780,2808  2315,537 1780,0" -crop 1780x2808+0+0 /tmp/cassini/011_La_Chatre_btv1b530952048_0_0_crop.png
 $MAGICK -monitor gallica_pngs/011_La_Chatre_btv1b530952048.png +distort Perspective "2366,539 0, 0 2333,3348 0,2809 4421,3372 2088,2809  4454,563 2088,0" -crop 2088x2809+0+0 /tmp/cassini/011_La_Chatre_btv1b530952048_1_0_crop.png
 $MAGICK -monitor gallica_pngs/011_La_Chatre_btv1b530952048.png +distort Perspective "4508,552 0, 0 4475,3367 0,2814 6577,3381 2096,2814  6599,567 2096,0" -crop 2096x2814+0+0 /tmp/cassini/011_La_Chatre_btv1b530952048_2_0_crop.png
@@ -693,6 +726,9 @@ if [ -f gallica_pngs/012_Evaux_btv1b53095185n.png ]; then
      echo Creating seamless image from 012_Evaux_btv1b53095185n.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 012_Evaux_btv1b53095185n
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/012_Evaux_btv1b53095185n.png +distort Perspective "480,518 0, 0 477,3328 0,2817 2252,3334 1779,2817  2263,509 1779,0" -crop 1779x2817+0+0 /tmp/cassini/012_Evaux_btv1b53095185n_0_0_crop.png
 $MAGICK -monitor gallica_pngs/012_Evaux_btv1b53095185n.png +distort Perspective "2307,511 0, 0 2296,3340 0,2834 4386,3339 2097,2834  4411,500 2097,0" -crop 2097x2834+0+0 /tmp/cassini/012_Evaux_btv1b53095185n_1_0_crop.png
 $MAGICK -monitor gallica_pngs/012_Evaux_btv1b53095185n.png +distort Perspective "4462,501 0, 0 4424,3336 0,2836 6524,3343 2094,2836  6551,506 2094,0" -crop 2094x2836+0+0 /tmp/cassini/012_Evaux_btv1b53095185n_2_0_crop.png
@@ -755,6 +791,9 @@ if [ -f gallica_pngs/013_Aubusson_btv1b530951880.png ]; then
      echo Creating seamless image from 013_Aubusson_btv1b530951880.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 013_Aubusson_btv1b530951880
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/013_Aubusson_btv1b530951880.png +distort Perspective "440,483 0, 0 430,3315 0,2832 2210,3326 1783,2832  2227,493 1783,0" -crop 1783x2832+0+0 /tmp/cassini/013_Aubusson_btv1b530951880_0_0_crop.png
 $MAGICK -monitor gallica_pngs/013_Aubusson_btv1b530951880.png +distort Perspective "2254,483 0, 0 2244,3317 0,2834 4332,3328 2092,2834  4351,494 2092,0" -crop 2092x2834+0+0 /tmp/cassini/013_Aubusson_btv1b530951880_1_0_crop.png
 $MAGICK -monitor gallica_pngs/013_Aubusson_btv1b530951880.png +distort Perspective "4381,488 0, 0 4368,3322 0,2831 6456,3328 2091,2831  6476,499 2091,0" -crop 2091x2831+0+0 /tmp/cassini/013_Aubusson_btv1b530951880_2_0_crop.png
@@ -817,6 +856,9 @@ if [ -f gallica_pngs/014_Mauriac_btv1b53095124q.png ]; then
      echo Creating seamless image from 014_Mauriac_btv1b53095124q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 014_Mauriac_btv1b53095124q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/014_Mauriac_btv1b53095124q.png +distort Perspective "467,550 0, 0 454,3388 0,2851 2276,3404 1822,2851  2289,539 1822,0" -crop 1822x2851+0+0 /tmp/cassini/014_Mauriac_btv1b53095124q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/014_Mauriac_btv1b53095124q.png +distort Perspective "2322,534 0, 0 2310,3392 0,2858 4383,3399 2081,2858  4411,541 2081,0" -crop 2081x2858+0+0 /tmp/cassini/014_Mauriac_btv1b53095124q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/014_Mauriac_btv1b53095124q.png +distort Perspective "4434,551 0, 0 4426,3402 0,2857 6509,3404 2085,2857  6522,541 2085,0" -crop 2085x2857+0+0 /tmp/cassini/014_Mauriac_btv1b53095124q_2_0_crop.png
@@ -879,6 +921,9 @@ if [ -f gallica_pngs/015_Aurillac_btv1b53095209h.png ]; then
      echo Creating seamless image from 015_Aurillac_btv1b53095209h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 015_Aurillac_btv1b53095209h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/015_Aurillac_btv1b53095209h.png +distort Perspective "520,488 0, 0 509,3263 0,2779 2281,3257 1766,2779  2281,474 1766,0" -crop 1766x2779+0+0 /tmp/cassini/015_Aurillac_btv1b53095209h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/015_Aurillac_btv1b53095209h.png +distort Perspective "2326,479 0, 0 2316,3262 0,2788 4415,3262 2092,2788  4412,468 2092,0" -crop 2092x2788+0+0 /tmp/cassini/015_Aurillac_btv1b53095209h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/015_Aurillac_btv1b53095209h.png +distort Perspective "4462,459 0, 0 4448,3257 0,2794 6539,3252 2089,2794  6550,461 2089,0" -crop 2089x2794+0+0 /tmp/cassini/015_Aurillac_btv1b53095209h_2_0_crop.png
@@ -941,6 +986,9 @@ if [ -f gallica_pngs/016_Rodez_btv1b53095227f.png ]; then
      echo Creating seamless image from 016_Rodez_btv1b53095227f.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 016_Rodez_btv1b53095227f
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/016_Rodez_btv1b53095227f.png +distort Perspective "500,491 0, 0 504,3306 0,2815 2304,3304 1803,2815  2306,488 1803,0" -crop 1803x2815+0+0 /tmp/cassini/016_Rodez_btv1b53095227f_0_0_crop.png
 $MAGICK -monitor gallica_pngs/016_Rodez_btv1b53095227f.png +distort Perspective "2334,491 0, 0 2353,3309 0,2819 4438,3297 2086,2819  4422,476 2086,0" -crop 2086x2819+0+0 /tmp/cassini/016_Rodez_btv1b53095227f_1_0_crop.png
 $MAGICK -monitor gallica_pngs/016_Rodez_btv1b53095227f.png +distort Perspective "4465,481 0, 0 4473,3306 0,2824 6556,3291 2088,2824  6558,468 2088,0" -crop 2088x2824+0+0 /tmp/cassini/016_Rodez_btv1b53095227f_2_0_crop.png
@@ -1003,6 +1051,9 @@ if [ -f gallica_pngs/017_Albi_btv1b53095284k.png ]; then
      echo Creating seamless image from 017_Albi_btv1b53095284k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 017_Albi_btv1b53095284k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/017_Albi_btv1b53095284k.png +distort Perspective "479,463 0, 0 481,3325 0,2850 2313,3298 1807,2850  2262,459 1807,0" -crop 1807x2850+0+0 /tmp/cassini/017_Albi_btv1b53095284k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/017_Albi_btv1b53095284k.png +distort Perspective "2296,451 0, 0 2340,3296 0,2841 4415,3286 2084,2841  4389,448 2084,0" -crop 2084x2841+0+0 /tmp/cassini/017_Albi_btv1b53095284k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/017_Albi_btv1b53095284k.png +distort Perspective "4436,450 0, 0 4464,3290 0,2835 6547,3283 2099,2835  6551,452 2099,0" -crop 2099x2835+0+0 /tmp/cassini/017_Albi_btv1b53095284k_2_0_crop.png
@@ -1065,6 +1116,9 @@ if [ -f gallica_pngs/018_Castres_btv1b53095131s.png ]; then
      echo Creating seamless image from 018_Castres_btv1b53095131s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 018_Castres_btv1b53095131s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/018_Castres_btv1b53095131s.png +distort Perspective "444,515 0, 0 441,3336 0,2824 2236,3337 1783,2824  2215,510 1783,0" -crop 1783x2824+0+0 /tmp/cassini/018_Castres_btv1b53095131s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/018_Castres_btv1b53095131s.png +distort Perspective "2256,504 0, 0 2271,3335 0,2829 4371,3340 2103,2829  4363,513 2103,0" -crop 2103x2829+0+0 /tmp/cassini/018_Castres_btv1b53095131s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/018_Castres_btv1b53095131s.png +distort Perspective "4405,509 0, 0 4420,3334 0,2821 6505,3330 2092,2821  6505,512 2092,0" -crop 2092x2821+0+0 /tmp/cassini/018_Castres_btv1b53095131s_2_0_crop.png
@@ -1127,6 +1181,9 @@ if [ -f gallica_pngs/019_Carcassonne_btv1b53095135k.png ]; then
      echo Creating seamless image from 019_Carcassonne_btv1b53095135k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 019_Carcassonne_btv1b53095135k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/019_Carcassonne_btv1b53095135k.png +distort Perspective "488,522 0, 0 497,3343 0,2834 2287,3342 1784,2834  2266,495 1784,0" -crop 1784x2834+0+0 /tmp/cassini/019_Carcassonne_btv1b53095135k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/019_Carcassonne_btv1b53095135k.png +distort Perspective "2312,501 0, 0 2320,3335 0,2829 4411,3315 2090,2829  4401,490 2090,0" -crop 2090x2829+0+0 /tmp/cassini/019_Carcassonne_btv1b53095135k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/019_Carcassonne_btv1b53095135k.png +distort Perspective "4446,489 0, 0 4452,3322 0,2828 6546,3307 2099,2828  6551,483 2099,0" -crop 2099x2828+0+0 /tmp/cassini/019_Carcassonne_btv1b53095135k_2_0_crop.png
@@ -1189,6 +1246,9 @@ if [ -f gallica_pngs/020_Mont_Louis_btv1b53095197z.png ]; then
      echo Creating seamless image from 020_Mont_Louis_btv1b53095197z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 020_Mont_Louis_btv1b53095197z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/020_Mont_Louis_btv1b53095197z.png +distort Perspective "557,703 0, 0 555,3346 0,2643 2327,3345 1770,2643  2325,702 1770,0" -crop 1770x2643+0+0 /tmp/cassini/020_Mont_Louis_btv1b53095197z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/020_Mont_Louis_btv1b53095197z.png +distort Perspective "2375,697 0, 0 2384,3328 0,2631 4460,3329 2080,2631  4459,697 2080,0" -crop 2080x2631+0+0 /tmp/cassini/020_Mont_Louis_btv1b53095197z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/020_Mont_Louis_btv1b53095197z.png +distort Perspective "4508,701 0, 0 4523,3328 0,2627 6602,3314 2081,2627  6591,686 2081,0" -crop 2081x2627+0+0 /tmp/cassini/020_Mont_Louis_btv1b53095197z_2_0_crop.png
@@ -1251,6 +1311,9 @@ if [ -f gallica_pngs/020bis_Puigcerda_btv1b53095218g.png ]; then
      echo Creating seamless image from 020bis_Puigcerda_btv1b53095218g.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 7 columns from 020bis_Puigcerda_btv1b53095218g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/020bis_Puigcerda_btv1b53095218g.png +distort Perspective "434,188 0, 0 454,3129 0,2924 2319,3098 1861,2924  2291,190 1861,0" -crop 1861x2924+0+0 /tmp/cassini/020bis_Puigcerda_btv1b53095218g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/020bis_Puigcerda_btv1b53095218g.png +distort Perspective "2345,192 0, 0 2387,3099 0,2902 4470,3075 2086,2902  4434,177 2086,0" -crop 2086x2902+0+0 /tmp/cassini/020bis_Puigcerda_btv1b53095218g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/020bis_Puigcerda_btv1b53095218g.png +distort Perspective "4494,170 0, 0 4529,3081 0,2902 6600,3067 2083,2902  6590,173 2083,0" -crop 2083x2902+0+0 /tmp/cassini/020bis_Puigcerda_btv1b53095218g_2_0_crop.png
@@ -1297,6 +1360,9 @@ if [ -f gallica_pngs/021_Ambleteuse_btv1b53095221r.png ]; then
      echo Creating seamless image from 021_Ambleteuse_btv1b53095221r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 3 columns from 021_Ambleteuse_btv1b53095221r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/021_Ambleteuse_btv1b53095221r.png +distort Perspective "262,430 0, 0 262,3314 0,2881 2262,3314 2001,2881  2264,436 2001,0" -crop 2001x2881+0+0 /tmp/cassini/021_Ambleteuse_btv1b53095221r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/021_Ambleteuse_btv1b53095221r.png +distort Perspective "2303,434 0, 0 2305,3318 0,2883 4406,3318 2105,2883  4412,436 2105,0" -crop 2105x2883+0+0 /tmp/cassini/021_Ambleteuse_btv1b53095221r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/021_Ambleteuse_btv1b53095221r.png +distort Perspective "4459,448 0, 0 4459,3320 0,2875 6329,3302 1868,2875  6326,424 1868,0" -crop 1868x2875+0+0 /tmp/cassini/021_Ambleteuse_btv1b53095221r_2_0_crop.png
@@ -1335,6 +1401,9 @@ if [ -f gallica_pngs/022_Boulogne_btv1b53095234h.png ]; then
      echo Creating seamless image from 022_Boulogne_btv1b53095234h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 3 columns from 022_Boulogne_btv1b53095234h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/022_Boulogne_btv1b53095234h.png +distort Perspective "196,464 0, 0 189,3348 0,2885 2218,3351 2022,2885  2212,464 2022,0" -crop 2022x2885+0+0 /tmp/cassini/022_Boulogne_btv1b53095234h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/022_Boulogne_btv1b53095234h.png +distort Perspective "2249,464 0, 0 2255,3347 0,2884 4357,3345 2108,2884  4364,460 2108,0" -crop 2108x2884+0+0 /tmp/cassini/022_Boulogne_btv1b53095234h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/022_Boulogne_btv1b53095234h.png +distort Perspective "4400,458 0, 0 4400,3335 0,2875 6243,3329 1845,2875  6247,456 1845,0" -crop 1845x2875+0+0 /tmp/cassini/022_Boulogne_btv1b53095234h_2_0_crop.png
@@ -1373,6 +1442,9 @@ if [ -f gallica_pngs/023_Dieppe_btv1b530952389.png ]; then
      echo Creating seamless image from 023_Dieppe_btv1b530952389.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 5 columns from 023_Dieppe_btv1b530952389
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/023_Dieppe_btv1b530952389.png +distort Perspective "225,434 0, 0 214,3302 0,2872 2207,3317 1990,2872  2213,440 1990,0" -crop 1990x2872+0+0 /tmp/cassini/023_Dieppe_btv1b530952389_0_0_crop.png
 $MAGICK -monitor gallica_pngs/023_Dieppe_btv1b530952389.png +distort Perspective "2252,435 0, 0 2249,3315 0,2876 4364,3309 2112,2876  4361,437 2112,0" -crop 2112x2876+0+0 /tmp/cassini/023_Dieppe_btv1b530952389_1_0_crop.png
 $MAGICK -monitor gallica_pngs/023_Dieppe_btv1b530952389.png +distort Perspective "4406,428 0, 0 4411,3302 0,2875 6525,3303 2109,2875  6511,427 2109,0" -crop 2109x2875+0+0 /tmp/cassini/023_Dieppe_btv1b530952389_2_0_crop.png
@@ -1423,6 +1495,9 @@ if [ -f gallica_pngs/024_Forges_btv1b53095160k.png ]; then
      echo Creating seamless image from 024_Forges_btv1b53095160k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 024_Forges_btv1b53095160k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/024_Forges_btv1b53095160k.png +distort Perspective "505,450 0, 0 484,3306 0,2859 2247,3303 1755,2859  2252,441 1755,0" -crop 1755x2859+0+0 /tmp/cassini/024_Forges_btv1b53095160k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/024_Forges_btv1b53095160k.png +distort Perspective "2285,444 0, 0 2283,3309 0,2861 4378,3302 2093,2861  4376,444 2093,0" -crop 2093x2861+0+0 /tmp/cassini/024_Forges_btv1b53095160k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/024_Forges_btv1b53095160k.png +distort Perspective "4410,447 0, 0 4425,3308 0,2862 6525,3296 2106,2862  6522,433 2106,0" -crop 2106x2862+0+0 /tmp/cassini/024_Forges_btv1b53095160k_2_0_crop.png
@@ -1485,6 +1560,9 @@ if [ -f gallica_pngs/025_Rouen_btv1b530951611.png ]; then
      echo Creating seamless image from 025_Rouen_btv1b530951611.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 025_Rouen_btv1b530951611
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/025_Rouen_btv1b530951611.png +distort Perspective "465,483 0, 0 449,3350 0,2867 2237,3360 1784,2867  2246,493 1784,0" -crop 1784x2867+0+0 /tmp/cassini/025_Rouen_btv1b530951611_0_0_crop.png
 $MAGICK -monitor gallica_pngs/025_Rouen_btv1b530951611.png +distort Perspective "2278,481 0, 0 2279,3354 0,2874 4380,3358 2099,2874  4375,482 2099,0" -crop 2099x2874+0+0 /tmp/cassini/025_Rouen_btv1b530951611_1_0_crop.png
 $MAGICK -monitor gallica_pngs/025_Rouen_btv1b530951611.png +distort Perspective "4411,481 0, 0 4428,3354 0,2876 6538,3354 2105,2876  6511,474 2105,0" -crop 2105x2876+0+0 /tmp/cassini/025_Rouen_btv1b530951611_2_0_crop.png
@@ -1547,6 +1625,9 @@ if [ -f gallica_pngs/026_Evreux_btv1b530951846.png ]; then
      echo Creating seamless image from 026_Evreux_btv1b530951846.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 026_Evreux_btv1b530951846
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/026_Evreux_btv1b530951846.png +distort Perspective "486,466 0, 0 469,3326 0,2856 2242,3326 1771,2856  2256,473 1771,0" -crop 1771x2856+0+0 /tmp/cassini/026_Evreux_btv1b530951846_0_0_crop.png
 $MAGICK -monitor gallica_pngs/026_Evreux_btv1b530951846.png +distort Perspective "2296,470 0, 0 2287,3324 0,2859 4399,3335 2103,2859  4390,470 2103,0" -crop 2103x2859+0+0 /tmp/cassini/026_Evreux_btv1b530951846_1_0_crop.png
 $MAGICK -monitor gallica_pngs/026_Evreux_btv1b530951846.png +distort Perspective "4423,467 0, 0 4434,3336 0,2875 6534,3339 2105,2875  6534,458 2105,0" -crop 2105x2875+0+0 /tmp/cassini/026_Evreux_btv1b530951846_2_0_crop.png
@@ -1609,6 +1690,9 @@ if [ -f gallica_pngs/027_Chartres_btv1b530951361.png ]; then
      echo Creating seamless image from 027_Chartres_btv1b530951361.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 027_Chartres_btv1b530951361
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/027_Chartres_btv1b530951361.png +distort Perspective "515,528 0, 0 506,3342 0,2822 2272,3351 1763,2822  2276,521 1763,0" -crop 1763x2822+0+0 /tmp/cassini/027_Chartres_btv1b530951361_0_0_crop.png
 $MAGICK -monitor gallica_pngs/027_Chartres_btv1b530951361.png +distort Perspective "2322,510 0, 0 2310,3348 0,2840 4411,3352 2094,2840  4409,510 2094,0" -crop 2094x2840+0+0 /tmp/cassini/027_Chartres_btv1b530951361_1_0_crop.png
 $MAGICK -monitor gallica_pngs/027_Chartres_btv1b530951361.png +distort Perspective "4462,502 0, 0 4460,3349 0,2838 6568,3334 2102,2838  6559,505 2102,0" -crop 2102x2838+0+0 /tmp/cassini/027_Chartres_btv1b530951361_2_0_crop.png
@@ -1671,6 +1755,9 @@ if [ -f gallica_pngs/028_Vendome_btv1b53095137g.png ]; then
      echo Creating seamless image from 028_Vendome_btv1b53095137g.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 028_Vendome_btv1b53095137g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/028_Vendome_btv1b53095137g.png +distort Perspective "506,528 0, 0 525,3326 0,2808 2295,3326 1773,2808  2283,507 1773,0" -crop 1773x2808+0+0 /tmp/cassini/028_Vendome_btv1b53095137g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/028_Vendome_btv1b53095137g.png +distort Perspective "2305,509 0, 0 2319,3329 0,2817 4428,3317 2102,2817  4400,503 2102,0" -crop 2102x2817+0+0 /tmp/cassini/028_Vendome_btv1b53095137g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/028_Vendome_btv1b53095137g.png +distort Perspective "4434,502 0, 0 4473,3320 0,2807 6574,3288 2109,2807  6552,492 2109,0" -crop 2109x2807+0+0 /tmp/cassini/028_Vendome_btv1b53095137g_2_0_crop.png
@@ -1733,6 +1820,9 @@ if [ -f gallica_pngs/029_Blois_btv1b53095261d.png ]; then
      echo Creating seamless image from 029_Blois_btv1b53095261d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 029_Blois_btv1b53095261d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/029_Blois_btv1b53095261d.png +distort Perspective "471,569 0, 0 483,3383 0,2819 2272,3373 1791,2819  2264,549 1791,0" -crop 1791x2819+0+0 /tmp/cassini/029_Blois_btv1b53095261d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/029_Blois_btv1b53095261d.png +distort Perspective "2306,547 0, 0 2306,3370 0,2827 4404,3370 2097,2827  4403,539 2097,0" -crop 2097x2827+0+0 /tmp/cassini/029_Blois_btv1b53095261d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/029_Blois_btv1b53095261d.png +distort Perspective "4442,540 0, 0 4451,3364 0,2826 6551,3352 2104,2826  6551,524 2104,0" -crop 2104x2826+0+0 /tmp/cassini/029_Blois_btv1b53095261d_2_0_crop.png
@@ -1795,6 +1885,9 @@ if [ -f gallica_pngs/030_Loches_btv1b530952639.png ]; then
      echo Creating seamless image from 030_Loches_btv1b530952639.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 030_Loches_btv1b530952639
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/030_Loches_btv1b530952639.png +distort Perspective "551,571 0, 0 558,3372 0,2807 2299,3373 1735,2807  2281,560 1735,0" -crop 1735x2807+0+0 /tmp/cassini/030_Loches_btv1b530952639_0_0_crop.png
 $MAGICK -monitor gallica_pngs/030_Loches_btv1b530952639.png +distort Perspective "2304,557 0, 0 2335,3372 0,2818 4438,3372 2104,2818  4410,551 2104,0" -crop 2104x2818+0+0 /tmp/cassini/030_Loches_btv1b530952639_1_0_crop.png
 $MAGICK -monitor gallica_pngs/030_Loches_btv1b530952639.png +distort Perspective "4457,546 0, 0 4471,3366 0,2818 6572,3371 2105,2818  6567,555 2105,0" -crop 2105x2818+0+0 /tmp/cassini/030_Loches_btv1b530952639_2_0_crop.png
@@ -1857,6 +1950,9 @@ if [ -f gallica_pngs/031_Chateauroux_btv1b53095264r.png ]; then
      echo Creating seamless image from 031_Chateauroux_btv1b53095264r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 031_Chateauroux_btv1b53095264r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/031_Chateauroux_btv1b53095264r.png +distort Perspective "563,448 0, 0 551,3325 0,2876 2307,3323 1752,2876  2312,448 1752,0" -crop 1752x2876+0+0 /tmp/cassini/031_Chateauroux_btv1b53095264r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/031_Chateauroux_btv1b53095264r.png +distort Perspective "2353,451 0, 0 2358,3321 0,2866 4443,3324 2093,2866  4454,461 2093,0" -crop 2093x2866+0+0 /tmp/cassini/031_Chateauroux_btv1b53095264r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/031_Chateauroux_btv1b53095264r.png +distort Perspective "4500,464 0, 0 4491,3329 0,2863 6591,3339 2108,2863  6617,477 2108,0" -crop 2108x2863+0+0 /tmp/cassini/031_Chateauroux_btv1b53095264r_2_0_crop.png
@@ -1919,6 +2015,9 @@ if [ -f gallica_pngs/032_LeDorat_btv1b530952728.png ]; then
      echo Creating seamless image from 032_LeDorat_btv1b530952728.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 032_LeDorat_btv1b530952728
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/032_LeDorat_btv1b530952728.png +distort Perspective "512,440 0, 0 510,3295 0,2862 2277,3297 1768,2862  2281,428 1768,0" -crop 1768x2862+0+0 /tmp/cassini/032_LeDorat_btv1b530952728_0_0_crop.png
 $MAGICK -monitor gallica_pngs/032_LeDorat_btv1b530952728.png +distort Perspective "2344,425 0, 0 2333,3294 0,2869 4437,3286 2097,2869  4435,417 2097,0" -crop 2097x2869+0+0 /tmp/cassini/032_LeDorat_btv1b530952728_1_0_crop.png
 $MAGICK -monitor gallica_pngs/032_LeDorat_btv1b530952728.png +distort Perspective "4491,417 0, 0 4476,3287 0,2870 6576,3299 2105,2870  6602,429 2105,0" -crop 2105x2870+0+0 /tmp/cassini/032_LeDorat_btv1b530952728_2_0_crop.png
@@ -1981,6 +2080,9 @@ if [ -f gallica_pngs/033_Limoges_btv1b53095235z.png ]; then
      echo Creating seamless image from 033_Limoges_btv1b53095235z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 033_Limoges_btv1b53095235z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/033_Limoges_btv1b53095235z.png +distort Perspective "536,445 0, 0 501,3297 0,2852 2256,3310 1752,2852  2285,457 1752,0" -crop 1752x2852+0+0 /tmp/cassini/033_Limoges_btv1b53095235z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/033_Limoges_btv1b53095235z.png +distort Perspective "2339,447 0, 0 2304,3304 0,2852 4419,3307 2106,2852  4437,460 2106,0" -crop 2106x2852+0+0 /tmp/cassini/033_Limoges_btv1b53095235z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/033_Limoges_btv1b53095235z.png +distort Perspective "4473,459 0, 0 4458,3319 0,2856 6552,3319 2099,2856  6577,467 2099,0" -crop 2099x2856+0+0 /tmp/cassini/033_Limoges_btv1b53095235z_2_0_crop.png
@@ -2043,6 +2145,9 @@ if [ -f gallica_pngs/034_Tulle_btv1b530951166.png ]; then
      echo Creating seamless image from 034_Tulle_btv1b530951166.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 034_Tulle_btv1b530951166
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/034_Tulle_btv1b530951166.png +distort Perspective "529,458 0, 0 531,3326 0,2870 2296,3327 1760,2870  2285,455 1760,0" -crop 1760x2870+0+0 /tmp/cassini/034_Tulle_btv1b530951166_0_0_crop.png
 $MAGICK -monitor gallica_pngs/034_Tulle_btv1b530951166.png +distort Perspective "2326,451 0, 0 2328,3321 0,2868 4442,3321 2110,2868  4432,454 2110,0" -crop 2110x2868+0+0 /tmp/cassini/034_Tulle_btv1b530951166_1_0_crop.png
 $MAGICK -monitor gallica_pngs/034_Tulle_btv1b530951166.png +distort Perspective "4479,456 0, 0 4489,3322 0,2868 6586,3332 2106,2868  6595,461 2106,0" -crop 2106x2868+0+0 /tmp/cassini/034_Tulle_btv1b530951166_2_0_crop.png
@@ -2105,6 +2210,9 @@ if [ -f gallica_pngs/035_Sarlat_btv1b530951327.png ]; then
      echo Creating seamless image from 035_Sarlat_btv1b530951327.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 035_Sarlat_btv1b530951327
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/035_Sarlat_btv1b530951327.png +distort Perspective "500,545 0, 0 511,3411 0,2876 2303,3406 1790,2876  2289,520 1790,0" -crop 1790x2876+0+0 /tmp/cassini/035_Sarlat_btv1b530951327_0_0_crop.png
 $MAGICK -monitor gallica_pngs/035_Sarlat_btv1b530951327.png +distort Perspective "2332,513 0, 0 2355,3403 0,2888 4469,3374 2107,2888  4433,488 2107,0" -crop 2107x2888+0+0 /tmp/cassini/035_Sarlat_btv1b530951327_1_0_crop.png
 $MAGICK -monitor gallica_pngs/035_Sarlat_btv1b530951327.png +distort Perspective "4493,474 0, 0 4508,3370 0,2889 6616,3351 2102,2889  6590,469 2102,0" -crop 2102x2889+0+0 /tmp/cassini/035_Sarlat_btv1b530951327_2_0_crop.png
@@ -2167,6 +2275,9 @@ if [ -f gallica_pngs/036_Cahors_btv1b530951522.png ]; then
      echo Creating seamless image from 036_Cahors_btv1b530951522.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 036_Cahors_btv1b530951522
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/036_Cahors_btv1b530951522.png +distort Perspective "521,457 0, 0 514,3314 0,2863 2314,3321 1801,2863  2323,452 1801,0" -crop 1801x2863+0+0 /tmp/cassini/036_Cahors_btv1b530951522_0_0_crop.png
 $MAGICK -monitor gallica_pngs/036_Cahors_btv1b530951522.png +distort Perspective "2380,447 0, 0 2357,3320 0,2874 4464,3321 2095,2874  4464,445 2095,0" -crop 2095x2874+0+0 /tmp/cassini/036_Cahors_btv1b530951522_1_0_crop.png
 $MAGICK -monitor gallica_pngs/036_Cahors_btv1b530951522.png +distort Perspective "4512,438 0, 0 4512,3319 0,2881 6602,3324 2089,2881  6601,442 2089,0" -crop 2089x2881+0+0 /tmp/cassini/036_Cahors_btv1b530951522_2_0_crop.png
@@ -2229,6 +2340,9 @@ if [ -f gallica_pngs/037_Montauban_btv1b530951579.png ]; then
      echo Creating seamless image from 037_Montauban_btv1b530951579.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 037_Montauban_btv1b530951579
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/037_Montauban_btv1b530951579.png +distort Perspective "467,539 0, 0 498,3425 0,2884 2295,3404 1796,2884  2263,521 1796,0" -crop 1796x2884+0+0 /tmp/cassini/037_Montauban_btv1b530951579_0_0_crop.png
 $MAGICK -monitor gallica_pngs/037_Montauban_btv1b530951579.png +distort Perspective "2315,511 0, 0 2328,3405 0,2890 4445,3391 2112,2890  4422,505 2112,0" -crop 2112x2890+0+0 /tmp/cassini/037_Montauban_btv1b530951579_1_0_crop.png
 $MAGICK -monitor gallica_pngs/037_Montauban_btv1b530951579.png +distort Perspective "4480,491 0, 0 4496,3380 0,2885 6598,3373 2103,2885  6584,492 2103,0" -crop 2103x2885+0+0 /tmp/cassini/037_Montauban_btv1b530951579_2_0_crop.png
@@ -2291,6 +2405,9 @@ if [ -f gallica_pngs/038_Toulouse_btv1b53095178k.png ]; then
      echo Creating seamless image from 038_Toulouse_btv1b53095178k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 038_Toulouse_btv1b53095178k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/038_Toulouse_btv1b53095178k.png +distort Perspective "497,508 0, 0 511,3392 0,2885 2278,3386 1771,2885  2272,500 1771,0" -crop 1771x2885+0+0 /tmp/cassini/038_Toulouse_btv1b53095178k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/038_Toulouse_btv1b53095178k.png +distort Perspective "2314,513 0, 0 2317,3381 0,2871 4427,3377 2109,2871  4423,502 2109,0" -crop 2109x2871+0+0 /tmp/cassini/038_Toulouse_btv1b53095178k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/038_Toulouse_btv1b53095178k.png +distort Perspective "4459,514 0, 0 4467,3380 0,2862 6571,3364 2106,2862  6567,506 2106,0" -crop 2106x2862+0+0 /tmp/cassini/038_Toulouse_btv1b53095178k_2_0_crop.png
@@ -2353,6 +2470,9 @@ if [ -f gallica_pngs/039_Saint_Lizier_btv1b53095198d.png ]; then
      echo Creating seamless image from 039_Saint_Lizier_btv1b53095198d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 039_Saint_Lizier_btv1b53095198d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/039_Saint_Lizier_btv1b53095198d.png +distort Perspective "532,469 0, 0 522,3349 0,2885 2276,3356 1755,2885  2288,465 1755,0" -crop 1755x2885+0+0 /tmp/cassini/039_Saint_Lizier_btv1b53095198d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/039_Saint_Lizier_btv1b53095198d.png +distort Perspective "2324,462 0, 0 2316,3362 0,2901 4410,3362 2097,2901  4425,459 2097,0" -crop 2097x2901+0+0 /tmp/cassini/039_Saint_Lizier_btv1b53095198d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/039_Saint_Lizier_btv1b53095198d.png +distort Perspective "4463,457 0, 0 4446,3357 0,2893 6551,3352 2107,2893  6573,465 2107,0" -crop 2107x2893+0+0 /tmp/cassini/039_Saint_Lizier_btv1b53095198d_2_0_crop.png
@@ -2415,6 +2535,9 @@ if [ -f gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png ]; then
      echo Creating seamless image from 040_Ax_les_thermes_btv1b53095200g.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 7 columns from 040_Ax_les_thermes_btv1b53095200g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "523,9401 0, 0 523,9672 0,271 2275,9672 1752,271  2275,9401 1752,0" -crop 1752x271+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "2324,9401 0, 0 2332,9672 0,271 4431,9672 2103,271  4432,9401 2103,0" -crop 2103x271+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "4479,9401 0, 0 4474,9672 0,271 6577,9672 2101,271  6578,9401 2101,0" -crop 2101x271+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_2_0_crop.png
@@ -2445,6 +2568,9 @@ if [ -f gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png ]; then
      echo Creating seamless image from 040_Ax_les_thermes_btv1b53095200g.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 040_Ax_les_thermes_btv1b53095200g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "486,469 0, 0 497,3386 0,2919 2252,3378 1760,2919  2251,456 1760,0" -crop 1760x2919+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "2295,454 0, 0 2294,3371 0,2911 4401,3362 2107,2911  4403,457 2107,0" -crop 2107x2911+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/040_Ax_les_thermes_btv1b53095200g.png +distort Perspective "4441,452 0, 0 4452,3362 0,2906 6553,3342 2103,2906  6547,440 2103,0" -crop 2103x2906+0+0 /tmp/cassini/040_Ax_les_thermes_btv1b53095200g_2_0_crop.png
@@ -2507,6 +2633,9 @@ if [ -f gallica_pngs/040bis_Andorre_btv1b53095219x.png ]; then
      echo Creating seamless image from 040bis_Andorre_btv1b53095219x.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 4 columns from 040bis_Andorre_btv1b53095219x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/040bis_Andorre_btv1b53095219x.png +distort Perspective "247,197 0, 0 247,1658 0,1462 1235,1656 981,1462  1222,193 981,0" -crop 981x1462+0+0 /tmp/cassini/040bis_Andorre_btv1b53095219x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/040bis_Andorre_btv1b53095219x.png +distort Perspective "1248,215 0, 0 1279,1668 0,1449 3364,1628 2094,1449  3351,183 2094,0" -crop 2094x1449+0+0 /tmp/cassini/040bis_Andorre_btv1b53095219x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/040bis_Andorre_btv1b53095219x.png +distort Perspective "3398,187 0, 0 3396,1625 0,1444 5483,1639 2087,1444  5486,189 2087,0" -crop 2087x1444+0+0 /tmp/cassini/040bis_Andorre_btv1b53095219x_2_0_crop.png
@@ -2531,6 +2660,9 @@ if [ -f gallica_pngs/041_Lille_btv1b530952226.png ]; then
      echo Creating seamless image from 041_Lille_btv1b530952226.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 041_Lille_btv1b530952226
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/041_Lille_btv1b530952226.png +distort Perspective "506,466 0, 0 500,3362 0,2889 2279,3358 1774,2889  2275,475 1774,0" -crop 1774x2889+0+0 /tmp/cassini/041_Lille_btv1b530952226_0_0_crop.png
 $MAGICK -monitor gallica_pngs/041_Lille_btv1b530952226.png +distort Perspective "2311,477 0, 0 2308,3357 0,2883 4405,3367 2099,2883  4412,480 2099,0" -crop 2099x2883+0+0 /tmp/cassini/041_Lille_btv1b530952226_1_0_crop.png
 $MAGICK -monitor gallica_pngs/041_Lille_btv1b530952226.png +distort Perspective "4448,484 0, 0 4452,3371 0,2879 6548,3356 2095,2879  6543,484 2095,0" -crop 2095x2879+0+0 /tmp/cassini/041_Lille_btv1b530952226_2_0_crop.png
@@ -2593,6 +2725,9 @@ if [ -f gallica_pngs/042_Cambrai_btv1b53095239r.png ]; then
      echo Creating seamless image from 042_Cambrai_btv1b53095239r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 042_Cambrai_btv1b53095239r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/042_Cambrai_btv1b53095239r.png +distort Perspective "488,465 0, 0 472,3313 0,2854 2266,3321 1790,2854  2275,461 1790,0" -crop 1790x2854+0+0 /tmp/cassini/042_Cambrai_btv1b53095239r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/042_Cambrai_btv1b53095239r.png +distort Perspective "2322,448 0, 0 2290,3316 0,2869 4374,3333 2086,2869  4410,463 2086,0" -crop 2086x2869+0+0 /tmp/cassini/042_Cambrai_btv1b53095239r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/042_Cambrai_btv1b53095239r.png +distort Perspective "4450,452 0, 0 4419,3322 0,2865 6506,3324 2086,2865  6536,464 2086,0" -crop 2086x2865+0+0 /tmp/cassini/042_Cambrai_btv1b53095239r_2_0_crop.png
@@ -2655,6 +2790,9 @@ if [ -f gallica_pngs/043_Laon_btv1b53095286g.png ]; then
      echo Creating seamless image from 043_Laon_btv1b53095286g.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 043_Laon_btv1b53095286g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/043_Laon_btv1b53095286g.png +distort Perspective "490,446 0, 0 474,3300 0,2856 2272,3311 1793,2856  2278,453 1793,0" -crop 1793x2856+0+0 /tmp/cassini/043_Laon_btv1b53095286g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/043_Laon_btv1b53095286g.png +distort Perspective "2335,460 0, 0 2314,3304 0,2848 4395,3323 2083,2848  4420,470 2083,0" -crop 2083x2848+0+0 /tmp/cassini/043_Laon_btv1b53095286g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/043_Laon_btv1b53095286g.png +distort Perspective "4462,459 0, 0 4452,3318 0,2857 6527,3317 2084,2857  6556,462 2084,0" -crop 2084x2857+0+0 /tmp/cassini/043_Laon_btv1b53095286g_2_0_crop.png
@@ -2717,6 +2855,9 @@ if [ -f gallica_pngs/044_Soissons_btv1b530951505.png ]; then
      echo Creating seamless image from 044_Soissons_btv1b530951505.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 044_Soissons_btv1b530951505
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/044_Soissons_btv1b530951505.png +distort Perspective "497,432 0, 0 473,3307 0,2881 2282,3311 1791,2881  2270,423 1791,0" -crop 1791x2881+0+0 /tmp/cassini/044_Soissons_btv1b530951505_0_0_crop.png
 $MAGICK -monitor gallica_pngs/044_Soissons_btv1b530951505.png +distort Perspective "2315,433 0, 0 2312,3313 0,2879 4425,3317 2107,2879  4417,438 2107,0" -crop 2107x2879+0+0 /tmp/cassini/044_Soissons_btv1b530951505_1_0_crop.png
 $MAGICK -monitor gallica_pngs/044_Soissons_btv1b530951505.png +distort Perspective "4466,441 0, 0 4470,3325 0,2881 6572,3319 2111,2881  6586,441 2111,0" -crop 2111x2881+0+0 /tmp/cassini/044_Soissons_btv1b530951505_2_0_crop.png
@@ -2779,6 +2920,9 @@ if [ -f gallica_pngs/045_Meaux_btv1b53095173b.png ]; then
      echo Creating seamless image from 045_Meaux_btv1b53095173b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 045_Meaux_btv1b53095173b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/045_Meaux_btv1b53095173b.png +distort Perspective "515,497 0, 0 506,3387 0,2890 2268,3386 1759,2890  2272,496 1759,0" -crop 1759x2890+0+0 /tmp/cassini/045_Meaux_btv1b53095173b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/045_Meaux_btv1b53095173b.png +distort Perspective "2313,511 0, 0 2313,3387 0,2879 4416,3382 2096,2879  4403,500 2096,0" -crop 2096x2879+0+0 /tmp/cassini/045_Meaux_btv1b53095173b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/045_Meaux_btv1b53095173b.png +distort Perspective "4444,499 0, 0 4468,3380 0,2881 6574,3363 2107,2881  6553,482 2107,0" -crop 2107x2881+0+0 /tmp/cassini/045_Meaux_btv1b53095173b_2_0_crop.png
@@ -2841,6 +2985,9 @@ if [ -f gallica_pngs/046_Sens_btv1b53095212s.png ]; then
      echo Creating seamless image from 046_Sens_btv1b53095212s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 046_Sens_btv1b53095212s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/046_Sens_btv1b53095212s.png +distort Perspective "537,505 0, 0 511,3365 0,2858 2279,3364 1760,2858  2289,508 1760,0" -crop 1760x2858+0+0 /tmp/cassini/046_Sens_btv1b53095212s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/046_Sens_btv1b53095212s.png +distort Perspective "2336,523 0, 0 2321,3365 0,2842 4428,3376 2103,2842  4435,534 2103,0" -crop 2103x2842+0+0 /tmp/cassini/046_Sens_btv1b53095212s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/046_Sens_btv1b53095212s.png +distort Perspective "4480,528 0, 0 4473,3373 0,2841 6582,3369 2109,2841  6589,531 2109,0" -crop 2109x2841+0+0 /tmp/cassini/046_Sens_btv1b53095212s_2_0_crop.png
@@ -2903,6 +3050,9 @@ if [ -f gallica_pngs/047_Auxerre_btv1b530952315.png ]; then
      echo Creating seamless image from 047_Auxerre_btv1b530952315.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 047_Auxerre_btv1b530952315
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/047_Auxerre_btv1b530952315.png +distort Perspective "552,509 0, 0 525,3378 0,2875 2306,3391 1772,2875  2316,510 1772,0" -crop 1772x2875+0+0 /tmp/cassini/047_Auxerre_btv1b530952315_0_0_crop.png
 $MAGICK -monitor gallica_pngs/047_Auxerre_btv1b530952315.png +distort Perspective "2358,515 0, 0 2359,3385 0,2870 4454,3389 2097,2870  4457,519 2097,0" -crop 2097x2870+0+0 /tmp/cassini/047_Auxerre_btv1b530952315_1_0_crop.png
 $MAGICK -monitor gallica_pngs/047_Auxerre_btv1b530952315.png +distort Perspective "4502,518 0, 0 4497,3392 0,2867 6594,3392 2105,2867  6615,531 2105,0" -crop 2105x2867+0+0 /tmp/cassini/047_Auxerre_btv1b530952315_2_0_crop.png
@@ -2965,6 +3115,9 @@ if [ -f gallica_pngs/048_Vezelay_btv1b53095268j.png ]; then
      echo Creating seamless image from 048_Vezelay_btv1b53095268j.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 048_Vezelay_btv1b53095268j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/048_Vezelay_btv1b53095268j.png +distort Perspective "499,467 0, 0 513,3329 0,2866 2276,3330 1763,2866  2263,460 1763,0" -crop 1763x2866+0+0 /tmp/cassini/048_Vezelay_btv1b53095268j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/048_Vezelay_btv1b53095268j.png +distort Perspective "2307,448 0, 0 2314,3331 0,2879 4420,3324 2102,2879  4405,448 2102,0" -crop 2102x2879+0+0 /tmp/cassini/048_Vezelay_btv1b53095268j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/048_Vezelay_btv1b53095268j.png +distort Perspective "4438,447 0, 0 4463,3316 0,2863 6558,3305 2103,2863  6550,447 2103,0" -crop 2103x2863+0+0 /tmp/cassini/048_Vezelay_btv1b53095268j_2_0_crop.png
@@ -3027,6 +3180,9 @@ if [ -f gallica_pngs/049_Nevers_btv1b530951863.png ]; then
      echo Creating seamless image from 049_Nevers_btv1b530951863.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 049_Nevers_btv1b530951863
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/049_Nevers_btv1b530951863.png +distort Perspective "508,574 0, 0 497,3421 0,2845 2243,3419 1749,2845  2261,576 1749,0" -crop 1749x2845+0+0 /tmp/cassini/049_Nevers_btv1b530951863_0_0_crop.png
 $MAGICK -monitor gallica_pngs/049_Nevers_btv1b530951863.png +distort Perspective "2295,575 0, 0 2288,3418 0,2844 4395,3428 2111,2844  4410,583 2111,0" -crop 2111x2844+0+0 /tmp/cassini/049_Nevers_btv1b530951863_1_0_crop.png
 $MAGICK -monitor gallica_pngs/049_Nevers_btv1b530951863.png +distort Perspective "4445,585 0, 0 4446,3433 0,2847 6555,3425 2113,2847  6562,579 2113,0" -crop 2113x2847+0+0 /tmp/cassini/049_Nevers_btv1b530951863_2_0_crop.png
@@ -3089,6 +3245,9 @@ if [ -f gallica_pngs/050_Moulins_btv1b53095144j.png ]; then
      echo Creating seamless image from 050_Moulins_btv1b53095144j.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 050_Moulins_btv1b53095144j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/050_Moulins_btv1b53095144j.png +distort Perspective "560,512 0, 0 569,3368 0,2863 2345,3366 1772,2863  2328,495 1772,0" -crop 1772x2863+0+0 /tmp/cassini/050_Moulins_btv1b53095144j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/050_Moulins_btv1b53095144j.png +distort Perspective "2377,504 0, 0 2377,3372 0,2869 4485,3369 2101,2869  4471,499 2101,0" -crop 2101x2869+0+0 /tmp/cassini/050_Moulins_btv1b53095144j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/050_Moulins_btv1b53095144j.png +distort Perspective "4522,484 0, 0 4530,3355 0,2870 6633,3350 2102,2870  6624,480 2102,0" -crop 2102x2870+0+0 /tmp/cassini/050_Moulins_btv1b53095144j_2_0_crop.png
@@ -3151,6 +3310,9 @@ if [ -f gallica_pngs/051_Gannat_btv1b53095210w.png ]; then
      echo Creating seamless image from 051_Gannat_btv1b53095210w.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 051_Gannat_btv1b53095210w
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/051_Gannat_btv1b53095210w.png +distort Perspective "553,512 0, 0 544,3381 0,2873 2314,3387 1765,2873  2313,510 1765,0" -crop 1765x2873+0+0 /tmp/cassini/051_Gannat_btv1b53095210w_0_0_crop.png
 $MAGICK -monitor gallica_pngs/051_Gannat_btv1b53095210w.png +distort Perspective "2358,512 0, 0 2349,3385 0,2874 4452,3392 2102,2874  4460,516 2102,0" -crop 2102x2874+0+0 /tmp/cassini/051_Gannat_btv1b53095210w_1_0_crop.png
 $MAGICK -monitor gallica_pngs/051_Gannat_btv1b53095210w.png +distort Perspective "4513,514 0, 0 4506,3393 0,2879 6592,3400 2092,2879  6612,521 2092,0" -crop 2092x2879+0+0 /tmp/cassini/051_Gannat_btv1b53095210w_2_0_crop.png
@@ -3213,6 +3375,9 @@ if [ -f gallica_pngs/052_Clermont_Ferrand_btv1b530952243.png ]; then
      echo Creating seamless image from 052_Clermont_Ferrand_btv1b530952243.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 052_Clermont_Ferrand_btv1b530952243
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/052_Clermont_Ferrand_btv1b530952243.png +distort Perspective "599,537 0, 0 576,3408 0,2880 2347,3429 1773,2880  2375,539 1773,0" -crop 1773x2880+0+0 /tmp/cassini/052_Clermont_Ferrand_btv1b530952243_0_0_crop.png
 $MAGICK -monitor gallica_pngs/052_Clermont_Ferrand_btv1b530952243.png +distort Perspective "2431,532 0, 0 2392,3427 0,2893 4507,3435 2105,2893  4526,544 2105,0" -crop 2105x2893+0+0 /tmp/cassini/052_Clermont_Ferrand_btv1b530952243_1_0_crop.png
 $MAGICK -monitor gallica_pngs/052_Clermont_Ferrand_btv1b530952243.png +distort Perspective "4572,555 0, 0 4562,3444 0,2886 6673,3442 2106,2886  6674,558 2106,0" -crop 2106x2886+0+0 /tmp/cassini/052_Clermont_Ferrand_btv1b530952243_2_0_crop.png
@@ -3275,6 +3440,9 @@ if [ -f gallica_pngs/053_Brioude_btv1b53095287x.png ]; then
      echo Creating seamless image from 053_Brioude_btv1b53095287x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 053_Brioude_btv1b53095287x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/053_Brioude_btv1b53095287x.png +distort Perspective "514,448 0, 0 513,3313 0,2866 2276,3315 1761,2866  2273,447 1761,0" -crop 1761x2866+0+0 /tmp/cassini/053_Brioude_btv1b53095287x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/053_Brioude_btv1b53095287x.png +distort Perspective "2312,450 0, 0 2314,3317 0,2867 4415,3307 2099,2867  4409,440 2099,0" -crop 2099x2867+0+0 /tmp/cassini/053_Brioude_btv1b53095287x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/053_Brioude_btv1b53095287x.png +distort Perspective "4446,441 0, 0 4458,3309 0,2866 6551,3300 2092,2866  6538,435 2092,0" -crop 2092x2866+0+0 /tmp/cassini/053_Brioude_btv1b53095287x_2_0_crop.png
@@ -3337,6 +3505,9 @@ if [ -f gallica_pngs/054_Saint_Flour_btv1b530951272.png ]; then
      echo Creating seamless image from 054_Saint_Flour_btv1b530951272.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 054_Saint_Flour_btv1b530951272
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/054_Saint_Flour_btv1b530951272.png +distort Perspective "497,457 0, 0 486,3330 0,2881 2304,3341 1822,2881  2324,451 1822,0" -crop 1822x2881+0+0 /tmp/cassini/054_Saint_Flour_btv1b530951272_0_0_crop.png
 $MAGICK -monitor gallica_pngs/054_Saint_Flour_btv1b530951272.png +distort Perspective "2372,458 0, 0 2332,3341 0,2884 4428,3349 2089,2884  4455,464 2089,0" -crop 2089x2884+0+0 /tmp/cassini/054_Saint_Flour_btv1b530951272_1_0_crop.png
 $MAGICK -monitor gallica_pngs/054_Saint_Flour_btv1b530951272.png +distort Perspective "4487,476 0, 0 4478,3355 0,2881 6576,3353 2095,2881  6580,469 2095,0" -crop 2095x2881+0+0 /tmp/cassini/054_Saint_Flour_btv1b530951272_2_0_crop.png
@@ -3399,6 +3570,9 @@ if [ -f gallica_pngs/055_Mende_btv1b53095151m.png ]; then
      echo Creating seamless image from 055_Mende_btv1b53095151m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 055_Mende_btv1b53095151m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/055_Mende_btv1b53095151m.png +distort Perspective "501,439 0, 0 483,3333 0,2895 2269,3342 1775,2895  2266,446 1775,0" -crop 1775x2895+0+0 /tmp/cassini/055_Mende_btv1b53095151m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/055_Mende_btv1b53095151m.png +distort Perspective "2320,437 0, 0 2310,3331 0,2886 4414,3335 2107,2886  4431,457 2107,0" -crop 2107x2886+0+0 /tmp/cassini/055_Mende_btv1b53095151m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/055_Mende_btv1b53095151m.png +distort Perspective "4483,456 0, 0 4463,3343 0,2875 6559,3340 2100,2875  6588,476 2100,0" -crop 2100x2875+0+0 /tmp/cassini/055_Mende_btv1b53095151m_2_0_crop.png
@@ -3461,6 +3635,9 @@ if [ -f gallica_pngs/056_Nant_btv1b530952137.png ]; then
      echo Creating seamless image from 056_Nant_btv1b530952137.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 056_Nant_btv1b530952137
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/056_Nant_btv1b530952137.png +distort Perspective "494,587 0, 0 500,3445 0,2858 2287,3436 1783,2858  2273,577 1783,0" -crop 1783x2858+0+0 /tmp/cassini/056_Nant_btv1b530952137_0_0_crop.png
 $MAGICK -monitor gallica_pngs/056_Nant_btv1b530952137.png +distort Perspective "2311,584 0, 0 2326,3440 0,2854 4431,3428 2105,2854  4416,576 2105,0" -crop 2105x2854+0+0 /tmp/cassini/056_Nant_btv1b530952137_1_0_crop.png
 $MAGICK -monitor gallica_pngs/056_Nant_btv1b530952137.png +distort Perspective "4457,580 0, 0 4479,3430 0,2848 6575,3412 2101,2848  6563,565 2101,0" -crop 2101x2848+0+0 /tmp/cassini/056_Nant_btv1b530952137_2_0_crop.png
@@ -3523,6 +3700,9 @@ if [ -f gallica_pngs/057_Lodeve_btv1b53095232m.png ]; then
      echo Creating seamless image from 057_Lodeve_btv1b53095232m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 057_Lodeve_btv1b53095232m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/057_Lodeve_btv1b53095232m.png +distort Perspective "552,595 0, 0 551,3428 0,2838 2324,3434 1774,2838  2327,590 1774,0" -crop 1774x2838+0+0 /tmp/cassini/057_Lodeve_btv1b53095232m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/057_Lodeve_btv1b53095232m.png +distort Perspective "2371,591 0, 0 2362,3433 0,2845 4477,3441 2111,2845  4478,593 2111,0" -crop 2111x2845+0+0 /tmp/cassini/057_Lodeve_btv1b53095232m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/057_Lodeve_btv1b53095232m.png +distort Perspective "4518,597 0, 0 4523,3447 0,2846 6624,3445 2103,2846  6624,603 2103,0" -crop 2103x2846+0+0 /tmp/cassini/057_Lodeve_btv1b53095232m_2_0_crop.png
@@ -3585,6 +3765,9 @@ if [ -f gallica_pngs/058_Narbonne_btv1b530952690.png ]; then
      echo Creating seamless image from 058_Narbonne_btv1b530952690.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 058_Narbonne_btv1b530952690
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/058_Narbonne_btv1b530952690.png +distort Perspective "574,551 0, 0 564,3420 0,2876 2325,3421 1758,2876  2330,537 1758,0" -crop 1758x2876+0+0 /tmp/cassini/058_Narbonne_btv1b530952690_0_0_crop.png
 $MAGICK -monitor gallica_pngs/058_Narbonne_btv1b530952690.png +distort Perspective "2370,540 0, 0 2359,3418 0,2878 4462,3413 2105,2878  4478,534 2105,0" -crop 2105x2878+0+0 /tmp/cassini/058_Narbonne_btv1b530952690_1_0_crop.png
 $MAGICK -monitor gallica_pngs/058_Narbonne_btv1b530952690.png +distort Perspective "4519,534 0, 0 4500,3412 0,2879 6610,3407 2099,2879  6607,527 2099,0" -crop 2099x2879+0+0 /tmp/cassini/058_Narbonne_btv1b530952690_2_0_crop.png
@@ -3647,6 +3830,9 @@ if [ -f gallica_pngs/059_Perpignan_btv1b53095288c.png ]; then
      echo Creating seamless image from 059_Perpignan_btv1b53095288c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 3 columns from 059_Perpignan_btv1b53095288c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/059_Perpignan_btv1b53095288c.png +distort Perspective "371,461 0, 0 354,3351 0,2891 2228,3361 1869,2891  2235,469 1869,0" -crop 1869x2891+0+0 /tmp/cassini/059_Perpignan_btv1b53095288c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/059_Perpignan_btv1b53095288c.png +distort Perspective "2296,465 0, 0 2302,3361 0,2891 4393,3362 2096,2891  4397,475 2096,0" -crop 2096x2891+0+0 /tmp/cassini/059_Perpignan_btv1b53095288c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/059_Perpignan_btv1b53095288c.png +distort Perspective "4462,471 0, 0 4461,3363 0,2888 6448,3355 1986,2888  6448,470 1986,0" -crop 1986x2888+0+0 /tmp/cassini/059_Perpignan_btv1b53095288c_2_0_crop.png
@@ -3685,6 +3871,9 @@ if [ -f gallica_pngs/059bis_Bellegarde_btv1b530951450.png ]; then
      echo Creating seamless image from 059bis_Bellegarde_btv1b530951450.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 3 columns from 059bis_Bellegarde_btv1b530951450
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/059bis_Bellegarde_btv1b530951450.png +distort Perspective "387,169 0, 0 359,2773 0,2607 2249,2803 1895,2607  2287,193 1895,0" -crop 1895x2607+0+0 /tmp/cassini/059bis_Bellegarde_btv1b530951450_0_0_crop.png
 $MAGICK -monitor gallica_pngs/059bis_Bellegarde_btv1b530951450.png +distort Perspective "2330,186 0, 0 2305,2791 0,2611 4404,2809 2106,2611  4443,192 2106,0" -crop 2106x2611+0+0 /tmp/cassini/059bis_Bellegarde_btv1b530951450_1_0_crop.png
 $MAGICK -monitor gallica_pngs/059bis_Bellegarde_btv1b530951450.png +distort Perspective "4478,199 0, 0 4453,2824 0,2625 6476,2831 2012,2625  6480,205 2012,0" -crop 2012x2625+0+0 /tmp/cassini/059bis_Bellegarde_btv1b530951450_2_0_crop.png
@@ -3715,6 +3904,9 @@ if [ -f gallica_pngs/060_Le_Havre_btv1b53095165t.png ]; then
      echo Creating seamless image from 060_Le_Havre_btv1b53095165t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 5 columns from 060_Le_Havre_btv1b53095165t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/060_Le_Havre_btv1b53095165t.png +distort Perspective "784,454 0, 0 759,3328 0,2871 2234,3329 1471,2871  2251,460 1471,0" -crop 1471x2871+0+0 /tmp/cassini/060_Le_Havre_btv1b53095165t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/060_Le_Havre_btv1b53095165t.png +distort Perspective "2287,456 0, 0 2279,3327 0,2870 4371,3334 2098,2870  4392,464 2098,0" -crop 2098x2870+0+0 /tmp/cassini/060_Le_Havre_btv1b53095165t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/060_Le_Havre_btv1b53095165t.png +distort Perspective "4432,464 0, 0 4422,3335 0,2871 6526,3335 2096,2871  6521,463 2096,0" -crop 2096x2871+0+0 /tmp/cassini/060_Le_Havre_btv1b53095165t_2_0_crop.png
@@ -3765,6 +3957,9 @@ if [ -f gallica_pngs/061_Lisieux_btv1b53095190t.png ]; then
      echo Creating seamless image from 061_Lisieux_btv1b53095190t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 061_Lisieux_btv1b53095190t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/061_Lisieux_btv1b53095190t.png +distort Perspective "499,425 0, 0 490,3293 0,2866 2245,3298 1754,2866  2253,433 1754,0" -crop 1754x2866+0+0 /tmp/cassini/061_Lisieux_btv1b53095190t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/061_Lisieux_btv1b53095190t.png +distort Perspective "2299,435 0, 0 2282,3302 0,2864 4376,3302 2093,2864  4391,440 2093,0" -crop 2093x2864+0+0 /tmp/cassini/061_Lisieux_btv1b53095190t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/061_Lisieux_btv1b53095190t.png +distort Perspective "4433,438 0, 0 4420,3303 0,2863 6516,3310 2094,2863  6525,448 2094,0" -crop 2094x2863+0+0 /tmp/cassini/061_Lisieux_btv1b53095190t_2_0_crop.png
@@ -3827,6 +4022,9 @@ if [ -f gallica_pngs/062_Argentan_btv1b53095211b.png ]; then
      echo Creating seamless image from 062_Argentan_btv1b53095211b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 062_Argentan_btv1b53095211b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/062_Argentan_btv1b53095211b.png +distort Perspective "484,440 0, 0 501,3288 0,2851 2265,3284 1765,2851  2251,429 1765,0" -crop 1765x2851+0+0 /tmp/cassini/062_Argentan_btv1b53095211b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/062_Argentan_btv1b53095211b.png +distort Perspective "2303,426 0, 0 2294,3286 0,2860 4392,3284 2098,2860  4402,424 2098,0" -crop 2098x2860+0+0 /tmp/cassini/062_Argentan_btv1b53095211b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/062_Argentan_btv1b53095211b.png +distort Perspective "4446,418 0, 0 4440,3276 0,2861 6531,3281 2100,2861  6555,417 2100,0" -crop 2100x2861+0+0 /tmp/cassini/062_Argentan_btv1b53095211b_2_0_crop.png
@@ -3889,6 +4087,9 @@ if [ -f gallica_pngs/063_Alencon_btv1b53095225j.png ]; then
      echo Creating seamless image from 063_Alencon_btv1b53095225j.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 063_Alencon_btv1b53095225j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/063_Alencon_btv1b53095225j.png +distort Perspective "515,466 0, 0 505,3349 0,2877 2285,3349 1775,2877  2286,478 1775,0" -crop 1775x2877+0+0 /tmp/cassini/063_Alencon_btv1b53095225j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/063_Alencon_btv1b53095225j.png +distort Perspective "2334,479 0, 0 2326,3350 0,2870 4420,3355 2094,2870  4429,485 2094,0" -crop 2094x2870+0+0 /tmp/cassini/063_Alencon_btv1b53095225j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/063_Alencon_btv1b53095225j.png +distort Perspective "4468,491 0, 0 4462,3358 0,2869 6567,3363 2102,2869  6568,492 2102,0" -crop 2102x2869+0+0 /tmp/cassini/063_Alencon_btv1b53095225j_2_0_crop.png
@@ -3951,6 +4152,9 @@ if [ -f gallica_pngs/064_LeMans_btv1b530951094.png ]; then
      echo Creating seamless image from 064_LeMans_btv1b530951094.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 064_LeMans_btv1b530951094
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/064_LeMans_btv1b530951094.png +distort Perspective "510,502 0, 0 491,3380 0,2882 2284,3389 1790,2882  2297,503 1790,0" -crop 1790x2882+0+0 /tmp/cassini/064_LeMans_btv1b530951094_0_0_crop.png
 $MAGICK -monitor gallica_pngs/064_LeMans_btv1b530951094.png +distort Perspective "2345,492 0, 0 2343,3368 0,2883 4457,3375 2110,2883  4452,485 2110,0" -crop 2110x2883+0+0 /tmp/cassini/064_LeMans_btv1b530951094_1_0_crop.png
 $MAGICK -monitor gallica_pngs/064_LeMans_btv1b530951094.png +distort Perspective "4514,476 0, 0 4508,3373 0,2894 6620,3372 2114,2894  6631,480 2114,0" -crop 2114x2894+0+0 /tmp/cassini/064_LeMans_btv1b530951094_2_0_crop.png
@@ -4013,6 +4217,9 @@ if [ -f gallica_pngs/065_Tours_btv1b53095128h.png ]; then
      echo Creating seamless image from 065_Tours_btv1b53095128h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 065_Tours_btv1b53095128h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/065_Tours_btv1b53095128h.png +distort Perspective "532,452 0, 0 511,3308 0,2860 2273,3315 1757,2860  2284,450 1757,0" -crop 1757x2860+0+0 /tmp/cassini/065_Tours_btv1b53095128h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/065_Tours_btv1b53095128h.png +distort Perspective "2333,449 0, 0 2318,3321 0,2866 4423,3322 2100,2866  4429,461 2100,0" -crop 2100x2866+0+0 /tmp/cassini/065_Tours_btv1b53095128h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/065_Tours_btv1b53095128h.png +distort Perspective "4473,460 0, 0 4469,3324 0,2860 6561,3322 2094,2860  6570,465 2094,0" -crop 2094x2860+0+0 /tmp/cassini/065_Tours_btv1b53095128h_2_0_crop.png
@@ -4075,6 +4282,9 @@ if [ -f gallica_pngs/066_Richelieu_btv1b53095174s.png ]; then
      echo Creating seamless image from 066_Richelieu_btv1b53095174s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 066_Richelieu_btv1b53095174s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/066_Richelieu_btv1b53095174s.png +distort Perspective "627,471 0, 0 580,3340 0,2873 2350,3348 1748,2873  2354,471 1748,0" -crop 1748x2873+0+0 /tmp/cassini/066_Richelieu_btv1b53095174s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/066_Richelieu_btv1b53095174s.png +distort Perspective "2397,472 0, 0 2384,3345 0,2872 4478,3351 2095,2872  4494,480 2095,0" -crop 2095x2872+0+0 /tmp/cassini/066_Richelieu_btv1b53095174s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/066_Richelieu_btv1b53095174s.png +distort Perspective "4543,472 0, 0 4527,3350 0,2879 6630,3355 2101,2879  6642,475 2101,0" -crop 2101x2879+0+0 /tmp/cassini/066_Richelieu_btv1b53095174s_2_0_crop.png
@@ -4137,6 +4347,9 @@ if [ -f gallica_pngs/067_Poitiers_btv1b53095214p.png ]; then
      echo Creating seamless image from 067_Poitiers_btv1b53095214p.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 067_Poitiers_btv1b53095214p
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/067_Poitiers_btv1b53095214p.png +distort Perspective "545,500 0, 0 538,3380 0,2881 2298,3375 1754,2881  2294,493 1754,0" -crop 1754x2881+0+0 /tmp/cassini/067_Poitiers_btv1b53095214p_0_0_crop.png
 $MAGICK -monitor gallica_pngs/067_Poitiers_btv1b53095214p.png +distort Perspective "2338,495 0, 0 2333,3381 0,2887 4442,3376 2108,2887  4446,488 2108,0" -crop 2108x2887+0+0 /tmp/cassini/067_Poitiers_btv1b53095214p_1_0_crop.png
 $MAGICK -monitor gallica_pngs/067_Poitiers_btv1b53095214p.png +distort Perspective "4493,486 0, 0 4483,3375 0,2889 6608,3372 2119,2889  6607,483 2119,0" -crop 2119x2889+0+0 /tmp/cassini/067_Poitiers_btv1b53095214p_2_0_crop.png
@@ -4199,6 +4412,9 @@ if [ -f gallica_pngs/068_Charroux_btv1b530952495.png ]; then
      echo Creating seamless image from 068_Charroux_btv1b530952495.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 068_Charroux_btv1b530952495
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/068_Charroux_btv1b530952495.png +distort Perspective "523,428 0, 0 496,3296 0,2872 2260,3311 1757,2872  2274,434 1757,0" -crop 1757x2872+0+0 /tmp/cassini/068_Charroux_btv1b530952495_0_0_crop.png
 $MAGICK -monitor gallica_pngs/068_Charroux_btv1b530952495.png +distort Perspective "2316,433 0, 0 2303,3315 0,2878 4397,3319 2102,2878  4426,444 2102,0" -crop 2102x2878+0+0 /tmp/cassini/068_Charroux_btv1b530952495_1_0_crop.png
 $MAGICK -monitor gallica_pngs/068_Charroux_btv1b530952495.png +distort Perspective "4462,444 0, 0 4445,3318 0,2876 6555,3330 2109,2876  6570,451 2109,0" -crop 2109x2876+0+0 /tmp/cassini/068_Charroux_btv1b530952495_2_0_crop.png
@@ -4261,6 +4477,9 @@ if [ -f gallica_pngs/069_Angouleme_btv1b53095270c.png ]; then
      echo Creating seamless image from 069_Angouleme_btv1b53095270c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 069_Angouleme_btv1b53095270c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/069_Angouleme_btv1b53095270c.png +distort Perspective "496,497 0, 0 490,3368 0,2879 2269,3370 1772,2879  2262,482 1772,0" -crop 1772x2879+0+0 /tmp/cassini/069_Angouleme_btv1b53095270c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/069_Angouleme_btv1b53095270c.png +distort Perspective "2314,483 0, 0 2316,3359 0,2879 4415,3357 2100,2879  4416,474 2100,0" -crop 2100x2879+0+0 /tmp/cassini/069_Angouleme_btv1b53095270c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/069_Angouleme_btv1b53095270c.png +distort Perspective "4465,474 0, 0 4460,3352 0,2880 6568,3354 2107,2880  6572,471 2107,0" -crop 2107x2880+0+0 /tmp/cassini/069_Angouleme_btv1b53095270c_2_0_crop.png
@@ -4323,6 +4542,9 @@ if [ -f gallica_pngs/070_Perigueux_btv1b53095289t.png ]; then
      echo Creating seamless image from 070_Perigueux_btv1b53095289t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 070_Perigueux_btv1b53095289t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/070_Perigueux_btv1b53095289t.png +distort Perspective "498,432 0, 0 470,3335 0,2909 2251,3355 1772,2909  2262,440 1772,0" -crop 1772x2909+0+0 /tmp/cassini/070_Perigueux_btv1b53095289t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/070_Perigueux_btv1b53095289t.png +distort Perspective "2321,445 0, 0 2301,3354 0,2904 4406,3359 2100,2904  4416,460 2100,0" -crop 2100x2904+0+0 /tmp/cassini/070_Perigueux_btv1b53095289t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/070_Perigueux_btv1b53095289t.png +distort Perspective "4468,452 0, 0 4449,3358 0,2906 6564,3368 2109,2906  6572,461 2109,0" -crop 2109x2906+0+0 /tmp/cassini/070_Perigueux_btv1b53095289t_2_0_crop.png
@@ -4385,6 +4607,9 @@ if [ -f gallica_pngs/071_Bergerac_btv1b53095146f.png ]; then
      echo Creating seamless image from 071_Bergerac_btv1b53095146f.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 071_Bergerac_btv1b53095146f
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/071_Bergerac_btv1b53095146f.png +distort Perspective "540,491 0, 0 522,3402 0,2911 2289,3410 1763,2911  2300,498 1763,0" -crop 1763x2911+0+0 /tmp/cassini/071_Bergerac_btv1b53095146f_0_0_crop.png
 $MAGICK -monitor gallica_pngs/071_Bergerac_btv1b53095146f.png +distort Perspective "2356,505 0, 0 2343,3418 0,2912 4445,3419 2096,2912  4447,507 2096,0" -crop 2096x2912+0+0 /tmp/cassini/071_Bergerac_btv1b53095146f_1_0_crop.png
 $MAGICK -monitor gallica_pngs/071_Bergerac_btv1b53095146f.png +distort Perspective "4500,505 0, 0 4483,3417 0,2906 6591,3414 2105,2906  6602,514 2105,0" -crop 2105x2906+0+0 /tmp/cassini/071_Bergerac_btv1b53095146f_2_0_crop.png
@@ -4447,6 +4672,9 @@ if [ -f gallica_pngs/072_Castillonnes_btv1b530951668.png ]; then
      echo Creating seamless image from 072_Castillonnes_btv1b530951668.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 072_Castillonnes_btv1b530951668
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/072_Castillonnes_btv1b530951668.png +distort Perspective "450,499 0, 0 475,3360 0,2868 2235,3357 1759,2868  2209,481 1759,0" -crop 1759x2868+0+0 /tmp/cassini/072_Castillonnes_btv1b530951668_0_0_crop.png
 $MAGICK -monitor gallica_pngs/072_Castillonnes_btv1b530951668.png +distort Perspective "2260,484 0, 0 2285,3350 0,2868 4372,3351 2098,2868  4369,481 2098,0" -crop 2098x2868+0+0 /tmp/cassini/072_Castillonnes_btv1b530951668_1_0_crop.png
 $MAGICK -monitor gallica_pngs/072_Castillonnes_btv1b530951668.png +distort Perspective "4417,486 0, 0 4415,3353 0,2875 6523,3351 2099,2875  6508,468 2099,0" -crop 2099x2875+0+0 /tmp/cassini/072_Castillonnes_btv1b530951668_2_0_crop.png
@@ -4509,6 +4737,9 @@ if [ -f gallica_pngs/073_Agen_btv1b53095187j.png ]; then
      echo Creating seamless image from 073_Agen_btv1b53095187j.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 073_Agen_btv1b53095187j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/073_Agen_btv1b53095187j.png +distort Perspective "473,527 0, 0 497,3415 0,2901 2265,3421 1770,2901  2245,506 1770,0" -crop 1770x2901+0+0 /tmp/cassini/073_Agen_btv1b53095187j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/073_Agen_btv1b53095187j.png +distort Perspective "2296,528 0, 0 2308,3426 0,2894 4418,3415 2106,2894  4399,525 2106,0" -crop 2106x2894+0+0 /tmp/cassini/073_Agen_btv1b53095187j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/073_Agen_btv1b53095187j.png +distort Perspective "4440,517 0, 0 4454,3412 0,2894 6563,3396 2106,2894  6543,502 2106,0" -crop 2106x2894+0+0 /tmp/cassini/073_Agen_btv1b53095187j_2_0_crop.png
@@ -4571,6 +4802,9 @@ if [ -f gallica_pngs/074_Auch_btv1b530952260.png ]; then
      echo Creating seamless image from 074_Auch_btv1b530952260.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 074_Auch_btv1b530952260
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/074_Auch_btv1b530952260.png +distort Perspective "507,579 0, 0 534,3443 0,2877 2310,3439 1778,2877  2287,548 1778,0" -crop 1778x2877+0+0 /tmp/cassini/074_Auch_btv1b530952260_0_0_crop.png
 $MAGICK -monitor gallica_pngs/074_Auch_btv1b530952260.png +distort Perspective "2338,557 0, 0 2343,3436 0,2877 4438,3424 2090,2877  4424,548 2090,0" -crop 2090x2877+0+0 /tmp/cassini/074_Auch_btv1b530952260_1_0_crop.png
 $MAGICK -monitor gallica_pngs/074_Auch_btv1b530952260.png +distort Perspective "4470,547 0, 0 4480,3424 0,2877 6577,3406 2097,2877  6567,528 2097,0" -crop 2097x2877+0+0 /tmp/cassini/074_Auch_btv1b530952260_2_0_crop.png
@@ -4633,6 +4867,9 @@ if [ -f gallica_pngs/075_Tarbes_btv1b530952404.png ]; then
      echo Creating seamless image from 075_Tarbes_btv1b530952404.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 075_Tarbes_btv1b530952404
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/075_Tarbes_btv1b530952404.png +distort Perspective "492,726 0, 0 479,3341 0,2620 2249,3352 1772,2620  2266,727 1772,0" -crop 1772x2620+0+0 /tmp/cassini/075_Tarbes_btv1b530952404_0_0_crop.png
 $MAGICK -monitor gallica_pngs/075_Tarbes_btv1b530952404.png +distort Perspective "2316,734 0, 0 2299,3348 0,2611 4409,3351 2105,2611  4417,742 2105,0" -crop 2105x2611+0+0 /tmp/cassini/075_Tarbes_btv1b530952404_1_0_crop.png
 $MAGICK -monitor gallica_pngs/075_Tarbes_btv1b530952404.png +distort Perspective "4471,741 0, 0 4459,3348 0,2610 6563,3353 2099,2610  6565,739 2099,0" -crop 2099x2610+0+0 /tmp/cassini/075_Tarbes_btv1b530952404_2_0_crop.png
@@ -4695,6 +4932,9 @@ if [ -f gallica_pngs/076_Bagnere_de_Bigorre_btv1b53095207m.png ]; then
      echo Creating seamless image from 076_Bagnere_de_Bigorre_btv1b53095207m.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 7 columns from 076_Bagnere_de_Bigorre_btv1b53095207m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/076_Bagnere_de_Bigorre_btv1b53095207m.png +distort Perspective "507,186 0, 0 482,2806 0,2610 2260,2810 1776,2610  2282,210 1776,0" -crop 1776x2610+0+0 /tmp/cassini/076_Bagnere_de_Bigorre_btv1b53095207m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/076_Bagnere_de_Bigorre_btv1b53095207m.png +distort Perspective "2336,218 0, 0 2341,2837 0,2615 4435,2837 2099,2615  4441,225 2099,0" -crop 2099x2615+0+0 /tmp/cassini/076_Bagnere_de_Bigorre_btv1b53095207m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/076_Bagnere_de_Bigorre_btv1b53095207m.png +distort Perspective "4503,202 0, 0 4492,2833 0,2617 6600,2814 2110,2617  6616,211 2110,0" -crop 2110x2617+0+0 /tmp/cassini/076_Bagnere_de_Bigorre_btv1b53095207m_2_0_crop.png
@@ -4741,6 +4981,9 @@ if [ -f gallica_pngs/077_Rocroi_btv1b53095110h.png ]; then
      echo Creating seamless image from 077_Rocroi_btv1b53095110h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 077_Rocroi_btv1b53095110h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/077_Rocroi_btv1b53095110h.png +distort Perspective "526,454 0, 0 518,3316 0,2865 2300,3318 1778,2865  2300,449 1778,0" -crop 1778x2865+0+0 /tmp/cassini/077_Rocroi_btv1b53095110h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/077_Rocroi_btv1b53095110h.png +distort Perspective "2338,438 0, 0 2337,3309 0,2875 4428,3314 2088,2875  4424,434 2088,0" -crop 2088x2875+0+0 /tmp/cassini/077_Rocroi_btv1b53095110h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/077_Rocroi_btv1b53095110h.png +distort Perspective "4466,432 0, 0 4470,3311 0,2877 6557,3303 2097,2877  6573,428 2097,0" -crop 2097x2877+0+0 /tmp/cassini/077_Rocroi_btv1b53095110h_2_0_crop.png
@@ -4803,6 +5046,9 @@ if [ -f gallica_pngs/078_Charleville_btv1b53095169m.png ]; then
      echo Creating seamless image from 078_Charleville_btv1b53095169m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 078_Charleville_btv1b53095169m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/078_Charleville_btv1b53095169m.png +distort Perspective "533,463 0, 0 518,3303 0,2834 2282,3311 1767,2834  2303,483 1767,0" -crop 1767x2834+0+0 /tmp/cassini/078_Charleville_btv1b53095169m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/078_Charleville_btv1b53095169m.png +distort Perspective "2344,461 0, 0 2326,3309 0,2849 4417,3331 2089,2849  4431,481 2089,0" -crop 2089x2849+0+0 /tmp/cassini/078_Charleville_btv1b53095169m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/078_Charleville_btv1b53095169m.png +distort Perspective "4476,479 0, 0 4468,3324 0,2844 6560,3336 2097,2844  6579,493 2097,0" -crop 2097x2844+0+0 /tmp/cassini/078_Charleville_btv1b53095169m_2_0_crop.png
@@ -4865,6 +5111,9 @@ if [ -f gallica_pngs/079_Reims_btv1b530951918.png ]; then
      echo Creating seamless image from 079_Reims_btv1b530951918.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 079_Reims_btv1b530951918
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/079_Reims_btv1b530951918.png +distort Perspective "526,431 0, 0 504,3305 0,2879 2273,3311 1762,2879  2282,427 1762,0" -crop 1762x2879+0+0 /tmp/cassini/079_Reims_btv1b530951918_0_0_crop.png
 $MAGICK -monitor gallica_pngs/079_Reims_btv1b530951918.png +distort Perspective "2328,430 0, 0 2310,3307 0,2875 4420,3316 2104,2875  4427,442 2104,0" -crop 2104x2875+0+0 /tmp/cassini/079_Reims_btv1b530951918_1_0_crop.png
 $MAGICK -monitor gallica_pngs/079_Reims_btv1b530951918.png +distort Perspective "4473,439 0, 0 4470,3311 0,2870 6579,3318 2112,2870  6589,449 2112,0" -crop 2112x2870+0+0 /tmp/cassini/079_Reims_btv1b530951918_2_0_crop.png
@@ -4927,6 +5176,9 @@ if [ -f gallica_pngs/080_Chalons_sur_Marne_tv1b53095244x.png ]; then
      echo Creating seamless image from 080_Chalons_sur_Marne_tv1b53095244x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 080_Chalons_sur_Marne_tv1b53095244x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/080_Chalons_sur_Marne_tv1b53095244x.png +distort Perspective "524,420 0, 0 517,3299 0,2873 2296,3293 1780,2873  2305,425 1780,0" -crop 1780x2873+0+0 /tmp/cassini/080_Chalons_sur_Marne_tv1b53095244x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/080_Chalons_sur_Marne_tv1b53095244x.png +distort Perspective "2361,429 0, 0 2327,3291 0,2856 4436,3295 2098,2856  4448,444 2098,0" -crop 2098x2856+0+0 /tmp/cassini/080_Chalons_sur_Marne_tv1b53095244x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/080_Chalons_sur_Marne_tv1b53095244x.png +distort Perspective "4492,445 0, 0 4482,3294 0,2849 6582,3303 2102,2849  6596,454 2102,0" -crop 2102x2849+0+0 /tmp/cassini/080_Chalons_sur_Marne_tv1b53095244x_2_0_crop.png
@@ -4989,6 +5241,9 @@ if [ -f gallica_pngs/081_Troyes_btv1b53095255s.png ]; then
      echo Creating seamless image from 081_Troyes_btv1b53095255s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 081_Troyes_btv1b53095255s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/081_Troyes_btv1b53095255s.png +distort Perspective "563,443 0, 0 560,3335 0,2890 2325,3330 1767,2890  2332,442 1767,0" -crop 1767x2890+0+0 /tmp/cassini/081_Troyes_btv1b53095255s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/081_Troyes_btv1b53095255s.png +distort Perspective "2375,436 0, 0 2361,3325 0,2889 4475,3334 2113,2889  4487,445 2113,0" -crop 2113x2889+0+0 /tmp/cassini/081_Troyes_btv1b53095255s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/081_Troyes_btv1b53095255s.png +distort Perspective "4523,444 0, 0 4513,3328 0,2883 6625,3325 2111,2883  6634,442 2111,0" -crop 2111x2883+0+0 /tmp/cassini/081_Troyes_btv1b53095255s_2_0_crop.png
@@ -5051,6 +5306,9 @@ if [ -f gallica_pngs/082_Tonnerre_btv1b530952762.png ]; then
      echo Creating seamless image from 082_Tonnerre_btv1b530952762.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 082_Tonnerre_btv1b530952762
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/082_Tonnerre_btv1b530952762.png +distort Perspective "519,466 0, 0 514,3339 0,2876 2307,3333 1790,2876  2307,453 1790,0" -crop 1790x2876+0+0 /tmp/cassini/082_Tonnerre_btv1b530952762_0_0_crop.png
 $MAGICK -monitor gallica_pngs/082_Tonnerre_btv1b530952762.png +distort Perspective "2364,440 0, 0 2366,3328 0,2887 4465,3317 2101,2887  4468,431 2101,0" -crop 2101x2887+0+0 /tmp/cassini/082_Tonnerre_btv1b530952762_1_0_crop.png
 $MAGICK -monitor gallica_pngs/082_Tonnerre_btv1b530952762.png +distort Perspective "4532,411 0, 0 4512,3306 0,2897 6608,3322 2097,2897  6630,423 2097,0" -crop 2097x2897+0+0 /tmp/cassini/082_Tonnerre_btv1b530952762_2_0_crop.png
@@ -5113,6 +5371,9 @@ if [ -f gallica_pngs/083_Semur_en_Auxois_btv1b53095138x.png ]; then
      echo Creating seamless image from 083_Semur_en_Auxois_btv1b53095138x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 083_Semur_en_Auxois_btv1b53095138x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/083_Semur_en_Auxois_btv1b53095138x.png +distort Perspective "569,465 0, 0 578,3337 0,2874 2348,3331 1767,2874  2334,454 1767,0" -crop 1767x2874+0+0 /tmp/cassini/083_Semur_en_Auxois_btv1b53095138x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/083_Semur_en_Auxois_btv1b53095138x.png +distort Perspective "2390,456 0, 0 2382,3324 0,2866 4501,3327 2117,2866  4506,462 2117,0" -crop 2117x2866+0+0 /tmp/cassini/083_Semur_en_Auxois_btv1b53095138x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/083_Semur_en_Auxois_btv1b53095138x.png +distort Perspective "4565,459 0, 0 4551,3331 0,2870 6658,3339 2108,2870  6674,471 2108,0" -crop 2108x2870+0+0 /tmp/cassini/083_Semur_en_Auxois_btv1b53095138x_2_0_crop.png
@@ -5175,6 +5436,9 @@ if [ -f gallica_pngs/084_Autun_btv1b53095158r.png ]; then
      echo Creating seamless image from 084_Autun_btv1b53095158r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 084_Autun_btv1b53095158r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/084_Autun_btv1b53095158r.png +distort Perspective "545,476 0, 0 518,3348 0,2875 2291,3363 1776,2875  2324,484 1776,0" -crop 1776x2875+0+0 /tmp/cassini/084_Autun_btv1b53095158r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/084_Autun_btv1b53095158r.png +distort Perspective "2374,483 0, 0 2342,3365 0,2876 4443,3371 2096,2876  4465,501 2096,0" -crop 2096x2876+0+0 /tmp/cassini/084_Autun_btv1b53095158r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/084_Autun_btv1b53095158r.png +distort Perspective "4514,500 0, 0 4498,3371 0,2869 6607,3369 2108,2869  6621,501 2108,0" -crop 2108x2869+0+0 /tmp/cassini/084_Autun_btv1b53095158r_2_0_crop.png
@@ -5237,6 +5501,9 @@ if [ -f gallica_pngs/085_Chalon_sur_Saone_tv1b530952745.png ]; then
      echo Creating seamless image from 085_Chalon_sur_Saone_tv1b530952745.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 085_Chalon_sur_Saone_tv1b530952745
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/085_Chalon_sur_Saone_tv1b530952745.png +distort Perspective "500,428 0, 0 498,3318 0,2888 2265,3308 1756,2888  2246,422 1756,0" -crop 1756x2888+0+0 /tmp/cassini/085_Chalon_sur_Saone_tv1b530952745_0_0_crop.png
 $MAGICK -monitor gallica_pngs/085_Chalon_sur_Saone_tv1b530952745.png +distort Perspective "2282,428 0, 0 2309,3317 0,2889 4412,3314 2104,2889  4388,425 2104,0" -crop 2104x2889+0+0 /tmp/cassini/085_Chalon_sur_Saone_tv1b530952745_1_0_crop.png
 $MAGICK -monitor gallica_pngs/085_Chalon_sur_Saone_tv1b530952745.png +distort Perspective "4429,433 0, 0 4462,3329 0,2889 6572,3302 2112,2889  6543,419 2112,0" -crop 2112x2889+0+0 /tmp/cassini/085_Chalon_sur_Saone_tv1b530952745_2_0_crop.png
@@ -5299,6 +5566,9 @@ if [ -f gallica_pngs/086_Macon_btv1b53095139c.png ]; then
      echo Creating seamless image from 086_Macon_btv1b53095139c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 086_Macon_btv1b53095139c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/086_Macon_btv1b53095139c.png +distort Perspective "538,422 0, 0 510,3289 0,2874 2279,3311 1761,2874  2291,429 1761,0" -crop 1761x2874+0+0 /tmp/cassini/086_Macon_btv1b53095139c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/086_Macon_btv1b53095139c.png +distort Perspective "2331,433 0, 0 2321,3306 0,2863 4412,3316 2089,2863  4419,463 2089,0" -crop 2089x2863+0+0 /tmp/cassini/086_Macon_btv1b53095139c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/086_Macon_btv1b53095139c.png +distort Perspective "4461,467 0, 0 4453,3326 0,2855 6542,3332 2088,2855  6548,480 2088,0" -crop 2088x2855+0+0 /tmp/cassini/086_Macon_btv1b53095139c_2_0_crop.png
@@ -5361,6 +5631,9 @@ if [ -f gallica_pngs/087_Lyon_btv1b530951596.png ]; then
      echo Creating seamless image from 087_Lyon_btv1b530951596.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 087_Lyon_btv1b530951596
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/087_Lyon_btv1b530951596.png +distort Perspective "458,488 0, 0 473,3375 0,2894 2249,3371 1775,2894  2232,470 1775,0" -crop 1775x2894+0+0 /tmp/cassini/087_Lyon_btv1b530951596_0_0_crop.png
 $MAGICK -monitor gallica_pngs/087_Lyon_btv1b530951596.png +distort Perspective "2272,475 0, 0 2277,3376 0,2897 4386,3359 2099,2897  4361,465 2099,0" -crop 2099x2897+0+0 /tmp/cassini/087_Lyon_btv1b530951596_1_0_crop.png
 $MAGICK -monitor gallica_pngs/087_Lyon_btv1b530951596.png +distort Perspective "4410,457 0, 0 4428,3357 0,2900 6539,3355 2110,2900  6520,455 2110,0" -crop 2110x2900+0+0 /tmp/cassini/087_Lyon_btv1b530951596_2_0_crop.png
@@ -5423,6 +5696,9 @@ if [ -f gallica_pngs/088_Saint_Etienne_btv1b530951149.png ]; then
      echo Creating seamless image from 088_Saint_Etienne_btv1b530951149.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 088_Saint_Etienne_btv1b530951149
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/088_Saint_Etienne_btv1b530951149.png +distort Perspective "520,524 0, 0 520,3400 0,2879 2314,3405 1790,2879  2307,523 1790,0" -crop 1790x2879+0+0 /tmp/cassini/088_Saint_Etienne_btv1b530951149_0_0_crop.png
 $MAGICK -monitor gallica_pngs/088_Saint_Etienne_btv1b530951149.png +distort Perspective "2347,517 0, 0 2355,3397 0,2880 4463,3397 2108,2880  4456,516 2108,0" -crop 2108x2880+0+0 /tmp/cassini/088_Saint_Etienne_btv1b530951149_1_0_crop.png
 $MAGICK -monitor gallica_pngs/088_Saint_Etienne_btv1b530951149.png +distort Perspective "4500,509 0, 0 4511,3388 0,2877 6625,3384 2113,2877  6612,508 2113,0" -crop 2113x2877+0+0 /tmp/cassini/088_Saint_Etienne_btv1b530951149_2_0_crop.png
@@ -5485,6 +5761,9 @@ if [ -f gallica_pngs/089_Le_Puy_btv1b53095117n.png ]; then
      echo Creating seamless image from 089_Le_Puy_btv1b53095117n.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 089_Le_Puy_btv1b53095117n
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/089_Le_Puy_btv1b53095117n.png +distort Perspective "553,423 0, 0 545,3306 0,2886 2338,3298 1790,2886  2341,409 1790,0" -crop 1790x2886+0+0 /tmp/cassini/089_Le_Puy_btv1b53095117n_0_0_crop.png
 $MAGICK -monitor gallica_pngs/089_Le_Puy_btv1b53095117n.png +distort Perspective "2372,410 0, 0 2371,3293 0,2886 4481,3290 2112,2886  4486,400 2112,0" -crop 2112x2886+0+0 /tmp/cassini/089_Le_Puy_btv1b53095117n_1_0_crop.png
 $MAGICK -monitor gallica_pngs/089_Le_Puy_btv1b53095117n.png +distort Perspective "4520,394 0, 0 4517,3291 0,2890 6624,3288 2109,2890  6631,404 2109,0" -crop 2109x2890+0+0 /tmp/cassini/089_Le_Puy_btv1b53095117n_2_0_crop.png
@@ -5547,6 +5826,9 @@ if [ -f gallica_pngs/090_Viviers_btv1b53095133p.png ]; then
      echo Creating seamless image from 090_Viviers_btv1b53095133p.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 090_Viviers_btv1b53095133p
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/090_Viviers_btv1b53095133p.png +distort Perspective "517,422 0, 0 487,3267 0,2852 2274,3286 1783,2852  2297,427 1783,0" -crop 1783x2852+0+0 /tmp/cassini/090_Viviers_btv1b53095133p_0_0_crop.png
 $MAGICK -monitor gallica_pngs/090_Viviers_btv1b53095133p.png +distort Perspective "2342,429 0, 0 2330,3289 0,2857 4426,3294 2096,2857  4439,439 2096,0" -crop 2096x2857+0+0 /tmp/cassini/090_Viviers_btv1b53095133p_1_0_crop.png
 $MAGICK -monitor gallica_pngs/090_Viviers_btv1b53095133p.png +distort Perspective "4487,439 0, 0 4480,3293 0,2847 6570,3290 2097,2847  6592,449 2097,0" -crop 2097x2847+0+0 /tmp/cassini/090_Viviers_btv1b53095133p_2_0_crop.png
@@ -5609,6 +5891,9 @@ if [ -f gallica_pngs/091_Nimes_btv1b53095153h.png ]; then
      echo Creating seamless image from 091_Nimes_btv1b53095153h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 091_Nimes_btv1b53095153h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/091_Nimes_btv1b53095153h.png +distort Perspective "532,408 0, 0 503,3307 0,2899 2298,3312 1788,2899  2313,412 1788,0" -crop 1788x2899+0+0 /tmp/cassini/091_Nimes_btv1b53095153h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/091_Nimes_btv1b53095153h.png +distort Perspective "2351,409 0, 0 2332,3307 0,2897 4439,3313 2107,2897  4459,416 2107,0" -crop 2107x2897+0+0 /tmp/cassini/091_Nimes_btv1b53095153h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/091_Nimes_btv1b53095153h.png +distort Perspective "4492,410 0, 0 4487,3311 0,2896 6586,3313 2104,2896  6602,421 2104,0" -crop 2104x2896+0+0 /tmp/cassini/091_Nimes_btv1b53095153h_2_0_crop.png
@@ -5671,6 +5956,9 @@ if [ -f gallica_pngs/092_Montpellier_btv1b530951700.png ]; then
      echo Creating seamless image from 092_Montpellier_btv1b530951700.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 2 columns from 092_Montpellier_btv1b530951700
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/092_Montpellier_btv1b530951700.png +distort Perspective "10886,9369 0, 0 10884,9611 0,240 12997,9611 2111,240  12996,9372 2111,0" -crop 2111x240+0+0 /tmp/cassini/092_Montpellier_btv1b530951700_0_0_crop.png
 $MAGICK -monitor gallica_pngs/092_Montpellier_btv1b530951700.png +distort Perspective "13028,9372 0, 0 13028,9611 0,240 14808,9611 1780,240  14808,9369 1780,0" -crop 1780x240+0+0 /tmp/cassini/092_Montpellier_btv1b530951700_1_0_crop.png
   echo Combining 1 rows and 2 columns
@@ -5691,6 +5979,9 @@ if [ -f gallica_pngs/092_Montpellier_btv1b530951700.png ]; then
      echo Creating seamless image from 092_Montpellier_btv1b530951700.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 092_Montpellier_btv1b530951700
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/092_Montpellier_btv1b530951700.png +distort Perspective "545,416 0, 0 521,3311 0,2893 2311,3315 1783,2893  2321,424 1783,0" -crop 1783x2893+0+0 /tmp/cassini/092_Montpellier_btv1b530951700_0_0_crop.png
 $MAGICK -monitor gallica_pngs/092_Montpellier_btv1b530951700.png +distort Perspective "2356,426 0, 0 2346,3312 0,2880 4442,3317 2102,2880  4464,442 2102,0" -crop 2102x2880+0+0 /tmp/cassini/092_Montpellier_btv1b530951700_1_0_crop.png
 $MAGICK -monitor gallica_pngs/092_Montpellier_btv1b530951700.png +distort Perspective "4491,440 0, 0 4474,3317 0,2877 6581,3321 2105,2877  6595,443 2105,0" -crop 2105x2877+0+0 /tmp/cassini/092_Montpellier_btv1b530951700_2_0_crop.png
@@ -5753,6 +6044,9 @@ if [ -f gallica_pngs/093_SaintVaast_la_Hougue_btv1b53095192q.png ]; then
      echo Creating seamless image from 093_SaintVaast_la_Hougue_btv1b53095192q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 093_SaintVaast_la_Hougue_btv1b53095192q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/093_SaintVaast_la_Hougue_btv1b53095192q.png +distort Perspective "399,438 0, 0 377,3334 0,2897 2287,3337 1903,2897  2295,438 1903,0" -crop 1903x2897+0+0 /tmp/cassini/093_SaintVaast_la_Hougue_btv1b53095192q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/093_SaintVaast_la_Hougue_btv1b53095192q.png +distort Perspective "2335,436 0, 0 2325,3335 0,2896 4433,3340 2103,2896  4433,446 2103,0" -crop 2103x2896+0+0 /tmp/cassini/093_SaintVaast_la_Hougue_btv1b53095192q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/093_SaintVaast_la_Hougue_btv1b53095192q.png +distort Perspective "4466,449 0, 0 4475,3340 0,2893 6568,3330 2090,2893  6553,434 2090,0" -crop 2090x2893+0+0 /tmp/cassini/093_SaintVaast_la_Hougue_btv1b53095192q_2_0_crop.png
@@ -5797,6 +6091,9 @@ if [ -f gallica_pngs/094_Bayeux_btv1b530952154.png ]; then
      echo Creating seamless image from 094_Bayeux_btv1b530952154.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 094_Bayeux_btv1b530952154
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/094_Bayeux_btv1b530952154.png +distort Perspective "612,464 0, 0 587,3349 0,2885 2372,3355 1783,2885  2393,469 1783,0" -crop 1783x2885+0+0 /tmp/cassini/094_Bayeux_btv1b530952154_0_0_crop.png
 $MAGICK -monitor gallica_pngs/094_Bayeux_btv1b530952154.png +distort Perspective "2424,471 0, 0 2404,3350 0,2882 4507,3367 2104,2882  4529,481 2104,0" -crop 2104x2882+0+0 /tmp/cassini/094_Bayeux_btv1b530952154_1_0_crop.png
 $MAGICK -monitor gallica_pngs/094_Bayeux_btv1b530952154.png +distort Perspective "4570,484 0, 0 4551,3368 0,2887 6661,3375 2104,2887  6669,485 2104,0" -crop 2104x2887+0+0 /tmp/cassini/094_Bayeux_btv1b530952154_2_0_crop.png
@@ -5859,6 +6156,9 @@ if [ -f gallica_pngs/095_Vire_btv1b530952567.png ]; then
      echo Creating seamless image from 095_Vire_btv1b530952567.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 095_Vire_btv1b530952567
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/095_Vire_btv1b530952567.png +distort Perspective "537,535 0, 0 554,3427 0,2897 2338,3418 1785,2897  2323,515 1785,0" -crop 1785x2897+0+0 /tmp/cassini/095_Vire_btv1b530952567_0_0_crop.png
 $MAGICK -monitor gallica_pngs/095_Vire_btv1b530952567.png +distort Perspective "2359,534 0, 0 2377,3420 0,2887 4493,3396 2108,2887  4459,507 2108,0" -crop 2108x2887+0+0 /tmp/cassini/095_Vire_btv1b530952567_1_0_crop.png
 $MAGICK -monitor gallica_pngs/095_Vire_btv1b530952567.png +distort Perspective "4500,516 0, 0 4521,3400 0,2880 6621,3383 2099,2880  6599,506 2099,0" -crop 2099x2880+0+0 /tmp/cassini/095_Vire_btv1b530952567_2_0_crop.png
@@ -5921,6 +6221,9 @@ if [ -f gallica_pngs/096_Mayenne_btv1b53095122t.png ]; then
      echo Creating seamless image from 096_Mayenne_btv1b53095122t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 096_Mayenne_btv1b53095122t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/096_Mayenne_btv1b53095122t.png +distort Perspective "529,432 0, 0 526,3316 0,2889 2310,3317 1778,2889  2301,423 1778,0" -crop 1778x2889+0+0 /tmp/cassini/096_Mayenne_btv1b53095122t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/096_Mayenne_btv1b53095122t.png +distort Perspective "2347,437 0, 0 2342,3326 0,2888 4446,3326 2105,2888  4454,439 2105,0" -crop 2105x2888+0+0 /tmp/cassini/096_Mayenne_btv1b53095122t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/096_Mayenne_btv1b53095122t.png +distort Perspective "4500,442 0, 0 4483,3335 0,2885 6597,3332 2114,2885  6614,454 2114,0" -crop 2114x2885+0+0 /tmp/cassini/096_Mayenne_btv1b53095122t_2_0_crop.png
@@ -5983,6 +6286,9 @@ if [ -f gallica_pngs/097_Laval_btv1b53095111z.png ]; then
      echo Creating seamless image from 097_Laval_btv1b53095111z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 097_Laval_btv1b53095111z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/097_Laval_btv1b53095111z.png +distort Perspective "557,489 0, 0 539,3388 0,2902 2308,3401 1762,2902  2312,496 1762,0" -crop 1762x2902+0+0 /tmp/cassini/097_Laval_btv1b53095111z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/097_Laval_btv1b53095111z.png +distort Perspective "2364,498 0, 0 2344,3386 0,2885 4440,3396 2104,2885  4476,514 2104,0" -crop 2104x2885+0+0 /tmp/cassini/097_Laval_btv1b53095111z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/097_Laval_btv1b53095111z.png +distort Perspective "4528,515 0, 0 4502,3398 0,2879 6610,3410 2108,2879  6636,534 2108,0" -crop 2108x2879+0+0 /tmp/cassini/097_Laval_btv1b53095111z_2_0_crop.png
@@ -6045,6 +6351,9 @@ if [ -f gallica_pngs/098_Angers_btv1b53095129z.png ]; then
      echo Creating seamless image from 098_Angers_btv1b53095129z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 098_Angers_btv1b53095129z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/098_Angers_btv1b53095129z.png +distort Perspective "534,500 0, 0 551,3360 0,2864 2328,3355 1769,2864  2296,487 1769,0" -crop 1769x2864+0+0 /tmp/cassini/098_Angers_btv1b53095129z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/098_Angers_btv1b53095129z.png +distort Perspective "2364,479 0, 0 2372,3352 0,2867 4481,3342 2107,2867  4470,480 2107,0" -crop 2107x2867+0+0 /tmp/cassini/098_Angers_btv1b53095129z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/098_Angers_btv1b53095129z.png +distort Perspective "4536,481 0, 0 4543,3342 0,2860 6643,3339 2108,2860  6652,480 2108,0" -crop 2108x2860+0+0 /tmp/cassini/098_Angers_btv1b53095129z_2_0_crop.png
@@ -6107,6 +6416,9 @@ if [ -f gallica_pngs/099_Mortagne_btv1b530951935.png ]; then
      echo Creating seamless image from 099_Mortagne_btv1b530951935.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 099_Mortagne_btv1b530951935
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/099_Mortagne_btv1b530951935.png +distort Perspective "526,543 0, 0 541,3434 0,2896 2315,3431 1773,2896  2298,529 1773,0" -crop 1773x2896+0+0 /tmp/cassini/099_Mortagne_btv1b530951935_0_0_crop.png
 $MAGICK -monitor gallica_pngs/099_Mortagne_btv1b530951935.png +distort Perspective "2352,527 0, 0 2353,3436 0,2902 4452,3425 2102,2902  4457,529 2102,0" -crop 2102x2902+0+0 /tmp/cassini/099_Mortagne_btv1b530951935_1_0_crop.png
 $MAGICK -monitor gallica_pngs/099_Mortagne_btv1b530951935.png +distort Perspective "4497,540 0, 0 4496,3433 0,2896 6599,3426 2102,2896  6599,526 2102,0" -crop 2102x2896+0+0 /tmp/cassini/099_Mortagne_btv1b530951935_2_0_crop.png
@@ -6169,6 +6481,9 @@ if [ -f gallica_pngs/100_Lucon_btv1b53095245c.png ]; then
      echo Creating seamless image from 100_Lucon_btv1b53095245c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 100_Lucon_btv1b53095245c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/100_Lucon_btv1b53095245c.png +distort Perspective "550,479 0, 0 528,3364 0,2887 2310,3362 1777,2887  2322,473 1777,0" -crop 1777x2887+0+0 /tmp/cassini/100_Lucon_btv1b53095245c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/100_Lucon_btv1b53095245c.png +distort Perspective "2368,470 0, 0 2363,3365 0,2892 4471,3357 2107,2892  4474,468 2107,0" -crop 2107x2892+0+0 /tmp/cassini/100_Lucon_btv1b53095245c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/100_Lucon_btv1b53095245c.png +distort Perspective "4514,464 0, 0 4513,3361 0,2897 6605,3363 2098,2897  6619,465 2098,0" -crop 2098x2897+0+0 /tmp/cassini/100_Lucon_btv1b53095245c_2_0_crop.png
@@ -6231,6 +6546,9 @@ if [ -f gallica_pngs/101_LaRochelle_btv1b53095257p.png ]; then
      echo Creating seamless image from 101_LaRochelle_btv1b53095257p.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 101_LaRochelle_btv1b53095257p
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/101_LaRochelle_btv1b53095257p.png +distort Perspective "269,500 0, 0 273,3405 0,2905 2344,3405 2077,2905  2352,499 2077,0" -crop 2077x2905+0+0 /tmp/cassini/101_LaRochelle_btv1b53095257p_0_0_crop.png
 $MAGICK -monitor gallica_pngs/101_LaRochelle_btv1b53095257p.png +distort Perspective "2415,505 0, 0 2404,3398 0,2897 4504,3411 2096,2897  4508,510 2096,0" -crop 2096x2897+0+0 /tmp/cassini/101_LaRochelle_btv1b53095257p_1_0_crop.png
 $MAGICK -monitor gallica_pngs/101_LaRochelle_btv1b53095257p.png +distort Perspective "4570,511 0, 0 4566,3409 0,2900 6656,3412 2093,2900  6667,509 2093,0" -crop 2093x2900+0+0 /tmp/cassini/101_LaRochelle_btv1b53095257p_2_0_crop.png
@@ -6293,6 +6611,9 @@ if [ -f gallica_pngs/102_Saintes_btv1b53095277h.png ]; then
      echo Creating seamless image from 102_Saintes_btv1b53095277h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 102_Saintes_btv1b53095277h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/102_Saintes_btv1b53095277h.png +distort Perspective "261,527 0, 0 269,3427 0,2898 2367,3418 2103,2898  2369,522 2103,0" -crop 2103x2898+0+0 /tmp/cassini/102_Saintes_btv1b53095277h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/102_Saintes_btv1b53095277h.png +distort Perspective "2427,525 0, 0 2442,3417 0,2897 4540,3418 2105,2897  4539,516 2105,0" -crop 2105x2897+0+0 /tmp/cassini/102_Saintes_btv1b53095277h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/102_Saintes_btv1b53095277h.png +distort Perspective "4596,516 0, 0 4610,3413 0,2901 6708,3406 2104,2901  6707,500 2104,0" -crop 2104x2901+0+0 /tmp/cassini/102_Saintes_btv1b53095277h_2_0_crop.png
@@ -6355,6 +6676,9 @@ if [ -f gallica_pngs/103_Blaye_btv1b53095163x.png ]; then
      echo Creating seamless image from 103_Blaye_btv1b53095163x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 103_Blaye_btv1b53095163x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/103_Blaye_btv1b53095163x.png +distort Perspective "259,475 0, 0 250,3372 0,2899 2337,3379 2085,2899  2343,477 2085,0" -crop 2085x2899+0+0 /tmp/cassini/103_Blaye_btv1b53095163x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/103_Blaye_btv1b53095163x.png +distort Perspective "2395,479 0, 0 2390,3381 0,2900 4481,3382 2094,2900  4492,483 2094,0" -crop 2094x2900+0+0 /tmp/cassini/103_Blaye_btv1b53095163x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/103_Blaye_btv1b53095163x.png +distort Perspective "4543,495 0, 0 4536,3381 0,2892 6625,3389 2089,2892  6633,490 2089,0" -crop 2089x2892+0+0 /tmp/cassini/103_Blaye_btv1b53095163x_2_0_crop.png
@@ -6417,6 +6741,9 @@ if [ -f gallica_pngs/104_Bordeaux_btv1b53095112d.png ]; then
      echo Creating seamless image from 104_Bordeaux_btv1b53095112d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 104_Bordeaux_btv1b53095112d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/104_Bordeaux_btv1b53095112d.png +distort Perspective "266,549 0, 0 283,3429 0,2880 2361,3419 2083,2880  2354,538 2083,0" -crop 2083x2880+0+0 /tmp/cassini/104_Bordeaux_btv1b53095112d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/104_Bordeaux_btv1b53095112d.png +distort Perspective "2423,549 0, 0 2426,3411 0,2860 4527,3399 2098,2860  4518,541 2098,0" -crop 2098x2860+0+0 /tmp/cassini/104_Bordeaux_btv1b53095112d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/104_Bordeaux_btv1b53095112d.png +distort Perspective "4584,547 0, 0 4591,3403 0,2856 6687,3395 2103,2856  6694,538 2103,0" -crop 2103x2856+0+0 /tmp/cassini/104_Bordeaux_btv1b53095112d_2_0_crop.png
@@ -6479,6 +6806,9 @@ if [ -f gallica_pngs/105_Bazas_btv1b53095130b.png ]; then
      echo Creating seamless image from 105_Bazas_btv1b53095130b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 105_Bazas_btv1b53095130b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/105_Bazas_btv1b53095130b.png +distort Perspective "254,516 0, 0 277,3420 0,2906 2353,3405 2078,2906  2334,497 2078,0" -crop 2078x2906+0+0 /tmp/cassini/105_Bazas_btv1b53095130b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/105_Bazas_btv1b53095130b.png +distort Perspective "2405,522 0, 0 2412,3408 0,2886 4514,3408 2105,2886  4514,522 2105,0" -crop 2105x2886+0+0 /tmp/cassini/105_Bazas_btv1b53095130b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/105_Bazas_btv1b53095130b.png +distort Perspective "4575,524 0, 0 4576,3403 0,2881 6684,3403 2116,2881  6699,520 2116,0" -crop 2116x2881+0+0 /tmp/cassini/105_Bazas_btv1b53095130b_2_0_crop.png
@@ -6541,6 +6871,9 @@ if [ -f gallica_pngs/106_Roquefort_btv1b53095147w.png ]; then
      echo Creating seamless image from 106_Roquefort_btv1b53095147w.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 106_Roquefort_btv1b53095147w
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/106_Roquefort_btv1b53095147w.png +distort Perspective "235,431 0, 0 203,3343 0,2908 2297,3364 2093,2908  2327,459 2093,0" -crop 2093x2908+0+0 /tmp/cassini/106_Roquefort_btv1b53095147w_0_0_crop.png
 $MAGICK -monitor gallica_pngs/106_Roquefort_btv1b53095147w.png +distort Perspective "2380,461 0, 0 2352,3354 0,2894 4454,3365 2097,2894  4472,469 2097,0" -crop 2097x2894+0+0 /tmp/cassini/106_Roquefort_btv1b53095147w_1_0_crop.png
 $MAGICK -monitor gallica_pngs/106_Roquefort_btv1b53095147w.png +distort Perspective "4534,469 0, 0 4521,3366 0,2895 6619,3376 2099,2895  6634,483 2099,0" -crop 2099x2895+0+0 /tmp/cassini/106_Roquefort_btv1b53095147w_2_0_crop.png
@@ -6603,6 +6936,9 @@ if [ -f gallica_pngs/107_Aire_btv1b53095194m.png ]; then
      echo Creating seamless image from 107_Aire_btv1b53095194m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 107_Aire_btv1b53095194m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/107_Aire_btv1b53095194m.png +distort Perspective "537,494 0, 0 537,3398 0,2902 2318,3407 1784,2902  2325,506 1784,0" -crop 1784x2902+0+0 /tmp/cassini/107_Aire_btv1b53095194m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/107_Aire_btv1b53095194m.png +distort Perspective "2358,503 0, 0 2353,3406 0,2899 4446,3414 2098,2899  4462,518 2098,0" -crop 2098x2899+0+0 /tmp/cassini/107_Aire_btv1b53095194m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/107_Aire_btv1b53095194m.png +distort Perspective "4496,518 0, 0 4493,3419 0,2904 6605,3407 2106,2904  6596,499 2106,0" -crop 2106x2904+0+0 /tmp/cassini/107_Aire_btv1b53095194m_2_0_crop.png
@@ -6665,6 +7001,9 @@ if [ -f gallica_pngs/108Bis_Cauterets_btv1b53095246t.png ]; then
      echo Creating seamless image from 108Bis_Cauterets_btv1b53095246t.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 6 columns from 108Bis_Cauterets_btv1b53095246t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/108Bis_Cauterets_btv1b53095246t.png +distort Perspective "290,205 0, 0 314,2963 0,2759 975,2964 660,2759  950,204 660,0" -crop 660x2759+0+0 /tmp/cassini/108Bis_Cauterets_btv1b53095246t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/108Bis_Cauterets_btv1b53095246t.png +distort Perspective "1036,211 0, 0 1072,2958 0,2739 3142,2946 2092,2739  3150,215 2092,0" -crop 2092x2739+0+0 /tmp/cassini/108Bis_Cauterets_btv1b53095246t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/108Bis_Cauterets_btv1b53095246t.png +distort Perspective "3234,212 0, 0 3217,2944 0,2728 5328,2963 2109,2728  5341,239 2109,0" -crop 2109x2728+0+0 /tmp/cassini/108Bis_Cauterets_btv1b53095246t_2_0_crop.png
@@ -6707,6 +7046,9 @@ if [ -f gallica_pngs/108_Pau_btv1b53095216k.png ]; then
      echo Creating seamless image from 108_Pau_btv1b53095216k.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 7 columns from 108_Pau_btv1b53095216k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "553,9521 0, 0 553,9816 0,301 2321,9829 1768,301  2321,9521 1768,0" -crop 1768x301+0+0 /tmp/cassini/108_Pau_btv1b53095216k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "2406,9541 0, 0 2405,9819 0,286 4515,9819 2109,286  4515,9525 2109,0" -crop 2109x286+0+0 /tmp/cassini/108_Pau_btv1b53095216k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "4590,9521 0, 0 4589,9816 0,299 6711,9804 2119,299  6706,9500 2119,0" -crop 2119x299+0+0 /tmp/cassini/108_Pau_btv1b53095216k_2_0_crop.png
@@ -6737,6 +7079,9 @@ if [ -f gallica_pngs/108_Pau_btv1b53095216k.png ]; then
      echo Creating seamless image from 108_Pau_btv1b53095216k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 108_Pau_btv1b53095216k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "570,490 0, 0 547,3398 0,2907 2320,3405 1769,2907  2336,499 1769,0" -crop 1769x2907+0+0 /tmp/cassini/108_Pau_btv1b53095216k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "2399,494 0, 0 2387,3408 0,2904 4506,3404 2114,2904  4509,510 2114,0" -crop 2114x2904+0+0 /tmp/cassini/108_Pau_btv1b53095216k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/108_Pau_btv1b53095216k.png +distort Perspective "4571,499 0, 0 4571,3397 0,2897 6692,3398 2117,2897  6684,501 2117,0" -crop 2117x2897+0+0 /tmp/cassini/108_Pau_btv1b53095216k_2_0_crop.png
@@ -6799,6 +7144,9 @@ if [ -f gallica_pngs/109Bis_Saint_Hubert_btv1b53095278z.png ]; then
      echo Creating seamless image from 109Bis_Saint_Hubert_btv1b53095278z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 109Bis_Saint_Hubert_btv1b53095278z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/109Bis_Saint_Hubert_btv1b53095278z.png +distort Perspective "480,407 0, 0 457,3294 0,2881 2325,3293 1858,2881  2329,418 1858,0" -crop 1858x2881+0+0 /tmp/cassini/109Bis_Saint_Hubert_btv1b53095278z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/109Bis_Saint_Hubert_btv1b53095278z.png +distort Perspective "2370,414 0, 0 2363,3283 0,2866 4472,3285 2101,2866  4464,422 2101,0" -crop 2101x2866+0+0 /tmp/cassini/109Bis_Saint_Hubert_btv1b53095278z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/109Bis_Saint_Hubert_btv1b53095278z.png +distort Perspective "4502,421 0, 0 4507,3275 0,2860 6590,3284 2090,2860  6600,417 2090,0" -crop 2090x2860+0+0 /tmp/cassini/109Bis_Saint_Hubert_btv1b53095278z_2_0_crop.png
@@ -6843,6 +7191,9 @@ if [ -f gallica_pngs/109_Montmedy_btv1b530952584.png ]; then
      echo Creating seamless image from 109_Montmedy_btv1b530952584.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 109_Montmedy_btv1b530952584
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/109_Montmedy_btv1b530952584.png +distort Perspective "539,450 0, 0 553,3329 0,2890 2332,3335 1781,2890  2322,433 1781,0" -crop 1781x2890+0+0 /tmp/cassini/109_Montmedy_btv1b530952584_0_0_crop.png
 $MAGICK -monitor gallica_pngs/109_Montmedy_btv1b530952584.png +distort Perspective "2362,451 0, 0 2360,3332 0,2877 4459,3330 2105,2877  4473,456 2105,0" -crop 2105x2877+0+0 /tmp/cassini/109_Montmedy_btv1b530952584_1_0_crop.png
 $MAGICK -monitor gallica_pngs/109_Montmedy_btv1b530952584.png +distort Perspective "4511,460 0, 0 4496,3336 0,2875 6594,3341 2094,2875  6601,466 2094,0" -crop 2094x2875+0+0 /tmp/cassini/109_Montmedy_btv1b530952584_2_0_crop.png
@@ -6905,6 +7256,9 @@ if [ -f gallica_pngs/110_Verdun_btv1b530951238.png ]; then
      echo Creating seamless image from 110_Verdun_btv1b530951238.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 110_Verdun_btv1b530951238
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/110_Verdun_btv1b530951238.png +distort Perspective "573,472 0, 0 555,3343 0,2875 2336,3344 1771,2875  2335,464 1771,0" -crop 1771x2875+0+0 /tmp/cassini/110_Verdun_btv1b530951238_0_0_crop.png
 $MAGICK -monitor gallica_pngs/110_Verdun_btv1b530951238.png +distort Perspective "2368,459 0, 0 2369,3337 0,2871 4477,3328 2102,2871  4464,463 2102,0" -crop 2102x2871+0+0 /tmp/cassini/110_Verdun_btv1b530951238_1_0_crop.png
 $MAGICK -monitor gallica_pngs/110_Verdun_btv1b530951238.png +distort Perspective "4511,464 0, 0 4512,3336 0,2867 6628,3325 2111,2867  6618,463 2111,0" -crop 2111x2867+0+0 /tmp/cassini/110_Verdun_btv1b530951238_2_0_crop.png
@@ -6967,6 +7321,9 @@ if [ -f gallica_pngs/111_Toul_btv1b53095241k.png ]; then
      echo Creating seamless image from 111_Toul_btv1b53095241k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 111_Toul_btv1b53095241k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/111_Toul_btv1b53095241k.png +distort Perspective "540,476 0, 0 526,3353 0,2883 2328,3363 1798,2883  2335,473 1798,0" -crop 1798x2883+0+0 /tmp/cassini/111_Toul_btv1b53095241k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/111_Toul_btv1b53095241k.png +distort Perspective "2371,478 0, 0 2357,3355 0,2877 4447,3364 2092,2877  4466,487 2092,0" -crop 2092x2877+0+0 /tmp/cassini/111_Toul_btv1b53095241k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/111_Toul_btv1b53095241k.png +distort Perspective "4496,489 0, 0 4495,3358 0,2872 6598,3359 2104,2872  6602,484 2104,0" -crop 2104x2872+0+0 /tmp/cassini/111_Toul_btv1b53095241k_2_0_crop.png
@@ -7029,6 +7386,9 @@ if [ -f gallica_pngs/112_Joinville_btv1b530952421.png ]; then
      echo Creating seamless image from 112_Joinville_btv1b530952421.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 112_Joinville_btv1b530952421
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/112_Joinville_btv1b530952421.png +distort Perspective "508,471 0, 0 516,3357 0,2888 2284,3345 1764,2888  2268,454 1764,0" -crop 1764x2888+0+0 /tmp/cassini/112_Joinville_btv1b530952421_0_0_crop.png
 $MAGICK -monitor gallica_pngs/112_Joinville_btv1b530952421.png +distort Perspective "2309,460 0, 0 2323,3344 0,2882 4427,3332 2103,2882  4412,451 2103,0" -crop 2103x2882+0+0 /tmp/cassini/112_Joinville_btv1b530952421_1_0_crop.png
 $MAGICK -monitor gallica_pngs/112_Joinville_btv1b530952421.png +distort Perspective "4458,466 0, 0 4474,3348 0,2885 6571,3338 2103,2885  6567,450 2103,0" -crop 2103x2885+0+0 /tmp/cassini/112_Joinville_btv1b530952421_2_0_crop.png
@@ -7091,6 +7451,9 @@ if [ -f gallica_pngs/113_Langres_btv1b53095113v.png ]; then
      echo Creating seamless image from 113_Langres_btv1b53095113v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 113_Langres_btv1b53095113v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/113_Langres_btv1b53095113v.png +distort Perspective "527,463 0, 0 530,3335 0,2875 2310,3334 1774,2875  2296,456 1774,0" -crop 1774x2875+0+0 /tmp/cassini/113_Langres_btv1b53095113v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/113_Langres_btv1b53095113v.png +distort Perspective "2347,450 0, 0 2341,3332 0,2881 4431,3334 2088,2881  4434,453 2088,0" -crop 2088x2881+0+0 /tmp/cassini/113_Langres_btv1b53095113v_1_0_crop.png
 $MAGICK -monitor gallica_pngs/113_Langres_btv1b53095113v.png +distort Perspective "4482,463 0, 0 4482,3343 0,2884 6582,3335 2097,2884  6577,446 2097,0" -crop 2097x2884+0+0 /tmp/cassini/113_Langres_btv1b53095113v_2_0_crop.png
@@ -7153,6 +7516,9 @@ if [ -f gallica_pngs/114_Dijon_btv1b53095148b.png ]; then
      echo Creating seamless image from 114_Dijon_btv1b53095148b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 114_Dijon_btv1b53095148b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/114_Dijon_btv1b53095148b.png +distort Perspective "543,474 0, 0 525,3348 0,2879 2305,3348 1773,2879  2309,464 1773,0" -crop 1773x2879+0+0 /tmp/cassini/114_Dijon_btv1b53095148b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/114_Dijon_btv1b53095148b.png +distort Perspective "2341,465 0, 0 2345,3353 0,2891 4439,3359 2097,2891  4442,465 2097,0" -crop 2097x2891+0+0 /tmp/cassini/114_Dijon_btv1b53095148b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/114_Dijon_btv1b53095148b.png +distort Perspective "4489,464 0, 0 4481,3364 0,2902 6585,3368 2097,2902  6580,463 2097,0" -crop 2097x2902+0+0 /tmp/cassini/114_Dijon_btv1b53095148b_2_0_crop.png
@@ -7215,6 +7581,9 @@ if [ -f gallica_pngs/115_Dole_btv1b530951952.png ]; then
      echo Creating seamless image from 115_Dole_btv1b530951952.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 115_Dole_btv1b530951952
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/115_Dole_btv1b530951952.png +distort Perspective "598,489 0, 0 567,3371 0,2880 2336,3382 1768,2880  2366,503 1768,0" -crop 1768x2880+0+0 /tmp/cassini/115_Dole_btv1b530951952_0_0_crop.png
 $MAGICK -monitor gallica_pngs/115_Dole_btv1b530951952.png +distort Perspective "2397,495 0, 0 2373,3373 0,2871 4475,3364 2101,2871  4497,499 2101,0" -crop 2101x2871+0+0 /tmp/cassini/115_Dole_btv1b530951952_1_0_crop.png
 $MAGICK -monitor gallica_pngs/115_Dole_btv1b530951952.png +distort Perspective "4534,498 0, 0 4525,3368 0,2865 6631,3357 2102,2865  6633,497 2102,0" -crop 2102x2865+0+0 /tmp/cassini/115_Dole_btv1b530951952_2_0_crop.png
@@ -7277,6 +7646,9 @@ if [ -f gallica_pngs/116_Tournus_btv1b53095228w.png ]; then
      echo Creating seamless image from 116_Tournus_btv1b53095228w.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 116_Tournus_btv1b53095228w
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/116_Tournus_btv1b53095228w.png +distort Perspective "564,511 0, 0 588,3398 0,2890 2370,3398 1785,2890  2352,505 1785,0" -crop 1785x2890+0+0 /tmp/cassini/116_Tournus_btv1b53095228w_0_0_crop.png
 $MAGICK -monitor gallica_pngs/116_Tournus_btv1b53095228w.png +distort Perspective "2394,512 0, 0 2399,3395 0,2883 4492,3386 2091,2883  4483,502 2091,0" -crop 2091x2883+0+0 /tmp/cassini/116_Tournus_btv1b53095228w_1_0_crop.png
 $MAGICK -monitor gallica_pngs/116_Tournus_btv1b53095228w.png +distort Perspective "4532,505 0, 0 4544,3391 0,2883 6637,3380 2098,2883  6636,500 2098,0" -crop 2098x2883+0+0 /tmp/cassini/116_Tournus_btv1b53095228w_2_0_crop.png
@@ -7339,6 +7711,9 @@ if [ -f gallica_pngs/117_Bourg_en_Bresse_btv1b53095259k.png ]; then
      echo Creating seamless image from 117_Bourg_en_Bresse_btv1b53095259k.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 117_Bourg_en_Bresse_btv1b53095259k
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/117_Bourg_en_Bresse_btv1b53095259k.png +distort Perspective "525,518 0, 0 523,3376 0,2864 2317,3380 1793,2864  2318,510 1793,0" -crop 1793x2864+0+0 /tmp/cassini/117_Bourg_en_Bresse_btv1b53095259k_0_0_crop.png
 $MAGICK -monitor gallica_pngs/117_Bourg_en_Bresse_btv1b53095259k.png +distort Perspective "2356,507 0, 0 2355,3373 0,2869 4453,3370 2098,2869  4454,497 2098,0" -crop 2098x2869+0+0 /tmp/cassini/117_Bourg_en_Bresse_btv1b53095259k_1_0_crop.png
 $MAGICK -monitor gallica_pngs/117_Bourg_en_Bresse_btv1b53095259k.png +distort Perspective "4488,493 0, 0 4489,3370 0,2880 6596,3369 2110,2880  6602,485 2110,0" -crop 2110x2880+0+0 /tmp/cassini/117_Bourg_en_Bresse_btv1b53095259k_2_0_crop.png
@@ -7401,6 +7776,9 @@ if [ -f gallica_pngs/118_Environs_de_Bellay_btv1b53095279d.png ]; then
      echo Creating seamless image from 118_Environs_de_Bellay_btv1b53095279d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 118_Environs_de_Bellay_btv1b53095279d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/118_Environs_de_Bellay_btv1b53095279d.png +distort Perspective "587,467 0, 0 589,3357 0,2897 2351,3355 1760,2897  2345,451 1760,0" -crop 1760x2897+0+0 /tmp/cassini/118_Environs_de_Bellay_btv1b53095279d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/118_Environs_de_Bellay_btv1b53095279d.png +distort Perspective "2384,448 0, 0 2382,3355 0,2901 4482,3345 2103,2901  4490,450 2103,0" -crop 2103x2901+0+0 /tmp/cassini/118_Environs_de_Bellay_btv1b53095279d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/118_Environs_de_Bellay_btv1b53095279d.png +distort Perspective "4534,449 0, 0 4531,3354 0,2902 6635,3352 2103,2902  6636,452 2103,0" -crop 2103x2902+0+0 /tmp/cassini/118_Environs_de_Bellay_btv1b53095279d_2_0_crop.png
@@ -7463,6 +7841,9 @@ if [ -f gallica_pngs/119_Grenoble_btv1b53095243g.png ]; then
      echo Creating seamless image from 119_Grenoble_btv1b53095243g.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 119_Grenoble_btv1b53095243g
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/119_Grenoble_btv1b53095243g.png +distort Perspective "482,480 0, 0 513,3355 0,2881 2304,3355 1799,2881  2289,467 1799,0" -crop 1799x2881+0+0 /tmp/cassini/119_Grenoble_btv1b53095243g_0_0_crop.png
 $MAGICK -monitor gallica_pngs/119_Grenoble_btv1b53095243g.png +distort Perspective "2330,470 0, 0 2339,3344 0,2874 4424,3341 2087,2874  4419,466 2087,0" -crop 2087x2874+0+0 /tmp/cassini/119_Grenoble_btv1b53095243g_1_0_crop.png
 $MAGICK -monitor gallica_pngs/119_Grenoble_btv1b53095243g.png +distort Perspective "4457,469 0, 0 4458,3342 0,2876 6540,3343 2083,2876  6541,464 2083,0" -crop 2083x2876+0+0 /tmp/cassini/119_Grenoble_btv1b53095243g_2_0_crop.png
@@ -7525,6 +7906,9 @@ if [ -f gallica_pngs/120_Valence_btv1b53095149s.png ]; then
      echo Creating seamless image from 120_Valence_btv1b53095149s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 120_Valence_btv1b53095149s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/120_Valence_btv1b53095149s.png +distort Perspective "521,569 0, 0 526,3412 0,2854 2328,3407 1800,2854  2319,542 1800,0" -crop 1800x2854+0+0 /tmp/cassini/120_Valence_btv1b53095149s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/120_Valence_btv1b53095149s.png +distort Perspective "2361,542 0, 0 2363,3402 0,2863 4457,3386 2089,2863  4446,519 2089,0" -crop 2089x2863+0+0 /tmp/cassini/120_Valence_btv1b53095149s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/120_Valence_btv1b53095149s.png +distort Perspective "4489,519 0, 0 4490,3391 0,2865 6579,3377 2087,2865  6575,519 2087,0" -crop 2087x2865+0+0 /tmp/cassini/120_Valence_btv1b53095149s_2_0_crop.png
@@ -7587,6 +7971,9 @@ if [ -f gallica_pngs/121_Vaison_la_Romaine_btv1b53095171f.png ]; then
      echo Creating seamless image from 121_Vaison_la_Romaine_btv1b53095171f.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 121_Vaison_la_Romaine_btv1b53095171f
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/121_Vaison_la_Romaine_btv1b53095171f.png +distort Perspective "527,381 0, 0 491,3258 0,2888 2308,3282 1819,2888  2349,382 1819,0" -crop 1819x2888+0+0 /tmp/cassini/121_Vaison_la_Romaine_btv1b53095171f_0_0_crop.png
 $MAGICK -monitor gallica_pngs/121_Vaison_la_Romaine_btv1b53095171f.png +distort Perspective "2381,382 0, 0 2345,3280 0,2893 4447,3283 2093,2893  4465,394 2093,0" -crop 2093x2893+0+0 /tmp/cassini/121_Vaison_la_Romaine_btv1b53095171f_1_0_crop.png
 $MAGICK -monitor gallica_pngs/121_Vaison_la_Romaine_btv1b53095171f.png +distort Perspective "4506,413 0, 0 4490,3301 0,2887 6570,3305 2080,2887  6587,419 2080,0" -crop 2080x2887+0+0 /tmp/cassini/121_Vaison_la_Romaine_btv1b53095171f_2_0_crop.png
@@ -7649,6 +8036,9 @@ if [ -f gallica_pngs/122_Avignon_btv1b53095196h.png ]; then
      echo Creating seamless image from 122_Avignon_btv1b53095196h.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 122_Avignon_btv1b53095196h
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/122_Avignon_btv1b53095196h.png +distort Perspective "545,451 0, 0 534,3313 0,2866 2316,3311 1770,2866  2304,440 1770,0" -crop 1770x2866+0+0 /tmp/cassini/122_Avignon_btv1b53095196h_0_0_crop.png
 $MAGICK -monitor gallica_pngs/122_Avignon_btv1b53095196h.png +distort Perspective "2345,438 0, 0 2335,3307 0,2871 4442,3314 2105,2871  4448,441 2105,0" -crop 2105x2871+0+0 /tmp/cassini/122_Avignon_btv1b53095196h_1_0_crop.png
 $MAGICK -monitor gallica_pngs/122_Avignon_btv1b53095196h.png +distort Perspective "4490,443 0, 0 4484,3313 0,2868 6591,3308 2104,2868  6592,441 2104,0" -crop 2104x2868+0+0 /tmp/cassini/122_Avignon_btv1b53095196h_2_0_crop.png
@@ -7711,6 +8101,9 @@ if [ -f gallica_pngs/123_Aix_en_Provence_btv1b530952478.png ]; then
      echo Creating seamless image from 123_Aix_en_Provence_btv1b530952478.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 7 columns from 123_Aix_en_Provence_btv1b530952478
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "599,9499 0, 0 599,9782 0,282 2359,9782 1760,282  2360,9501 1760,0" -crop 1760x282+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_0_0_crop.png
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "2419,9507 0, 0 2414,9786 0,279 4532,9774 2115,279  4532,9494 2115,0" -crop 2115x279+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_1_0_crop.png
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "4584,9496 0, 0 4586,9771 0,270 6700,9753 2113,270  6697,9487 2113,0" -crop 2113x270+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_2_0_crop.png
@@ -7741,6 +8134,9 @@ if [ -f gallica_pngs/123_Aix_en_Provence_btv1b530952478.png ]; then
      echo Creating seamless image from 123_Aix_en_Provence_btv1b530952478.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 123_Aix_en_Provence_btv1b530952478
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "556,527 0, 0 546,3427 0,2893 2301,3426 1759,2893  2320,539 1759,0" -crop 1759x2893+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_0_0_crop.png
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "2380,537 0, 0 2368,3429 0,2886 4473,3426 2114,2886  4503,546 2114,0" -crop 2114x2886+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_1_0_crop.png
 $MAGICK -monitor gallica_pngs/123_Aix_en_Provence_btv1b530952478.png +distort Perspective "4563,533 0, 0 4546,3422 0,2893 6670,3419 2115,2893  6670,522 2115,0" -crop 2115x2893+0+0 /tmp/cassini/123_Aix_en_Provence_btv1b530952478_2_0_crop.png
@@ -7803,6 +8199,9 @@ if [ -f gallica_pngs/124_Marseille_btv1b530952656.png ]; then
      echo Creating seamless image from 124_Marseille_btv1b530952656.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 4 columns from 124_Marseille_btv1b530952656
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/124_Marseille_btv1b530952656.png +distort Perspective "149,226 0, 0 177,3003 0,2773 1300,2996 1128,2773  1282,226 1128,0" -crop 1128x2773+0+0 /tmp/cassini/124_Marseille_btv1b530952656_0_0_crop.png
 $MAGICK -monitor gallica_pngs/124_Marseille_btv1b530952656.png +distort Perspective "1343,215 0, 0 1351,2984 0,2779 3440,3005 2092,2779  3439,215 2092,0" -crop 2092x2779+0+0 /tmp/cassini/124_Marseille_btv1b530952656_1_0_crop.png
 $MAGICK -monitor gallica_pngs/124_Marseille_btv1b530952656.png +distort Perspective "3509,208 0, 0 3506,3000 0,2799 5607,3012 2104,2799  5616,205 2104,0" -crop 2104x2799+0+0 /tmp/cassini/124_Marseille_btv1b530952656_2_0_crop.png
@@ -7837,6 +8236,9 @@ if [ -f gallica_pngs/125_Cherbourg_btv1b53095280s.png ]; then
      echo Creating seamless image from 125_Cherbourg_btv1b53095280s.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 125_Cherbourg_btv1b53095280s
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/125_Cherbourg_btv1b53095280s.png +distort Perspective "499,534 0, 0 528,3390 0,2868 2315,3382 1790,2868  2292,502 1790,0" -crop 1790x2868+0+0 /tmp/cassini/125_Cherbourg_btv1b53095280s_0_0_crop.png
 $MAGICK -monitor gallica_pngs/125_Cherbourg_btv1b53095280s.png +distort Perspective "2337,502 0, 0 2356,3377 0,2876 4455,3353 2092,2876  4423,476 2092,0" -crop 2092x2876+0+0 /tmp/cassini/125_Cherbourg_btv1b53095280s_1_0_crop.png
 $MAGICK -monitor gallica_pngs/125_Cherbourg_btv1b53095280s.png +distort Perspective "4473,471 0, 0 4491,3353 0,2883 6599,3347 2100,2883  6566,462 2100,0" -crop 2100x2883+0+0 /tmp/cassini/125_Cherbourg_btv1b53095280s_2_0_crop.png
@@ -7899,6 +8301,9 @@ if [ -f gallica_pngs/126_Coutances_btv1b530951416.png ]; then
      echo Creating seamless image from 126_Coutances_btv1b530951416.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 126_Coutances_btv1b530951416
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/126_Coutances_btv1b530951416.png +distort Perspective "591,486 0, 0 602,3383 0,2904 2342,3385 1738,2904  2328,473 1738,0" -crop 1738x2904+0+0 /tmp/cassini/126_Coutances_btv1b530951416_0_0_crop.png
 $MAGICK -monitor gallica_pngs/126_Coutances_btv1b530951416.png +distort Perspective "2378,467 0, 0 2381,3372 0,2897 4491,3368 2109,2897  4486,478 2109,0" -crop 2109x2897+0+0 /tmp/cassini/126_Coutances_btv1b530951416_1_0_crop.png
 $MAGICK -monitor gallica_pngs/126_Coutances_btv1b530951416.png +distort Perspective "4537,477 0, 0 4525,3362 0,2882 6638,3375 2116,2882  6657,496 2116,0" -crop 2116x2882+0+0 /tmp/cassini/126_Coutances_btv1b530951416_2_0_crop.png
@@ -7961,6 +8366,9 @@ if [ -f gallica_pngs/127_Saint_Malo_btv1b530952834.png ]; then
      echo Creating seamless image from 127_Saint_Malo_btv1b530952834.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 127_Saint_Malo_btv1b530952834
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/127_Saint_Malo_btv1b530952834.png +distort Perspective "554,544 0, 0 550,3419 0,2883 2275,3420 1717,2883  2264,528 1717,0" -crop 1717x2883+0+0 /tmp/cassini/127_Saint_Malo_btv1b530952834_0_0_crop.png
 $MAGICK -monitor gallica_pngs/127_Saint_Malo_btv1b530952834.png +distort Perspective "2303,532 0, 0 2304,3411 0,2880 4424,3406 2115,2880  4413,525 2115,0" -crop 2115x2880+0+0 /tmp/cassini/127_Saint_Malo_btv1b530952834_1_0_crop.png
 $MAGICK -monitor gallica_pngs/127_Saint_Malo_btv1b530952834.png +distort Perspective "4448,529 0, 0 4462,3411 0,2881 6558,3404 2102,2881  6557,523 2102,0" -crop 2102x2881+0+0 /tmp/cassini/127_Saint_Malo_btv1b530952834_2_0_crop.png
@@ -8023,6 +8431,9 @@ if [ -f gallica_pngs/128_Dinan_btv1b53095172w.png ]; then
      echo Creating seamless image from 128_Dinan_btv1b53095172w.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 128_Dinan_btv1b53095172w
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/128_Dinan_btv1b53095172w.png +distort Perspective "537,472 0, 0 531,3354 0,2888 2271,3358 1735,2888  2267,463 1735,0" -crop 1735x2888+0+0 /tmp/cassini/128_Dinan_btv1b53095172w_0_0_crop.png
 $MAGICK -monitor gallica_pngs/128_Dinan_btv1b53095172w.png +distort Perspective "2314,466 0, 0 2308,3357 0,2892 4424,3368 2109,2892  4417,475 2109,0" -crop 2109x2892+0+0 /tmp/cassini/128_Dinan_btv1b53095172w_1_0_crop.png
 $MAGICK -monitor gallica_pngs/128_Dinan_btv1b53095172w.png +distort Perspective "4468,482 0, 0 4466,3380 0,2898 6573,3389 2114,2898  6590,491 2114,0" -crop 2114x2898+0+0 /tmp/cassini/128_Dinan_btv1b53095172w_2_0_crop.png
@@ -8085,6 +8496,9 @@ if [ -f gallica_pngs/129_Rennes_btv1b53095266n.png ]; then
      echo Creating seamless image from 129_Rennes_btv1b53095266n.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 129_Rennes_btv1b53095266n
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/129_Rennes_btv1b53095266n.png +distort Perspective "545,464 0, 0 547,3359 0,2896 2255,3357 1708,2896  2253,459 1708,0" -crop 1708x2896+0+0 /tmp/cassini/129_Rennes_btv1b53095266n_0_0_crop.png
 $MAGICK -monitor gallica_pngs/129_Rennes_btv1b53095266n.png +distort Perspective "2292,471 0, 0 2290,3358 0,2888 4412,3358 2120,2888  4410,469 2120,0" -crop 2120x2888+0+0 /tmp/cassini/129_Rennes_btv1b53095266n_1_0_crop.png
 $MAGICK -monitor gallica_pngs/129_Rennes_btv1b53095266n.png +distort Perspective "4447,479 0, 0 4447,3364 0,2886 6558,3362 2116,2886  6569,475 2116,0" -crop 2116x2886+0+0 /tmp/cassini/129_Rennes_btv1b53095266n_2_0_crop.png
@@ -8147,6 +8561,9 @@ if [ -f gallica_pngs/130_Paimboeuf_btv1b530952817.png ]; then
      echo Creating seamless image from 130_Paimboeuf_btv1b530952817.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 130_Paimboeuf_btv1b530952817
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/130_Paimboeuf_btv1b530952817.png +distort Perspective "572,511 0, 0 603,3403 0,2889 2371,3390 1766,2889  2337,503 1766,0" -crop 1766x2889+0+0 /tmp/cassini/130_Paimboeuf_btv1b530952817_0_0_crop.png
 $MAGICK -monitor gallica_pngs/130_Paimboeuf_btv1b530952817.png +distort Perspective "2373,503 0, 0 2398,3387 0,2882 4509,3381 2106,2882  4475,500 2106,0" -crop 2106x2882+0+0 /tmp/cassini/130_Paimboeuf_btv1b530952817_1_0_crop.png
 $MAGICK -monitor gallica_pngs/130_Paimboeuf_btv1b530952817.png +distort Perspective "4521,500 0, 0 4551,3376 0,2881 6645,3371 2101,2881  6630,485 2101,0" -crop 2101x2881+0+0 /tmp/cassini/130_Paimboeuf_btv1b530952817_2_0_crop.png
@@ -8209,6 +8626,9 @@ if [ -f gallica_pngs/131_Nantes_btv1b53095142n.png ]; then
      echo Creating seamless image from 131_Nantes_btv1b53095142n.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 131_Nantes_btv1b53095142n
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/131_Nantes_btv1b53095142n.png +distort Perspective "511,500 0, 0 528,3420 0,2921 2307,3413 1776,2921  2285,490 1776,0" -crop 1776x2921+0+0 /tmp/cassini/131_Nantes_btv1b53095142n_0_0_crop.png
 $MAGICK -monitor gallica_pngs/131_Nantes_btv1b53095142n.png +distort Perspective "2324,477 0, 0 2337,3406 0,2926 4436,3403 2101,2926  4428,479 2101,0" -crop 2101x2926+0+0 /tmp/cassini/131_Nantes_btv1b53095142n_1_0_crop.png
 $MAGICK -monitor gallica_pngs/131_Nantes_btv1b53095142n.png +distort Perspective "4475,473 0, 0 4477,3402 0,2929 6572,3407 2099,2929  6579,477 2099,0" -crop 2099x2929+0+0 /tmp/cassini/131_Nantes_btv1b53095142n_2_0_crop.png
@@ -8271,6 +8691,9 @@ if [ -f gallica_pngs/132_La_Roche_sur_Yon_btv1b530952851.png ]; then
      echo Creating seamless image from 132_La_Roche_sur_Yon_btv1b530952851.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 132_La_Roche_sur_Yon_btv1b530952851
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/132_La_Roche_sur_Yon_btv1b530952851.png +distort Perspective "504,512 0, 0 512,3383 0,2872 2297,3374 1783,2872  2286,501 1783,0" -crop 1783x2872+0+0 /tmp/cassini/132_La_Roche_sur_Yon_btv1b530952851_0_0_crop.png
 $MAGICK -monitor gallica_pngs/132_La_Roche_sur_Yon_btv1b530952851.png +distort Perspective "2327,500 0, 0 2328,3370 0,2869 4431,3364 2100,2869  4424,495 2100,0" -crop 2100x2869+0+0 /tmp/cassini/132_La_Roche_sur_Yon_btv1b530952851_1_0_crop.png
 $MAGICK -monitor gallica_pngs/132_La_Roche_sur_Yon_btv1b530952851.png +distort Perspective "4470,493 0, 0 4466,3366 0,2877 6562,3366 2092,2877  6559,485 2092,0" -crop 2092x2877+0+0 /tmp/cassini/132_La_Roche_sur_Yon_btv1b530952851_2_0_crop.png
@@ -8333,6 +8756,9 @@ if [ -f gallica_pngs/133_Ile_de_Re_btv1b530951255.png ]; then
      echo Creating seamless image from 133_Ile_de_Re_btv1b530951255.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 133_Ile_de_Re_btv1b530951255
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/133_Ile_de_Re_btv1b530951255.png +distort Perspective "432,539 0, 0 392,3387 0,2844 1118,3389 725,2844  1157,548 725,0" -crop 725x2844+0+0 /tmp/cassini/133_Ile_de_Re_btv1b530951255_0_0_crop.png
 $MAGICK -monitor gallica_pngs/133_Ile_de_Re_btv1b530951255.png +distort Perspective "1200,541 0, 0 1189,3393 0,2853 3275,3402 2089,2853  3293,547 2089,0" -crop 2089x2853+0+0 /tmp/cassini/133_Ile_de_Re_btv1b530951255_1_0_crop.png
 $MAGICK -monitor gallica_pngs/133_Ile_de_Re_btv1b530951255.png +distort Perspective "3347,543 0, 0 3340,3401 0,2858 5451,3402 2108,2858  5452,543 2108,0" -crop 2108x2858+0+0 /tmp/cassini/133_Ile_de_Re_btv1b530951255_2_0_crop.png
@@ -8377,6 +8803,9 @@ if [ -f gallica_pngs/134_Ile_dOleron_btv1b53095155d.png ]; then
      echo Creating seamless image from 134_Ile_dOleron_btv1b53095155d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 2 columns from 134_Ile_dOleron_btv1b53095155d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/134_Ile_dOleron_btv1b53095155d.png +distort Perspective "707,486 0, 0 690,3374 0,2894 2305,3386 1609,2894  2310,485 1609,0" -crop 1609x2894+0+0 /tmp/cassini/134_Ile_dOleron_btv1b53095155d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/134_Ile_dOleron_btv1b53095155d.png +distort Perspective "2376,491 0, 0 2375,3394 0,2904 4467,3389 2083,2904  4450,484 2083,0" -crop 2083x2904+0+0 /tmp/cassini/134_Ile_dOleron_btv1b53095155d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/134_Ile_dOleron_btv1b53095155d.png +distort Perspective "680,3464 0, 0 685,6656 0,3191 2295,6653 1615,3191  2301,3462 1615,0" -crop 1615x3191+0+0 /tmp/cassini/134_Ile_dOleron_btv1b53095155d_0_1_crop.png
@@ -8409,6 +8838,9 @@ if [ -f gallica_pngs/135_Cote_de_Medoc_btv1b53095156v.png ]; then
      echo Creating seamless image from 135_Cote_de_Medoc_btv1b53095156v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 1 columns from 135_Cote_de_Medoc_btv1b53095156v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/135_Cote_de_Medoc_btv1b53095156v.png +distort Perspective "291,458 0, 0 289,3295 0,2847 2308,3290 2014,2847  2300,433 2014,0" -crop 2014x2847+0+0 /tmp/cassini/135_Cote_de_Medoc_btv1b53095156v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/135_Cote_de_Medoc_btv1b53095156v.png +distort Perspective "290,3348 0, 0 271,6498 0,3149 2301,6497 2020,3149  2300,3349 2020,0" -crop 2020x3149+0+0 /tmp/cassini/135_Cote_de_Medoc_btv1b53095156v_0_1_crop.png
 $MAGICK -monitor gallica_pngs/135_Cote_de_Medoc_btv1b53095156v.png +distort Perspective "267,6562 0, 0 279,9337 0,2768 2302,9320 2023,2768  2291,6558 2023,0" -crop 2023x2768+0+0 /tmp/cassini/135_Cote_de_Medoc_btv1b53095156v_0_2_crop.png
@@ -8435,6 +8867,9 @@ if [ -f gallica_pngs/136_La_Teste_de_Buch_btv1b53095229b.png ]; then
      echo Creating seamless image from 136_La_Teste_de_Buch_btv1b53095229b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 2 columns from 136_La_Teste_de_Buch_btv1b53095229b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/136_La_Teste_de_Buch_btv1b53095229b.png +distort Perspective "186,371 0, 0 186,3231 0,2859 2211,3231 2027,2859  2216,372 2027,0" -crop 2027x2859+0+0 /tmp/cassini/136_La_Teste_de_Buch_btv1b53095229b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/136_La_Teste_de_Buch_btv1b53095229b.png +distort Perspective "2277,375 0, 0 2285,3234 0,2861 4399,3227 2110,2861  4383,364 2110,0" -crop 2110x2861+0+0 /tmp/cassini/136_La_Teste_de_Buch_btv1b53095229b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/136_La_Teste_de_Buch_btv1b53095229b.png +distort Perspective "189,3306 0, 0 189,6447 0,3141 2219,6448 2026,3141  2211,3307 2026,0" -crop 2026x3141+0+0 /tmp/cassini/136_La_Teste_de_Buch_btv1b53095229b_0_1_crop.png
@@ -8467,6 +8902,9 @@ if [ -f gallica_pngs/137_Cazau_btv1b53095176p.png ]; then
      echo Creating seamless image from 137_Cazau_btv1b53095176p.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 2 columns from 137_Cazau_btv1b53095176p
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/137_Cazau_btv1b53095176p.png +distort Perspective "333,439 0, 0 319,3318 0,2884 2331,3334 2005,2884  2331,445 2005,0" -crop 2005x2884+0+0 /tmp/cassini/137_Cazau_btv1b53095176p_0_0_crop.png
 $MAGICK -monitor gallica_pngs/137_Cazau_btv1b53095176p.png +distort Perspective "2395,449 0, 0 2399,3328 0,2879 4520,3328 2123,2879  4520,449 2123,0" -crop 2123x2879+0+0 /tmp/cassini/137_Cazau_btv1b53095176p_1_0_crop.png
 $MAGICK -monitor gallica_pngs/137_Cazau_btv1b53095176p.png +distort Perspective "314,3399 0, 0 299,6565 0,3174 2321,6577 2016,3174  2325,3395 2016,0" -crop 2016x3174+0+0 /tmp/cassini/137_Cazau_btv1b53095176p_0_1_crop.png
@@ -8499,6 +8937,9 @@ if [ -f gallica_pngs/138_Vieux_Boucau_les_Bains_btv1b530951774.png ]; then
      echo Creating seamless image from 138_Vieux_Boucau_les_Bains_btv1b530951774.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 3 columns from 138_Vieux_Boucau_les_Bains_btv1b530951774
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/138_Vieux_Boucau_les_Bains_btv1b530951774.png +distort Perspective "310,531 0, 0 312,3405 0,2875 2316,3434 2023,2875  2352,557 2023,0" -crop 2023x2875+0+0 /tmp/cassini/138_Vieux_Boucau_les_Bains_btv1b530951774_0_0_crop.png
 $MAGICK -monitor gallica_pngs/138_Vieux_Boucau_les_Bains_btv1b530951774.png +distort Perspective "2404,548 0, 0 2377,3426 0,2877 4479,3438 2092,2877  4486,561 2092,0" -crop 2092x2877+0+0 /tmp/cassini/138_Vieux_Boucau_les_Bains_btv1b530951774_1_0_crop.png
 $MAGICK -monitor gallica_pngs/138_Vieux_Boucau_les_Bains_btv1b530951774.png +distort Perspective "4557,548 0, 0 4534,3429 0,2887 6617,3445 2083,2887  6640,551 2083,0" -crop 2083x2887+0+0 /tmp/cassini/138_Vieux_Boucau_les_Bains_btv1b530951774_2_0_crop.png
@@ -8537,6 +8978,9 @@ if [ -f gallica_pngs/139_Bayonne_btv1b530951757.png ]; then
      echo Creating seamless image from 139_Bayonne_btv1b530951757.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 139_Bayonne_btv1b530951757
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/139_Bayonne_btv1b530951757.png +distort Perspective "576,437 0, 0 576,3316 0,2880 2330,3313 1758,2880  2339,432 1758,0" -crop 1758x2880+0+0 /tmp/cassini/139_Bayonne_btv1b530951757_0_0_crop.png
 $MAGICK -monitor gallica_pngs/139_Bayonne_btv1b530951757.png +distort Perspective "2381,440 0, 0 2362,3302 0,2866 4462,3312 2096,2866  4474,442 2096,0" -crop 2096x2866+0+0 /tmp/cassini/139_Bayonne_btv1b530951757_1_0_crop.png
 $MAGICK -monitor gallica_pngs/139_Bayonne_btv1b530951757.png +distort Perspective "4504,441 0, 0 4499,3313 0,2874 6615,3310 2112,2874  6613,434 2112,0" -crop 2112x2874+0+0 /tmp/cassini/139_Bayonne_btv1b530951757_2_0_crop.png
@@ -8599,6 +9043,9 @@ if [ -f gallica_pngs/140_Saint_Jean_Pied_de_Port_btv1b530951791.png ]; then
      echo Creating seamless image from 140_Saint_Jean_Pied_de_Port_btv1b530951791.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 140_Saint_Jean_Pied_de_Port_btv1b530951791
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/140_Saint_Jean_Pied_de_Port_btv1b530951791.png +distort Perspective "539,441 0, 0 537,3350 0,2908 2299,3351 1761,2908  2299,444 1761,0" -crop 1761x2908+0+0 /tmp/cassini/140_Saint_Jean_Pied_de_Port_btv1b530951791_0_0_crop.png
 $MAGICK -monitor gallica_pngs/140_Saint_Jean_Pied_de_Port_btv1b530951791.png +distort Perspective "2334,435 0, 0 2349,3361 0,2912 4436,3342 2093,2912  4433,443 2093,0" -crop 2093x2912+0+0 /tmp/cassini/140_Saint_Jean_Pied_de_Port_btv1b530951791_1_0_crop.png
 $MAGICK -monitor gallica_pngs/140_Saint_Jean_Pied_de_Port_btv1b530951791.png +distort Perspective "4482,443 0, 0 4477,3352 0,2907 6579,3345 2106,2907  6592,440 2106,0" -crop 2106x2907+0+0 /tmp/cassini/140_Saint_Jean_Pied_de_Port_btv1b530951791_2_0_crop.png
@@ -8661,6 +9108,9 @@ if [ -f gallica_pngs/141Bis_Luxembourg_btv1b53095230q.png ]; then
      echo Creating seamless image from 141Bis_Luxembourg_btv1b53095230q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 141Bis_Luxembourg_btv1b53095230q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/141Bis_Luxembourg_btv1b53095230q.png +distort Perspective "560,473 0, 0 534,3347 0,2877 2319,3348 1772,2877  2320,468 1772,0" -crop 1772x2877+0+0 /tmp/cassini/141Bis_Luxembourg_btv1b53095230q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/141Bis_Luxembourg_btv1b53095230q.png +distort Perspective "2362,474 0, 0 2348,3351 0,2876 4436,3358 2086,2876  4446,483 2086,0" -crop 2086x2876+0+0 /tmp/cassini/141Bis_Luxembourg_btv1b53095230q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/141Bis_Luxembourg_btv1b53095230q.png +distort Perspective "4484,485 0, 0 4475,3359 0,2871 6565,3354 2095,2871  6585,485 2095,0" -crop 2095x2871+0+0 /tmp/cassini/141Bis_Luxembourg_btv1b53095230q_2_0_crop.png
@@ -8723,6 +9173,9 @@ if [ -f gallica_pngs/141_Metz_btv1b53095199v.png ]; then
      echo Creating seamless image from 141_Metz_btv1b53095199v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 141_Metz_btv1b53095199v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/141_Metz_btv1b53095199v.png +distort Perspective "530,467 0, 0 521,3358 0,2894 2316,3362 1787,2894  2309,465 1787,0" -crop 1787x2894+0+0 /tmp/cassini/141_Metz_btv1b53095199v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/141_Metz_btv1b53095199v.png +distort Perspective "2348,469 0, 0 2355,3366 0,2895 4458,3368 2105,2895  4455,475 2105,0" -crop 2105x2895+0+0 /tmp/cassini/141_Metz_btv1b53095199v_1_0_crop.png
 $MAGICK -monitor gallica_pngs/141_Metz_btv1b53095199v.png +distort Perspective "4500,470 0, 0 4504,3364 0,2897 6611,3369 2104,2897  6602,469 2104,0" -crop 2104x2897+0+0 /tmp/cassini/141_Metz_btv1b53095199v_2_0_crop.png
@@ -8785,6 +9238,9 @@ if [ -f gallica_pngs/142_Nancy_btv1b530952171.png ]; then
      echo Creating seamless image from 142_Nancy_btv1b530952171.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 142_Nancy_btv1b530952171
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/142_Nancy_btv1b530952171.png +distort Perspective "583,491 0, 0 594,3352 0,2866 2361,3350 1768,2866  2353,479 1768,0" -crop 1768x2866+0+0 /tmp/cassini/142_Nancy_btv1b530952171_0_0_crop.png
 $MAGICK -monitor gallica_pngs/142_Nancy_btv1b530952171.png +distort Perspective "2400,480 0, 0 2399,3349 0,2879 4507,3351 2103,2879  4498,462 2103,0" -crop 2103x2879+0+0 /tmp/cassini/142_Nancy_btv1b530952171_1_0_crop.png
 $MAGICK -monitor gallica_pngs/142_Nancy_btv1b530952171.png +distort Perspective "4549,458 0, 0 4558,3340 0,2885 6668,3345 2110,2885  6660,456 2110,0" -crop 2110x2885+0+0 /tmp/cassini/142_Nancy_btv1b530952171_2_0_crop.png
@@ -8847,6 +9303,9 @@ if [ -f gallica_pngs/143_Epinal_btv1b530952332.png ]; then
      echo Creating seamless image from 143_Epinal_btv1b530952332.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 143_Epinal_btv1b530952332
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/143_Epinal_btv1b530952332.png +distort Perspective "597,407 0, 0 560,3272 0,2866 2340,3289 1776,2866  2369,421 1776,0" -crop 1776x2866+0+0 /tmp/cassini/143_Epinal_btv1b530952332_0_0_crop.png
 $MAGICK -monitor gallica_pngs/143_Epinal_btv1b530952332.png +distort Perspective "2412,433 0, 0 2372,3285 0,2852 4472,3303 2089,2852  4491,450 2089,0" -crop 2089x2852+0+0 /tmp/cassini/143_Epinal_btv1b530952332_1_0_crop.png
 $MAGICK -monitor gallica_pngs/143_Epinal_btv1b530952332.png +distort Perspective "4547,453 0, 0 4521,3303 0,2853 6630,3312 2105,2853  6648,456 2105,0" -crop 2105x2853+0+0 /tmp/cassini/143_Epinal_btv1b530952332_2_0_crop.png
@@ -8909,6 +9368,9 @@ if [ -f gallica_pngs/144_Luxeuil_btv1b53095236d.png ]; then
      echo Creating seamless image from 144_Luxeuil_btv1b53095236d.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 144_Luxeuil_btv1b53095236d
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/144_Luxeuil_btv1b53095236d.png +distort Perspective "515,455 0, 0 514,3321 0,2867 2321,3319 1799,2867  2307,451 1799,0" -crop 1799x2867+0+0 /tmp/cassini/144_Luxeuil_btv1b53095236d_0_0_crop.png
 $MAGICK -monitor gallica_pngs/144_Luxeuil_btv1b53095236d.png +distort Perspective "2341,457 0, 0 2358,3318 0,2859 4451,3308 2100,2859  4449,451 2100,0" -crop 2100x2859+0+0 /tmp/cassini/144_Luxeuil_btv1b53095236d_1_0_crop.png
 $MAGICK -monitor gallica_pngs/144_Luxeuil_btv1b53095236d.png +distort Perspective "4490,450 0, 0 4493,3312 0,2867 6601,3318 2106,2867  6595,445 2106,0" -crop 2106x2867+0+0 /tmp/cassini/144_Luxeuil_btv1b53095236d_2_0_crop.png
@@ -8971,6 +9433,9 @@ if [ -f gallica_pngs/145_Vesoul_btv1b53095115r.png ]; then
      echo Creating seamless image from 145_Vesoul_btv1b53095115r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 145_Vesoul_btv1b53095115r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/145_Vesoul_btv1b53095115r.png +distort Perspective "602,479 0, 0 564,3341 0,2864 2342,3351 1776,2864  2377,485 1776,0" -crop 1776x2864+0+0 /tmp/cassini/145_Vesoul_btv1b53095115r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/145_Vesoul_btv1b53095115r.png +distort Perspective "2413,479 0, 0 2383,3344 0,2866 4483,3349 2090,2866  4494,481 2090,0" -crop 2090x2866+0+0 /tmp/cassini/145_Vesoul_btv1b53095115r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/145_Vesoul_btv1b53095115r.png +distort Perspective "4534,474 0, 0 4528,3347 0,2876 6625,3344 2093,2876  6623,465 2093,0" -crop 2093x2876+0+0 /tmp/cassini/145_Vesoul_btv1b53095115r_2_0_crop.png
@@ -9033,6 +9498,9 @@ if [ -f gallica_pngs/146_Besancon_btv1b530951183.png ]; then
      echo Creating seamless image from 146_Besancon_btv1b530951183.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 146_Besancon_btv1b530951183
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/146_Besancon_btv1b530951183.png +distort Perspective "539,445 0, 0 525,3328 0,2879 2287,3331 1754,2879  2286,455 1754,0" -crop 1754x2879+0+0 /tmp/cassini/146_Besancon_btv1b530951183_0_0_crop.png
 $MAGICK -monitor gallica_pngs/146_Besancon_btv1b530951183.png +distort Perspective "2331,442 0, 0 2331,3326 0,2885 4437,3335 2105,2885  4436,448 2105,0" -crop 2105x2885+0+0 /tmp/cassini/146_Besancon_btv1b530951183_1_0_crop.png
 $MAGICK -monitor gallica_pngs/146_Besancon_btv1b530951183.png +distort Perspective "4469,453 0, 0 4484,3338 0,2888 6584,3339 2106,2888  6581,448 2106,0" -crop 2106x2888+0+0 /tmp/cassini/146_Besancon_btv1b530951183_2_0_crop.png
@@ -9095,6 +9563,9 @@ if [ -f gallica_pngs/147_Nozeroi_btv1b530951344.png ]; then
      echo Creating seamless image from 147_Nozeroi_btv1b530951344.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 6 columns from 147_Nozeroi_btv1b530951344
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/147_Nozeroi_btv1b530951344.png +distort Perspective "477,505 0, 0 495,3384 0,2886 2276,3379 1779,2886  2255,486 1779,0" -crop 1779x2886+0+0 /tmp/cassini/147_Nozeroi_btv1b530951344_0_0_crop.png
 $MAGICK -monitor gallica_pngs/147_Nozeroi_btv1b530951344.png +distort Perspective "2319,492 0, 0 2328,3378 0,2888 4422,3366 2091,2888  4407,475 2091,0" -crop 2091x2888+0+0 /tmp/cassini/147_Nozeroi_btv1b530951344_1_0_crop.png
 $MAGICK -monitor gallica_pngs/147_Nozeroi_btv1b530951344.png +distort Perspective "4456,476 0, 0 4464,3372 0,2899 6554,3363 2088,2899  6542,461 2088,0" -crop 2088x2899+0+0 /tmp/cassini/147_Nozeroi_btv1b530951344_2_0_crop.png
@@ -9151,6 +9622,9 @@ if [ -f gallica_pngs/148_Geneve_btv1b53095275m.png ]; then
      echo Creating seamless image from 148_Geneve_btv1b53095275m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 148_Geneve_btv1b53095275m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/148_Geneve_btv1b53095275m.png +distort Perspective "428,485 0, 0 413,3357 0,2870 2325,3361 1911,2870  2338,493 1911,0" -crop 1911x2870+0+0 /tmp/cassini/148_Geneve_btv1b53095275m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/148_Geneve_btv1b53095275m.png +distort Perspective "2399,484 0, 0 2379,3357 0,2865 4476,3358 2096,2865  4494,500 2096,0" -crop 2096x2865+0+0 /tmp/cassini/148_Geneve_btv1b53095275m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/148_Geneve_btv1b53095275m.png +distort Perspective "4552,478 0, 0 4539,3338 0,2866 6627,3346 2088,2866  6641,473 2088,0" -crop 2088x2866+0+0 /tmp/cassini/148_Geneve_btv1b53095275m_2_0_crop.png
@@ -9195,6 +9669,9 @@ if [ -f gallica_pngs/149_Montmelian_btv1b53095119j.png ]; then
      echo Creating seamless image from 149_Montmelian_btv1b53095119j.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 3 columns from 149_Montmelian_btv1b53095119j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/149_Montmelian_btv1b53095119j.png +distort Perspective "541,266 0, 0 507,2117 0,1857 2238,2130 1722,1857  2255,266 1722,0" -crop 1722x1857+0+0 /tmp/cassini/149_Montmelian_btv1b53095119j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/149_Montmelian_btv1b53095119j.png +distort Perspective "2282,265 0, 0 2290,2127 0,1857 4376,2123 2083,1857  4363,271 2083,0" -crop 2083x1857+0+0 /tmp/cassini/149_Montmelian_btv1b53095119j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/149_Montmelian_btv1b53095119j.png +distort Perspective "4433,279 0, 0 4431,2137 0,1860 5295,2136 849,1860  5268,273 849,0" -crop 849x1860+0+0 /tmp/cassini/149_Montmelian_btv1b53095119j_2_0_crop.png
@@ -9217,6 +9694,9 @@ if [ -f gallica_pngs/150_Barraux_btv1b53095120x.png ]; then
      echo Creating seamless image from 150_Barraux_btv1b53095120x.png
      echo compute intensive, can take several minutes
 echo extracting  1 rows and 3 columns from 150_Barraux_btv1b53095120x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "589,217 0, 0 587,489 0,281 2309,489 1716,281  2300,199 1716,0" -crop 1716x281+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "2359,196 0, 0 2359,483 0,281 4452,488 2093,281  4453,213 2093,0" -crop 2093x281+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "4508,234 0, 0 4508,502 0,266 5338,498 830,266  5338,234 830,0" -crop 830x266+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_2_0_crop.png
@@ -9239,6 +9719,9 @@ if [ -f gallica_pngs/150_Barraux_btv1b53095120x.png ]; then
      echo Creating seamless image from 150_Barraux_btv1b53095120x.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 150_Barraux_btv1b53095120x
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "586,491 0, 0 591,3373 0,2880 2323,3367 1730,2880  2315,488 1730,0" -crop 1730x2880+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_0_0_crop.png
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "2362,488 0, 0 2369,3374 0,2886 4460,3371 2090,2886  4451,484 2090,0" -crop 2090x2886+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_1_0_crop.png
 $MAGICK -monitor gallica_pngs/150_Barraux_btv1b53095120x.png +distort Perspective "4506,505 0, 0 4505,3378 0,2884 6602,3382 2099,2884  6608,486 2099,0" -crop 2099x2884+0+0 /tmp/cassini/150_Barraux_btv1b53095120x_2_0_crop.png
@@ -9301,6 +9784,9 @@ if [ -f gallica_pngs/151_Briancon_btv1b53095121c.png ]; then
      echo Creating seamless image from 151_Briancon_btv1b53095121c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 151_Briancon_btv1b53095121c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/151_Briancon_btv1b53095121c.png +distort Perspective "799,556 0, 0 796,3397 0,2847 2317,3406 1530,2847  2338,553 1530,0" -crop 1530x2847+0+0 /tmp/cassini/151_Briancon_btv1b53095121c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/151_Briancon_btv1b53095121c.png +distort Perspective "2381,546 0, 0 2363,3397 0,2856 4452,3407 2081,2856  4455,545 2081,0" -crop 2081x2856+0+0 /tmp/cassini/151_Briancon_btv1b53095121c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/151_Briancon_btv1b53095121c.png +distort Perspective "4508,544 0, 0 4513,3407 0,2862 6595,3399 2084,2862  6594,537 2084,0" -crop 2084x2862+0+0 /tmp/cassini/151_Briancon_btv1b53095121c_2_0_crop.png
@@ -9363,6 +9849,9 @@ if [ -f gallica_pngs/152_Embrun_btv1b53095140r.png ]; then
      echo Creating seamless image from 152_Embrun_btv1b53095140r.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 152_Embrun_btv1b53095140r
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/152_Embrun_btv1b53095140r.png +distort Perspective "781,451 0, 0 772,3347 0,2902 2271,3360 1498,2902  2279,451 1498,0" -crop 1498x2902+0+0 /tmp/cassini/152_Embrun_btv1b53095140r_0_0_crop.png
 $MAGICK -monitor gallica_pngs/152_Embrun_btv1b53095140r.png +distort Perspective "2335,452 0, 0 2330,3356 0,2897 4415,3351 2084,2897  4418,460 2084,0" -crop 2084x2897+0+0 /tmp/cassini/152_Embrun_btv1b53095140r_1_0_crop.png
 $MAGICK -monitor gallica_pngs/152_Embrun_btv1b53095140r.png +distort Perspective "4479,475 0, 0 4477,3358 0,2881 6560,3355 2082,2881  6560,475 2082,0" -crop 2082x2881+0+0 /tmp/cassini/152_Embrun_btv1b53095140r_2_0_crop.png
@@ -9425,6 +9914,9 @@ if [ -f gallica_pngs/153_Digne_les_Bains_btv1b53095248q.png ]; then
      echo Creating seamless image from 153_Digne_les_Bains_btv1b53095248q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 153_Digne_les_Bains_btv1b53095248q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/153_Digne_les_Bains_btv1b53095248q.png +distort Perspective "502,587 0, 0 543,3452 0,2871 2337,3427 1789,2871  2286,550 1789,0" -crop 1789x2871+0+0 /tmp/cassini/153_Digne_les_Bains_btv1b53095248q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/153_Digne_les_Bains_btv1b53095248q.png +distort Perspective "2333,555 0, 0 2373,3420 0,2871 4471,3396 2095,2871  4426,518 2095,0" -crop 2095x2871+0+0 /tmp/cassini/153_Digne_les_Bains_btv1b53095248q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/153_Digne_les_Bains_btv1b53095248q.png +distort Perspective "4471,522 0, 0 4477,3336 0,2847 6603,3378 2117,2847  6579,497 2117,0" -crop 2117x2847+0+0 /tmp/cassini/153_Digne_les_Bains_btv1b53095248q_2_0_crop.png
@@ -9487,6 +9979,9 @@ if [ -f gallica_pngs/154_Lorgues_btv1b530952673.png ]; then
      echo Creating seamless image from 154_Lorgues_btv1b530952673.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 154_Lorgues_btv1b530952673
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/154_Lorgues_btv1b530952673.png +distort Perspective "528,464 0, 0 529,3335 0,2875 2310,3332 1768,2875  2283,452 1768,0" -crop 1768x2875+0+0 /tmp/cassini/154_Lorgues_btv1b530952673_0_0_crop.png
 $MAGICK -monitor gallica_pngs/154_Lorgues_btv1b530952673.png +distort Perspective "2323,445 0, 0 2363,3331 0,2889 4460,3321 2101,2889  4428,428 2101,0" -crop 2101x2889+0+0 /tmp/cassini/154_Lorgues_btv1b530952673_1_0_crop.png
 $MAGICK -monitor gallica_pngs/154_Lorgues_btv1b530952673.png +distort Perspective "4474,437 0, 0 4503,3325 0,2882 6592,3307 2095,2882  6576,430 2095,0" -crop 2095x2882+0+0 /tmp/cassini/154_Lorgues_btv1b530952673_2_0_crop.png
@@ -9549,6 +10044,9 @@ if [ -f gallica_pngs/155_Toulon_btv1b53095282p.png ]; then
      echo Creating seamless image from 155_Toulon_btv1b53095282p.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 155_Toulon_btv1b53095282p
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/155_Toulon_btv1b53095282p.png +distort Perspective "574,614 0, 0 585,3506 0,2887 2346,3495 1760,2887  2334,612 1760,0" -crop 1760x2887+0+0 /tmp/cassini/155_Toulon_btv1b53095282p_0_0_crop.png
 $MAGICK -monitor gallica_pngs/155_Toulon_btv1b53095282p.png +distort Perspective "2372,612 0, 0 2400,3499 0,2895 4495,3501 2102,2895  4481,598 2102,0" -crop 2102x2895+0+0 /tmp/cassini/155_Toulon_btv1b53095282p_1_0_crop.png
 $MAGICK -monitor gallica_pngs/155_Toulon_btv1b53095282p.png +distort Perspective "4543,597 0, 0 4554,3496 0,2901 6667,3490 2112,2901  6655,586 2112,0" -crop 2112x2901+0+0 /tmp/cassini/155_Toulon_btv1b53095282p_2_0_crop.png
@@ -9611,6 +10109,9 @@ if [ -f gallica_pngs/156_Treguier_btv1b530951433.png ]; then
      echo Creating seamless image from 156_Treguier_btv1b530951433.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 156_Treguier_btv1b530951433
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/156_Treguier_btv1b530951433.png +distort Perspective "545,482 0, 0 539,3352 0,2876 2304,3356 1774,2876  2328,473 1774,0" -crop 1774x2876+0+0 /tmp/cassini/156_Treguier_btv1b530951433_0_0_crop.png
 $MAGICK -monitor gallica_pngs/156_Treguier_btv1b530951433.png +distort Perspective "2377,469 0, 0 2344,3341 0,2873 4442,3351 2095,2873  4470,477 2095,0" -crop 2095x2873+0+0 /tmp/cassini/156_Treguier_btv1b530951433_1_0_crop.png
 $MAGICK -monitor gallica_pngs/156_Treguier_btv1b530951433.png +distort Perspective "4522,478 0, 0 4488,3349 0,2866 6579,3361 2084,2866  6599,499 2084,0" -crop 2084x2866+0+0 /tmp/cassini/156_Treguier_btv1b530951433_2_0_crop.png
@@ -9673,6 +10174,9 @@ if [ -f gallica_pngs/157_Uzel_btv1b53095126m.png ]; then
      echo Creating seamless image from 157_Uzel_btv1b53095126m.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 157_Uzel_btv1b53095126m
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/157_Uzel_btv1b53095126m.png +distort Perspective "592,688 0, 0 624,3500 0,2821 2392,3488 1768,2821  2361,657 1768,0" -crop 1768x2821+0+0 /tmp/cassini/157_Uzel_btv1b53095126m_0_0_crop.png
 $MAGICK -monitor gallica_pngs/157_Uzel_btv1b53095126m.png +distort Perspective "2413,670 0, 0 2435,3492 0,2831 4531,3487 2097,2831  4511,646 2097,0" -crop 2097x2831+0+0 /tmp/cassini/157_Uzel_btv1b53095126m_1_0_crop.png
 $MAGICK -monitor gallica_pngs/157_Uzel_btv1b53095126m.png +distort Perspective "4565,650 0, 0 4569,3486 0,2841 6663,3478 2096,2841  6663,631 2096,0" -crop 2096x2841+0+0 /tmp/cassini/157_Uzel_btv1b53095126m_2_0_crop.png
@@ -9735,6 +10239,9 @@ if [ -f gallica_pngs/158_Vannes_btv1b53095164c.png ]; then
      echo Creating seamless image from 158_Vannes_btv1b53095164c.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 158_Vannes_btv1b53095164c
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/158_Vannes_btv1b53095164c.png +distort Perspective "531,533 0, 0 551,3420 0,2893 2328,3413 1774,2893  2303,513 1774,0" -crop 1774x2893+0+0 /tmp/cassini/158_Vannes_btv1b53095164c_0_0_crop.png
 $MAGICK -monitor gallica_pngs/158_Vannes_btv1b53095164c.png +distort Perspective "2346,516 0, 0 2361,3414 0,2899 4458,3404 2096,2899  4441,504 2096,0" -crop 2096x2899+0+0 /tmp/cassini/158_Vannes_btv1b53095164c_1_0_crop.png
 $MAGICK -monitor gallica_pngs/158_Vannes_btv1b53095164c.png +distort Perspective "4492,498 0, 0 4501,3406 0,2913 6592,3407 2092,2913  6585,489 2092,0" -crop 2092x2913+0+0 /tmp/cassini/158_Vannes_btv1b53095164c_2_0_crop.png
@@ -9797,6 +10304,9 @@ if [ -f gallica_pngs/159_Belle_Ile_btv1b530951685.png ]; then
      echo Creating seamless image from 159_Belle_Ile_btv1b530951685.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 159_Belle_Ile_btv1b530951685
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/159_Belle_Ile_btv1b530951685.png +distort Perspective "529,444 0, 0 515,3303 0,2863 2285,3306 1760,2863  2280,438 1760,0" -crop 1760x2863+0+0 /tmp/cassini/159_Belle_Ile_btv1b530951685_0_0_crop.png
 $MAGICK -monitor gallica_pngs/159_Belle_Ile_btv1b530951685.png +distort Perspective "2319,441 0, 0 2331,3309 0,2864 4401,3303 2079,2864  4407,442 2079,0" -crop 2079x2864+0+0 /tmp/cassini/159_Belle_Ile_btv1b530951685_1_0_crop.png
 $MAGICK -monitor gallica_pngs/159_Belle_Ile_btv1b530951685.png +distort Perspective "4444,442 0, 0 4439,3312 0,2863 6530,3299 2088,2863  6530,442 2088,0" -crop 2088x2863+0+0 /tmp/cassini/159_Belle_Ile_btv1b530951685_2_0_crop.png
@@ -9859,6 +10369,9 @@ if [ -f gallica_pngs/161_Landau_Wissenbourg_btv1b53095189f.png ]; then
      echo Creating seamless image from 161_Landau_Wissenbourg_btv1b53095189f.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 161_Landau_Wissenbourg_btv1b53095189f
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/161_Landau_Wissenbourg_btv1b53095189f.png +distort Perspective "772,462 0, 0 758,3366 0,2898 2308,3359 1533,2898  2289,466 1533,0" -crop 1533x2898+0+0 /tmp/cassini/161_Landau_Wissenbourg_btv1b53095189f_0_0_crop.png
 $MAGICK -monitor gallica_pngs/161_Landau_Wissenbourg_btv1b53095189f.png +distort Perspective "2357,477 0, 0 2383,3364 0,2892 4460,3362 2088,2892  4457,464 2088,0" -crop 2088x2892+0+0 /tmp/cassini/161_Landau_Wissenbourg_btv1b53095189f_1_0_crop.png
 $MAGICK -monitor gallica_pngs/161_Landau_Wissenbourg_btv1b53095189f.png +distort Perspective "4522,474 0, 0 4522,3358 0,2887 6614,3354 2090,2887  6611,463 2090,0" -crop 2090x2887+0+0 /tmp/cassini/161_Landau_Wissenbourg_btv1b53095189f_2_0_crop.png
@@ -9921,6 +10434,9 @@ if [ -f gallica_pngs/162_Strasbourg_btv1b530952082.png ]; then
      echo Creating seamless image from 162_Strasbourg_btv1b530952082.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 162_Strasbourg_btv1b530952082
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/162_Strasbourg_btv1b530952082.png +distort Perspective "545,440 0, 0 541,3319 0,2883 2299,3311 1751,2883  2289,423 1751,0" -crop 1751x2883+0+0 /tmp/cassini/162_Strasbourg_btv1b530952082_0_0_crop.png
 $MAGICK -monitor gallica_pngs/162_Strasbourg_btv1b530952082.png +distort Perspective "2325,421 0, 0 2330,3303 0,2885 4434,3292 2095,2885  4412,404 2095,0" -crop 2095x2885+0+0 /tmp/cassini/162_Strasbourg_btv1b530952082_1_0_crop.png
 $MAGICK -monitor gallica_pngs/162_Strasbourg_btv1b530952082.png +distort Perspective "4453,413 0, 0 4466,3301 0,2886 6551,3294 2088,2886  6545,409 2088,0" -crop 2088x2886+0+0 /tmp/cassini/162_Strasbourg_btv1b530952082_2_0_crop.png
@@ -9983,6 +10499,9 @@ if [ -f gallica_pngs/163_Colmar_btv1b53095271t.png ]; then
      echo Creating seamless image from 163_Colmar_btv1b53095271t.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 6 columns from 163_Colmar_btv1b53095271t
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/163_Colmar_btv1b53095271t.png +distort Perspective "576,533 0, 0 568,3426 0,2896 2373,3428 1798,2896  2368,529 1798,0" -crop 1798x2896+0+0 /tmp/cassini/163_Colmar_btv1b53095271t_0_0_crop.png
 $MAGICK -monitor gallica_pngs/163_Colmar_btv1b53095271t.png +distort Perspective "2419,517 0, 0 2420,3418 0,2908 4505,3430 2092,2908  4518,515 2092,0" -crop 2092x2908+0+0 /tmp/cassini/163_Colmar_btv1b53095271t_1_0_crop.png
 $MAGICK -monitor gallica_pngs/163_Colmar_btv1b53095271t.png +distort Perspective "4553,522 0, 0 4542,3436 0,2914 6630,3427 2087,2914  6639,512 2087,0" -crop 2087x2914+0+0 /tmp/cassini/163_Colmar_btv1b53095271t_2_0_crop.png
@@ -10039,6 +10558,9 @@ if [ -f gallica_pngs/164_Neuf_Brisach_btv1b53095167q.png ]; then
      echo Creating seamless image from 164_Neuf_Brisach_btv1b53095167q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 6 columns from 164_Neuf_Brisach_btv1b53095167q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/164_Neuf_Brisach_btv1b53095167q.png +distort Perspective "511,524 0, 0 509,3399 0,2874 2326,3392 1815,2874  2324,518 1815,0" -crop 1815x2874+0+0 /tmp/cassini/164_Neuf_Brisach_btv1b53095167q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/164_Neuf_Brisach_btv1b53095167q.png +distort Perspective "2361,520 0, 0 2370,3396 0,2877 4460,3396 2096,2877  4463,518 2096,0" -crop 2096x2877+0+0 /tmp/cassini/164_Neuf_Brisach_btv1b53095167q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/164_Neuf_Brisach_btv1b53095167q.png +distort Perspective "4514,515 0, 0 4515,3393 0,2874 6600,3387 2091,2874  6611,517 2091,0" -crop 2091x2874+0+0 /tmp/cassini/164_Neuf_Brisach_btv1b53095167q_2_0_crop.png
@@ -10095,6 +10617,9 @@ if [ -f gallica_pngs/165_Bale_btv1b53095254b.png ]; then
      echo Creating seamless image from 165_Bale_btv1b53095254b.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 6 columns from 165_Bale_btv1b53095254b
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/165_Bale_btv1b53095254b.png +distort Perspective "486,521 0, 0 496,3385 0,2864 2310,3368 1811,2864  2294,504 1811,0" -crop 1811x2864+0+0 /tmp/cassini/165_Bale_btv1b53095254b_0_0_crop.png
 $MAGICK -monitor gallica_pngs/165_Bale_btv1b53095254b.png +distort Perspective "2351,499 0, 0 2349,3364 0,2862 4425,3368 2085,2862  4445,509 2085,0" -crop 2085x2862+0+0 /tmp/cassini/165_Bale_btv1b53095254b_1_0_crop.png
 $MAGICK -monitor gallica_pngs/165_Bale_btv1b53095254b.png +distort Perspective "4493,503 0, 0 4486,3368 0,2865 6573,3366 2084,2865  6575,501 2084,0" -crop 2084x2865+0+0 /tmp/cassini/165_Bale_btv1b53095254b_2_0_crop.png
@@ -10151,6 +10676,9 @@ if [ -f gallica_pngs/166_Queyras_btv1b53095260z.png ]; then
      echo Creating seamless image from 166_Queyras_btv1b53095260z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 3 columns from 166_Queyras_btv1b53095260z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/166_Queyras_btv1b53095260z.png +distort Perspective "223,513 0, 0 237,3370 0,2855 2319,3369 2087,2855  2316,516 2087,0" -crop 2087x2855+0+0 /tmp/cassini/166_Queyras_btv1b53095260z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/166_Queyras_btv1b53095260z.png +distort Perspective "2372,519 0, 0 2384,3377 0,2849 4458,3364 2080,2849  4458,523 2080,0" -crop 2080x2849+0+0 /tmp/cassini/166_Queyras_btv1b53095260z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/166_Queyras_btv1b53095260z.png +distort Perspective "4524,508 0, 0 4526,3362 0,2856 6551,3362 2013,2856  6525,503 2013,0" -crop 2013x2856+0+0 /tmp/cassini/166_Queyras_btv1b53095260z_2_0_crop.png
@@ -10189,6 +10717,9 @@ if [ -f gallica_pngs/167_Larche_btv1b53095262v.png ]; then
      echo Creating seamless image from 167_Larche_btv1b53095262v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 2 columns from 167_Larche_btv1b53095262v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/167_Larche_btv1b53095262v.png +distort Perspective "305,509 0, 0 297,3403 0,2896 2386,3408 2093,2896  2403,509 2093,0" -crop 2093x2896+0+0 /tmp/cassini/167_Larche_btv1b53095262v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/167_Larche_btv1b53095262v.png +distort Perspective "2464,520 0, 0 2455,3409 0,2894 4424,3425 1964,2894  4424,526 1964,0" -crop 1964x2894+0+0 /tmp/cassini/167_Larche_btv1b53095262v_1_0_crop.png
 $MAGICK -monitor gallica_pngs/167_Larche_btv1b53095262v.png +distort Perspective "294,3457 0, 0 273,6627 0,3169 2361,6649 2089,3169  2385,3481 2089,0" -crop 2089x3169+0+0 /tmp/cassini/167_Larche_btv1b53095262v_0_1_crop.png
@@ -10221,6 +10752,9 @@ if [ -f gallica_pngs/168_Vence_btv1b53095223n.png ]; then
      echo Creating seamless image from 168_Vence_btv1b53095223n.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 5 columns from 168_Vence_btv1b53095223n
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/168_Vence_btv1b53095223n.png +distort Perspective "411,548 0, 0 424,3405 0,2860 2353,3399 1929,2860  2341,536 1929,0" -crop 1929x2860+0+0 /tmp/cassini/168_Vence_btv1b53095223n_0_0_crop.png
 $MAGICK -monitor gallica_pngs/168_Vence_btv1b53095223n.png +distort Perspective "2378,540 0, 0 2386,3403 0,2865 4479,3401 2100,2865  4485,534 2100,0" -crop 2100x2865+0+0 /tmp/cassini/168_Vence_btv1b53095223n_1_0_crop.png
 $MAGICK -monitor gallica_pngs/168_Vence_btv1b53095223n.png +distort Perspective "4524,537 0, 0 4525,3396 0,2863 6621,3402 2100,2863  6629,535 2100,0" -crop 2100x2863+0+0 /tmp/cassini/168_Vence_btv1b53095223n_2_0_crop.png
@@ -10271,6 +10805,9 @@ if [ -f gallica_pngs/169_Antibes_btv1b53095273q.png ]; then
      echo Creating seamless image from 169_Antibes_btv1b53095273q.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 5 columns from 169_Antibes_btv1b53095273q
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/169_Antibes_btv1b53095273q.png +distort Perspective "590,483 0, 0 562,3381 0,2899 2306,3392 1736,2899  2319,491 1736,0" -crop 1736x2899+0+0 /tmp/cassini/169_Antibes_btv1b53095273q_0_0_crop.png
 $MAGICK -monitor gallica_pngs/169_Antibes_btv1b53095273q.png +distort Perspective "2364,489 0, 0 2344,3389 0,2894 4437,3397 2094,2894  4460,508 2094,0" -crop 2094x2894+0+0 /tmp/cassini/169_Antibes_btv1b53095273q_1_0_crop.png
 $MAGICK -monitor gallica_pngs/169_Antibes_btv1b53095273q.png +distort Perspective "4497,513 0, 0 4490,3408 0,2884 6581,3408 2093,2884  6592,534 2093,0" -crop 2093x2884+0+0 /tmp/cassini/169_Antibes_btv1b53095273q_2_0_crop.png
@@ -10321,6 +10858,9 @@ if [ -f gallica_pngs/169bis_Cap_Camrat_btv1b530952510.png ]; then
      echo Creating seamless image from 169bis_Cap_Camrat_btv1b530952510.png
      echo compute intensive, can take several minutes
 echo extracting  2 rows and 2 columns from 169bis_Cap_Camrat_btv1b530952510
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/169bis_Cap_Camrat_btv1b530952510.png +distort Perspective "181,208 0, 0 121,3282 0,3073 465,3284 345,3073  528,211 345,0" -crop 345x3073+0+0 /tmp/cassini/169bis_Cap_Camrat_btv1b530952510_0_0_crop.png
 $MAGICK -monitor gallica_pngs/169bis_Cap_Camrat_btv1b530952510.png +distort Perspective "560,212 0, 0 523,3277 0,3068 1834,3285 1307,3068  1863,214 1307,0" -crop 1307x3068+0+0 /tmp/cassini/169bis_Cap_Camrat_btv1b530952510_1_0_crop.png
 $MAGICK -monitor gallica_pngs/169bis_Cap_Camrat_btv1b530952510.png +distort Perspective "119,3330 0, 0 117,3789 0,456 457,3789 342,456  464,3336 342,0" -crop 342x456+0+0 /tmp/cassini/169bis_Cap_Camrat_btv1b530952510_0_1_crop.png
@@ -10347,6 +10887,9 @@ if [ -f gallica_pngs/170_Saint_Pol_de_Leon_btv1b53095250j.png ]; then
      echo Creating seamless image from 170_Saint_Pol_de_Leon_btv1b53095250j.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 170_Saint_Pol_de_Leon_btv1b53095250j
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/170_Saint_Pol_de_Leon_btv1b53095250j.png +distort Perspective "269,548 0, 0 246,3424 0,2873 2328,3425 2076,2873  2340,555 2076,0" -crop 2076x2873+0+0 /tmp/cassini/170_Saint_Pol_de_Leon_btv1b53095250j_0_0_crop.png
 $MAGICK -monitor gallica_pngs/170_Saint_Pol_de_Leon_btv1b53095250j.png +distort Perspective "2394,567 0, 0 2386,3424 0,2860 4468,3438 2081,2860  4474,574 2081,0" -crop 2081x2860+0+0 /tmp/cassini/170_Saint_Pol_de_Leon_btv1b53095250j_1_0_crop.png
 $MAGICK -monitor gallica_pngs/170_Saint_Pol_de_Leon_btv1b53095250j.png +distort Perspective "4521,579 0, 0 4526,3439 0,2860 6609,3439 2089,2860  6616,578 2089,0" -crop 2089x2860+0+0 /tmp/cassini/170_Saint_Pol_de_Leon_btv1b53095250j_2_0_crop.png
@@ -10409,6 +10952,9 @@ if [ -f gallica_pngs/171_Carhaix_btv1b53095252f.png ]; then
      echo Creating seamless image from 171_Carhaix_btv1b53095252f.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 171_Carhaix_btv1b53095252f
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/171_Carhaix_btv1b53095252f.png +distort Perspective "279,507 0, 0 291,3415 0,2897 2363,3399 2075,2897  2357,513 2075,0" -crop 2075x2897+0+0 /tmp/cassini/171_Carhaix_btv1b53095252f_0_0_crop.png
 $MAGICK -monitor gallica_pngs/171_Carhaix_btv1b53095252f.png +distort Perspective "2417,505 0, 0 2430,3411 0,2904 4520,3409 2089,2904  4505,506 2089,0" -crop 2089x2904+0+0 /tmp/cassini/171_Carhaix_btv1b53095252f_1_0_crop.png
 $MAGICK -monitor gallica_pngs/171_Carhaix_btv1b53095252f.png +distort Perspective "4568,505 0, 0 4577,3413 0,2905 6666,3418 2093,2905  6666,516 2093,0" -crop 2093x2905+0+0 /tmp/cassini/171_Carhaix_btv1b53095252f_2_0_crop.png
@@ -10471,6 +11017,9 @@ if [ -f gallica_pngs/172_Quimperle_btv1b53095253w.png ]; then
      echo Creating seamless image from 172_Quimperle_btv1b53095253w.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 7 columns from 172_Quimperle_btv1b53095253w
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/172_Quimperle_btv1b53095253w.png +distort Perspective "494,534 0, 0 533,3405 0,2876 2306,3397 1781,2876  2284,515 1781,0" -crop 1781x2876+0+0 /tmp/cassini/172_Quimperle_btv1b53095253w_0_0_crop.png
 $MAGICK -monitor gallica_pngs/172_Quimperle_btv1b53095253w.png +distort Perspective "2322,520 0, 0 2339,3395 0,2874 4434,3385 2094,2874  4415,512 2094,0" -crop 2094x2874+0+0 /tmp/cassini/172_Quimperle_btv1b53095253w_1_0_crop.png
 $MAGICK -monitor gallica_pngs/172_Quimperle_btv1b53095253w.png +distort Perspective "4454,515 0, 0 4476,3382 0,2873 6578,3371 2107,2873  6567,492 2107,0" -crop 2107x2873+0+0 /tmp/cassini/172_Quimperle_btv1b53095253w_2_0_crop.png
@@ -10533,6 +11082,9 @@ if [ -f gallica_pngs/173_Philippsburg_btv1b53095154z.png ]; then
      echo Creating seamless image from 173_Philippsburg_btv1b53095154z.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 173_Philippsburg_btv1b53095154z
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/173_Philippsburg_btv1b53095154z.png +distort Perspective "267,532 0, 0 236,3388 0,2844 2347,3385 2100,2844  2356,553 2100,0" -crop 2100x2844+0+0 /tmp/cassini/173_Philippsburg_btv1b53095154z_0_0_crop.png
 $MAGICK -monitor gallica_pngs/173_Philippsburg_btv1b53095154z.png +distort Perspective "2418,557 0, 0 2412,3377 0,2823 4505,3378 2094,2823  4514,551 2094,0" -crop 2094x2823+0+0 /tmp/cassini/173_Philippsburg_btv1b53095154z_1_0_crop.png
 $MAGICK -monitor gallica_pngs/173_Philippsburg_btv1b53095154z.png +distort Perspective "4571,554 0, 0 4561,3379 0,2829 6680,3388 2118,2829  6688,554 2118,0" -crop 2118x2829+0+0 /tmp/cassini/173_Philippsburg_btv1b53095154z_2_0_crop.png
@@ -10577,6 +11129,9 @@ if [ -f gallica_pngs/174_Ouessant_btv1b530952209.png ]; then
      echo Creating seamless image from 174_Ouessant_btv1b530952209.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 5 columns from 174_Ouessant_btv1b530952209
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/174_Ouessant_btv1b530952209.png +distort Perspective "239,389 0, 0 239,3264 0,2873 1136,3264 901,2873  1145,393 901,0" -crop 901x2873+0+0 /tmp/cassini/174_Ouessant_btv1b530952209_0_0_crop.png
 $MAGICK -monitor gallica_pngs/174_Ouessant_btv1b530952209.png +distort Perspective "1193,387 0, 0 1171,3264 0,2880 3275,3270 2093,2880  3276,387 2093,0" -crop 2093x2880+0+0 /tmp/cassini/174_Ouessant_btv1b530952209_1_0_crop.png
 $MAGICK -monitor gallica_pngs/174_Ouessant_btv1b530952209.png +distort Perspective "3337,390 0, 0 3335,3263 0,2883 5432,3274 2097,2883  5435,381 2097,0" -crop 2097x2883+0+0 /tmp/cassini/174_Ouessant_btv1b530952209_2_0_crop.png
@@ -10627,6 +11182,9 @@ if [ -f gallica_pngs/175_Rade_de_Brest_btv1b53095237v.png ]; then
      echo Creating seamless image from 175_Rade_de_Brest_btv1b53095237v.png
      echo compute intensive, can take several minutes
 echo extracting  3 rows and 4 columns from 175_Rade_de_Brest_btv1b53095237v
+if [ ! -d /tmp/cassini ]; then
+  mkdir -p /tmp/cassini
+fi
 $MAGICK -monitor gallica_pngs/175_Rade_de_Brest_btv1b53095237v.png +distort Perspective "783,534 0, 0 761,3389 0,2857 1519,3394 750,2857  1525,534 750,0" -crop 750x2857+0+0 /tmp/cassini/175_Rade_de_Brest_btv1b53095237v_0_0_crop.png
 $MAGICK -monitor gallica_pngs/175_Rade_de_Brest_btv1b53095237v.png +distort Perspective "1591,532 0, 0 1575,3393 0,2858 3654,3402 2080,2858  3672,546 2080,0" -crop 2080x2858+0+0 /tmp/cassini/175_Rade_de_Brest_btv1b53095237v_1_0_crop.png
 $MAGICK -monitor gallica_pngs/175_Rade_de_Brest_btv1b53095237v.png +distort Perspective "3741,538 0, 0 3731,3399 0,2860 5827,3399 2100,2860  5845,540 2100,0" -crop 2100x2860+0+0 /tmp/cassini/175_Rade_de_Brest_btv1b53095237v_2_0_crop.png
