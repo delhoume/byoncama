@@ -70,5 +70,5 @@ if (!fs.existsSync("scripts"))
     fs.mkdirSync("scripts");
 
 const output = scriptfile.join("\n");
-const filename = `scripts${sep}make_single_pyramid${scriptext}`;
+const filename = `scripts${sep}make_pyramid${scriptext}`;
 fs.writeFileSync(filename, output);

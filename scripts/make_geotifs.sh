@@ -1493,3 +1493,4 @@ if [ -f seamless_images/175_Rade_de_Brest_btv1b53095237v.tif ]; then
     echo ERROR: Failed to create geotiff for 175_Rade_de_Brest_btv1b53095237v
   fi
 fi
+rm -f geoti§f_images/*.xml

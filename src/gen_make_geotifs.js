@@ -36,7 +36,7 @@ const findLatitude = (name, positions) => {
         if (latitudes[t].tiles.includes(name)) {
             return latitudes[t];
         }
-§    }
+    }
     return null;
 }
 
@@ -71,7 +71,7 @@ function getMetersCorners(mapping, images_positions) {
        var fleft = Number(longref.left);
              var fright = Number(longref.right);
         var fwidth = Number(longref.width);
-           console.log("Raw JSON: long", city, fleft, fright, fwidth)
+        // console.log("Raw JSON: long", city, fleft, fright, fwidth)
 
         if (fleft && fright) { }
         else if (fwidth && fleft) fright = fleft + fwidth;
@@ -80,19 +80,19 @@ function getMetersCorners(mapping, images_positions) {
         else if (fright && !fwidth) fleft = fright - sheetWidthInToises;
 
 
-          console.log("Processed JSON long: ", city, "left", fleft, "right", fright);
+        // console.log("Processed JSON long: ", city, "left", fleft, "right", fright);
 
         var ftop = Number(latref.top);
         var fbottom = Number(latref.bottom);
         var fheight = Number(latref.height);
-        console.log("Raw JSON: lat", city, ftop, fbottom, fheight);
+        //console.log("Raw JSON: lat", city, ftop, fbottom, fheight);
         if (ftop && fbottom) { }
         else if (fheight && ftop) fbottom = ftop - fheight;
         else if (fheight && fbottom) ftop = fbottom + fheight;
         else if (ftop && !fheight) fbottom = ftop - sheetHeightInToises;
         else if (fbottom && !fheight) ftop = fbottom + sheetHeightInToises;
 
-        console.log("Processed JSON lat: ", city, "top", ftop, "bottom", fbottom);
+        //console.log("Processed JSON lat: ", city, "top", ftop, "bottom", fbottom);
         // no need for degrees bullshit !
         // no need for image dimensions
         const topleft = [fleft * meterPerToise, ftop * meterPerToise];
@@ -131,9 +131,11 @@ for (var l = 0; l < mappings.length; ++l) {
         }
     }
 }
+if (isWindows) scriptfile.push(`del /q geotif_images\\*.xml`);
+else scriptfile.push(`rm -f geoti§f_images/*.xml`);
 if (!fs.existsSync("scripts"))
     fs.mkdirSync("scripts");
 
 const output = scriptfile.join("\n");
-const filename = `scripts${sep}make_missing_geotifs${scriptext}`;
+const filename = `scripts${sep}make_geotifs${scriptext}`;
 fs.writeFileSync(filename, output);

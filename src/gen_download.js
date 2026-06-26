@@ -12,14 +12,14 @@ const sep = isWindows ? "\\" : "/";
 const scriptfile = [];
 
 if (isWindows) {
-      scriptfile.push("@echo off");
+    scriptfile.push("@echo off");
     scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
 } else {
- scriptfile.push("#!/bin/bash");
-      scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
+    scriptfile.push("#!/bin/bash");
+    scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
     scriptfile.push(`  mkdir gallica_pngs`);
     scriptfile.push(`fi`);
-} 
+}
 
 if (!fs.existsSync("scripts")) {
     fs.mkdirSync("scripts");

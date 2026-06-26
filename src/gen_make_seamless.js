@@ -191,5 +191,5 @@ for (var l = 0; l < mappings.length; ++l) {
 if (!fs.existsSync("scripts")) fs.mkdirSync("scripts");
 
 const output = scriptfile.join("\n");
-const filename = `scripts${sep}make_missing_seamless${scriptext}`;
+const filename = `scripts${sep}make_seamless${scriptext}`;
 fs.writeFileSync(filename, output);

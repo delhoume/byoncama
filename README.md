@@ -57,10 +57,15 @@ Total weight for all 181 images is about 35Gb
 
 
 # Step 2 : creating seamless images
-- windows:`scripts\make_mssnhg_selwee==.bat`
-- macos, linux: `source scripts.download_missing.sh`
+- windows:`scripts\make_missing_seamless.bat`
+- macos, linux: `source scripts./make_missing_seamless.sh`
+
+computes seamless image if not it does not exis†
 
 # Step 3 : geo-localizing images
+- windows:`scripts\make_seamless.bat`
+- macos, linux: `source scripts.make_seamless.sh`
+
 
 # Step 4 : merging, retroprojecting and pyramid generation
 
