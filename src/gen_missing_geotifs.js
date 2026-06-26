@@ -36,20 +36,26 @@ const findLatitude = (name, positions) => {
         if (latitudes[t].tiles.includes(name)) {
             return latitudes[t];
         }
-    }
+§    }
     return null;
 }
 
 if (isWindows) {
     scriptfile.push("@echo off");
-    scriptfile.push(`set GDAL_EDIT=${GDAL_EDIT}`);
+    scriptfile.push("setlocal EnableExtensions EnableDelayedExpansion");
+    scriptfile.push("if not defined QGIS_FOLDER set \"QGIS_FOLDER=%ProgramFiles%\\QGIS\"");
+    scriptfile.push("if not defined GDAL_BIN_FOLDER set \"GDAL_BIN_FOLDER=%QGIS_FOLDER%\\bin\"");
+    scriptfile.push(`set "GDAL_EDIT=%GDAL_BIN_FOLDER%\\gdal_edit.py"`);
+    scriptfile.push(`if not exist geotif_images mkdir geotif_images`);
 } else {
     scriptfile.push("#!/bin/bash");
-    scriptfile.push("export QGISDIR=");
-    scriptfile.push("export PROJ_DATA=$QGISDIR/Contents/Resources/gis/proj");
-    scriptfile.push("export GDAL_EDIT=${GDAL_EDIT}");
+    scriptfile.push("export QGISDIR=/Applications/QGIS-final-4_0_3.app");
+    scriptfile.push("export PROJ_DATA=$QGISDIR/Contents/Resources/qgis/proj");
+    scriptfile.push("export GDAL_EDIT=$QGISDIR/Contents/MacOS/gdal_edit");
+    scriptfile.push(`if [ ! -d geotif_images ]; then`);
+    scriptfile.push(`  mkdir -p geotif_images`);
+    scriptfile.push(`fi`);
 }
-
 function getMetersCorners(mapping, images_positions) {
     const start = mapping.indexOf('_') + 1;
     const end = mapping.lastIndexOf('_');
@@ -58,12 +64,14 @@ function getMetersCorners(mapping, images_positions) {
     //  console.log('#', city);
     const longref = findLongitude(city, images_positions);
     const latref = findLatitude(city, images_positions);
+
+
     if (longref && latref) {
-        //   console.log('#', city, longref, latref);
-        var fleft = Number(longref.left);
-        var fright = Number(longref.right);
+       
+       var fleft = Number(longref.left);
+             var fright = Number(longref.right);
         var fwidth = Number(longref.width);
-        //   console.log("Raw JSON: long", city, fleft, fright, fwidth)
+           console.log("Raw JSON: long", city, fleft, fright, fwidth)
 
         if (fleft && fright) { }
         else if (fwidth && fleft) fright = fleft + fwidth;
@@ -72,24 +80,24 @@ function getMetersCorners(mapping, images_positions) {
         else if (fright && !fwidth) fleft = fright - sheetWidthInToises;
 
 
-        //   console.log("Processed JSON long: ", city, "left", fleft, "right", fright);
+          console.log("Processed JSON long: ", city, "left", fleft, "right", fright);
 
         var ftop = Number(latref.top);
         var fbottom = Number(latref.bottom);
         var fheight = Number(latref.height);
-        //console.log("Raw JSON: lat", city, ftop, fbottom, fheight);
+        console.log("Raw JSON: lat", city, ftop, fbottom, fheight);
         if (ftop && fbottom) { }
         else if (fheight && ftop) fbottom = ftop - fheight;
         else if (fheight && fbottom) ftop = fbottom + fheight;
         else if (ftop && !fheight) fbottom = ftop - sheetHeightInToises;
         else if (fbottom && !fheight) ftop = fbottom + sheetHeightInToises;
 
-        // console.log("Processed JSON lat: ", city, "top", ftop, "bottom", fbottom);
+        console.log("Processed JSON lat: ", city, "top", ftop, "bottom", fbottom);
         // no need for degrees bullshit !
         // no need for image dimensions
         const topleft = [fleft * meterPerToise, ftop * meterPerToise];
         const bottomright = [fright * meterPerToise, fbottom * meterPerToise];
-        console.log("Computed meters: ", city, "topleft", topleft, "bottomright", bottomright);
+        console.log("Computed meters: ", mapping, "topleft", topleft, "bottomright", bottomright);
         return { topleft, bottomright };
     }
 }
@@ -99,21 +107,26 @@ for (var l = 0; l < mappings.length; ++l) {
     const mapfile = `mappings${sep}${mappingname}_mapping.json`;
     if (fs.existsSync(mapfile)) {
         const mapping = JSON.parse(fs.readFileSync(mapfile));
-        const image = mapping['image'];
         const positions = JSON.parse(fs.readFileSync(`data${sep}positions.json`, "utf-8"));
         const { topleft, bottomright } = getMetersCorners(mappingname, positions);
         if (isWindows) {
-            scriptfile.push(`if exist seamless_images\\${image}.tif (`);
-            scriptfile.push(`     echo Creating geotiff image from ${image}.tif`);
-            scriptfile.push(`     if not exist geotif_images mkdir geotif_images`)
-            scriptfile.push(`     copy seamless_images\\${image}.tif geotif_images\\${image}.tif`);
-            scriptfile.push(`     %GDAL_EDIT% -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1] } ${bottomright[0]} ${bottomright[1]} geotif_images${sep}${image}.tif`);
+            scriptfile.push(`if exist seamless_images\\${mappingname}.tif (`);
+            scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
+            scriptfile.push(`  if not exist geotif_images mkdir geotif_images`);
+            scriptfile.push(`  copy /Y "seamless_images\\${mappingname}.tif" "geotif_images\\${mappingname}.tif"`);
+            scriptfile.push(`  python "%GDAL_EDIT%" -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} "geotif_images\\${mappingname}.tif"`);
+            scriptfile.push(`  if errorlevel 1 (`);
+            scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
+            scriptfile.push(`  )`);
             scriptfile.push(`)`);
         } else {
-            scriptfile.push(`if [-f seamless_images/${image}.tif]; then`);
-            scriptfile.push(`   echo Creating geotiff image from ${image}.tif`);
-            scriptfile.push(`     cp seamless_images/${image}.tif geotif_images/${image}.tif`);
-            scriptfile.push(`     echo $GDAL_EDIT -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images${sep}${image}.tif`);
+            scriptfile.push(`if [ -f seamless_images/${mappingname}.tif ]; then`);
+            scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
+            scriptfile.push(`  cp seamless_images/${mappingname}.tif geotif_images/${mappingname}.tif`);
+            scriptfile.push(`  $GDAL_EDIT -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${mappingname}.tif`);
+            scriptfile.push(`  if [ $? -ne 0 ]; then`);
+            scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
+            scriptfile.push(`  fi`);
             scriptfile.push(`fi`);
         }
     }

@@ -12,16 +12,11 @@ This repo does not host any images, only build material.
 
 https://en.wikipedia.org/wiki/Cassini_map
 
-### Step 01: required 
+### Step 01: required hardwire
 the workflow duplicates several times the initial 35Gb and the final result tiff is 20Go, so you need a large HD, and  the faster the better.
 
-My dev machine is a 2021 16Gb M1 MacMini.
+My dev machine is a 2021 16Gb 4M1 MacMini.
 
-### Step 02 required software
-
-Current implementation is targetted towards MacOs or linux or WSL.
-
-Windows is not supported (some parts work) but should be relativly easy to port to thanks to the bundled OSGeo console
 
 The workflow is command line oriented, so a package manager is useful.
 -  mandatory 
@@ -54,13 +49,16 @@ a provided script allows to download missing image, it can be run multiple times
 
 Your mileage may vary, but expect a few days and multiple attemps to get all images.
 
-Totl weight for all 181 images is about 35Gb
+Total weight for all 181 images is about 35Gb
 
 
-- winmdows:`scripts\download_missing.bat`
+- windows:`scripts\download_missing.bat`
 - macos, linux: `source scripts.download_missing.sh`
 
+
 # Step 2 : creating seamless images
+- windows:`scripts\make_mssnhg_selwee==.bat`
+- macos, linux: `source scripts.download_missing.sh`
 
 # Step 3 : geo-localizing images
 
