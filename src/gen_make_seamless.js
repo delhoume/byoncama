@@ -16,14 +16,14 @@ const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
 
 if (isWindows) {
   scriptfile.push("@echo off");
-  scriptfile.push(
-    `set MAGICK="C:\\Program Files\\ImageMagick-7.1.2-Q8\\magick.exe"`,
-  );
-  scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
+  scriptfile.push("call scripts\\setup.bat");
+    scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
   scriptfile.push(`if not exist seamless_images mkdir seamless_images`);
 } else {
   scriptfile.push("#!/bin/bash");
-  scriptfile.push(`export MAGICK=magick`);
+  scriptfile.push("source ./scri
+    pts/setup.sh");
+  scriptfile.push(`  echo $MAGICK`);
   scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
   scriptfile.push(`  mkdir gallica_pngs`);
   scriptfile.push(`fi`);
@@ -189,7 +189,6 @@ for (var l = 0; l < mappings.length; ++l) {
   }
 }
 if (!fs.existsSync("scripts")) fs.mkdirSync("scripts");
-
 const output = scriptfile.join("\n");
 const filename = `scripts${sep}make_seamless${scriptext}`;
 fs.writeFileSync(filename, output);

@@ -88,8 +88,9 @@ The Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
  For easier transportation, each leaf has been cut in pieces and mounted on a wooden frame. Digitized images show this frame, we will get rid of them.
 Full size leaves are about 15000x10000 pixels for around 400 dp.
 
-The method used to remove the frame is to define parts oparts or wodden support in image.
-frame removal is implemented with Image Magick -distort Perspective, see 
+The method used is not to remove the frame, but to define valid map regions as quads
+
+It is implemented with Image Magick -distort Perspective, see 
 <image>
 A visual improvement might be to allow non straight borders, or find an automatic way of computing best contents
 

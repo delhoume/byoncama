@@ -1,8 +1,5 @@
 #!/bin/bash
-export QGISDIR=/Applications/QGIS-final-4_0_3.app
-export PROJ_DATA=$QGISDIR/Contents/Resources/qgis/proj
-export GDALWARP=$QGISDIR/Contents/MacOS/gdalwarp
-export GDALADDO=$QGISDIR/Contents/MacOS/gdaladdo
+source ./scripts/setup.sh
 if [ ! -d tmp/cassini ]; then
   mkdir -p tmp/cassini
 fi

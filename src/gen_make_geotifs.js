@@ -42,16 +42,12 @@ const findLatitude = (name, positions) => {
 
 if (isWindows) {
     scriptfile.push("@echo off");
+    scriptfile.push("calll scripts\\setup.bat");
     scriptfile.push("setlocal EnableExtensions EnableDelayedExpansion");
-    scriptfile.push("if not defined QGIS_FOLDER set \"QGIS_FOLDER=%ProgramFiles%\\QGIS\"");
-    scriptfile.push("if not defined GDAL_BIN_FOLDER set \"GDAL_BIN_FOLDER=%QGIS_FOLDER%\\bin\"");
-    scriptfile.push(`set "GDAL_EDIT=%GDAL_BIN_FOLDER%\\gdal_edit.py"`);
     scriptfile.push(`if not exist geotif_images mkdir geotif_images`);
 } else {
     scriptfile.push("#!/bin/bash");
-    scriptfile.push("export QGISDIR=/Applications/QGIS-final-4_0_3.app");
-    scriptfile.push("export PROJ_DATA=$QGISDIR/Contents/Resources/qgis/proj");
-    scriptfile.push("export GDAL_EDIT=$QGISDIR/Contents/MacOS/gdal_edit");
+    scriptfile.push("source ./scripts/setup.sh");
     scriptfile.push(`if [ ! -d geotif_images ]; then`);
     scriptfile.push(`  mkdir -p geotif_images`);
     scriptfile.push(`fi`);
@@ -114,7 +110,7 @@ for (var l = 0; l < mappings.length; ++l) {
             scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
             scriptfile.push(`  if not exist geotif_images mkdir geotif_images`);
             scriptfile.push(`  copy /Y "seamless_images\\${mappingname}.tif" "geotif_images\\${mappingname}.tif"`);
-            scriptfile.push(`  python "%GDAL_EDIT%" -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} "geotif_images\\${mappingname}.tif"`);
+            scriptfile.push(`  %GDAL_EDIT% -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} "geotif_images\\${mappingname}.tif"`);
             scriptfile.push(`  if errorlevel 1 (`);
             scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
             scriptfile.push(`  )`);
@@ -123,7 +119,7 @@ for (var l = 0; l < mappings.length; ++l) {
             scriptfile.push(`if [ -f seamless_images/${mappingname}.tif ]; then`);
             scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
             scriptfile.push(`  cp seamless_images/${mappingname}.tif geotif_images/${mappingname}.tif`);
-            scriptfile.push(`  $GDAL_EDIT -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${mappingname}.tif`);
+            scriptfile.push(`  $GDALEDIT -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${mappingname}.tif`);
             scriptfile.push(`  if [ $? -ne 0 ]; then`);
             scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
             scriptfile.push(`  fi`);
@@ -132,7 +128,7 @@ for (var l = 0; l < mappings.length; ++l) {
     }
 }
 if (isWindows) scriptfile.push(`del /q geotif_images\\*.xml`);
-else scriptfile.push(`rm -f geoti§f_images/*.xml`);
+else scriptfile.push(`rm -f geotif_images/*.xml`);
 if (!fs.existsSync("scripts"))
     fs.mkdirSync("scripts");
 

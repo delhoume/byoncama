@@ -1,5 +1,6 @@
 #!/bin/bash
-export MAGICK=magick
+source ./scripts/setup.sh
+  echo $MAGICK
 if [ ! -d gallica_pngs ]; then
   mkdir gallica_pngs
 fi
