@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordByIdResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <mdb:MD_Metadata xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gfc="http://standards.iso.org/iso/19110/gfc/1.1" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/2.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/2.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/2.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/2.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/2.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:dqm="http://standards.iso.org/iso/19157/-2/dqm/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/2.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" uuid="BNF_CASSINI-MARIE-ANTOINETTE">
+    <mdb:metadataIdentifier>
+      <mcc:MD_Identifier>
+        <mcc:code>
+          <gco:CharacterString>BNF_CASSINI-MARIE-ANTOINETTE</gco:CharacterString>
+        </mcc:code>
+      </mcc:MD_Identifier>
+    </mdb:metadataIdentifier>
+    <mdb:defaultLocale>
+      <lan:PT_Locale>
+        <lan:language>
+          <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+        </lan:language>
+        <lan:characterEncoding>
+          <lan:MD_CharacterSetCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+        </lan:characterEncoding>
+      </lan:PT_Locale>
+    </mdb:defaultLocale>
+    <mdb:metadataScope>
+      <mdb:MD_MetadataScope>
+        <mdb:resourceScope>
+          <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="series">series</mcc:MD_ScopeCode>
+        </mdb:resourceScope>
+        <mdb:name>
+          <gco:CharacterString>Produit</gco:CharacterString>
+        </mdb:name>
+      </mdb:MD_MetadataScope>
+    </mdb:metadataScope>
+    <mdb:contact>
+      <cit:CI_Responsibility>
+        <cit:role>
+          <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+        </cit:role>
+        <cit:party>
+          <cit:CI_Organisation>
+            <cit:name>
+              <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+            </cit:name>
+            <cit:contactInfo>
+              <cit:CI_Contact>
+                <cit:address>
+                  <cit:CI_Address>
+                    <cit:deliveryPoint>
+                      <gco:CharacterString>BNF - Support utilisateurs</gco:CharacterString>
+                    </cit:deliveryPoint>
+                    <cit:deliveryPoint>
+                      <gco:CharacterString>Quai François‑Mauriac</gco:CharacterString>
+                    </cit:deliveryPoint>
+                    <cit:city>
+                      <gco:CharacterString>PARIS CÉDEX 13</gco:CharacterString>
+                    </cit:city>
+                    <cit:postalCode>
+                      <gco:CharacterString>75706</gco:CharacterString>
+                    </cit:postalCode>
+                    <cit:country>
+                      <gco:CharacterString>FRANCE</gco:CharacterString>
+                    </cit:country>
+                    <cit:electronicMailAddress>
+                      <gco:CharacterString>gallica@bnf.fr</gco:CharacterString>
+                    </cit:electronicMailAddress>
+                  </cit:CI_Address>
+                </cit:address>
+                <cit:contactInstructions>
+                  <gcx:FileName src="https://data.geopf.fr/annexes/ressources/logos/Logo_BNF.jpg">Logo</gcx:FileName>
+                </cit:contactInstructions>
+              </cit:CI_Contact>
+            </cit:contactInfo>
+          </cit:CI_Organisation>
+        </cit:party>
+      </cit:CI_Responsibility>
+    </mdb:contact>
+    <mdb:dateInfo>
+      <cit:CI_Date>
+        <cit:date>
+          <gco:DateTime>2026-02-11T15:00:00.759575Z</gco:DateTime>
+        </cit:date>
+        <cit:dateType>
+          <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+        </cit:dateType>
+      </cit:CI_Date>
+    </mdb:dateInfo>
+    <mdb:metadataStandard>
+      <cit:CI_Citation>
+        <cit:title>
+          <gco:CharacterString>ISO 19115-3:2018</gco:CharacterString>
+        </cit:title>
+        <cit:edition>
+          <gco:CharacterString>1.0</gco:CharacterString>
+        </cit:edition>
+      </cit:CI_Citation>
+    </mdb:metadataStandard>
+    <mdb:spatialRepresentationInfo>
+      <msr:MD_VectorSpatialRepresentation id="BNF_CASSINI-MARIE-ANTOINETTE.spatialRepresentationInfo_1">
+        <msr:topologyLevel>
+          <msr:MD_TopologyLevelCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" />
+        </msr:topologyLevel>
+      </msr:MD_VectorSpatialRepresentation>
+    </mdb:spatialRepresentationInfo>
+    <mdb:referenceSystemInfo>
+      <mrs:MD_ReferenceSystem>
+        <mrs:referenceSystemIdentifier>
+          <mcc:MD_Identifier>
+            <mcc:code>
+              <gcx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/2154">EPSG:2154</gcx:Anchor>
+            </mcc:code>
+            <mcc:codeSpace>
+              <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+            </mcc:codeSpace>
+          </mcc:MD_Identifier>
+        </mrs:referenceSystemIdentifier>
+      </mrs:MD_ReferenceSystem>
+    </mdb:referenceSystemInfo>
+    <mdb:identificationInfo>
+      <mri:MD_DataIdentification>
+        <mri:citation>
+          <cit:CI_Citation>
+            <cit:title>
+              <gco:CharacterString>Carte de Cassini – exemplaire dit « de Marie-Antoinette »</gco:CharacterString>
+            </cit:title>
+            <cit:alternateTitle>
+              <gco:CharacterString>Carte de Cassini – exemplaire dit « de Marie-Antoinette »</gco:CharacterString>
+            </cit:alternateTitle>
+            <cit:date>
+              <cit:CI_Date>
+                <cit:date>
+                  <gco:Date>2026-02-09</gco:Date>
+                </cit:date>
+                <cit:dateType>
+                  <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                </cit:dateType>
+              </cit:CI_Date>
+            </cit:date>
+            <cit:edition>
+              <gco:CharacterString>1.0</gco:CharacterString>
+            </cit:edition>
+            <cit:identifier>
+              <mcc:MD_Identifier id="BNF_CASSINI-MARIE-ANTOINETTE.identifier">
+                <mcc:code>
+                  <gco:CharacterString>BNF_CASSINI-MARIE-ANTOINETTE</gco:CharacterString>
+                </mcc:code>
+              </mcc:MD_Identifier>
+            </cit:identifier>
+          </cit:CI_Citation>
+        </mri:citation>
+        <mri:abstract>
+          <gco:CharacterString>**Introduction** : 
+Élaborée par la dynastie de cartographes Cassini entre 1756 et 1815, la Carte générale de la France, dite « carte de Cassini », constitue la première représentation à la fois générale et détaillée du royaume. Formée d’environ 180 feuilles assemblées, elle offre une vue globale de la France dans ses limites d’alors : Nice, la Savoie et la Corse n’y figurent pas, tandis que certaines villes aujourd’hui situées en Belgique, au Luxembourg ou en Allemagne y apparaissent. Cet exemplaire, issu de planches numérisées par la Bibliothèque nationale de France (BNF) puis découpées et assemblées par l’IGN, aurait été réalisé pour la reine d’alors, Marie-Antoinette.
+
+**Caractéristiques principales** : 
+Près de 180 feuilles numérisées en haute définition (400 dpi) par la Bibliothèque nationale de France puis découpées, assemblées et géoréférencées par l’IGN. 
+
+**Couverture** : 
+France entière dans ses limites d’alors hormis quelques zones manquantes en raison de la perte ou de la détérioration des feuilles associées.
+
+**Millésime et mise à jour** : 
+Production étalée entre 1756 et 1815</gco:CharacterString>
+        </mri:abstract>
+        <mri:purpose gco:nilReason="missing">
+          <gco:CharacterString />
+        </mri:purpose>
+        <mri:status>
+          <mcc:MD_ProgressCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ProgressCode" codeListValue="completed">completed</mcc:MD_ProgressCode>
+        </mri:status>
+        <mri:pointOfContact>
+          <cit:CI_Responsibility>
+            <cit:role>
+              <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+            </cit:role>
+            <cit:party>
+              <cit:CI_Organisation>
+                <cit:name>
+                  <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                </cit:name>
+                <cit:contactInfo>
+                  <cit:CI_Contact>
+                    <cit:address>
+                      <cit:CI_Address>
+                        <cit:deliveryPoint>
+                          <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                        </cit:deliveryPoint>
+                        <cit:deliveryPoint>
+                          <gco:CharacterString>Quai François‑Mauriac</gco:CharacterString>
+                        </cit:deliveryPoint>
+                        <cit:city>
+                          <gco:CharacterString>PARIS CÉDEX 13</gco:CharacterString>
+                        </cit:city>
+                        <cit:postalCode>
+                          <gco:CharacterString>75706</gco:CharacterString>
+                        </cit:postalCode>
+                        <cit:country>
+                          <gco:CharacterString>FRANCE</gco:CharacterString>
+                        </cit:country>
+                        <cit:electronicMailAddress>
+                          <gco:CharacterString>gallica@bnf.fr</gco:CharacterString>
+                        </cit:electronicMailAddress>
+                      </cit:CI_Address>
+                    </cit:address>
+                    <cit:contactInstructions>
+                      <gcx:FileName src="https://data.geopf.fr/annexes/ressources/logos/Logo_BNF.jpg">Logo</gcx:FileName>
+                    </cit:contactInstructions>
+                  </cit:CI_Contact>
+                </cit:contactInfo>
+              </cit:CI_Organisation>
+            </cit:party>
+          </cit:CI_Responsibility>
+        </mri:pointOfContact>
+        <mri:spatialRepresentationType>
+          <mcc:MD_SpatialRepresentationTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</mcc:MD_SpatialRepresentationTypeCode>
+        </mri:spatialRepresentationType>
+        <mri:spatialResolution>
+          <mri:MD_Resolution>
+            <mri:equivalentScale>
+              <mri:MD_RepresentativeFraction id="BNF_CASSINI-MARIE-ANTOINETTE.spatialResolution_1">
+                <mri:denominator>
+                  <gco:Integer>50000</gco:Integer>
+                </mri:denominator>
+              </mri:MD_RepresentativeFraction>
+            </mri:equivalentScale>
+          </mri:MD_Resolution>
+        </mri:spatialResolution>
+        <mri:topicCategory>
+          <mri:MD_TopicCategoryCode>imageryBaseMapsEarthCover</mri:MD_TopicCategoryCode>
+        </mri:topicCategory>
+        <mri:extent>
+          <gex:EX_Extent>
+            <gex:description>
+              <gco:CharacterString>France métropolitaine</gco:CharacterString>
+            </gex:description>
+            <gex:geographicElement>
+              <gex:EX_GeographicBoundingBox>
+                <gex:westBoundLongitude>
+                  <gco:Decimal>-5.15</gco:Decimal>
+                </gex:westBoundLongitude>
+                <gex:eastBoundLongitude>
+                  <gco:Decimal>9.57</gco:Decimal>
+                </gex:eastBoundLongitude>
+                <gex:southBoundLatitude>
+                  <gco:Decimal>41.32</gco:Decimal>
+                </gex:southBoundLatitude>
+                <gex:northBoundLatitude>
+                  <gco:Decimal>51.10</gco:Decimal>
+                </gex:northBoundLatitude>
+              </gex:EX_GeographicBoundingBox>
+            </gex:geographicElement>
+            <gex:geographicElement>
+              <gex:EX_GeographicDescription>
+                <gex:geographicIdentifier>
+                  <mcc:MD_Identifier>
+                    <mcc:authority>
+                      <cit:CI_Citation>
+                        <cit:title>
+                          <gco:CharacterString>ISO 3166 alpha 3</gco:CharacterString>
+                        </cit:title>
+                        <cit:date>
+                          <cit:CI_Date>
+                            <cit:date>
+                              <gco:Date>1974</gco:Date>
+                            </cit:date>
+                            <cit:dateType>
+                              <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                            </cit:dateType>
+                          </cit:CI_Date>
+                        </cit:date>
+                      </cit:CI_Citation>
+                    </mcc:authority>
+                    <mcc:code>
+                      <gco:CharacterString>FXX</gco:CharacterString>
+                    </mcc:code>
+                  </mcc:MD_Identifier>
+                </gex:geographicIdentifier>
+              </gex:EX_GeographicDescription>
+            </gex:geographicElement>
+          </gex:EX_Extent>
+        </mri:extent>
+        <mri:extent>
+          <gex:EX_Extent>
+            <gex:description>
+              <gco:CharacterString>Dates de création</gco:CharacterString>
+            </gex:description>
+            <gex:temporalElement>
+              <gex:EX_TemporalExtent>
+                <gex:extent>
+                  <TimePeriod xmlns="http://www.opengis.net/gml/3.2" gml:id="d27076383e962">
+                    <beginPosition>1756-01-01</beginPosition>
+                    <endPosition>1815-01-01</endPosition>
+                  </TimePeriod>
+                </gex:extent>
+              </gex:EX_TemporalExtent>
+            </gex:temporalElement>
+          </gex:EX_Extent>
+        </mri:extent>
+        <mri:resourceMaintenance>
+          <mmi:MD_MaintenanceInformation id="BNF_CASSINI-MARIE-ANTOINETTE.resourceMaintenance_1">
+            <mmi:maintenanceAndUpdateFrequency>
+              <mmi:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
+            </mmi:maintenanceAndUpdateFrequency>
+            <mmi:maintenanceNote>
+              <gco:CharacterString>N/C</gco:CharacterString>
+            </mmi:maintenanceNote>
+          </mmi:MD_MaintenanceInformation>
+        </mri:resourceMaintenance>
+        <mri:graphicOverview>
+          <mcc:MD_BrowseGraphic>
+            <mcc:fileName>
+              <gco:CharacterString>https://data.geopf.fr/annexes/ressources/metadata/thumbnail/vignette-cassini-marie-antoinette.jpg</gco:CharacterString>
+            </mcc:fileName>
+            <mcc:fileDescription>
+              <gco:CharacterString>Aperçu</gco:CharacterString>
+            </mcc:fileDescription>
+            <mcc:fileType>
+              <gco:CharacterString>image/jpeg</gco:CharacterString>
+            </mcc:fileType>
+          </mcc:MD_BrowseGraphic>
+        </mri:graphicOverview>
+        <mri:descriptiveKeywords>
+          <mri:MD_Keywords>
+            <mri:keyword>
+              <gco:CharacterString>Unités administratives</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>Dénominations géographiques</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>Occupation des terres</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>Sols</gco:CharacterString>
+            </mri:keyword>
+            <mri:thesaurusName>
+              <cit:CI_Citation>
+                <cit:title>
+                  <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                </cit:title>
+                <cit:date>
+                  <cit:CI_Date>
+                    <cit:date>
+                      <gco:Date>2008-06-01</gco:Date>
+                    </cit:date>
+                    <cit:dateType>
+                      <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                    </cit:dateType>
+                  </cit:CI_Date>
+                </cit:date>
+              </cit:CI_Citation>
+            </mri:thesaurusName>
+          </mri:MD_Keywords>
+        </mri:descriptiveKeywords>
+        <mri:descriptiveKeywords>
+          <mri:MD_Keywords>
+            <mri:keyword>
+              <gcx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/national">National</gcx:Anchor>
+            </mri:keyword>
+            <mri:thesaurusName>
+              <cit:CI_Citation>
+                <cit:title>
+                  <gcx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">INSPIRE Spatial Scope</gcx:Anchor>
+                </cit:title>
+                <cit:date>
+                  <cit:CI_Date>
+                    <cit:date>
+                      <gco:Date>2019-05-22</gco:Date>
+                    </cit:date>
+                    <cit:dateType>
+                      <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                    </cit:dateType>
+                  </cit:CI_Date>
+                </cit:date>
+              </cit:CI_Citation>
+            </mri:thesaurusName>
+          </mri:MD_Keywords>
+        </mri:descriptiveKeywords>
+        <mri:descriptiveKeywords>
+          <mri:MD_Keywords>
+            <mri:keyword>
+              <gco:CharacterString>cassini</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>reine</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>histoire</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>marie-antoinette</gco:CharacterString>
+            </mri:keyword>
+            <mri:keyword>
+              <gco:CharacterString>bibliotheque</gco:CharacterString>
+            </mri:keyword>
+            <mri:type>
+              <mri:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+            </mri:type>
+          </mri:MD_Keywords>
+        </mri:descriptiveKeywords>
+        <mri:resourceSpecificUsage>
+          <mri:MD_Usage id="BNF_CASSINI-MARIE-ANTOINETTE.resourceSpecificUsage_1">
+            <mri:specificUsage>
+              <gco:CharacterString>Échelles d'affichage</gco:CharacterString>
+            </mri:specificUsage>
+            <mri:userDeterminedLimitations>
+              <gco:CharacterString>Échelles comprises entre le 1 : 2 500 et le 1 : 50 000.</gco:CharacterString>
+            </mri:userDeterminedLimitations>
+            <mri:userContactInfo>
+              <cit:CI_Responsibility>
+                <cit:role>
+                  <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+                </cit:role>
+                <cit:party>
+                  <cit:CI_Organisation>
+                    <cit:name>
+                      <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                    </cit:name>
+                    <cit:contactInfo>
+                      <cit:CI_Contact>
+                        <cit:address>
+                          <cit:CI_Address>
+                            <cit:deliveryPoint>
+                              <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                            </cit:deliveryPoint>
+                            <cit:deliveryPoint>
+                              <gco:CharacterString>Quai François‑Mauriac</gco:CharacterString>
+                            </cit:deliveryPoint>
+                            <cit:city>
+                              <gco:CharacterString>PARIS CÉDEX 13</gco:CharacterString>
+                            </cit:city>
+                            <cit:postalCode>
+                              <gco:CharacterString>75706</gco:CharacterString>
+                            </cit:postalCode>
+                            <cit:country>
+                              <gco:CharacterString>FRANCE</gco:CharacterString>
+                            </cit:country>
+                            <cit:electronicMailAddress>
+                              <gco:CharacterString>gallica@bnf.fr</gco:CharacterString>
+                            </cit:electronicMailAddress>
+                          </cit:CI_Address>
+                        </cit:address>
+                        <cit:contactInstructions>
+                          <gcx:FileName src="https://data.geopf.fr/annexes/ressources/logos/Logo_BNF.jpg">Logo</gcx:FileName>
+                        </cit:contactInstructions>
+                      </cit:CI_Contact>
+                    </cit:contactInfo>
+                  </cit:CI_Organisation>
+                </cit:party>
+              </cit:CI_Responsibility>
+            </mri:userContactInfo>
+          </mri:MD_Usage>
+        </mri:resourceSpecificUsage>
+        <mri:resourceConstraints>
+          <mco:MD_LegalConstraints>
+            <mco:accessConstraints>
+              <mco:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+            </mco:accessConstraints>
+            <mco:otherConstraints>
+              <gcx:Anchor>La carte de Cassini reconstituée est une information publique librement réutilisable, gratuitement, dans le monde entier et pour tout usage, y compris commercial, sous réserve du respect de l’intégrité des données. Toute rediffusion doit obligatoirement mentionner la source : « Carte de France de Cassini reconstituée en une version numérique de haute qualité, 2025 / Archives nationales et IGN – issue de la numérisation des planches originales: BIBLIOTHEQUE NATIONALE DE FRANCE (BNF), Bibliothèque, E/III/200».</gcx:Anchor>
+            </mco:otherConstraints>
+          </mco:MD_LegalConstraints>
+        </mri:resourceConstraints>
+        <mri:resourceConstraints>
+          <mco:MD_LegalConstraints>
+            <mco:useConstraints>
+              <mco:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" />
+            </mco:useConstraints>
+          </mco:MD_LegalConstraints>
+        </mri:resourceConstraints>
+        <mri:resourceConstraints>
+          <mco:MD_LegalConstraints>
+            <mco:useConstraints>
+              <mco:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+            </mco:useConstraints>
+            <mco:otherConstraints>
+              <gcx:Anchor xlink:href="https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf">Licence Ouverte / Open License (compatible ODC-BY, CC-BY 2.0)</gcx:Anchor>
+            </mco:otherConstraints>
+          </mco:MD_LegalConstraints>
+        </mri:resourceConstraints>
+        <mri:defaultLocale>
+          <lan:PT_Locale>
+            <lan:language>
+              <lan:LanguageCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#LanguageCode" codeListValue="fre">fre</lan:LanguageCode>
+            </lan:language>
+            <lan:characterEncoding gco:nilReason="unknown" />
+          </lan:PT_Locale>
+        </mri:defaultLocale>
+      </mri:MD_DataIdentification>
+    </mdb:identificationInfo>
+    <mdb:contentInfo />
+    <mdb:distributionInfo>
+      <mrd:MD_Distribution>
+        <mrd:distributionFormat>
+          <mrd:MD_Format id="BNF_CASSINI-MARIE-ANTOINETTE.distributionFormat.wmts">
+            <mrd:formatSpecificationCitation>
+              <cit:CI_Citation>
+                <cit:title>
+                  <gco:CharacterString>WMTS</gco:CharacterString>
+                </cit:title>
+                <cit:date gco:nilReason="unknown" />
+                <cit:edition>
+                  <gco:CharacterString>1.0.0</gco:CharacterString>
+                </cit:edition>
+              </cit:CI_Citation>
+            </mrd:formatSpecificationCitation>
+          </mrd:MD_Format>
+        </mrd:distributionFormat>
+        <mrd:distributionFormat>
+          <mrd:MD_Format id="BNF_CASSINI-MARIE-ANTOINETTE.distributionFormat.wms">
+            <mrd:formatSpecificationCitation>
+              <cit:CI_Citation>
+                <cit:title>
+                  <gco:CharacterString>WMS</gco:CharacterString>
+                </cit:title>
+                <cit:date gco:nilReason="unknown" />
+                <cit:edition>
+                  <gco:CharacterString>1.3.0</gco:CharacterString>
+                </cit:edition>
+              </cit:CI_Citation>
+            </mrd:formatSpecificationCitation>
+          </mrd:MD_Format>
+        </mrd:distributionFormat>
+        <mrd:distributor>
+          <mrd:MD_Distributor id="BNF_CASSINI-MARIE-ANTOINETTE.distributor.IGN-F">
+            <mrd:distributorContact>
+              <cit:CI_Responsibility>
+                <cit:role>
+                  <cit:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_RoleCode" codeListValue="distributor">distributor</cit:CI_RoleCode>
+                </cit:role>
+                <cit:party>
+                  <cit:CI_Organisation>
+                    <cit:name>
+                      <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                    </cit:name>
+                    <cit:contactInfo>
+                      <cit:CI_Contact>
+                        <cit:address>
+                          <cit:CI_Address>
+                            <cit:deliveryPoint>
+                              <gco:CharacterString>BIBLIOTHEQUE NATIONALE DE FRANCE (BNF)</gco:CharacterString>
+                            </cit:deliveryPoint>
+                            <cit:deliveryPoint>
+                              <gco:CharacterString>Quai François‑Mauriac</gco:CharacterString>
+                            </cit:deliveryPoint>
+                            <cit:city>
+                              <gco:CharacterString>PARIS CÉDEX 13</gco:CharacterString>
+                            </cit:city>
+                            <cit:postalCode>
+                              <gco:CharacterString>75706</gco:CharacterString>
+                            </cit:postalCode>
+                            <cit:country>
+                              <gco:CharacterString>FRANCE</gco:CharacterString>
+                            </cit:country>
+                            <cit:electronicMailAddress>
+                              <gco:CharacterString>gallica@bnf.fr</gco:CharacterString>
+                            </cit:electronicMailAddress>
+                          </cit:CI_Address>
+                        </cit:address>
+                        <cit:contactInstructions>
+                          <gcx:FileName src="https://data.geopf.fr/annexes/ressources/logos/Logo_BNF.jpg">Logo</gcx:FileName>
+                        </cit:contactInstructions>
+                      </cit:CI_Contact>
+                    </cit:contactInfo>
+                  </cit:CI_Organisation>
+                </cit:party>
+              </cit:CI_Responsibility>
+            </mrd:distributorContact>
+          </mrd:MD_Distributor>
+        </mrd:distributor>
+        <mrd:transferOptions>
+          <mrd:MD_DigitalTransferOptions>
+            <mrd:onLine>
+              <cit:CI_OnlineResource>
+                <cit:linkage>
+                  <gco:CharacterString>https://cartes.gouv.fr/rechercher-une-donnee/dataset/ARCHIVES-NATIONALES_CASSINI-ROI</gco:CharacterString>
+                </cit:linkage>
+                <cit:description>
+                  <gco:CharacterString>Carte de Cassini – exemplaire du roi</gco:CharacterString>
+                </cit:description>
+              </cit:CI_OnlineResource>
+            </mrd:onLine>
+            <mrd:onLine>
+              <cit:CI_OnlineResource>
+                <cit:linkage>
+                  <gco:CharacterString>https://data.geopf.fr/wmts?SERVICE=WMTS&amp;VERSION=1.0.0&amp;REQUEST=GetCapabilities</gco:CharacterString>
+                </cit:linkage>
+                <cit:protocol>
+                  <gcx:MimeFileType type="">OGC:WMTS</gcx:MimeFileType>
+                </cit:protocol>
+                <cit:name>
+                  <gco:CharacterString>BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI</gco:CharacterString>
+                </cit:name>
+                <cit:description>
+                  <gco:CharacterString>Carte de Cassini – exemplaire dit « de Marie-Antoinette »</gco:CharacterString>
+                </cit:description>
+              </cit:CI_OnlineResource>
+            </mrd:onLine>
+            <mrd:onLine>
+              <cit:CI_OnlineResource>
+                <cit:linkage>
+                  <gco:CharacterString>https://data.geopf.fr/wms-r/wms?service=wms&amp;version=1.3.0&amp;request=GetCapabilities</gco:CharacterString>
+                </cit:linkage>
+                <cit:protocol>
+                  <gcx:MimeFileType type="">OGC:WMS</gcx:MimeFileType>
+                </cit:protocol>
+                <cit:name>
+                  <gco:CharacterString>BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI</gco:CharacterString>
+                </cit:name>
+                <cit:description>
+                  <gco:CharacterString>Carte de Cassini – exemplaire dit « de Marie-Antoinette »</gco:CharacterString>
+                </cit:description>
+              </cit:CI_OnlineResource>
+            </mrd:onLine>
+          </mrd:MD_DigitalTransferOptions>
+        </mrd:transferOptions>
+      </mrd:MD_Distribution>
+    </mdb:distributionInfo>
+    <mdb:dataQualityInfo>
+      <mdq:DQ_DataQuality>
+        <mdq:scope>
+          <mcc:MD_Scope>
+            <mcc:level>
+              <mcc:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="series" />
+            </mcc:level>
+          </mcc:MD_Scope>
+        </mdq:scope>
+        <mdq:report>
+          <mdq:DQ_DomainConsistency>
+            <mdq:measure>
+              <mdq:DQ_MeasureReference>
+                <mdq:nameOfMeasure>
+                  <gco:CharacterString>Value domain conformance</gco:CharacterString>
+                </mdq:nameOfMeasure>
+              </mdq:DQ_MeasureReference>
+            </mdq:measure>
+            <mdq:result>
+              <mdq:DQ_ConformanceResult>
+                <mdq:specification>
+                  <cit:CI_Citation>
+                    <cit:title>
+                      <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                    </cit:title>
+                    <cit:date>
+                      <cit:CI_Date>
+                        <cit:date>
+                          <gco:Date>2010-12-08</gco:Date>
+                        </cit:date>
+                        <cit:dateType>
+                          <cit:CI_DateTypeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                        </cit:dateType>
+                      </cit:CI_Date>
+                    </cit:date>
+                  </cit:CI_Citation>
+                </mdq:specification>
+                <mdq:explanation>
+                  <gco:CharacterString>Dataset is conformant to the Inspire data specification.</gco:CharacterString>
+                </mdq:explanation>
+                <mdq:pass>
+                  <gco:Boolean>true</gco:Boolean>
+                </mdq:pass>
+              </mdq:DQ_ConformanceResult>
+            </mdq:result>
+          </mdq:DQ_DomainConsistency>
+        </mdq:report>
+      </mdq:DQ_DataQuality>
+    </mdb:dataQualityInfo>
+    <mdb:resourceLineage>
+      <mrl:LI_Lineage>
+        <mrl:statement>
+          <gco:CharacterString>Première carte complète du royaume de France, la carte de Cassini (1756-1815) offre une vision d’ensemble de la France d’alors..</gco:CharacterString>
+        </mrl:statement>
+        <mrl:scope>
+          <mcc:MD_Scope>
+            <mcc:level>
+              <mcc:MD_ScopeCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/cat/codelists.xml#MD_ScopeCode" codeListValue="series">series</mcc:MD_ScopeCode>
+            </mcc:level>
+          </mcc:MD_Scope>
+        </mrl:scope>
+        <mrl:source>
+          <mrl:LI_Source>
+            <mrl:description>
+              <gco:CharacterString>Première carte complète du royaume de France, la carte de Cassini (1756-1815) offre une vision d’ensemble de la France d’alors.</gco:CharacterString>
+            </mrl:description>
+          </mrl:LI_Source>
+        </mrl:source>
+      </mrl:LI_Lineage>
+    </mdb:resourceLineage>
+    <mdb:metadataConstraints>
+      <mco:MD_SecurityConstraints>
+        <mco:useLimitation>
+          <gco:CharacterString>Aucune contrainte</gco:CharacterString>
+        </mco:useLimitation>
+        <mco:classification>
+          <mco:MD_ClassificationCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified" />
+        </mco:classification>
+      </mco:MD_SecurityConstraints>
+    </mdb:metadataConstraints>
+  </mdb:MD_Metadata>
+</csw:GetRecordByIdResponse>
+

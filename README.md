@@ -3,7 +3,7 @@ Build Your Own Cassini Map
 
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
-The outcome is a single 200000x184000 GeoTIFF.
+The result is a single 200000x184000 GeoTIFF, in 4 easy  steps
 
 This repo does not host any images, only build material.
 
@@ -32,51 +32,55 @@ The workflow is command line oriented, so a package manager is useful.
 
 # Step 1: downloading the source images from Gallica
 
-The map is available as 181 individual images, called "leaves" on Gallica (https://gallica.bnf.fr/), the BNF (Bibliohèque Nationale de France) digital library.
+This script downloads missing images in gallica_pngs
+
+- windows: `scripts\download_missing.bat`
+- macos, linux: `source ./scripts/download_missing.sh`
+
+does not download leaves already in gallica_pngs
 
 
-See https://gallica.bnf.fr/accueil/fr/html/conditions-dutilisation-de-gallica
-
-The original map has been digitized in high resolution in 2015 by the BNF
-https://gallica.bnf.fr/selections/fr/html/carte-de-cassini
-https://gallica.bnf.fr/selections/fr/html/carte-de-cassini-acces-par-numero-de-feuille
-
-Gallica provides an IIIF interface (https://api.bnf.fr/fr/api-iiif-de-recuperation-des-images-de-gallica)
-
-The Gallica IIIF download API is very unreliable, with huge starting delays and connection errors. There seems to be a daily limit in number of requests too.
-a provided script allows to download missing image, it can be run multiple times and will only load missing iamges
-
-
-Your mileage may vary, but expect a few days and multiple attemps to get all images.
-
-Total weight for all 181 images is about 35Gb
-
-
-- windows:`scripts\download_missing.bat`
-- macos, linux: `source scripts.download_missing.sh`
+Total weight for all 181 leaves images is about 35Gb
 
 
 # Step 2 : creating seamless images
-- windows:`scripts\make_missing_seamless.bat`
-- macos, linux: `source scripts./make_missing_seamless.sh`
 
-computes seamless image if not it does not exis†
+This script removes wooden frames from individual leaves.
+
+- windows:`scripts\make_seamless.bat`
+- macos, linux: `source ./scripts/make_seamless.sh`
+
+computes seamless image if it does not alreadyn exist in seamless_images
 
 # Step 3 : geo-localizing images
-- windows:`scripts\make_seamless.bat`
-- macos, linux: `source scripts.make_seamless.sh`
 
+this script creates individual geotifs
+
+- windows:`scripts\make_seamless.bat`
+- macos, linux: `source scripts/make_geotif.sh`
+
+as computation is fast, always create all geotifs from seamless-images
 
 # Step 4 : merging, retroprojecting and pyramid generation
 
+this script merges all leaves into a single pseudo-mercator tiled BigTiff, and creates pyramid levels.
+the resulting tif can be dropped into QGis or used in a tile server.
+
+- windows: `scripts\make_pyramid.bat`
+- macos, linux: `source scripts/make_pyramid.sh`
+
+final result is a 209470 x 195633 pixel GeoTIFF R GBA image, with 11 levels.
+
+With deflate compression, its size is  bytes. If you do not need alpha values, you can switch to JPEG compression, for a much smaller file.
 
 
+## troubleshooting
+The scripts are available for bash (linux, wsl,macos).
+Depending on your installation, you may have to change the location of image magick, or QGis.
+on Windows, the geolocalization does not work, because of an error related to pro.db
+I am using OSGeo4w, and it fails running gdal_edit.
 
-
-
-
-
-### The Gallica source images
+On MacOs I use the GDAL binaries that are delivered with QGi in its .appThe Gallica source images
 
 The Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
  Normal sized leaves are about 95x60cm.
@@ -84,19 +88,13 @@ The Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
  For easier transportation, each leaf has been cut in pieces and mounted on a wooden frame. Digitized images show this frame, we will get rid of them.
 Full size leaves are about 15000x10000 pixels for around 400 dp.
 
-The method used to remove the frame is to define parts of the image that
-will remain as quadrilaterals in a grid.
-
-We then map these quadrilateral to axis aligned rectangles and merge them while keeping relative proportions. 
-Unfortunately, individual cells do not have straight line borders, and adjacent cells are not well aligned, because of various frame widths.
-
-Some cells have missing image parts or wodden support in image.
-
+The method used to remove the frame is to define parts oparts or wodden support in image.
+frame removal is implemented with Image Magick -distort Perspective, see 
 <image>
 A visual improvement might be to allow non straight borders, or find an automatic way of computing best contents
 
 
-We describe valid content for each leave in a JSON files with explicit cell corners coordinates in pixels.
+We describe valid content for each leaf in a JSON files with explicit cell corners coordinates in pixels.
 
 ```extension is _mapping.json
 {
@@ -128,8 +126,9 @@ We describe valid content for each leave in a JSON files with explicit cell corn
 <image>
 
 A rudimentary graphical mapping editor is provided in the mapping_editor folder. it is a Processing sketch that can be opened on all platforms.
-It allows to edit existing mappings and edit interactively the quadrilaterals with the mouse.
+It allows editing interactively the quadrilaterals with the mouse and specialized keyboard shortcuts
 hit ? to get help an do not forget to hit 'Enter" done.
-Mappings for all 181 leavs are provided.
+Mappings for all 181 leaves are provided. A few leaves haven two mappings.
 
-From the _mapping.json we can generate the scripts that will actually create wood support free images. 
+`scripts/make_seamless[bat,.sh]` computes all seamless images not already in seamless_images, from the reference in gallica_pngs and the mapping in `mappings`.
+it takes about 10mn per mapping on my  machine , for a total of
