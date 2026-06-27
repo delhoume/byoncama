@@ -1,11 +1,11 @@
 # byoncama
-Build Your Own Cassini Map
+Build Your Own CAssini MAP
 
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
-The result is a single 200000x184000 GeoTIFF, in 4 easy  steps
+What we will build
 
-This repo does not host any images, only build material.
+This repository does not host any images, only build material.
 
 
 # What is the Cassini map ?
@@ -132,18 +132,19 @@ We describe valid content for each leaf in a JSON file with explicit cell corner
 ...
 ```
 
-<image>
 
 A basic graphical mapping editor is provided in the mapping_editor folder. it is a Processing sketch that can be opened on all platforms.
 It allows editing interactively the quadrilaterals with the mouse and specialized keyboard shortcuts
 hit ? to get help an do not forget to hit 'Enter" done.
 Mappings for all 181 leaves are provided. A few leaves have two mappings.
 
+<img width="999" height="515" alt="image" src="https://github.com/user-attachments/assets/063de4c3-7ecb-4422-91b2-5e147673c241" />
+
 ## Development
 
 if you need to change something in  the workflow , you will  have to propagate change and recreate all scripts
 
- There are Javascript, generators for download, seamless leaves creation, geolocalisation and final pyramid computation.
+ There are Javascript generators for download, seamless leaves creation, geolocalisation and final pyramid computation.
 
  i use deno as the js runtime, as it is a single binary.
 
@@ -153,12 +154,13 @@ if you need to change something in  the workflow , you will  have to propagate c
 
 The list of all images that are part of the final assembled images is in `data/mappings.json`. The geographical location of each mapping has been extracted or computed from BNF scans, and is described in `data/position.json`, with a kind of spatial organization. This file is the key to geolocalisaton, as it gives each mapping cornrs a location in the Cassini coordinate system 
 
-Cassini described it the index (assemblage) and proj4 is :
+Cassini described it the index (<img width="1440" height="763" alt="image" src="https://github.com/user-attachments/assets/e7c66ffe-9aa5-4a50-b1cf-cc8f0bc9eacb" />
+assemblage) and proj4 is :
 
 `cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs`
 
-cass = Cassini Soldner 
-lat = latitude of the french observatoire in Paris = 48.836111 degrees 
-long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
-R = earth radius according to Cassini
-units = meters
+ . cass = Cassini Soldner 
+ . lat = latitude of the french observatoire in Paris = 48.836111 degrees 
+ . long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
+ . R = earth radius according to Cassini
+ . units = meters
