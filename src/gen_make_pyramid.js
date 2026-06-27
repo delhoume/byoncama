@@ -2,8 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import os from 'node:os'
 
-const GDAL_WARP = "gdalwarp";
-const GDAL_ADD = "gdaladdo";
+                              
 // the target projection, pseudo mercator here
 const isWindows = os.platform() === 'win32';
 const scriptext = isWindows ? ".bat" : ".sh";
@@ -18,13 +17,13 @@ if (isWindows) {
     scriptfile.push(`if exist geotif_images\\*.tif (`);
     scriptfile.push(`  dir /b /a:-d geotif_images\\*.tif > "%TMP_DIR%\\geotifs.lst"`);
     scriptfile.push(`  echo Creating final pyramid with gdalwarp...`);
-    scriptfile.push(`  ${GDALWARP} -overwrite -dstalpha -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile "%TMP_DIR%\\geotifs.lst" cassini_map.tif`);
+    scriptfile.push(` %GDALWARP% -overwrite -dstalpha -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile "%TMP_DIR%\\geotifs.lst" cassini_map.tif`);
     scriptfile.push(`  if errorlevel 1 (`);
     scriptfile.push(`    echo ERROR: gdalwarp failed`);
     scriptfile.push(`    exit /b 1`);
     scriptfile.push(`  )`);
     scriptfile.push(`  echo Creating overviews with gdaladdo...`);
-    scriptfile.push(`  ${GDALADDO} -r lanczos cassini_map.tif`);
+    scriptfile.push(`  %GDALADDO% -r lanczos cassini_map.tif`);
     scriptfile.push(`  if errorlevel 1 (`);
     scriptfile.push(`    echo ERROR: gdaladdo failed`);
     scriptfile.push(`    exit /b 1`);

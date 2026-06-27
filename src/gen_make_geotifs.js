@@ -110,7 +110,7 @@ for (var l = 0; l < mappings.length; ++l) {
             scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
             scriptfile.push(`  if not exist geotif_images mkdir geotif_images`);
             scriptfile.push(`  copy /Y "seamless_images\\${mappingname}.tif" "geotif_images\\${mappingname}.tif"`);
-            scriptfile.push(`  %GDAL_EDIT% -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} "geotif_images\\${mappingname}.tif"`);
+            scriptfile.push(`  gdal  raster edit --crs=${cassini_proj4} geotif_images\\${mappingname}.tif"`);
             scriptfile.push(`  if errorlevel 1 (`);
             scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
             scriptfile.push(`  )`);

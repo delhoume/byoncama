@@ -21,8 +21,7 @@ if (isWindows) {
   scriptfile.push(`if not exist seamless_images mkdir seamless_images`);
 } else {
   scriptfile.push("#!/bin/bash");
-  scriptfile.push("source ./scri
-    pts/setup.sh");
+  scriptfile.push("source ./scripts/setup.sh");
   scriptfile.push(`  echo $MAGICK`);
   scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
   scriptfile.push(`  mkdir gallica_pngs`);
