@@ -5,8 +5,7 @@ import os from 'node:os'
 const mappingsjson = fs.readFileSync(`data/mappings.json`);
 const mappings = JSON.parse(mappingsjson)['mappings'];
 
-const GDAL_EDIT = "gdal_edit";
-// the projecction, commputed from cassini's indications
+// the projection, computed from cassini's indications
 const cassini_proj4 =`"+proj=cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs"`;
 const isWindows = os.platform() === 'win32';
 const scriptext = isWindows ? ".bat" : ".sh";

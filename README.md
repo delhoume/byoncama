@@ -12,10 +12,10 @@ This repo does not host any images, only build material.
 
 https://en.wikipedia.org/wiki/Cassini_map
 
-### Step 01: required hardwire
+### Step 01: required hardware
 the workflow duplicates several times the initial 35Gb and the final result tiff is 20Go, so you need a large HD, and  the faster the better.
 
-My dev machine is a 2021 16Gb 4M1 MacMini.
+My dev machine is a 2021 16Gb M1 MacMini.
 
 
 The workflow is command line oriented, so a package manager is useful.
@@ -24,11 +24,13 @@ The workflow is command line oriented, so a package manager is useful.
    - image magick is used for all image processing (https://imagemagick.org )
    - gdal (https://gdal.org/en/stable/), usually hard to get  but qgis (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
 
- - if you want to change something 
+ - if you want to change something in the wrkflow
    - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
     - pngcheck
     - processing (htps://processing.org) for the mappings editor
 
+scripts are designed to be used as is, you only need to edit
+scripts\setup.bat or scripts/setup.sh to match your installation pat hes. §wiows gdal dependent script do not work, because of a mismatch in proj.db
 
 # Step 1: downloading the source images from Gallica
 
@@ -37,10 +39,10 @@ This script downloads missing images in gallica_pngs
 - windows: `scripts\download_missing.bat`
 - macos, linux: `source ./scripts/download_missing.sh`
 
-does not download leaves already in gallica_pngs
+does not download leaves already present in gallica_pngs
 
 
-Total weight for all 181 leaves images is about 35Gb
+Total weight for all 181 original leaves images is about 35Gb
 
 
 # Step 2 : creating seamless images
@@ -48,54 +50,60 @@ Total weight for all 181 leaves images is about 35Gb
 This script removes wooden frames from individual leaves.
 
 - windows:`scripts\make_seamless.bat`
-- macos, linux: `source ./scripts/make_seamless.sh`
+- macos, linux: `source ./scripts/make_seamless.sh`s
 
-computes seamless image if it does not alreadyn exist in seamless_images
+computes seamless image from sources in  `gallica_pngs`folder and mappings folder if it does not already exist in seamless_images
+Note ther are 181 source leaves but 186 mapping.
+
+it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go n wth next steps on a subsetof all leaves. 
+
 
 # Step 3 : geo-localizing images
 
 this script creates individual geotifs
 
-- windows:`scripts\make_seamless.bat`
-- macos, linux: `source scripts/make_geotif.sh`
+- windows:`scripts\make_geotifs.bat`
+- macos, linux: `source scripts/make_geotifs.sh`
 
-as computation is fast, always create all geotifs from seamless-images
+as computation is fast, always create all geotifs from  `seamless_images` folder into geotif_images`folder.
 
 # Step 4 : merging, retroprojecting and pyramid generation
 
 this script merges all leaves into a single pseudo-mercator tiled BigTiff, and creates pyramid levels.
 the resulting tif can be dropped into QGis or used in a tile server.
 
-- windows: `scripts\make_pyramid.bat`
+- windows: `scripts\make_pyramid.bat` **FAILS**
 - macos, linux: `source scripts/make_pyramid.sh`
 
-final result is a 209470 x 195633 pixel GeoTIFF R GBA image, with 11 levels.
+final result is cassini_map.tif a 209470 x 195633 pixel GeoTIFF RGBA image, with 11 levels.
 
-With deflate compression, its size is  bytes. If you do not need alpha values, you can switch to JPEG compression, for a much smaller file.
-
+With deflate compression, its size is 72 Gigabytes. If you do not need alpha values, you can switch to JPEG compression, for a much smaller file.
 
 ## troubleshooting
-The scripts are available for bash (linux, wsl,macos).
+The scripts are available for bash (linux, wsl, macos) and as .bat batch files
+t
 Depending on your installation, you may have to change the location of image magick, or QGis.
 on Windows, the geolocalization does not work, because of an error related to pro.db
-I am using OSGeo4w, and it fails running gdal_edit.
+I am using OSGeo4w shell, and it fails running `gdal raster <edit,re reproject>`.
 
-On MacOs I use the GDAL binaries that are delivered with QGi in its .appThe Gallica source images
+A issue is opened if you want to contribute and fix.
 
-The Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
+On MacOS I use the GDAL binaries that are delivered with QGis in its .app folder.
+
+The  Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
  Normal sized leaves are about 95x60cm.
 
- For easier transportation, each leaf has been cut in pieces and mounted on a wooden frame. Digitized images show this frame, we will get rid of them.
+ For easier transportation, each leaf has been cut in pieces and mounted on a wooden frame. Digitized images show this frame, we will get rid of it.
 Full size leaves are about 15000x10000 pixels for around 400 dp.
 
-The method used is not to remove the frame, but to define valid map regions as quads
+The method used is not to remove the frame, but to define valid map regions as quads an re-assemble thems.
 
 It is implemented with Image Magick -distort Perspective, see 
 <image>
 A visual improvement might be to allow non straight borders, or find an automatic way of computing best contents
 
 
-We describe valid content for each leaf in a JSON files with explicit cell corners coordinates in pixels.
+We describe valid content for each leaf in a JSON file with explicit cell corners coordinates in pixels.
 
 ```extension is _mapping.json
 {
@@ -126,10 +134,31 @@ We describe valid content for each leaf in a JSON files with explicit cell corne
 
 <image>
 
-A rudimentary graphical mapping editor is provided in the mapping_editor folder. it is a Processing sketch that can be opened on all platforms.
+A basic graphical mapping editor is provided in the mapping_editor folder. it is a Processing sketch that can be opened on all platforms.
 It allows editing interactively the quadrilaterals with the mouse and specialized keyboard shortcuts
 hit ? to get help an do not forget to hit 'Enter" done.
-Mappings for all 181 leaves are provided. A few leaves haven two mappings.
+Mappings for all 181 leaves are provided. A few leaves have two mappings.
 
-`scripts/make_seamless[bat,.sh]` computes all seamless images not already in seamless_images, from the reference in gallica_pngs and the mapping in `mappings`.
-it takes about 10mn per mapping on my  machine , for a total of
+## Development
+
+if you need to change something in  the workflow , you will  have to propagate change and recreate all scripts
+
+ There are Javascript, generators for download, seamless leaves creation, geolocalisation and final pyramid computation.
+
+ i use deno as the js runtime, as it is a single binary.
+
+  `deno -A src/gen_make_seamless`
+
+  generators have no external dependencies.
+
+The list of all images that are part of the final assembled images is in `data/mappings.json`. The geographical location of each mapping has been extracted or computed from BNF scans, and is described in `data/position.json`, with a kind of spatial organization. This file is the key to geolocalisaton, as it gives each mapping cornrs a location in the Cassini coordinate system 
+
+Cassini described it the index (assemblage) and proj4 is :
+
+`cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs`
+
+cass = Cassini Soldner 
+lat = latitude of the french observatoire in Paris = 48.836111 degrees 
+long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
+R = earth radius according to Cassini
+units = meters
