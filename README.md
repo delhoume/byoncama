@@ -17,16 +17,17 @@ the workflow duplicates several times the initial 35Gb and the final result tiff
 
 My dev machine is a 2021 16Gb M1 MacMini.
 
-
+### Stwp 01; R   uiewd siftwae-e
 The workflow is command line oriented, so a package manager is useful.
 -  mandatory 
    - curl (https://curl.se/)
    - image magick is used for all image processing (https://imagemagick.org )
-   - gdal (https://gdal.org/en/stable/), usually hard to get  but qgis (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
+   - gdal (https://gdal.org/en/stable/), usually hard to get  but ±QGs (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
 
- - if you want to change something in the wrkflow
-   - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
+ - if you want to change something in the workflow
+    - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
     - pngcheck
+    - parallel
     - processing (htps://processing.org) for the mappings editor
 
 scripts are designed to be used as is, you only need to edit
@@ -137,8 +138,8 @@ A basic graphical mapping editor is provided in the mapping_editor folder. it is
 It allows editing interactively the quadrilaterals with the mouse and specialized keyboard shortcuts
 hit ? to get help an do not forget to hit 'Enter" done.
 Mappings for all 181 leaves are provided. A few leaves have two mappings.
-
-<img width="999" height="515" alt="image" src="https://github.com/user-attachments/assets/063de4c3-7ecb-4422-91b2-5e147673c241" />
+[
+](https://usage.imagemagick.org/distorts/#perspective)<img width="999" height="515" alt="image" src="https://github.com/user-attachments/assets/063de4c3-7ecb-4422-91b2-5e147673c241" />
 
 ## Development
 
@@ -159,8 +160,8 @@ assemblage) and proj4 is :
 
 `cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs`
 
- . cass = Cassini Soldner 
- . lat = latitude of the french observatoire in Paris = 48.836111 degrees 
+ - cass = Cassini Soldner 
+  - lat = latitude of the french observatoire in Paris = 48.836111 degrees 
  . long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
  . R = earth radius according to Cassini
  . units = meters
