@@ -5,6 +5,10 @@ This project contains all code for building a local version of the Cassini Map o
 
 What we will build
 
+<img width="604" height="641" alt="SCR-20260628-acv" src="https://github.com/user-attachments/assets/4b90cf40-cab8-4416-9c26-8d67a7ad9e3e" />
+
+<img width="604" height="641" alt="SCR-20260628-agk" src="https://github.com/user-attachments/assets/81ea8a31-d0b8-44a4-bdd2-b0371449afa0" />
+
 This repository does not host any images, only build material.
 
 
@@ -12,12 +16,12 @@ This repository does not host any images, only build material.
 
 https://en.wikipedia.org/wiki/Cassini_map
 
-### Step 01: required hardware
+### required hardware
 the workflow duplicates several times the initial 35Gb and the final result tiff is 20Go, so you need a large HD, and  the faster the better.
 
 My dev machine is a 2021 16Gb M1 MacMini.
 
-### Stwp 01; R   uiewd siftwae-e
+### required software
 The workflow is command line oriented, so a package manager is useful.
 -  mandatory 
    - curl (https://curl.se/)
