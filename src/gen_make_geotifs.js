@@ -3,16 +3,39 @@ import path from 'node:path'
 import os from 'node:os'
 
 
-const mappingsjson = fs.readFileSyncse
+const mappingsjson = fs.readFileSync(`data/mappings.json`);
+const mappings = JSON.parse(mappingsjson)['mappings'];
+
+const GDAL_EDIT = "gdal_edit";
+// the projecction, commputed from cassini's indications
+const cassini_proj4 =`"+proj=cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs"`;
+const isWindows = os.platform() === 'win32';
+const scriptext = isWindows ? ".bat" : ".sh";
+const sep = isWindows ? "\\" : "/";
+const scriptfile = [];
+
+const sheetWidthInToises = 40000;
+const sheetHeightInToises = 25000;
+const meterPerToise = 1.94906;
+const toisePerMeter = 1 / meterPerToise;
+
+const findLongitude = (name, positions) => {
+    //        console.log("findLongitudes", tile);
+    let longitudes = positions.longitudes;
+    for (let t in longitudes) {
+        if (longitudes[t].tiles.includes(name)) {
+            return longitudes[t];
+        }
     }
     return null;
 }
+
 
 const findLatitude = (name, positions) => {
     //       console.log("findLatitudes", tile);
     let latitudes = positions.latitudes;
     for (let t in latitudes) {
-  §      if (latitudes[t].tiles.includes(name)) {
+       if (latitudes[t].tiles.includes(name)) {
             return latitudes[t];
         }
     }
