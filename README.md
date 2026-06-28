@@ -100,7 +100,9 @@ Full size leaves are about 15000x10000 pixels for around 400 dp.
 The method used is not to remove the frame, but to define valid map regions as quads an re-assemble thems.
 
 It is implemented with Image Magick -distort Perspective, see 
-<image>
+
+<img width="828" height="892" alt="image" src="https://github.com/user-attachments/assets/dfbd5245-dbf0-4f5b-bf88-2dcfa780a22b" />
+
 A visual improvement might be to allow non straight borders, or find an automatic way of computing best contents
 
 
