@@ -12,6 +12,8 @@ const tifext = ".tif";
 const tempfolder = isWindows ? "tmp\\cassini" : "tmp/cassini";
 const destfolder = "seamless_images";
 const scriptfile = [];
+
+const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
 const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
 
 if (isWindows) {
