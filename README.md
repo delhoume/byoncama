@@ -57,7 +57,7 @@ This script removes wooden frames from individual leaves.
 - windows:`scripts\make_seamless.bat`
 - macos, linux: `source ./scripts/make_seamless.sh`s
 
-computes seamless image from sources in  `gallica_pngs`folder and mappings folder if it does not already exist in seamless_images
+computes seamless image from sources in  `gallica_pngs`folder and mappings folder if it does not already exist in `seamless_images`
 Note there are 181 source leaves but 186 mapping.
 
 it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go n wth next steps on a subsetof all leaves. 
