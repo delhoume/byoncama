@@ -1,5 +1,5 @@
 # byocama
-Build Your Own CAssini MAp
+**B**uild **Y**our **O**wn **CA**ssini **MA**p
  
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
