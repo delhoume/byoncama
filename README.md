@@ -50,7 +50,7 @@ does not download leaves already present in gallica_pngs
 Total weight for all 181 original leaves images is about 35Gb
 
 
-# Step 2 : creating seamless images
+# Step 2: creating seamless images
 
 This script removes wooden frames from individual leaves.
 
@@ -64,8 +64,7 @@ it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This 
 
 see  https://github.com/delhoume/byocama/issues/1
 
-# Step 3 _:geo
-localizing images
+# Step 3: geolocalizing images
 
 this script creates individual geolocalized tifs
 
@@ -75,7 +74,7 @@ this script creates individual geolocalized tifs
 as computation is fast, always create all geotifs from  `seamless_images` folder into `geotif_images` folder.
 Files in `geotif_images` can be used in GIS applications
 ons
-# Step 4 : merging, retroprojecting and pyramid generation
+# Step 4: merging, retroprojecting and pyramid generation
 
 this script merges all leaves into a single pseudo-mercator tiled BigTiff, and creates pyramid levels.
 the resulting tif can be dropped into QGis or used in a tile server.
