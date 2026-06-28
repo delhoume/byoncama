@@ -35,7 +35,7 @@ The workflow is command line oriented, so a package manager is useful.
     - processing (htps://processing.org) for the mappings editor
 
 scripts are designed to be used as is, you only need to edit
-scripts\setup.bat or scripts/setup.sh to match your installation pat hes. §wiows gdal dependent script do not work, because of a mismatch in proj.db
+`scripts\setup.bat` or `scripts/setup.sh` to match your installation pathes.  Windows GDAL dependent script do not work, because of a mismatch in proj.db
 
 # Step 1: downloading the source images from Gallica
 
