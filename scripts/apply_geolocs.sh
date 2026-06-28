@@ -1,3 +1,8 @@
+#!/bin/bash
+source ./scripts/setup.sh
+if [ ! -d geotif_images ]; then
+  mkdir -p geotif_images
+fi
 if [ -f seamless_images/001_Paris_btv1b53095162g.tif ]; then
   echo Creating geotiff image from 001_Paris_btv1b53095162g.tif
   cp seamless_images/001_Paris_btv1b53095162g.tif geotif_images/001_Paris_btv1b53095162g.tif
