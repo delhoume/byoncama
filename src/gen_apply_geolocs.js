@@ -4,13 +4,13 @@ import os from 'node:os'
 
 const mappingsjson = fs.readFileSync(`data/mappings.json`);
 const mappings = JSON.parse(mappingsjson)['mappings'];
-
-// the projection, computed from cassini's indications
-const cassini_proj4 = `"+proj=cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs"`;
 const isWindows = os.platform() === 'win32';
 const scriptext = isWindows ? ".bat" : ".sh";
 const sep = isWindows ? "\\" : "/";
 const scriptfile = [];
+
+const  APPLYGEO = isWindows ? "%APPLYGEO%" : "$APPLYGEO";
+
 
 for (var l = 0; l < mappings.length; ++l) {
     const mappingname = mappings[l];
@@ -33,10 +33,10 @@ for (var l = 0; l < mappings.length; ++l) {
         scriptfile.push(`  if [ $? -ne 0 ]; then`);
         scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
         scriptfile.push(`  fi`);
-        scriptaapplygeo
-        ile.push(`fi`);appendFile
-}
-if (isWindows) scriptfile.push(`del /qs gif_images\\*.xml`);
+        scriptfile.push(`fi`);
+    }     
+} 
+if (isWindows) scriptfile.push(`del /q /s gif_images\\*.xml`);
 else scriptfile.push(`rm -f geotif_images/*.xml`);
 if (!fs.existsSync("scripts"))
     fs.mkdirSync("scripts");
