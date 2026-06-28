@@ -14,7 +14,6 @@ const destfolder = "seamless_images";
 const scriptfile = [];
 
 const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
-const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
 
 if (isWindows) {
   scriptfile.push("@echo off");
@@ -24,7 +23,6 @@ if (isWindows) {
 } else {
   scriptfile.push("#!/bin/bash");
   scriptfile.push("source ./scripts/setup.sh");
-  scriptfile.push(`  echo $MAGICK`);
   scriptfile.push(`if [ ! -d gallica_pngs ]; then`);
   scriptfile.push(`  mkdir gallica_pngs`);
   scriptfile.push(`fi`);
