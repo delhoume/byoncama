@@ -17,7 +17,7 @@ This repository does not host any images, only build material.
 https://en.wikipedia.org/wiki/Cassini_map
 
 ### required hardware
-the workflow duplicates several times the initial 35Gb and the final result tiff is 20Go, so you need a large HD, and  the faster the better.
+the workflow duplicates several times the initial 35Gb and the final result tiff is 72Go, so you need a large HD, and  the faster the better.
 
 My dev machine is a 2021 16Gb M1 MacMini.
 
@@ -26,7 +26,7 @@ The workflow is command line oriented, so a package manager is useful.
 -  mandatory 
    - curl (https://curl.se/)
    - image magick is used for all image processing (https://imagemagick.org )
-   - gdal (https://gdal.org/en/stable/), usually hard to get  but ±QGs (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
+   - gdal (https://gdal.org/en/stable/), usually hard to get  but QGIs (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
 
  - if you want to change something in the workflow
     - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
