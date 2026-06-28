@@ -148,7 +148,7 @@ It allows editing interactively the quadrilaterals with the mouse and specialize
 hit ? to get help an do not forget to hit 'Enter" done.
 Mappings for all 181 leaves are provided. A few leaves have two mappings.
 [
-](https://usage.imagemagick.org/distorts/#perspective)<img width="999" height="515" alt="image" src="https://github.com/user-attachments/assets/063de4c3-7ecb-4422-91b2-5e147673c241" />
+](https://usage.imagemagick.org/distorts/#perspective)
 
 ## Development
 
