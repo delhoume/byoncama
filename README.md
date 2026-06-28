@@ -62,19 +62,19 @@ Note there are 181 source leaves but 186 mapping.
 
 it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go n wth next steps on a subsetof all leaves. 
 
-It can be optimized
-  -  at Imagemagick level, moving to a  single call, see https://imagemagick.org/command-line-processing
-  - at workflow level, levdera
+see  https://github.com/delhoume/byocama/issues/1
 
-# Step 3 : geo-localizing images
+# Step 3 _:geo
+localizing images
 
-this script creates individualtifs
+this script creates individual geolocalized tifs
 
 - windows :`scripts\make_geotifs.bat`
 - macos, linux: `source scripts/make_geotifs.sh`
 
-as computation is fast, always create all geotifs from  `seamless_images` folder into geotif_images`folder.
-
+as computation is fast, always create all geotifs from  `seamless_images` folder into `geotif_images` folder.
+Files in `geotif_images` can be used in GIS applications
+ons
 # Step 4 : merging, retroprojecting and pyramid generation
 
 this script merges all leaves into a single pseudo-mercator tiled BigTiff, and creates pyramid levels.
