@@ -58,16 +58,19 @@ This script removes wooden frames from individual leaves.
 - macos, linux: `source ./scripts/make_seamless.sh`s
 
 computes seamless image from sources in  `gallica_pngs`folder and mappings folder if it does not already exist in seamless_images
-Note ther are 181 source leaves but 186 mapping.
+Note there are 181 source leaves but 186 mapping.
 
 it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go n wth next steps on a subsetof all leaves. 
 
+It can be optimized
+  -  at Imagemagick level, moving to a  single call, see https://imagemagick.org/command-line-processing
+  - at workflow level, levdera
 
 # Step 3 : geo-localizing images
 
-this script creates individual geotifs
+this script creates individualtifs
 
-- windows:`scripts\make_geotifs.bat`
+- windows :`scripts\make_geotifs.bat`
 - macos, linux: `source scripts/make_geotifs.sh`
 
 as computation is fast, always create all geotifs from  `seamless_images` folder into geotif_images`folder.
