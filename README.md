@@ -1,5 +1,5 @@
 # byocama
-Build Your Own CAssini MAp
+**B**uild **Y**our **O**wn **CA**ssini **MA**p
  
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
@@ -17,7 +17,7 @@ This repository does not host any images, only build material.
 https://en.wikipedia.org/wiki/Cassini_map
 
 ### required hardware
-the workflow duplicates several times the initial 35Gb and the final result tiff is 20Go, so you need a large HD, and  the faster the better.
+the workflow duplicates several times the initial 35Gb and the final result tiff is 72Go, so you need a large HD, and  the faster the better.
 
 My dev machine is a 2021 16Gb M1 MacMini.
 
@@ -26,7 +26,7 @@ The workflow is command line oriented, so a package manager is useful.
 -  mandatory 
    - curl (https://curl.se/)
    - image magick is used for all image processing (https://imagemagick.org )
-   - gdal (https://gdal.org/en/stable/), usually hard to get  but ±QGs (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
+   - gdal (https://gdal.org/en/stable/), usually hard to get  but QGIs (https://www.qgis.org/) is embedding gdal binaries, this is the  preferred method on mac
 
  - if you want to change something in the workflow
     - deno (https://deno.com/) or node.js (https://node.js) Javascript runtime
@@ -60,7 +60,7 @@ This script removes wooden frames from individual leaves.
 computes seamless image from sources in  `gallica_pngs`folder and mappings folder if it does not already exist in `seamless_images`
 Note there are 181 source leaves but 186 mapping.
 
-it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go n wth next steps on a subsetof all leaves. 
+it takes about 10-15mn per mapping on my  machine , for a total of 2 days. This is the longuest step, but you can interrupt this script and go on with next steps on a subsetof all leaves.
 
 see  https://github.com/delhoume/byocama/issues/1
 
@@ -68,8 +68,10 @@ see  https://github.com/delhoume/byocama/issues/1
 
 this script creates individual geolocalized tifs
 
-- windows :`scripts\make_geotifs.bat`
-- macos, linux: `source scripts/make_geotifs.sh`
+- windows :`scripts\make_geotifs.bat` **FAILS**
+- alternative method that seeem to work better (info extracted with listgeo and set with applygeo): `scripts
+- mak
+ - macos, linux: `source scripts/make_geotifs.sh`
 
 as computation is fast, always create all geotifs from  `seamless_images` folder into `geotif_images` folder.
 Files in `geotif_images` can be used in GIS applications
