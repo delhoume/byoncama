@@ -44,7 +44,7 @@ const findLatitude = (name, positions) => {
 
 if (isWindows) {
     scriptfile.push("@echo off");
-    scriptfile.push("calll scripts\\setup.bat");
+    scriptfile.push("call scripts\\setup.bat");
     scriptfile.push("setlocal EnableExtensions EnableDelayedExpansion");
     scriptfile.push(`if not exist geotif_images mkdir geotif_images`);
 } else {

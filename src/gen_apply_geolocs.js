@@ -11,6 +11,18 @@ const scriptfile = [];
 
 const  APPLYGEO = isWindows ? "%APPLYGEO%" : "$APPLYGEO";
 
+if (isWindows) {
+    scriptfile.push("@echo off");
+    scriptfile.push("call scripts\\setup.bat");
+    scriptfile.push("setlocal EnableExtensions EnableDelayedExpansion");
+    scriptfile.push(`if not exist geotif_images mkdir geotif_images`);
+} else {
+    scriptfile.push("#!/bin/bash");
+    scriptfile.push("source ./scripts/setup.sh");
+     scriptfile.push(`if [ ! -d geotif_images ]; then`);
+    scriptfile.push(`  mkdir -p geotif_images`);
+    scriptfile.push(`fi`);
+}
 
 for (var l = 0; l < mappings.length; ++l) {
     const mappingname = mappings[l];
@@ -19,9 +31,9 @@ for (var l = 0; l < mappings.length; ++l) {
         scriptfile.push(`if exist seamless_images\\${mappingname}.tif (`);
         scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
         scriptfile.push(`  if not exist geotif_images mkdir geotif_images`);
-        scriptfile.push(`  coy /Y "seamless_images\\${mappingname}.tif" "geotif_images\\${mappingname}.tif"`);
+        scriptfile.push(`  copy /Y "seamless_images\\${mappingname}.tif" "geotif_images\\${mappingname}.tif"`);
         scriptfile.push(`  ${APPLYGEO} geolocs\\${mappingname}.geo geotif_images\\${mappingname}.tif`);
-        scriptfile.push(`  if errorl                evel 1 (`);
+        scriptfile.push(`  if errorlevel 1 (`);
         scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);
         scriptfile.push(`  )`);
         scriptfile.push(`)`);
