@@ -1,5 +1,5 @@
 # byoncama
-Build Your Own CAssini MAP
+Build Your Own CAssini MAp
 
 This project contains all code for building a local version of the Cassini Map of France on your computer.
 
@@ -80,18 +80,18 @@ the resulting tif can be dropped into QGis or used in a tile server.
 - windows: `scripts\make_pyramid.bat` **FAILS**
 - macos, linux: `source scripts/make_pyramid.sh`
 
-final result is cassini_map.tif a 209470 x 195633 pixel GeoTIFF RGBA image, with 11 levels.
+final result is **cassini_map.tif** a 209470 x 195633 pixel GeoTIFF RGBA image, with 11 levels.
 
 With deflate compression, its size is 72 Gigabytes. If you do not need alpha values, you can switch to JPEG compression, for a much smaller file.
 
 ## troubleshooting
-The scripts are available for bash (linux, wsl, macos) and as .bat batch files
-t
-Depending on your installation, you may have to change the location of image magick, or QGis.
-on Windows, the geolocalization does not work, because of an error related to pro.db
-I am using OSGeo4w shell, and it fails running `gdal raster <edit,re reproject>`.
+The scripts are available for bash (linux, wsl, macos) and as Windows .bat batch files
 
-A issue is opened if you want to contribute and fix.
+Depending on your installation, you may have to change the location of image magick, or QGis.
+on Windows, the geolocalization does not work, because of an error related to proj.db
+I am using OSGeo4w shell, and it fails running `gdal raster <edit,reproject>`.
+
+An issue is opened if you want to contribute and propose afix.
 
 On MacOS I use the GDAL binaries that are delivered with QGis in its .app folder.
 
@@ -109,6 +109,7 @@ It is implemented with Image Magick -distort Perspective, see
 
 A visual improvement might be to allow non straight borders, or find an automatic way of computing best contents
 
+<img width="604" height="641" alt="SCR-20260628-acv" src="https://github.com/user-attachments/assets/4b90cf40-cab8-4416-9c26-8d67a7ad9e3e" />
 
 We describe valid content for each leaf in a JSON file with explicit cell corners coordinates in pixels.
 
