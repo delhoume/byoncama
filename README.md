@@ -97,7 +97,7 @@ An issue is opened if you want to contribute and propose afix.
 
 On MacOS I use the GDAL binaries that are delivered with QGis in its .app folder.
 
-The  Cassini Map digitized by he BNF has been divided in 181 parts called leaves.
+The  [Cassini](https://github.com/delhoume/byocama/issues/1) Map digitized by he BNF has been divided in 181 parts called leaves.
  Normal sized leaves are about 95x60cm.
 
  For easier transportation, each leaf has been cut in pieces and mounted on a wooden frame. Digitized images show this frame, we will get rid of it.
