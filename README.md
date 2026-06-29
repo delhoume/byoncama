@@ -37,7 +37,7 @@ The workflow is command line oriented, so a package manager is useful.
     - processing (htps://processing.org) for the mappings editor
 
 scripts are designed to be used as is, you only need to edit
-`scripts\setup.bat` or `scripts/setup.sh` to match your installation pathes.  Windows GDAL dependent script do not work, because of a mismatch in proj.db
+`scripts\setup.bat` or `scripts/setup.sh` to match your installation pathes.  Windows GDAL dependent scripts do not work, because of a version mismatch in proj.db
 
 # Step 1: downloading the source images from Gallica
 
@@ -71,19 +71,19 @@ see  https://github.com/delhoume/byocama/issues/1
 this script creates individual geolocalized tifs
 
 - windows :`scripts\make_geotifs.bat` **FAILS**
-- alternative method that seeem to work better (info extracted with listgeo and set with applygeo): `scripts
-- mak
+- alternative method that seeem to work better (info extracted with listgeo and set with applygeo): `scripts\apply_geolocs.bat`
  - macos, linux: `source scripts/make_geotifs.sh`
 
-as computation is fast, always create all geotifs from  `seamless_images` folder into `geotif_images` folder.
-Files in `geotif_images` can be used in GIS applications
-ons
+as computation is fast, we always create all geotifs from  `seamless_images` folder into `geotif_images` folder.
+Files in `geotif_images` can be used in GIS applications (dropped into QGIS for example)
+
 # Step 4: merging, retroprojecting and pyramid generation
 
 this script merges all leaves into a single pseudo-mercator tiled BigTiff, and creates pyramid levels.
 the resulting tif can be dropped into QGis or used in a tile server.
 
 - windows: `scripts\make_pyramid.bat` **FAILS**
+- alternative manual method; load all geotif_images in QGIS and use "raster" menus Projection / Warp and Miscellaneous / Build Overviews (Pyramids).The CLI commands seem to be better integrated than in the OSGEO4W shell...
 - macos, linux: `source scripts/make_pyramid.sh`
 
 final result is **cassini_map.tif** a 209470 x 195633 pixel GeoTIFF RGBA image, with 11 levels.

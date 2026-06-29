@@ -3,7 +3,7 @@ source ./scripts/setup.sh
 if [ ! -d tmp/cassini ]; then
   mkdir -p tmp/cassini
 fi
-if [ -d geotif_images ] && [ -n "$(ls -A geotif_images)" ]; then
+if [ -d geotif_images ] && [ -n "$(ls -1 geotif_images/.*.tif | wc -l ;)" ]; then
   ls -1 geotif_images/*.tif > tmp/cassini/geotifs.lst
   echo "Merging and retroprojecting geotiff images..."
   $GDALWARP -overwrite -dstalpha -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile tmp/cassini/geotifs.lst cassini_map.tif
