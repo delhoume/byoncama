@@ -120,7 +120,7 @@ for (var l = 0; l < mappings.length; ++l) {
         } else {
             scriptfile.push(`if [ -f seamless_images/${mappingname}.tif ]; then`);
             scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);
-            scriptfile.push(`  cp seamless_images/${mappingname}.tif geotif_images/${mappingname}.tif`);
+            scriptfile.push(`  cp -f seamless_images/${mappingname}.tif geotif_images/${mappingname}.tif`);
             scriptfile.push(`  $GDALEDIT -a_srs ${cassini_proj4} -a_ullr ${topleft[0]} ${topleft[1]} ${bottomright[0]} ${bottomright[1]} geotif_images/${mappingname}.tif`);
             scriptfile.push(`  if [ $? -ne 0 ]; then`);
             scriptfile.push(`    echo ERROR: Failed to create geotiff for ${mappingname}`);

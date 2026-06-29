@@ -5,8 +5,8 @@ import os from 'node:os'
                               
 // the target projection, pseudo mercator here
 const isWindows = os.platform() === 'win32';
-const scriptext = isWindows ? ".bat" : ".sh";
 const sep = isWindows ? "\\" : "/";
+const scriptext = isWindows ? ".bat" : ".sh";
 const scriptfile = [];
 
 if (isWindows) {
@@ -14,8 +14,8 @@ if (isWindows) {
     scriptfile.push("setlocal EnableExtensions EnableDelayedExpansion");
     scriptfile.push("call scripts\\setup.bat");   
     scriptfile.push(`echo Merging and retroprojecting geotiff images...`);
+    scriptfile.push(`dir /b /a:-d geotif_images\\*.tif > "%TMP_DIR%\\geotifs.lst"`);
     scriptfile.push(`if exist geotif_images\\*.tif (`);
-    scriptfile.push(`  dir /b /a:-d geotif_images\\*.tif > "%TMP_DIR%\\geotifs.lst"`);
     scriptfile.push(`  echo Creating final pyramid with gdalwarp...`);
     scriptfile.push(` %GDALWARP% -overwrite -dstalpha -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile "%TMP_DIR%\\geotifs.lst" cassini_map.tif`);
     scriptfile.push(`  if errorlevel 1 (`);
@@ -36,10 +36,10 @@ if (isWindows) {
     scriptfile.push(`if [ ! -d tmp/cassini ]; then`);
     scriptfile.push(`  mkdir -p tmp/cassini`);
     scriptfile.push(`fi`);
-    scriptfile.push(`if [ -d geotif_images ] && [ -n "$(ls -A geotif_images)" ]; then`);
+    scriptfile.push(`if [ -d geotif_images ] && [ -n "$(ls -1 geotif_images/*.tif | wc -l" ]; then`);
     scriptfile.push(`  ls -1 geotif_images/*.tif > tmp/cassini/geotifs.lst`);
     scriptfile.push(`  echo "Merging and retroprojecting geotiff images..."`);
-    scriptfile.push(`  $GDALWARP -overwrite -dstalpha -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile tmp/cassini/geotifs.lst cassini_map.tif`);
+    scriptfile.push(`  $GDALWARP -overwrite -dstalpha -r lanczos -multi -co TILED=YES -wo NUM_THREADS=ALL_CPUS -wo INIT_DEST=255 -co COMPRESS=DEFLATE -co BIGTIFF=YES -co BLOCKXSIZE=1024 -co BLOCKYSIZE=1024 -t_srs "EPSG:3857" --optfile tmp/cassini/geotifs.lst cassini_map.tif`);
     scriptfile.push(`  if [ $? -eq 0 ]; then`);
     scriptfile.push(`    echo "Creating overviews with gdaladdo..."`);
     scriptfile.push(`    $GDALADDO -r lanczos cassini_map.tif`);
