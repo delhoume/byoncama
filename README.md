@@ -162,14 +162,17 @@ if you need to change something in  the workflow , you will  have to propagate c
 
  I use deno as the js runtime, as it is a single binary.
 
-  `deno -A src/gen_make_seamless`
+Example: (script extension .bat or .sh depends on th e os you e on):
+ 
+ `deno -A src/gen_make_seamless.js`  
 
   generators have no external dependencies.
 
 The list of all images that are part of the final assembled images is in `data/mappings.json`. The geographical location of each mapping has been extracted or computed from BNF scans, and is described in `data/position.json`, with a kind of spatial organization. This file is the key to geolocalisation, as it gives each mapping corner a location in the Cassini coordinate system 
 
-Cassini described it the index (<img width="1440" height="763" alt="image" src="https://github.com/user-attachments/assets/e7c66ffe-9aa5-4a50-b1cf-cc8f0bc9eacb" />
-assemblage) and proj4 is :
+ <img width="1042" height="417" alt="image" src="https://github.com/user-attachments/assets/7676c9cb-960a-49ff-8fa4-53f2a709117c" />
+
+Cassini described it in detail in the index (Carte d'assemblage,we have a mapping for a seamless version) andand proj4 is :
 
 `cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs`
 
