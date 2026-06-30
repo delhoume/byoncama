@@ -2,6 +2,13 @@
 if [ ! -d gallica_pngs ]; then
   mkdir gallica_pngs
 fi
+if [ ! -f gallica_png/000_CarteAssemblage_btv1b53095291n.png ]; then
+   echo Downloading 000_CarteAssemblage_btv1b53095291n from Gallica
+   curl https://gallica.bnf.fr/iiif/ark:/12148/btv1b53095291n/f1/full/full/0/native.png -o /tmp/000_CarteAssemblage_btv1b53095291n.png
+   if [ $? -eq 0 ]; then
+     mv /tmp/000_CarteAssemblage_btv1b53095291n.png gallica_pngs/000_CarteAssemblage_btv1b53095291n.png   
+   fi
+fi
 if [ ! -f gallica_png/001_Paris_btv1b53095162g.png ]; then
    echo Downloading 001_Paris_btv1b53095162g from Gallica
    curl https://gallica.bnf.fr/iiif/ark:/12148/btv1b53095162g/f1/full/full/0/native.png -o /tmp/001_Paris_btv1b53095162g.png

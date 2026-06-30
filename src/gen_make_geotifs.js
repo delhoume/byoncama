@@ -97,16 +97,22 @@ function getMetersCorners(mapping, images_positions) {
         const bottomright = [fright * meterPerToise, fbottom * meterPerToise];
         console.log("Computed meters: ", mapping, "topleft", topleft, "bottomright", bottomright);
         return { topleft, bottomright };
+    } else {
+        return null;
     }
 }
 
 for (var l = 0; l < mappings.length; ++l) {
     const mappingname = mappings[l];
+    if (mappingname.startsWith("000")) continue;
     const mapfile = `mappings${sep}${mappingname}_mapping.json`;
     if (fs.existsSync(mapfile)) {
         const mapping = JSON.parse(fs.readFileSync(mapfile));
         const positions = JSON.parse(fs.readFileSync(`data${sep}positions.json`, "utf-8"));
         const { topleft, bottomright } = getMetersCorners(mappingname, positions);
+         if (topleft == null || bottomright == null) {
+            continue;
+         }
         if (isWindows) {
             scriptfile.push(`if exist seamless_images\\${mappingname}.tif (`);
             scriptfile.push(`  echo Creating geotiff image from ${mappingname}.tif`);

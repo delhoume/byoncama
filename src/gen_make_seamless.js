@@ -157,6 +157,7 @@ function generateOneScript(topmapping, mappingname) {
   lscript += `echo done\n`;
   return lscript;
 }
+
 for (var l = 0; l < mappings.length; ++l) {
   const mappingname = mappings[l];
   const mapfile = `mappings${sep}${mappingname}_mapping.json`;
