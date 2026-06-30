@@ -13,6 +13,7 @@ const tempfolder = isWindows ? "tmp\\cassini" : "tmp/cassini";
 const destfolder = "seamless_images";
 const scriptfile = [];
 
+const OPAREN = isWindows ? '"("' : "\\(";
 const CPAREN = isWindows ? '")"' : "\\)";
 const MAGICK = isWindows ?"%MAGICK%" : "$MAGICK";
 
