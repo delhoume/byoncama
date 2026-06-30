@@ -7,13 +7,14 @@ const mappings = JSON.parse(mappingsjson)["mappings"];
 const isWindows = os.platform() === "win32";
 const scriptext = isWindows ? ".bat" : ".sh";
 const sep = isWindows ? "\\" : "/";
-const pngext = ".png";
+const pngext = ".png"
 const tifext = ".tif";
 const tempfolder = isWindows ? "tmp\\cassini" : "tmp/cassini";
 const destfolder = "seamless_images";
 const scriptfile = [];
 
-const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
+const CPAREN = isWindows ? '")"' : "\\)";
+const MAGICK = isWindows ?"%MAGICK%" : "$MAGICK";
 
 if (isWindows) {
   scriptfile.push("@echo off");
@@ -79,9 +80,11 @@ function generateOneScript(topmapping, mappingname) {
     lscript += `if [ ! -d ${tempfolder} ]; then\n`;
     lscript += `  mkdir -p ${tempfolder}\n`;
     lscript += `fi\n`;
-  }
+  };
+    
   const rimage = `${realimage}${pngext}`;
-  for (let c = 0; c < mapping.length; ++c) {
+lscript += `${MAGICK} -monitor gallica_pngs${sep}${rimage} `;
+ for (let c = 0; c < mapping.length; ++c) {
     let tile = mapping[c];
     let col = tile.column;
     let row = tile.row;
@@ -92,17 +95,17 @@ function generateOneScript(topmapping, mappingname) {
     let fw = tilewidths[row][col];
     let fh = tileheights[row][col];
     //    console.log%(`dims for tile ${col} ${row}: ${fw} ${fh}`);
-    lscript += `${MAGICK} -monitor gallica_pngs${sep}${rimage}`;
     const cropimage = `${mappingname}_${col}_${row}_crop${pngext}`;
-    lscript += ` +distort Perspective "${tl.x},${tl.y} 0, 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
-    lscript += `-crop ${fw}x${fh}+0+0 ${tempfolder}${sep}${cropimage}\n`;
-  }
+    lscript += ` ${OPAREN} +clone +distort Perspective "${tl.x},${tl.y} 0, 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
+lscript += ` -crop ${fw}x${fh}+0+0 -write ${tempfolder}${sep}${cropimage} +delete ${CPAREN} `;
+ }
+  lscript += `null:\n`;
   lscript += `  echo Combining ${rows} rows and ${cols} columns\n`;
 
   // référence = ligne du haut, rows de la même colonne doivent avoir la même largeur
   // ensuite on assemble chaque colonne verticalement selon ses hauteurs
   // on prend la première colonne et on  retaille les autres à sa hauteur
-  // on assemble les colonnes -> image complète
+  // on assemble les colonines -> image complète
   let refwidths = [];
   for (let c = 0; c < cols; ++c) {
     // ref width is current column first width;
@@ -122,7 +125,7 @@ function generateOneScript(topmapping, mappingname) {
       const cropimage = `${mappingname}_${c}_${r}_crop${pngext}`;
       const cropimage2 = `${mappingname}_${c}_${r}_crop2${pngext}`;
 
-      lscript += `${MAGICK} ${tempfolder}${sep}${cropimage} -resize ${refwidths[c]}x${refheights[r]}\! ${tempfolder}${sep}${cropimage2}\n`;
+      lscript += `${MAGICK} -monitor ${tempfolder}${sep}${cropimage} -resize ${refwidths[c]}x${refheights[r]}\! ${tempfolder}${sep}${cropimage2}\n`;
     }
   }
   // console.log("refwidths");
@@ -130,29 +133,20 @@ function generateOneScript(topmapping, mappingname) {
   // console.log("refheights");
   // console.table(refheights);
 
-  // see if montage cannot do it directly)
   // assemble the cols and rows (or rows and cols)
-  lscript += `echo creatings rows\n`;
+  lscript += `echo creating final image\n`;
+   lscript += `${MAGICK} -monitor `;
   for (let r = 0; r < rows; ++r) {
-    lscript += `echo making elements for row ${r}\n`;
-    lscript += `${MAGICK} -monitor `;
-    for (let c = 0; c < cols; ++c) {
+     lscript += `${OPAREN} `; 
+     for (let c = 0; c < cols; ++c) {
       const cropimage2 = `${mappingname}_${c}_${r}_crop2${pngext}`;
       lscript += `${tempfolder}${sep}${cropimage2} `;
     }
-   const rowimage = `${mappingname}_row${r}${pngext}`;
-    lscript += `+append ${tempfolder}${sep}${rowimage}\n`;
+    lscript += `+append ${CPAREN} `; 
   }
 
-  //assemble rows
-  lscript += `echo assembling rows\n`;
-  lscript += `${MAGICK} -monitor `;
-  for (let r = 0; r < rows; ++r) {
-    lscript += `${tempfolder}${sep}${mappingname}_row${r}${pngext} `;
-  }
-  const dstimage = `${destfolder}${sep}${mappingname}${tifext}`;
+  let dstimage = `${destfolder}${sep}${mappingname}${tifext}`;
   lscript += `-append -compress Zip ${dstimage}\n`;
-
   lscript += isWindows ? `del /q ${tempfolder}\n` : `rm -rf ${tempfolder}\n`;
   lscript += `echo done\n`;
   return lscript;
