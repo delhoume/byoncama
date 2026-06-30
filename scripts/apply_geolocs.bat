@@ -2,6 +2,15 @@
 call scripts\setup.bat
 setlocal EnableExtensions EnableDelayedExpansion
 if not exist geotif_images mkdir geotif_images
+if exist seamless_images\000_CarteAssemblage_btv1b53095291n.tif (
+  echo Creating geotiff image from 000_CarteAssemblage_btv1b53095291n.tif
+  if not exist geotif_images mkdir geotif_images
+  copy /Y "seamless_images\000_CarteAssemblage_btv1b53095291n.tif" "geotif_images\000_CarteAssemblage_btv1b53095291n.tif"
+  %APPLYGEO% geolocs\000_CarteAssemblage_btv1b53095291n.geo geotif_images\000_CarteAssemblage_btv1b53095291n.tif
+  if errorlevel 1 (
+    echo ERROR: Failed to create geotiff for 000_CarteAssemblage_btv1b53095291n
+  )
+)
 if exist seamless_images\001_Paris_btv1b53095162g.tif (
   echo Creating geotiff image from 001_Paris_btv1b53095162g.tif
   if not exist geotif_images mkdir geotif_images

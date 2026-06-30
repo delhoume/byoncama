@@ -1,5 +1,12 @@
 @echo off
 if not exist gallica_pngs mkdir gallica_pngs
+if not exist gallica_pngs\000_CarteAssemblage_btv1b53095291n.png (
+   echo Downloading 000_CarteAssemblage_btv1b53095291n from Gallica
+   curl https://gallica.bnf.fr/iiif/ark:/12148/btv1b53095291n/f1/full/full/0/native.png -o %TEMP%\000_CarteAssemblage_btv1b53095291n.png
+   if %ERRORLEVEL% equ 0 (
+     move %TEMP%\000_CarteAssemblage_btv1b53095291n.png gallica_pngs\000_CarteAssemblage_btv1b53095291n.png
+  )
+)
 if not exist gallica_pngs\001_Paris_btv1b53095162g.png (
    echo Downloading 001_Paris_btv1b53095162g from Gallica
    curl https://gallica.bnf.fr/iiif/ark:/12148/btv1b53095162g/f1/full/full/0/native.png -o %TEMP%\001_Paris_btv1b53095162g.png
