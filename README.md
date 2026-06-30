@@ -176,11 +176,11 @@ Cassini described it in detail in the index (Carte d'assemblage,we have a mappin
 
 `cass +lat_0=48.8361111 +lon_0=2.33570833 +x_0=0 +y_0=0 +R=6372057 +units=m +no_defs`
 
- - cass = Cassini Soldner 
+  - cass = Cassini Soldner 
   - lat = latitude of the french observatoire in Paris = 48.836111 degrees 
- . long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
- . R = earth radius according to Cassini
- . units = meters
+  = long  = longitude of the french observatoire in Paris = 2.3372083- 0.0015 ?
+  - R = earth radius according to Cassini (it was considered a sphere then)  
+  - units = meters
 
 
 
