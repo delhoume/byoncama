@@ -9,18 +9,18 @@ const scriptext = isWindows ? ".bat" : ".sh";
 const sep = isWindows ? "\\" : "/";
 const pngext = ".png"
 const tifext = ".tif";
-const tempfolder = isWindows ? "tmp\\cassini" : "tmp/cassini";
 const destfolder = "seamless_images";
 const scriptfile = [];
 
 const OPAREN = isWindows ? '"("' : "\\(";
 const CPAREN = isWindows ? '")"' : "\\)";
-const MAGICK = isWindows ?"%MAGICK%" : "$MAGICK";
+const MAGICK = isWindows ? "%MAGICK%" : "$MAGICK";
+const TMP_DIR = isWindows ? "%TMP_DIR%" : "$TMP_DIR";
 
 if (isWindows) {
   scriptfile.push("@echo off");
   scriptfile.push("call scripts\\setup.bat");
-    scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
+  scriptfile.push(`if not exist gallica_pngs mkdir gallica_pngs`);
   scriptfile.push(`if not exist seamless_images mkdir seamless_images`);
 } else {
   scriptfile.push("#!/bin/bash");
@@ -33,7 +33,8 @@ if (isWindows) {
   scriptfile.push(`fi`);
 }
 
-function generateOneScript(topmapping, mappingname) {
+function generateOneScript(topmapping, mappingname)
+{
   // console.log(mappingname, topmapping);
   const mapping = topmapping.mapping;
   let realimage = topmapping.image;
@@ -76,33 +77,14 @@ function generateOneScript(topmapping, mappingname) {
   var lscript = "";
   lscript += `echo extracting  ${rows} rows and ${cols} columns from ${realimage}\n`;
   if (isWindows) {
-    lscript += `if not exist ${tempfolder}  mkdir ${tempfolder}\n`;
+    lscript += `if not exist ${TMP_DIR}  mkdir ${TMP_DIR}\n`;
   } else {
-    lscript += `if [ ! -d ${tempfolder} ]; then\n`;
-    lscript += `  mkdir -p ${tempfolder}\n`;
+    lscript += `if [ ! -d ${TMP_DIR} ]; then\n`;
+    lscript += `  mkdir -p ${TMP_DIR}\n`;
     lscript += `fi\n`;
   };
-    
-  const rimage = `${realimage}${pngext}`;
-lscript += `${MAGICK} -monitor gallica_pngs${sep}${rimage} `;
- for (let c = 0; c < mapping.length; ++c) {
-    let tile = mapping[c];
-    let col = tile.column;
-    let row = tile.row;
-    let tl = tile.topleft;
-    let tr = tile.topright;
-    let br = tile.bottomright;
-    let bl = tile.bottomleft;
-    let fw = tilewidths[row][col];
-    let fh = tileheights[row][col];
-    //    console.log%(`dims for tile ${col} ${row}: ${fw} ${fh}`);
-    const cropimage = `${mappingname}_${col}_${row}_crop${pngext}`;
-    lscript += ` ${OPAREN} +clone +distort Perspective "${tl.x},${tl.y} 0, 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
-lscript += ` -crop ${fw}x${fh}+0+0 -write ${tempfolder}${sep}${cropimage} +delete ${CPAREN} `;
- }
-  lscript += `null:\n`;
-  lscript += `  echo Combining ${rows} rows and ${cols} columns\n`;
 
+ 
   // référence = ligne du haut, rows de la même colonne doivent avoir la même largeur
   // ensuite on assemble chaque colonne verticalement selon ses hauteurs
   // on prend la première colonne et on  retaille les autres à sa hauteur
@@ -120,35 +102,46 @@ lscript += ` -crop ${fw}x${fh}+0+0 -write ${tempfolder}${sep}${cropimage} +delet
     let refheight = tileheights[r][0];
     refheights.push(refheight);
   }
-
-  for (let r = 0; r < rows; ++r) {
-    for (let c = 0; c < cols; ++c) {
-      const cropimage = `${mappingname}_${c}_${r}_crop${pngext}`;
-      const cropimage2 = `${mappingname}_${c}_${r}_crop2${pngext}`;
-
-      lscript += `${MAGICK} -monitor ${tempfolder}${sep}${cropimage} -resize ${refwidths[c]}x${refheights[r]}\! ${tempfolder}${sep}${cropimage2}\n`;
-    }
-  }
   // console.log("refwidths");
   // console.table(refwidths);
   // console.log("refheights");
   // console.table(refheights);
 
+  const rimage = `${realimage}${pngext}`;
+  lscript += `${MAGICK} -monitor gallica_pngs${sep}${rimage} `;
+  for (let c = 0; c < mapping.length; ++c) {
+    let tile = mapping[c];
+    let col = tile.column;
+    let row = tile.row;
+    let tl = tile.topleft;
+    let tr = tile.topright;
+    let br = tile.bottomright;
+    let bl = tile.bottomleft;
+    let fw = tilewidths[row][col];
+    let fh = tileheights[row][col];
+    //    console.log%(`dims for tile ${col} ${row}: ${fw} ${fh}`);
+    const cropimage = `${mappingname}_${col}_${row}_crop${pngext}`;
+    lscript += ` ${OPAREN} +clone +distort Perspective "${tl.x},${tl.y} 0, 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
+    lscript += ` -crop ${fw}x${fh}+0+0 -resize ${refwidths[col]}x${refheights[row]}\! -write ${TMP_DIR}${sep}${cropimage} +delete ${CPAREN} `;
+  }
+  lscript += `null:\n`;
+  lscript += `  echo Combining ${rows} rows and ${cols} columns\n`;
+
   // assemble the cols and rows (or rows and cols)
   lscript += `echo creating final image\n`;
-   lscript += `${MAGICK} -monitor `;
+  lscript += `${MAGICK} -monitor `;
   for (let r = 0; r < rows; ++r) {
-     lscript += `${OPAREN} `; 
-     for (let c = 0; c < cols; ++c) {
-      const cropimage2 = `${mappingname}_${c}_${r}_crop2${pngext}`;
-      lscript += `${tempfolder}${sep}${cropimage2} `;
+    lscript += `${OPAREN} `;
+    for (let c = 0; c < cols; ++c) {
+      const cropimage2 = `${mappingname}_${c}_${r}_crop${pngext}`;
+      lscript += `${TMP_DIR}${sep}${cropimage2} `;
     }
-    lscript += `+append ${CPAREN} `; 
+    lscript += `+append ${CPAREN} `;
   }
 
   let dstimage = `${destfolder}${sep}${mappingname}${tifext}`;
   lscript += `-append -compress Zip ${dstimage}\n`;
-  lscript += isWindows ? `del /q ${tempfolder}\n` : `rm -rf ${tempfolder}\n`;
+  lscript += isWindows ? `del /q ${TMP_DIR}\n` : `rm -rf ${TMP_DIR}\n`;
   lscript += `echo done\n`;
   return lscript;
 }

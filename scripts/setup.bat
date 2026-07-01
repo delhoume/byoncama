@@ -8,6 +8,6 @@ set GDALWARP=%GDAL_BIN_FOLDER%\gdalwarp
 set GDALADDO=%GDAL_BIN_FOLDER%\gdaladdo
 set APPLYGEO==%GDAL_BIN_FOLDER%\applygeo
 set MAGICK="c:\Program Files\ImageMagick-7.1.2-Q8\magick"
-if not exist %TMP_DIR%  mkdir %TMP_DIR%
 set TMP_DIR=tmp\\cassini
+if not exist %TMP_DIR%  mkdir %TMP_DIR%
 del /q %TMP_DIR%
