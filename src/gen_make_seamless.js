@@ -88,7 +88,7 @@ function generateOneScript(topmapping, mappingname)
   // référence = ligne du haut, rows de la même colonne doivent avoir la même largeur
   // ensuite on assemble chaque colonne verticalement selon ses hauteurs
   // on prend la première colonne et on  retaille les autres à sa hauteur
-  // on assemble les colonines -> image complète
+  // on assemble les colonnes -> image complète
   let refwidths = [];
   for (let c = 0; c < cols; ++c) {
     // ref width is current column first width;
@@ -122,7 +122,7 @@ function generateOneScript(topmapping, mappingname)
     //    console.log%(`dims for tile ${col} ${row}: ${fw} ${fh}`);
     const cropimage = `${mappingname}_${col}_${row}_crop${pngext}`;
     lscript += ` ${OPAREN} +clone +distort Perspective "${tl.x},${tl.y} 0, 0 ${bl.x},${bl.y} 0,${fh} ${br.x},${br.y} ${fw},${fh}  ${tr.x},${tr.y} ${fw},0" `;
-    lscript += ` -crop ${fw}x${fh}+0+0 -resize ${refwidths[col]}x${refheights[row]}\! -write ${TMP_DIR}${sep}${cropimage} +delete ${CPAREN} `;
+    lscript += ` -crop ${fw}x${fh}+0+0 -resize ${refwidths[col]}x${refheights[row]}\! -quality 0 -write ${TMP_DIR}${sep}${cropimage} +delete ${CPAREN} `;
   }
   lscript += `null:\n`;
   lscript += `  echo Combining ${rows} rows and ${cols} columns\n`;
