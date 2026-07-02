@@ -3,6 +3,14 @@ source ./scripts/setup.sh
 if [ ! -d geotif_images ]; then
   mkdir -p geotif_images
 fi
+if [ -f seamless_images/000_CarteAssemblage_btv1b53095291n.tif ]; then
+  echo Creating geotiff image from 000_CarteAssemblage_btv1b53095291n.tif
+  cp seamless_images/000_CarteAssemblage_btv1b53095291n.tif geotif_images/000_CarteAssemblage_btv1b53095291n.tif
+  $APPLYGEO geolocs/000_CarteAssemblage_btv1b53095291n.geo geotif_images/000_CarteAssemblage_btv1b53095291n.tif
+  if [ $? -ne 0 ]; then
+    echo ERROR: Failed to create geotiff for 000_CarteAssemblage_btv1b53095291n
+  fi
+fi
 if [ -f seamless_images/001_Paris_btv1b53095162g.tif ]; then
   echo Creating geotiff image from 001_Paris_btv1b53095162g.tif
   cp seamless_images/001_Paris_btv1b53095162g.tif geotif_images/001_Paris_btv1b53095162g.tif
