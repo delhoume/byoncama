@@ -195,8 +195,15 @@ git clone https://github.com/delhoume/byocama.git
 cd byocama
 apk add curl imagemagick
 source ./scripts/download_missing.sh
-# takes between 10 and 15mn  for each of the 186  parts
 source ./scripts/make_seamless.sh 
 source ./scripts/make_geotifs.sh
 source ./scripts/make_pyramid.sh
-``
+```
+
+ImageMagick script for seamless generation is optimized, 
+but On Windows and MacOS, using a RAMDisk for tmp folder can 
+speed  up things.
+Each image takes at most 10mn to be computed.
+
+Important gains can be achieved with GNU parallel, this will require changes to script generation,
+it is currently sequential single threaded. 
